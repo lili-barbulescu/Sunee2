@@ -37,7 +37,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 3
+Sheet 3 3
 Title ""
 Date ""
 Rev ""
@@ -47,26 +47,37 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Text HLabel 6575 2700 2    60   Output ~ 0
+SCL
+Text HLabel 6575 2800 2    60   BiDi ~ 0
+SDA
+Text HLabel 6575 2925 2    60   Output ~ 0
+SENS_ON
 $Comp
-L ATMEGA128-A IC?
-U 1 1 59A43A8B
-P 2750 3325
-F 0 "IC?" H 1600 5225 50  0000 L BNN
-F 1 "ATMEGA128-A" H 3500 1375 50  0000 L BNN
-F 2 "TQFP64" H 2750 3325 50  0000 C CIN
-F 3 "" H 2750 3325 50  0000 C CNN
-	1    2750 3325
+L MDBT42V MDBT42V_?
+U 1 1 59A49511
+P 3775 2950
+F 0 "MDBT42V_?" H 4250 2200 60  0000 C CNN
+F 1 "MDBT42V" H 4250 3675 60  0000 C CNN
+F 2 "" H 3675 2975 60  0000 C CNN
+F 3 "" H 3675 2975 60  0000 C CNN
+	1    3775 2950
 	1    0    0    -1  
 $EndComp
-$Comp
-L BUZZER BZ?
-U 1 1 59A43D1F
-P 4925 1850
-F 0 "BZ?" H 5300 1500 60  0000 C CNN
-F 1 "BUZZER" H 5325 2200 60  0000 C CNN
-F 2 "" H 5050 1850 60  0000 C CNN
-F 3 "" H 5050 1850 60  0000 C CNN
-	1    4925 1850
-	1    0    0    -1  
-$EndComp
+Wire Wire Line
+	3175 2650 3050 2650
+Wire Wire Line
+	3700 2375 3700 2200
+Text GLabel 3550 3725 3    39   Input ~ 0
+GND
+Wire Wire Line
+	3550 3725 3550 3575
+Text GLabel 3050 2650 0    39   Input ~ 0
+GND
+Text GLabel 3700 2200 1    39   Input ~ 0
+GND
+Text GLabel 4500 2925 2    39   Input ~ 0
+VCC
+Wire Wire Line
+	4375 2925 4500 2925
 $EndSCHEMATC

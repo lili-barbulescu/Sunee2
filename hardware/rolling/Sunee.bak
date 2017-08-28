@@ -48,15 +48,46 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 525  525  4100 3100
-U 59A43647
-F0 "BLE" 60
-F1 "BLE.sch" 60
-$EndSheet
-$Sheet
-S 7300 575  3825 2900
+S 2400 650  1000 1575
 U 59A4369B
 F0 "sensors" 60
 F1 "sensors.sch" 60
+F2 "SCL" I L 2400 975 60 
+F3 "SDA" B L 2400 875 60 
+F4 "SENS_ON" I L 2400 1100 60 
 $EndSheet
+$Comp
+L Battery BT1
+U 1 1 59A44A38
+P 675 3225
+F 0 "BT1" H 775 3275 50  0000 L CNN
+F 1 "Battery" H 775 3175 50  0000 L CNN
+F 2 "" V 675 3265 50  0000 C CNN
+F 3 "" V 675 3265 50  0000 C CNN
+	1    675  3225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	675  3375 675  3500
+Wire Wire Line
+	675  3000 675  3075
+$Sheet
+S 525  725  1200 1475
+U 59A43647
+F0 "BLE" 60
+F1 "BLE.sch" 60
+F2 "SCL" O R 1725 975 60 
+F3 "SDA" B R 1725 875 60 
+F4 "SENS_ON" O R 1725 1100 60 
+$EndSheet
+Wire Wire Line
+	1725 875  2400 875 
+Wire Wire Line
+	2400 975  1725 975 
+Text GLabel 675  3000 2    60   BiDi ~ 0
+VCC
+Text GLabel 675  3500 2    60   BiDi ~ 0
+GND
+Wire Wire Line
+	1725 1100 2400 1100
 $EndSCHEMATC
