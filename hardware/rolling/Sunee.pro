@@ -1,4 +1,4 @@
-update=Sat 26 Aug 2017 12:10:57 PM EEST
+update=Mon 28 Aug 2017 04:19:35 PM EEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,8 +23,6 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=/media/media2/Projects/KiCAD/symbols
@@ -61,3 +59,6 @@ LibName29=valves
 LibName30=symbols/bma253
 LibName31=symbols/si1133
 LibName32=symbols/buzzer
+LibName33=symbols/mdbt42v
+[general]
+version=1

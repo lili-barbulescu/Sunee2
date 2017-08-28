@@ -37,7 +37,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 1
 Title ""
 Date ""
 Rev ""
@@ -47,10 +47,4 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Sheet
-S 475  500  2925 1875
-U 59A41921
-F0 "Sensors" 60
-F1 "Sensors.sch" 60
-$EndSheet
 $EndSCHEMATC
