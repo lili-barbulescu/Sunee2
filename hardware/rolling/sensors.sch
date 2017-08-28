@@ -37,7 +37,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 1
 Title ""
 Date ""
 Rev ""
@@ -47,16 +47,4 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Sheet
-S 525  525  4100 3100
-U 59A43647
-F0 "BLE" 60
-F1 "BLE.sch" 60
-$EndSheet
-$Sheet
-S 7300 575  3825 2900
-U 59A4369B
-F0 "sensors" 60
-F1 "sensors.sch" 60
-$EndSheet
 $EndSCHEMATC
