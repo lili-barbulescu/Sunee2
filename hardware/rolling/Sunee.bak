@@ -37,7 +37,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 4
 Title ""
 Date ""
 Rev ""
@@ -48,13 +48,13 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 2400 650  1000 1575
+S 5450 1050 1000 1575
 U 59A4369B
 F0 "sensors" 60
 F1 "sensors.sch" 60
-F2 "SCL" I L 2400 975 60 
-F3 "SDA" B L 2400 875 60 
-F4 "SENS_ON" I L 2400 1100 60 
+F2 "SCL" I L 5450 1375 60 
+F3 "SDA" B L 5450 1275 60 
+F4 "SENS_ON" I L 5450 1500 60 
 $EndSheet
 $Comp
 L Battery BT1
@@ -72,22 +72,38 @@ Wire Wire Line
 Wire Wire Line
 	675  3000 675  3075
 $Sheet
-S 525  725  1200 1475
+S 3575 1125 1200 1475
 U 59A43647
 F0 "BLE" 60
 F1 "BLE.sch" 60
-F2 "SCL" O R 1725 975 60 
-F3 "SDA" B R 1725 875 60 
-F4 "SENS_ON" O R 1725 1100 60 
+F2 "SCL" O R 4775 1375 60 
+F3 "SDA" B R 4775 1275 60 
+F4 "SENS_ON" O R 4775 1500 60 
+F5 "BUZZER" O L 3575 1400 60 
+F6 "LED[1..6]" O L 3575 1275 60 
 $EndSheet
 Wire Wire Line
-	1725 875  2400 875 
+	4775 1275 5450 1275
 Wire Wire Line
-	2400 975  1725 975 
+	5450 1375 4775 1375
 Text GLabel 675  3000 2    60   BiDi ~ 0
 VCC
 Text GLabel 675  3500 2    60   BiDi ~ 0
 GND
 Wire Wire Line
-	1725 1100 2400 1100
+	4775 1500 5450 1500
+$Sheet
+S 1650 1125 1325 1475
+U 59A5D52C
+F0 "actuators" 60
+F1 "actuators.sch" 60
+F2 "LED[1..6]" I R 2975 1275 60 
+F3 "BUZZER" I R 2975 1400 60 
+$EndSheet
+Text Label 3125 1275 0    39   ~ 0
+LED[1..6]
+Wire Bus Line
+	2975 1275 3575 1275
+Wire Wire Line
+	2975 1400 3575 1400
 $EndSCHEMATC
