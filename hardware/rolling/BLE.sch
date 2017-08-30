@@ -54,7 +54,7 @@ SDA
 Text HLabel 3075 3025 0    60   Output ~ 0
 SENS_ON
 $Comp
-L MDBT42V MDBT42V_1
+L MDBT42V MDBT42V_?
 U 1 1 59A49511
 P 3775 2950
 F 0 "MDBT42V_?" H 4950 2350 60  0000 C CNN
@@ -246,9 +246,7 @@ Wire Wire Line
 Wire Wire Line
 	5125 2850 5175 2850
 Wire Wire Line
-	1675 1000 1750 1000
-Wire Wire Line
-	1750 1000 1850 1000
+	1675 1000 1850 1000
 Wire Wire Line
 	1750 1075 1750 1000
 Connection ~ 1750 1000
@@ -281,17 +279,9 @@ Wire Wire Line
 Wire Wire Line
 	2375 2850 2300 2850
 Wire Bus Line
-	3875 2100 3950 2100
-Wire Bus Line
-	3950 2100 4025 2100
-Wire Bus Line
-	4025 2100 4100 2100
-Wire Bus Line
-	4100 2100 5025 2100
+	3875 2100 5025 2100
 Wire Wire Line
-	4550 3125 4600 3125
-Wire Wire Line
-	4600 3125 4675 3125
+	4550 3125 4675 3125
 Wire Wire Line
 	4375 3075 4550 3075
 Wire Wire Line
@@ -306,25 +296,19 @@ Wire Wire Line
 Wire Wire Line
 	3925 3675 3875 3675
 Wire Wire Line
-	3875 3675 3875 3750
-Wire Wire Line
-	3875 3750 3875 3825
+	3875 3675 3875 3825
 Wire Wire Line
 	3875 3825 3925 3825
 Wire Wire Line
 	3900 3750 3875 3750
 Connection ~ 3875 3750
 Wire Wire Line
-	4125 3575 4125 3750
-Wire Wire Line
-	4125 3750 4125 3825
+	4125 3575 4125 3825
 Wire Wire Line
 	4100 3750 4125 3750
 Connection ~ 4125 3750
 Wire Wire Line
-	3925 4025 4025 4025
-Wire Wire Line
-	4025 4025 4125 4025
+	3925 4025 4125 4025
 Wire Wire Line
 	4025 4100 4025 4025
 Connection ~ 4025 4025
@@ -353,11 +337,7 @@ Entry Wire Line
 Entry Wire Line
 	4525 2625 4625 2525
 Wire Bus Line
-	4625 2200 4625 2225
-Wire Bus Line
-	4625 2225 4625 2525
-Wire Bus Line
-	4625 2525 4625 2600
+	4625 2200 4625 2600
 Wire Wire Line
 	3525 4000 3525 3750
 Wire Wire Line
@@ -372,4 +352,10 @@ Wire Wire Line
 	3475 3625 3475 3575
 Entry Bus Bus
 	4625 2200 4725 2100
+Text HLabel 1525 3725 0    60   Input ~ 0
+INT_UV
+Text HLabel 1525 3800 0    60   Input ~ 0
+INT_ACC1
+Text HLabel 1525 3900 0    60   Input ~ 0
+INT_ACC2
 $EndSCHEMATC
