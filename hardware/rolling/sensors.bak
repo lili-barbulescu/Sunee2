@@ -142,9 +142,9 @@ F 3 "" H 9100 1950 50  0001 C CNN
 $EndComp
 Text Label 9100 725  0    60   ~ 0
 SENS_VCC
-Text HLabel 8525 1925 3    60   Output ~ 0
+Text HLabel 8525 2025 3    60   Output ~ 0
 INT_ACC1
-Text HLabel 8600 1925 3    60   Output ~ 0
+Text HLabel 8600 2025 3    60   Output ~ 0
 INT_ACC2
 $Comp
 L C C2
@@ -341,4 +341,8 @@ Text HLabel 4575 1325 0    60   BiDi ~ 0
 SDA
 Text HLabel 4600 1425 0    60   Input ~ 0
 SCL
+Wire Wire Line
+	8600 2025 8600 1925
+Wire Wire Line
+	8525 1925 8525 2025
 $EndSCHEMATC

@@ -49,9 +49,9 @@ Comment4 ""
 $EndDescr
 Text HLabel 3075 3175 0    60   Output ~ 0
 SCL
-Text HLabel 3450 4000 3    60   BiDi ~ 0
+Text HLabel 3450 3625 3    60   BiDi ~ 0
 SDA
-Text HLabel 3075 3025 0    60   Output ~ 0
+Text HLabel 3075 3100 0    60   Output ~ 0
 SENS_ON
 $Comp
 L MDBT42V MDBT42V_?
@@ -64,7 +64,7 @@ F 3 "" H 3675 2975 60  0000 C CNN
 	1    3775 2950
 	1    0    0    -1  
 $EndComp
-Text GLabel 3525 4000 3    39   Input ~ 0
+Text GLabel 3525 3625 3    39   Input ~ 0
 GND
 Text GLabel 3050 2650 0    39   Input ~ 0
 GND
@@ -109,7 +109,7 @@ F 3 "" H 5025 2850 50  0000 C CNN
 $EndComp
 Text GLabel 5175 2850 2    39   Input ~ 0
 GND
-Text Label 3625 4000 3    39   ~ 0
+Text Label 3125 2800 2    39   ~ 0
 BLE_RESET
 Text Label 1850 1000 0    39   ~ 0
 BLE_RESET
@@ -150,7 +150,7 @@ F 3 "" H 1750 1175 50  0000 C CNN
 	1    1750 1175
 	-1   0    0    1   
 $EndComp
-Text HLabel 3700 4000 3    60   Output ~ 0
+Text HLabel 3625 3600 3    60   Output ~ 0
 BUZZER
 $Comp
 L CONN_01X04 P?
@@ -259,10 +259,6 @@ Wire Wire Line
 Wire Wire Line
 	3175 3175 3075 3175
 Wire Wire Line
-	3075 3025 3175 3025
-Wire Wire Line
-	3700 4000 3700 3575
-Wire Wire Line
 	3175 2725 2375 2725
 Wire Wire Line
 	2375 2725 2375 2750
@@ -287,8 +283,6 @@ Wire Wire Line
 Wire Wire Line
 	4550 3075 4550 3125
 Connection ~ 4600 3125
-Wire Wire Line
-	3625 3575 3625 4000
 Wire Wire Line
 	4000 3575 4125 3575
 Wire Wire Line
@@ -339,23 +333,35 @@ Entry Wire Line
 Wire Bus Line
 	4625 2200 4625 2600
 Wire Wire Line
-	3525 4000 3525 3750
+	3525 3625 3525 3600
 Wire Wire Line
-	3525 3750 3550 3750
+	3525 3600 3550 3600
 Wire Wire Line
-	3550 3750 3550 3575
+	3550 3600 3550 3575
 Wire Wire Line
-	3450 4000 3450 3625
+	3450 3625 3450 3600
 Wire Wire Line
-	3450 3625 3475 3625
+	3450 3600 3475 3600
 Wire Wire Line
-	3475 3625 3475 3575
+	3475 3600 3475 3575
 Entry Bus Bus
 	4625 2200 4725 2100
-Text HLabel 1525 3725 0    60   Input ~ 0
+Text HLabel 3700 3600 3    60   Input ~ 0
 INT_UV
-Text HLabel 1525 3800 0    60   Input ~ 0
+Text HLabel 3075 2950 0    60   Input ~ 0
 INT_ACC1
-Text HLabel 1525 3900 0    60   Input ~ 0
+Text HLabel 3075 3025 0    60   Input ~ 0
 INT_ACC2
+Wire Wire Line
+	3075 2950 3175 2950
+Wire Wire Line
+	3075 3025 3175 3025
+Wire Wire Line
+	3075 3100 3175 3100
+Wire Wire Line
+	3125 2800 3175 2800
+Wire Wire Line
+	3625 3600 3625 3575
+Wire Wire Line
+	3700 3600 3700 3575
 $EndSCHEMATC
