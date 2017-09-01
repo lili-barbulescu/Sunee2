@@ -1,0 +1,7 @@
+(fp_lib_table
+  (lib (name 3030)(type KiCad)(uri "$(KIPRJMOD)/3030.pretty")(options "")(descr ""))
+  (lib (name MDBT42V)(type KiCad)(uri "$(KIPRJMOD)/MDBT42V.pretty")(options "")(descr ""))
+  (lib (name BMA250E)(type KiCad)(uri "$(KIPRJMOD)/BMA250E.pretty")(options "")(descr ""))
+  (lib (name cl-505s)(type KiCad)(uri "$(KIPRJMOD)/cl-505s.pretty")(options "")(descr ""))
+  (lib (name PS1240P02CT3)(type KiCad)(uri "$(KIPRJMOD)/PS1240P02CT3.pretty")(options "")(descr ""))
+)

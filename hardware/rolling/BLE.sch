@@ -51,8 +51,6 @@ Text HLabel 3075 3175 0    60   Output ~ 0
 SCL
 Text HLabel 3450 3625 3    60   BiDi ~ 0
 SDA
-Text HLabel 3075 3100 0    60   Output ~ 0
-SENS_ON
 $Comp
 L MDBT42V MDBT42V_?
 U 1 1 59A49511
@@ -124,7 +122,7 @@ F 3 "" H 1375 1000 50  0000 C CNN
 	1    1375 1000
 	1    0    0    -1  
 $EndComp
-Text GLabel 1750 1400 2    39   Input ~ 0
+Text GLabel 1075 625  0    39   Input ~ 0
 GND
 $Comp
 L R_Small R?
@@ -137,7 +135,7 @@ F 3 "" H 1075 825 50  0000 C CNN
 	1    1075 825 
 	-1   0    0    1   
 $EndComp
-Text GLabel 1075 625  0    39   Input ~ 0
+Text GLabel 1750 1400 3    39   Input ~ 0
 VCC
 $Comp
 L R_Small R?
@@ -356,8 +354,6 @@ Wire Wire Line
 	3075 2950 3175 2950
 Wire Wire Line
 	3075 3025 3175 3025
-Wire Wire Line
-	3075 3100 3175 3100
 Wire Wire Line
 	3125 2800 3175 2800
 Wire Wire Line
