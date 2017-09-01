@@ -159,28 +159,6 @@ F 3 "" H 3550 1325 50  0001 C CNN
 $EndComp
 Text Label 3550 1025 0    60   ~ 0
 SENS_VCC
-$Comp
-L R R7
-U 1 1 59A6DBFA
-P 1475 1325
-F 0 "R7" V 1555 1325 50  0000 C CNN
-F 1 "330R" V 1475 1325 50  0000 C CNN
-F 2 "" V 1405 1325 50  0001 C CNN
-F 3 "" H 1475 1325 50  0001 C CNN
-	1    1475 1325
-	0    1    1    0   
-$EndComp
-$Comp
-L R R8
-U 1 1 59A6DCBD
-P 1775 1575
-F 0 "R8" V 1855 1575 50  0000 C CNN
-F 1 "10K" V 1775 1575 50  0000 C CNN
-F 2 "" V 1705 1575 50  0001 C CNN
-F 3 "" H 1775 1575 50  0001 C CNN
-	1    1775 1575
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	4575 1325 5525 1325
 Wire Wire Line
@@ -238,22 +216,6 @@ Wire Wire Line
 Wire Wire Line
 	3550 1175 3550 1025
 Wire Wire Line
-	2125 1525 2125 1675
-Wire Wire Line
-	1625 1325 1825 1325
-Wire Wire Line
-	2125 900  2125 1125
-Text Label 2125 1675 0    60   ~ 0
-SENS_VCC
-Text HLabel 1225 1325 0    60   Input ~ 0
-SENS_ON
-Wire Wire Line
-	1325 1325 1225 1325
-Text GLabel 2125 900  2    60   BiDi ~ 0
-VCC
-Text GLabel 1775 1875 0    60   BiDi ~ 0
-GND
-Wire Wire Line
 	3550 1475 3550 1600
 Text GLabel 3550 1600 2    60   BiDi ~ 0
 GND
@@ -272,26 +234,10 @@ Wire Wire Line
 	6775 1025 6900 1025
 Text GLabel 6575 1425 2    60   BiDi ~ 0
 GND
-$Comp
-L Q_NMOS_DGS Q1
-U 1 1 59A6DA5F
-P 2025 1325
-F 0 "Q1" H 2225 1375 50  0000 L CNN
-F 1 "Q_NMOS_DGS" H 2225 1275 50  0000 L CNN
-F 2 "" H 2225 1425 50  0001 C CNN
-F 3 "" H 2025 1325 50  0001 C CNN
-	1    2025 1325
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1775 1725 1775 1875
 Wire Wire Line
 	6475 1025 6475 1625
 Connection ~ 6475 1325
 Connection ~ 6475 1525
-Wire Wire Line
-	1775 1425 1775 1325
-Connection ~ 1775 1325
 Wire Wire Line
 	5250 925  5250 875 
 Connection ~ 5400 875 

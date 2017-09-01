@@ -1,5 +1,13 @@
 (fp_lib_table
+<<<<<<< HEAD
   (lib (name BMA253)(type KiCad)(uri "$(KIPRJMOD)/BMA253.pretty")(options "")(descr ""))
   (lib (name FSMSM)(type KiCad)(uri "$(KIPRJMOD)/FSMSM.pretty")(options "")(descr ""))
   (lib (name DPDT)(type KiCad)(uri "$(KIPRJMOD)/DPDT.pretty")(options "")(descr ""))
+=======
+  (lib (name 3030)(type KiCad)(uri "$(KIPRJMOD)/3030.pretty")(options "")(descr ""))
+  (lib (name MDBT42V)(type KiCad)(uri "$(KIPRJMOD)/MDBT42V.pretty")(options "")(descr ""))
+  (lib (name BMA250E)(type KiCad)(uri "$(KIPRJMOD)/BMA250E.pretty")(options "")(descr ""))
+  (lib (name cl-505s)(type KiCad)(uri "$(KIPRJMOD)/cl-505s.pretty")(options "")(descr ""))
+  (lib (name PS1240P02CT3)(type KiCad)(uri "$(KIPRJMOD)/PS1240P02CT3.pretty")(options "")(descr ""))
+>>>>>>> 9ffd50b1ace9ccb9f6abc1d458f0f036dd594a2e
 )
