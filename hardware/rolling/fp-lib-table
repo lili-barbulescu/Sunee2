@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name BMA253)(type KiCad)(uri "$(KIPRJMOD)/BMA253.pretty")(options "")(descr ""))
+  (lib (name FSMSM)(type KiCad)(uri "$(KIPRJMOD)/FSMSM.pretty")(options "")(descr ""))
+  (lib (name DPDT)(type KiCad)(uri "$(KIPRJMOD)/DPDT.pretty")(options "")(descr ""))
+)
