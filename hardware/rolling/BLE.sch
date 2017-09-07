@@ -33,6 +33,7 @@ LIBS:buzzer
 LIBS:mdbt42v
 LIBS:si1133
 LIBS:battery
+LIBS:Sunee-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
