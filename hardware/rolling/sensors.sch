@@ -58,10 +58,6 @@ F 3 "" H 5950 1625 60  0000 C CNN
 	1    5950 1625
 	1    0    0    -1  
 $EndComp
-Text Label 5400 825  0    60   ~ 0
-SENS_VCC
-Text HLabel 1150 2600 0    60   BiDi ~ 0
-SDA
 $Comp
 L R R5
 U 1 1 59A58552
@@ -73,8 +69,6 @@ F 3 "" H 5250 1075 50  0001 C CNN
 	1    5250 1075
 	1    0    0    -1  
 $EndComp
-Text HLabel 1150 2750 0    60   Input ~ 0
-SCL
 $Comp
 L C C1
 U 1 1 59A58AFA
@@ -86,20 +80,18 @@ F 3 "" H 5400 1975 50  0001 C CNN
 	1    5400 1975
 	1    0    0    -1  
 $EndComp
-Text HLabel 4575 1625 0    60   Output ~ 0
+Text HLabel 2525 3675 0    60   Output ~ 0
 INT_UV
-Text Label 6900 1025 0    60   ~ 0
-SENS_VCC
 $Comp
 L R R6
 U 1 1 59A5946B
-P 6625 1025
-F 0 "R6" V 6705 1025 50  0000 C CNN
-F 1 "10K" V 6625 1025 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 6555 1025 50  0001 C CNN
-F 3 "" H 6625 1025 50  0001 C CNN
-	1    6625 1025
-	0    1    1    0   
+P 6475 1050
+F 0 "R6" V 6555 1050 50  0000 C CNN
+F 1 "10K" V 6475 1050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 6405 1050 50  0001 C CNN
+F 3 "" H 6475 1050 50  0001 C CNN
+	1    6475 1050
+	-1   0    0    1   
 $EndComp
 $Comp
 L BMA253 ACC1
@@ -112,23 +104,17 @@ F 3 "" H 8375 1425 60  0000 C CNN
 	1    8500 1575
 	1    0    0    -1  
 $EndComp
-Text HLabel 7600 1550 0    60   BiDi ~ 0
-SDA
-Text Label 8025 725  0    60   ~ 0
-SENS_VCC
 $Comp
 L C C3
 U 1 1 59A5B737
 P 8025 1850
 F 0 "C3" H 8050 1950 50  0000 L CNN
-F 1 "100nF" H 8050 1750 50  0000 L CNN
+F 1 "0.1uF" H 8050 1750 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0402" H 8063 1700 50  0001 C CNN
 F 3 "" H 8025 1850 50  0001 C CNN
 	1    8025 1850
 	1    0    0    -1  
 $EndComp
-Text HLabel 8450 1000 1    60   Input ~ 0
-SCL
 $Comp
 L C C4
 U 1 1 59A5D521
@@ -140,12 +126,6 @@ F 3 "" H 9100 1950 50  0001 C CNN
 	1    9100 1950
 	1    0    0    -1  
 $EndComp
-Text Label 9100 725  0    60   ~ 0
-SENS_VCC
-Text HLabel 8525 2025 3    60   Output ~ 0
-INT_ACC1
-Text HLabel 8600 2025 3    60   Output ~ 0
-INT_ACC2
 $Comp
 L C C2
 U 1 1 59A6BF87
@@ -160,13 +140,9 @@ $EndComp
 Text Label 3550 1025 0    60   ~ 0
 SENS_VCC
 Wire Wire Line
-	4575 1325 5525 1325
-Wire Wire Line
-	4600 1425 5525 1425
-Wire Wire Line
 	5400 825  5400 1825
 Wire Wire Line
-	4575 1625 5525 1625
+	4750 1625 5525 1625
 Wire Wire Line
 	5400 1525 5525 1525
 Connection ~ 5400 1525
@@ -184,16 +160,16 @@ Wire Wire Line
 Wire Wire Line
 	7600 1550 8125 1550
 Wire Wire Line
-	8025 2000 8025 2100
+	8025 2000 8025 2250
 Wire Wire Line
 	8025 725  8025 1700
 Wire Wire Line
 	8025 1625 8125 1625
 Connection ~ 8025 1625
 Wire Wire Line
-	7750 1475 8125 1475
+	7600 1475 8125 1475
 Wire Wire Line
-	8450 1000 8450 1200
+	8450 875  8450 1200
 Wire Wire Line
 	8525 1150 8525 1200
 Wire Wire Line
@@ -207,11 +183,6 @@ Wire Wire Line
 	8900 1575 9250 1575
 Connection ~ 9250 1575
 Wire Wire Line
-	8450 1925 8450 2525
-Wire Wire Line
-	8450 2525 9250 2525
-Connection ~ 9100 2525
-Wire Wire Line
 	9100 2100 9100 2525
 Wire Wire Line
 	3550 1175 3550 1025
@@ -219,23 +190,11 @@ Wire Wire Line
 	3550 1475 3550 1600
 Text GLabel 3550 1600 2    60   BiDi ~ 0
 GND
-Text GLabel 5400 2275 2    60   BiDi ~ 0
-GND
 Wire Wire Line
 	5400 2125 5400 2275
 Connection ~ 9250 2525
-Text GLabel 8025 2100 2    60   BiDi ~ 0
-GND
-Text GLabel 9250 2625 2    60   BiDi ~ 0
-GND
-Text GLabel 7750 1475 1    60   BiDi ~ 0
-GND
 Wire Wire Line
-	6775 1025 6900 1025
-Text GLabel 6575 1425 2    60   BiDi ~ 0
-GND
-Wire Wire Line
-	6475 1025 6475 1625
+	6475 1200 6475 1625
 Connection ~ 6475 1325
 Connection ~ 6475 1525
 Wire Wire Line
@@ -283,12 +242,155 @@ Wire Wire Line
 Wire Wire Line
 	1650 2750 1575 2750
 Connection ~ 1650 2600
-Text HLabel 4575 1325 0    60   BiDi ~ 0
-SDA
-Text HLabel 4600 1425 0    60   Input ~ 0
-SCL
 Wire Wire Line
 	8600 2025 8600 1925
 Wire Wire Line
 	8525 1925 8525 2025
+Text Label 2325 2875 0    60   ~ 0
+SENS_VCC
+Wire Wire Line
+	2325 2875 2875 2875
+Text Label 4675 2875 2    60   ~ 0
+SENS_VCC_UP
+Wire Wire Line
+	4675 2875 4050 2875
+Text Label 4675 2975 2    60   ~ 0
+GND_UP
+Wire Wire Line
+	4675 2975 4050 2975
+Text HLabel 2525 3075 0    60   BiDi ~ 0
+SDA
+Text HLabel 2525 3175 0    60   Input ~ 0
+SCL
+Wire Wire Line
+	2875 3075 2525 3075
+Wire Wire Line
+	2525 3175 2875 3175
+Text Label 4675 3075 2    60   ~ 0
+SDA_UP
+Text Label 4675 3175 2    60   ~ 0
+SCL_UP
+Wire Wire Line
+	4675 3175 4050 3175
+Wire Wire Line
+	4675 3075 4050 3075
+Text GLabel 2550 2975 0    60   BiDi ~ 0
+GND
+Wire Wire Line
+	2550 2975 2875 2975
+$Comp
+L CONN_01X04 P5
+U 1 1 59B0733A
+P 3850 3025
+F 0 "P5" H 3850 3275 50  0000 C CNN
+F 1 "CONN_01X04" V 3950 3025 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x04" H 3850 3025 50  0001 C CNN
+F 3 "" H 3850 3025 50  0000 C CNN
+	1    3850 3025
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X04 P3
+U 1 1 59B077DC
+P 3075 3025
+F 0 "P3" H 3075 3275 50  0000 C CNN
+F 1 "CONN_01X04" V 3175 3025 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x04" H 3075 3025 50  0001 C CNN
+F 3 "" H 3075 3025 50  0000 C CNN
+	1    3075 3025
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X04 P4
+U 1 1 59B0787B
+P 3075 3525
+F 0 "P4" H 3075 3775 50  0000 C CNN
+F 1 "CONN_01X04" V 3175 3525 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x04" H 3075 3525 50  0001 C CNN
+F 3 "" H 3075 3525 50  0000 C CNN
+	1    3075 3525
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X04 P6
+U 1 1 59B079C0
+P 3850 3525
+F 0 "P6" H 3850 3775 50  0000 C CNN
+F 1 "CONN_01X04" V 3950 3525 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x04" H 3850 3525 50  0001 C CNN
+F 3 "" H 3850 3525 50  0000 C CNN
+	1    3850 3525
+	-1   0    0    -1  
+$EndComp
+Text Label 4750 1625 0    60   ~ 0
+INT_UV_UP
+Text HLabel 2525 3375 0    60   Output ~ 0
+INT_ACC1
+Text HLabel 2525 3475 0    60   Output ~ 0
+INT_ACC2
+Wire Wire Line
+	2525 3375 2875 3375
+Wire Wire Line
+	2875 3475 2525 3475
+Wire Wire Line
+	2525 3675 2875 3675
+Text Label 4650 3375 2    60   ~ 0
+INT_ACC1_UP
+Text Label 4650 3475 2    60   ~ 0
+INT_ACC2_UP
+Text Label 4625 3675 2    60   ~ 0
+INT_UV_UP
+Wire Wire Line
+	4625 3675 4050 3675
+Wire Wire Line
+	4050 3475 4650 3475
+Wire Wire Line
+	4050 3375 4650 3375
+Text Label 9250 2625 0    60   ~ 0
+GND_UP
+Text Label 8025 2250 0    60   ~ 0
+GND_UP
+Text Label 7600 1475 0    60   ~ 0
+GND_UP
+Text Label 9100 725  0    60   ~ 0
+SENS_VCC_UP
+Text Label 8025 725  0    60   ~ 0
+SENS_VCC_UP
+Text Label 5400 825  0    60   ~ 0
+SENS_VCC_UP
+Text Label 6475 825  0    60   ~ 0
+SENS_VCC_UP
+Wire Wire Line
+	6475 900  6475 825 
+Text Label 8525 2025 3    60   ~ 0
+INT_ACC1_UP
+Text Label 8600 2025 3    60   ~ 0
+INT_ACC2_UP
+Wire Wire Line
+	8025 2075 8450 2075
+Connection ~ 8025 2075
+Wire Wire Line
+	8450 2075 8450 1925
+Wire Wire Line
+	9100 2525 9250 2525
+Text Label 7600 1550 0    60   ~ 0
+SDA_UP
+Text Label 8450 875  0    60   ~ 0
+SCL_UP
+Text Label 5400 2275 0    60   ~ 0
+GND_UP
+Text Label 6575 1425 0    60   ~ 0
+GND_UP
+Text Label 4900 1325 0    60   ~ 0
+SDA_UP
+Text Label 4900 1425 0    60   ~ 0
+SCL_UP
+Wire Wire Line
+	4900 1425 5525 1425
+Wire Wire Line
+	4900 1325 5525 1325
+Text Label 1150 2600 2    60   ~ 0
+SDA_UP
+Text Label 1150 2750 2    60   ~ 0
+SCL_UP
 $EndSCHEMATC

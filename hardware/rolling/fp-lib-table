@@ -8,4 +8,5 @@
   (lib (name PS1240P02CT3)(type KiCad)(uri "$(KIPRJMOD)/PS1240P02CT3.pretty")(options "")(descr ""))
   (lib (name SI1133)(type KiCad)(uri "$(KIPRJMOD)/SI1133.pretty")(options "")(descr ""))
   (lib (name K135)(type KiCad)(uri "$(KIPRJMOD)/K135.pretty")(options "")(descr ""))
+  (lib (name connect)(type KiCad)(uri "$(KIPRJMOD)/connect.pretty")(options "")(descr ""))
 )

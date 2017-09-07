@@ -68,9 +68,9 @@ Text GLabel 3050 2650 0    39   Input ~ 0
 GND
 Text GLabel 3700 2125 1    39   Input ~ 0
 GND
-Text GLabel 4750 2925 2    39   Input ~ 0
+Text GLabel 4675 2925 2    39   Input ~ 0
 VCC
-Text GLabel 4675 3125 2    39   Input ~ 0
+Text GLabel 4675 3150 2    39   Input ~ 0
 GND
 $Comp
 L L_Small 10uH1
@@ -135,33 +135,22 @@ F 3 "" H 1075 825 50  0000 C CNN
 	1    1075 825 
 	-1   0    0    1   
 $EndComp
-Text GLabel 1750 1400 3    39   Input ~ 0
+Text GLabel 1750 600  2    39   Input ~ 0
 VCC
 $Comp
 L R_Small R4
 U 1 1 59A58BA4
-P 1750 1175
-F 0 "R4" H 1575 1225 50  0000 L CNN
-F 1 "10K" H 1550 1125 50  0000 L CNN
-F 2 "Resistors_SMD:R_0402" H 1750 1175 50  0001 C CNN
-F 3 "" H 1750 1175 50  0000 C CNN
-	1    1750 1175
+P 1750 825
+F 0 "R4" H 1575 875 50  0000 L CNN
+F 1 "10K" H 1550 775 50  0000 L CNN
+F 2 "Resistors_SMD:R_0402" H 1750 825 50  0001 C CNN
+F 3 "" H 1750 825 50  0000 C CNN
+	1    1750 825 
 	-1   0    0    1   
 $EndComp
 Text HLabel 3625 3600 3    60   Output ~ 0
 BUZZER
-$Comp
-L CONN_01X04 P1
-U 1 1 59A5AF8E
-P 2100 2800
-F 0 "P1" H 2075 2525 50  0000 C CNN
-F 1 "Programming" H 2175 3075 50  0000 C CNN
-F 2 "Connect:bornier4" H 2100 2800 50  0001 C CNN
-F 3 "" H 2100 2800 50  0000 C CNN
-	1    2100 2800
-	-1   0    0    -1  
-$EndComp
-Text GLabel 2375 2950 2    39   Input ~ 0
+Text GLabel 2375 3050 2    39   Input ~ 0
 VDD
 Text GLabel 2375 2650 2    39   Input ~ 0
 GND
@@ -184,23 +173,23 @@ LED[1..6]
 $Comp
 L C_Small C7
 U 1 1 59A69C81
-P 4600 3025
-F 0 "C7" H 4725 3025 50  0000 L CNN
-F 1 "0.1uF" H 4600 2825 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0402" H 4600 3025 50  0001 C CNN
-F 3 "" H 4600 3025 50  0000 C CNN
-	1    4600 3025
+P 4600 3050
+F 0 "C7" H 4725 3050 50  0000 L CNN
+F 1 "0.1uF" H 4600 2850 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 4600 3050 50  0001 C CNN
+F 3 "" H 4600 3050 50  0000 C CNN
+	1    4600 3050
 	1    0    0    -1  
 $EndComp
 $Comp
 L C_Small C5
 U 1 1 59A6B727
-P 3925 3925
-F 0 "C5" H 3935 3995 50  0000 L CNN
-F 1 "12pF" H 3775 3775 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0402" H 3925 3925 50  0001 C CNN
-F 3 "" H 3925 3925 50  0000 C CNN
-	1    3925 3925
+P 3875 3925
+F 0 "C5" H 3885 3995 50  0000 L CNN
+F 1 "12pF" H 3725 3775 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 3875 3925 50  0001 C CNN
+F 3 "" H 3875 3925 50  0000 C CNN
+	1    3875 3925
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -225,14 +214,53 @@ F 3 "" H 4000 3750 50  0000 C CNN
 	1    4000 3750
 	1    0    0    -1  
 $EndComp
-Text GLabel 4025 4100 3    39   BiDi ~ 0
+Text GLabel 4025 4100 3    39   Input ~ 0
 GND
+Entry Wire Line
+	3775 2200 3875 2100
+Entry Wire Line
+	3850 2200 3950 2100
+Entry Wire Line
+	3925 2200 4025 2100
+Entry Wire Line
+	4000 2200 4100 2100
+Entry Wire Line
+	4525 2700 4625 2600
+Entry Wire Line
+	4525 2625 4625 2525
+Entry Bus Bus
+	4625 2200 4725 2100
+Text HLabel 3700 3600 3    60   Input ~ 0
+INT_UV
+Text HLabel 3075 2950 0    60   Input ~ 0
+INT_ACC1
+Text HLabel 3075 3025 0    60   Input ~ 0
+INT_ACC2
+Text GLabel 4900 3775 0    39   Input ~ 0
+VCC
+Text GLabel 4900 3375 0    39   Input ~ 0
+GND
+Text GLabel 1750 1375 2    39   Input ~ 0
+GND
+$Comp
+L C_Small C9
+U 1 1 59B1A58E
+P 1750 1175
+F 0 "C9" H 1760 1245 50  0000 L CNN
+F 1 "0.1uF" H 1760 1095 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 1750 1175 50  0001 C CNN
+F 3 "" H 1750 1175 50  0000 C CNN
+	1    1750 1175
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
 	3175 2650 3050 2650
 Wire Wire Line
 	3700 2375 3700 2125
 Wire Wire Line
-	4375 2925 4750 2925
+	4375 2925 4600 2925
+Wire Wire Line
+	4600 2925 4675 2925
 Wire Wire Line
 	4375 2775 4475 2775
 Wire Wire Line
@@ -244,12 +272,9 @@ Wire Wire Line
 Wire Wire Line
 	5125 2850 5175 2850
 Wire Wire Line
-	1675 1000 1850 1000
+	1675 1000 1750 1000
 Wire Wire Line
-	1750 1075 1750 1000
-Connection ~ 1750 1000
-Wire Wire Line
-	1750 1275 1750 1400
+	1750 1000 1850 1000
 Wire Wire Line
 	1075 925  1075 1000
 Wire Wire Line
@@ -265,7 +290,7 @@ Wire Wire Line
 Wire Wire Line
 	2375 2650 2300 2650
 Wire Wire Line
-	2375 2950 2300 2950
+	2375 3050 2300 3050
 Wire Wire Line
 	3175 2875 2375 2875
 Wire Wire Line
@@ -273,34 +298,50 @@ Wire Wire Line
 Wire Wire Line
 	2375 2850 2300 2850
 Wire Bus Line
-	3875 2100 5025 2100
+	3875 2100 3950 2100
+Wire Bus Line
+	3950 2100 4025 2100
+Wire Bus Line
+	4025 2100 4100 2100
+Wire Bus Line
+	4100 2100 4725 2100
+Wire Bus Line
+	4725 2100 5025 2100
 Wire Wire Line
-	4550 3125 4675 3125
+	4500 3150 4600 3150
 Wire Wire Line
-	4375 3075 4550 3075
+	4600 3150 4675 3150
 Wire Wire Line
-	4550 3075 4550 3125
-Connection ~ 4600 3125
+	4375 3075 4500 3075
+Wire Wire Line
+	4500 3075 4500 3150
+Connection ~ 4600 3150
 Wire Wire Line
 	4000 3575 4125 3575
 Wire Wire Line
-	3925 3575 3925 3675
+	3925 3575 3925 3575
 Wire Wire Line
-	3925 3675 3875 3675
+	3925 3575 3875 3575
 Wire Wire Line
-	3875 3675 3875 3825
+	3875 3575 3875 3750
 Wire Wire Line
-	3875 3825 3925 3825
+	3875 3750 3875 3825
+Wire Wire Line
+	3875 3825 3875 3825
 Wire Wire Line
 	3900 3750 3875 3750
 Connection ~ 3875 3750
 Wire Wire Line
-	4125 3575 4125 3825
+	4125 3575 4125 3750
+Wire Wire Line
+	4125 3750 4125 3825
 Wire Wire Line
 	4100 3750 4125 3750
 Connection ~ 4125 3750
 Wire Wire Line
-	3925 4025 4125 4025
+	3875 4025 4025 4025
+Wire Wire Line
+	4025 4025 4125 4025
 Wire Wire Line
 	4025 4100 4025 4025
 Connection ~ 4025 4025
@@ -316,20 +357,10 @@ Wire Wire Line
 	4375 2625 4525 2625
 Wire Wire Line
 	4375 2700 4525 2700
-Entry Wire Line
-	3775 2200 3875 2100
-Entry Wire Line
-	3850 2200 3950 2100
-Entry Wire Line
-	3925 2200 4025 2100
-Entry Wire Line
-	4000 2200 4100 2100
-Entry Wire Line
-	4525 2700 4625 2600
-Entry Wire Line
-	4525 2625 4625 2525
 Wire Bus Line
-	4625 2200 4625 2600
+	4625 2200 4625 2525
+Wire Bus Line
+	4625 2525 4625 2600
 Wire Wire Line
 	3525 3625 3525 3600
 Wire Wire Line
@@ -342,14 +373,6 @@ Wire Wire Line
 	3450 3600 3475 3600
 Wire Wire Line
 	3475 3600 3475 3575
-Entry Bus Bus
-	4625 2200 4725 2100
-Text HLabel 3700 3600 3    60   Input ~ 0
-INT_UV
-Text HLabel 3075 2950 0    60   Input ~ 0
-INT_ACC1
-Text HLabel 3075 3025 0    60   Input ~ 0
-INT_ACC2
 Wire Wire Line
 	3075 2950 3175 2950
 Wire Wire Line
@@ -360,17 +383,6 @@ Wire Wire Line
 	3625 3600 3625 3575
 Wire Wire Line
 	3700 3600 3700 3575
-$Comp
-L CONN_01X04 P2
-U 1 1 59A711D8
-P 5150 3525
-F 0 "P2" H 5150 3775 50  0000 C CNN
-F 1 "UART Logging" H 5475 3600 50  0000 C CNN
-F 2 "Connect:bornier4" H 5150 3525 50  0001 C CNN
-F 3 "" H 5150 3525 50  0000 C CNN
-	1    5150 3525
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4375 3000 4475 3000
 Wire Wire Line
@@ -381,12 +393,42 @@ Wire Wire Line
 	4375 3150 4375 3575
 Wire Wire Line
 	4375 3575 4950 3575
-Text GLabel 4875 3375 0    60   BiDi ~ 0
-VCC
 Wire Wire Line
-	4875 3375 4950 3375
-Text GLabel 4900 3675 0    60   BiDi ~ 0
-GND
+	4900 3375 4950 3375
 Wire Wire Line
-	4900 3675 4950 3675
+	4900 3775 4950 3775
+Wire Wire Line
+	1750 925  1750 1000
+Wire Wire Line
+	1750 1000 1750 1075
+Connection ~ 1750 1000
+Wire Wire Line
+	1750 725  1750 600 
+Wire Wire Line
+	1750 1275 1750 1375
+Wire Wire Line
+	4600 2950 4600 2925
+Connection ~ 4600 2925
+$Comp
+L CONN_01X05 P?
+U 1 1 59B1DD34
+P 2100 2850
+F 0 "P?" H 2100 3150 50  0000 C CNN
+F 1 "CONN_01X05" V 2200 2850 50  0000 C CNN
+F 2 "" H 2100 2850 50  0000 C CNN
+F 3 "" H 2100 2850 50  0000 C CNN
+	1    2100 2850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X05 P?
+U 1 1 59B1E1D3
+P 5150 3575
+F 0 "P?" H 5150 3875 50  0000 C CNN
+F 1 "CONN_01X05" V 5250 3575 50  0000 C CNN
+F 2 "" H 5150 3575 50  0000 C CNN
+F 3 "" H 5150 3575 50  0000 C CNN
+	1    5150 3575
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

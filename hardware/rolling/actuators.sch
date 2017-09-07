@@ -164,7 +164,7 @@ Wire Wire Line
 Wire Wire Line
 	1800 775  2100 775 
 Wire Wire Line
-	1825 975  2100 975 
+	1800 975  2100 975 
 Wire Wire Line
 	1800 1175 2100 1175
 Entry Wire Line
