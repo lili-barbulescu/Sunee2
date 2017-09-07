@@ -1,4 +1,4 @@
-update=Tue 05 Sep 2017 07:25:23 PM EEST
+update=Thu 07 Sep 2017 08:09:10 PM EEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -62,3 +62,4 @@ LibName30=symbols/bma253
 LibName31=symbols/buzzer
 LibName32=symbols/mdbt42v
 LibName33=symbols/si1133
+LibName34=symbols/battery

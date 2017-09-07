@@ -32,7 +32,7 @@ LIBS:bma253
 LIBS:buzzer
 LIBS:mdbt42v
 LIBS:si1133
-LIBS:Sunee-cache
+LIBS:battery
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -151,7 +151,7 @@ $EndComp
 Text HLabel 3625 3600 3    60   Output ~ 0
 BUZZER
 Text GLabel 2375 3050 2    39   Input ~ 0
-VDD
+VCC
 Text GLabel 2375 2650 2    39   Input ~ 0
 GND
 Text Label 3775 2375 1    39   ~ 0
@@ -258,9 +258,7 @@ Wire Wire Line
 Wire Wire Line
 	3700 2375 3700 2125
 Wire Wire Line
-	4375 2925 4600 2925
-Wire Wire Line
-	4600 2925 4675 2925
+	4375 2925 4675 2925
 Wire Wire Line
 	4375 2775 4475 2775
 Wire Wire Line
@@ -272,9 +270,7 @@ Wire Wire Line
 Wire Wire Line
 	5125 2850 5175 2850
 Wire Wire Line
-	1675 1000 1750 1000
-Wire Wire Line
-	1750 1000 1850 1000
+	1675 1000 1850 1000
 Wire Wire Line
 	1075 925  1075 1000
 Wire Wire Line
@@ -290,27 +286,15 @@ Wire Wire Line
 Wire Wire Line
 	2375 2650 2300 2650
 Wire Wire Line
-	2375 3050 2300 3050
-Wire Wire Line
 	3175 2875 2375 2875
 Wire Wire Line
 	2375 2875 2375 2850
 Wire Wire Line
 	2375 2850 2300 2850
 Wire Bus Line
-	3875 2100 3950 2100
-Wire Bus Line
-	3950 2100 4025 2100
-Wire Bus Line
-	4025 2100 4100 2100
-Wire Bus Line
-	4100 2100 4725 2100
-Wire Bus Line
-	4725 2100 5025 2100
+	3875 2100 5025 2100
 Wire Wire Line
-	4500 3150 4600 3150
-Wire Wire Line
-	4600 3150 4675 3150
+	4500 3150 4675 3150
 Wire Wire Line
 	4375 3075 4500 3075
 Wire Wire Line
@@ -319,29 +303,19 @@ Connection ~ 4600 3150
 Wire Wire Line
 	4000 3575 4125 3575
 Wire Wire Line
-	3925 3575 3925 3575
+	3875 3575 3925 3575
 Wire Wire Line
-	3925 3575 3875 3575
-Wire Wire Line
-	3875 3575 3875 3750
-Wire Wire Line
-	3875 3750 3875 3825
-Wire Wire Line
-	3875 3825 3875 3825
+	3875 3575 3875 3825
 Wire Wire Line
 	3900 3750 3875 3750
 Connection ~ 3875 3750
 Wire Wire Line
-	4125 3575 4125 3750
-Wire Wire Line
-	4125 3750 4125 3825
+	4125 3575 4125 3825
 Wire Wire Line
 	4100 3750 4125 3750
 Connection ~ 4125 3750
 Wire Wire Line
-	3875 4025 4025 4025
-Wire Wire Line
-	4025 4025 4125 4025
+	3875 4025 4125 4025
 Wire Wire Line
 	4025 4100 4025 4025
 Connection ~ 4025 4025
@@ -352,15 +326,11 @@ Wire Wire Line
 Wire Wire Line
 	3925 2375 3925 2200
 Wire Wire Line
-	4000 2375 4000 2200
-Wire Wire Line
 	4375 2625 4525 2625
 Wire Wire Line
 	4375 2700 4525 2700
 Wire Bus Line
-	4625 2200 4625 2525
-Wire Bus Line
-	4625 2525 4625 2600
+	4625 2200 4625 2600
 Wire Wire Line
 	3525 3625 3525 3600
 Wire Wire Line
@@ -398,9 +368,7 @@ Wire Wire Line
 Wire Wire Line
 	4900 3775 4950 3775
 Wire Wire Line
-	1750 925  1750 1000
-Wire Wire Line
-	1750 1000 1750 1075
+	1750 925  1750 1075
 Connection ~ 1750 1000
 Wire Wire Line
 	1750 725  1750 600 
@@ -410,25 +378,29 @@ Wire Wire Line
 	4600 2950 4600 2925
 Connection ~ 4600 2925
 $Comp
-L CONN_01X05 P?
+L CONN_01X05 P1
 U 1 1 59B1DD34
 P 2100 2850
-F 0 "P?" H 2100 3150 50  0000 C CNN
+F 0 "P1" H 2100 3150 50  0000 C CNN
 F 1 "CONN_01X05" V 2200 2850 50  0000 C CNN
-F 2 "" H 2100 2850 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x05" H 2100 2850 50  0001 C CNN
 F 3 "" H 2100 2850 50  0000 C CNN
 	1    2100 2850
 	-1   0    0    -1  
 $EndComp
 $Comp
-L CONN_01X05 P?
+L CONN_01X05 P2
 U 1 1 59B1E1D3
 P 5150 3575
-F 0 "P?" H 5150 3875 50  0000 C CNN
+F 0 "P2" H 5150 3875 50  0000 C CNN
 F 1 "CONN_01X05" V 5250 3575 50  0000 C CNN
-F 2 "" H 5150 3575 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x05" H 5150 3575 50  0001 C CNN
 F 3 "" H 5150 3575 50  0000 C CNN
 	1    5150 3575
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2375 3050 2300 3050
+Wire Wire Line
+	4000 2375 4000 2200
 $EndSCHEMATC
