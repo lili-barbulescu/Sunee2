@@ -9,4 +9,5 @@
   (lib (name SI1133)(type KiCad)(uri "$(KIPRJMOD)/SI1133.pretty")(options "")(descr ""))
   (lib (name K135)(type KiCad)(uri "$(KIPRJMOD)/K135.pretty")(options "")(descr ""))
   (lib (name connect)(type KiCad)(uri "$(KIPRJMOD)/connect.pretty")(options "")(descr ""))
+  (lib (name ASMB-MTB0-0A3A2)(type KiCad)(uri "$(KIPRJMOD)/ASMB-MTB0-0A3A2.pretty")(options "")(descr ""))
 )

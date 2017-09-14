@@ -81,7 +81,7 @@ F 3 "" H 5400 1975 50  0001 C CNN
 	1    5400 1975
 	1    0    0    -1  
 $EndComp
-Text HLabel 2525 3675 0    60   Output ~ 0
+Text HLabel 2525 3475 0    60   Output ~ 0
 INT_UV
 $Comp
 L R R6
@@ -138,8 +138,6 @@ F 3 "" H 3550 1325 50  0001 C CNN
 	1    3550 1325
 	1    0    0    -1  
 $EndComp
-Text Label 3550 1025 0    60   ~ 0
-SENS_VCC
 Wire Wire Line
 	5400 825  5400 1825
 Wire Wire Line
@@ -189,8 +187,6 @@ Wire Wire Line
 	3550 1175 3550 1025
 Wire Wire Line
 	3550 1475 3550 1600
-Text GLabel 3550 1600 2    60   BiDi ~ 0
-GND
 Wire Wire Line
 	5400 2125 5400 2275
 Connection ~ 9250 2525
@@ -208,8 +204,6 @@ Wire Wire Line
 Connection ~ 9100 1650
 Wire Wire Line
 	5250 875  5400 875 
-Text Label 1650 2325 0    60   ~ 0
-SENS_VCC
 $Comp
 L R R1
 U 1 1 59A7FC01
@@ -247,16 +241,10 @@ Wire Wire Line
 	8600 2025 8600 1925
 Wire Wire Line
 	8525 1925 8525 2025
-Text Label 2325 2875 0    60   ~ 0
-SENS_VCC
 Wire Wire Line
-	2325 2875 2875 2875
-Text Label 4675 2875 2    60   ~ 0
-SENS_VCC_UP
+	2550 2875 2875 2875
 Wire Wire Line
 	4675 2875 4050 2875
-Text Label 4675 2975 2    60   ~ 0
-GND_UP
 Wire Wire Line
 	4675 2975 4050 2975
 Text HLabel 2525 3075 0    60   BiDi ~ 0
@@ -325,42 +313,28 @@ F 3 "" H 3850 3525 50  0000 C CNN
 $EndComp
 Text Label 4750 1625 0    60   ~ 0
 INT_UV_UP
-Text HLabel 2525 3375 0    60   Output ~ 0
-INT_ACC1
-Text HLabel 2525 3475 0    60   Output ~ 0
+Text HLabel 2525 3575 0    60   Output ~ 0
 INT_ACC2
+Text HLabel 2525 3675 0    60   Output ~ 0
+INT_ACC1
 Wire Wire Line
 	2525 3375 2875 3375
 Wire Wire Line
 	2875 3475 2525 3475
 Wire Wire Line
 	2525 3675 2875 3675
-Text Label 4650 3375 2    60   ~ 0
+Text Label 4650 3575 2    60   ~ 0
+INT_ACC2_UP
+Text Label 4650 3675 2    60   ~ 0
 INT_ACC1_UP
 Text Label 4650 3475 2    60   ~ 0
-INT_ACC2_UP
-Text Label 4625 3675 2    60   ~ 0
 INT_UV_UP
 Wire Wire Line
-	4625 3675 4050 3675
+	4650 3675 4050 3675
 Wire Wire Line
 	4050 3475 4650 3475
-Wire Wire Line
-	4050 3375 4650 3375
-Text Label 9250 2625 0    60   ~ 0
-GND_UP
 Text Label 8025 2250 0    60   ~ 0
 GND_UP
-Text Label 7600 1475 0    60   ~ 0
-GND_UP
-Text Label 9100 725  0    60   ~ 0
-SENS_VCC_UP
-Text Label 8025 725  0    60   ~ 0
-SENS_VCC_UP
-Text Label 5400 825  0    60   ~ 0
-SENS_VCC_UP
-Text Label 6475 825  0    60   ~ 0
-SENS_VCC_UP
 Wire Wire Line
 	6475 900  6475 825 
 Text Label 8525 2025 3    60   ~ 0
@@ -378,10 +352,6 @@ Text Label 7600 1550 0    60   ~ 0
 SDA_UP
 Text Label 8450 875  0    60   ~ 0
 SCL_UP
-Text Label 5400 2275 0    60   ~ 0
-GND_UP
-Text Label 6575 1425 0    60   ~ 0
-GND_UP
 Text Label 4900 1325 0    60   ~ 0
 SDA_UP
 Text Label 4900 1425 0    60   ~ 0
@@ -394,4 +364,44 @@ Text Label 1150 2600 2    60   ~ 0
 SDA_UP
 Text Label 1150 2750 2    60   ~ 0
 SCL_UP
+Text GLabel 2525 3375 0    60   Input ~ 0
+BUZZ_D
+Wire Wire Line
+	2525 3575 2875 3575
+Text GLabel 4225 3300 2    60   Input ~ 0
+BUZZ_U
+Wire Wire Line
+	4050 3575 4650 3575
+Text GLabel 4675 2975 2    60   BiDi ~ 0
+GND_UP
+Text GLabel 1650 2325 2    60   BiDi ~ 0
+VCC_UP
+Text GLabel 3550 1025 2    60   BiDi ~ 0
+VCC_UP
+Text GLabel 5400 825  2    60   BiDi ~ 0
+VCC_UP
+Text GLabel 6475 825  2    60   BiDi ~ 0
+VCC_UP
+Text GLabel 8025 725  2    60   BiDi ~ 0
+VCC_UP
+Text GLabel 9100 725  2    60   BiDi ~ 0
+VCC_UP
+Text GLabel 9250 2625 2    60   BiDi ~ 0
+GND_UP
+Text GLabel 7600 1475 0    60   BiDi ~ 0
+GND_UP
+Text GLabel 6575 1425 2    60   BiDi ~ 0
+GND_UP
+Text GLabel 5400 2275 2    60   BiDi ~ 0
+GND_UP
+Text GLabel 4675 2875 2    60   BiDi ~ 0
+VCC_UP
+Text GLabel 2550 2875 0    60   BiDi ~ 0
+VCC
+Text GLabel 3550 1600 2    60   BiDi ~ 0
+GND_UP
+Wire Wire Line
+	4050 3375 4225 3375
+Wire Wire Line
+	4225 3375 4225 3300
 $EndSCHEMATC

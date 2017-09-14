@@ -54,7 +54,7 @@ U 1 1 59A5D950
 P 1225 975
 F 0 "D1" H 1225 1325 50  0000 C CNN
 F 1 "LED[1..3]" H 1225 625 50  0000 C CNN
-F 2 "cl-505s:cl-505s" H 1180 925 50  0001 C CNN
+F 2 "ASMB-MTB0-0A3A2:ASMB-MTB0-0A3A2" H 1180 925 50  0001 C CNN
 F 3 "" H 1180 925 50  0000 C CNN
 	1    1225 975 
 	-1   0    0    1   
@@ -65,7 +65,7 @@ U 1 1 59A5DA10
 P 1250 1850
 F 0 "D2" H 1250 2200 50  0000 C CNN
 F 1 "LED[4..6]" H 1250 1500 50  0000 C CNN
-F 2 "cl-505s:cl-505s" H 1205 1800 50  0001 C CNN
+F 2 "ASMB-MTB0-0A3A2:ASMB-MTB0-0A3A2" H 1205 1800 50  0001 C CNN
 F 3 "" H 1205 1800 50  0000 C CNN
 	1    1250 1850
 	-1   0    0    1   
@@ -137,9 +137,9 @@ F 3 "" H 2625 2050 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 Text GLabel 850  1850 0    39   BiDi ~ 0
-VCC
+VCC_UP
 Text GLabel 825  975  0    39   BiDi ~ 0
-VCC
+VCC_UP
 Entry Wire Line
 	3000 775  3100 875 
 Entry Wire Line
@@ -167,9 +167,7 @@ F 3 "" H 2275 3325 60  0000 C CNN
 	1    2150 3325
 	1    0    0    -1  
 $EndComp
-Text GLabel 1750 3400 0    39   BiDi ~ 0
-GND
-Text HLabel 1125 3250 0    60   Input ~ 0
+Text HLabel 1050 2725 0    60   Input ~ 0
 BUZZER
 $Comp
 L R_Small R7
@@ -260,11 +258,9 @@ Wire Bus Line
 Wire Bus Line
 	3100 2150 3475 2150
 Wire Wire Line
-	1925 3400 1750 3400
+	1675 3400 1925 3400
 Wire Wire Line
 	1725 3250 1925 3250
-Wire Wire Line
-	1275 3250 1125 3250
 Wire Wire Line
 	1525 3250 1475 3250
 Wire Wire Line
@@ -317,4 +313,14 @@ Wire Wire Line
 	2350 1950 2350 2050
 Wire Wire Line
 	2350 1750 2350 1650
+Text GLabel 1200 2725 2    60   Input ~ 0
+BUZZ_D
+Wire Wire Line
+	1200 2725 1050 2725
+Text GLabel 1125 3250 0    60   Input ~ 0
+BUZZ_U
+Wire Wire Line
+	1125 3250 1275 3250
+Text GLabel 1675 3400 0    60   BiDi ~ 0
+GND_UP
 $EndSCHEMATC

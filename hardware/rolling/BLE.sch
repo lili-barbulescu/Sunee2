@@ -149,27 +149,27 @@ F 3 "" H 1750 825 50  0000 C CNN
 	1    1750 825 
 	-1   0    0    1   
 $EndComp
-Text HLabel 3625 3600 3    60   Output ~ 0
+Text HLabel 4450 2625 2    60   Output ~ 0
 BUZZER
 Text GLabel 2375 3050 2    39   Input ~ 0
 VCC
 Text GLabel 2375 2650 2    39   Input ~ 0
 GND
-Text Label 3775 2375 1    39   ~ 0
+Text Label 5025 1475 1    39   ~ 0
 LED1
-Text Label 3850 2375 1    39   ~ 0
+Text Label 5100 1475 1    39   ~ 0
 LED2
-Text Label 3925 2375 1    39   ~ 0
+Text Label 5175 1475 1    39   ~ 0
 LED3
-Text Label 4000 2375 1    39   ~ 0
+Text Label 5250 1475 1    39   ~ 0
 LED4
-Text Label 4400 2700 0    39   ~ 0
+Text Label 5325 1475 1    39   ~ 0
 LED5
-Text Label 4400 2625 0    39   ~ 0
+Text Label 5400 1475 1    39   ~ 0
 LED6
-Text Label 4750 2100 0    39   ~ 0
+Text Label 5600 1250 0    39   ~ 0
 LED[1..6]
-Text HLabel 5025 2100 2    60   Output ~ 0
+Text HLabel 5975 1250 2    60   Output ~ 0
 LED[1..6]
 $Comp
 L C_Small C7
@@ -218,24 +218,22 @@ $EndComp
 Text GLabel 4025 4100 3    39   Input ~ 0
 GND
 Entry Wire Line
-	3775 2200 3875 2100
+	5025 1350 5125 1250
 Entry Wire Line
-	3850 2200 3950 2100
+	5100 1350 5200 1250
 Entry Wire Line
-	3925 2200 4025 2100
+	5175 1350 5275 1250
 Entry Wire Line
-	4000 2200 4100 2100
+	5250 1350 5350 1250
 Entry Wire Line
-	4525 2700 4625 2600
+	5400 1350 5500 1250
 Entry Wire Line
-	4525 2625 4625 2525
-Entry Bus Bus
-	4625 2200 4725 2100
-Text HLabel 3700 3600 3    60   Input ~ 0
+	5325 1350 5425 1250
+Text HLabel 4000 2325 1    60   Input ~ 0
 INT_UV
-Text HLabel 3075 2950 0    60   Input ~ 0
+Text HLabel 3625 3600 3    60   Input ~ 0
 INT_ACC1
-Text HLabel 3075 3025 0    60   Input ~ 0
+Text HLabel 3700 3600 3    60   Input ~ 0
 INT_ACC2
 Text GLabel 4900 3775 0    39   Input ~ 0
 VCC
@@ -293,7 +291,7 @@ Wire Wire Line
 Wire Wire Line
 	2375 2850 2300 2850
 Wire Bus Line
-	3875 2100 5025 2100
+	5125 1250 5975 1250
 Wire Wire Line
 	4500 3150 4675 3150
 Wire Wire Line
@@ -321,18 +319,6 @@ Wire Wire Line
 	4025 4100 4025 4025
 Connection ~ 4025 4025
 Wire Wire Line
-	3775 2375 3775 2200
-Wire Wire Line
-	3850 2375 3850 2200
-Wire Wire Line
-	3925 2375 3925 2200
-Wire Wire Line
-	4375 2625 4525 2625
-Wire Wire Line
-	4375 2700 4525 2700
-Wire Bus Line
-	4625 2200 4625 2600
-Wire Wire Line
 	3525 3625 3525 3600
 Wire Wire Line
 	3525 3600 3550 3600
@@ -345,25 +331,13 @@ Wire Wire Line
 Wire Wire Line
 	3475 3600 3475 3575
 Wire Wire Line
-	3075 2950 3175 2950
-Wire Wire Line
-	3075 3025 3175 3025
-Wire Wire Line
 	3125 2800 3175 2800
-Wire Wire Line
-	3625 3600 3625 3575
-Wire Wire Line
-	3700 3600 3700 3575
 Wire Wire Line
 	4375 3000 4475 3000
 Wire Wire Line
-	4475 3000 4475 3475
+	4475 3000 4475 3575
 Wire Wire Line
-	4475 3475 4950 3475
-Wire Wire Line
-	4375 3150 4375 3575
-Wire Wire Line
-	4375 3575 4950 3575
+	4375 3150 4375 3475
 Wire Wire Line
 	4900 3375 4950 3375
 Wire Wire Line
@@ -403,5 +377,51 @@ $EndComp
 Wire Wire Line
 	2375 3050 2300 3050
 Wire Wire Line
-	4000 2375 4000 2200
+	5250 1350 5250 1475
+Wire Wire Line
+	5175 1475 5175 1350
+Wire Wire Line
+	5100 1350 5100 1475
+Wire Wire Line
+	5025 1475 5025 1350
+Wire Wire Line
+	5400 1475 5400 1350
+Wire Wire Line
+	5325 1350 5325 1475
+Text Label 3025 2950 0    39   ~ 0
+LED6
+Text Label 3025 3025 0    39   ~ 0
+LED5
+Text Label 3025 3100 0    39   ~ 0
+LED4
+Wire Wire Line
+	3025 2950 3175 2950
+Wire Wire Line
+	3025 3025 3175 3025
+Wire Wire Line
+	3025 3100 3175 3100
+Text Label 3775 2175 3    39   ~ 0
+LED3
+Text Label 3850 2175 3    39   ~ 0
+LED2
+Text Label 3925 2175 3    39   ~ 0
+LED1
+Wire Wire Line
+	3775 2375 3775 2175
+Wire Wire Line
+	3850 2175 3850 2375
+Wire Wire Line
+	3925 2375 3925 2175
+Wire Wire Line
+	3700 3600 3700 3575
+Wire Wire Line
+	3625 3575 3625 3600
+Wire Wire Line
+	4475 3575 4950 3575
+Wire Wire Line
+	4375 3475 4950 3475
+Wire Wire Line
+	4450 2625 4375 2625
+Wire Wire Line
+	4000 2325 4000 2375
 $EndSCHEMATC
