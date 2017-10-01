@@ -33,6 +33,7 @@ LIBS:buzzer
 LIBS:mdbt42v
 LIBS:si1133
 LIBS:battery
+LIBS:mech
 LIBS:Sunee-cache
 EELAYER 25 0
 EELAYER END
@@ -126,6 +127,28 @@ F 1 "Battery" H 775 3825 50  0000 L CNN
 F 2 "3030:3034" V 675 3915 50  0001 C CNN
 F 3 "" V 675 3915 50  0000 C CNN
 	1    675  3875
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mech_Cutout M1
+U 1 1 59C02445
+P 3075 4150
+F 0 "M1" H 3075 4250 50  0000 C CNN
+F 1 "Mech_Cutout" H 3075 4050 50  0000 C CNN
+F 2 "Mech Cutouts:11mm" H 3075 4150 50  0001 C CNN
+F 3 "" H 3075 4150 50  0000 C CNN
+	1    3075 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mech_Cutout M2
+U 1 1 59C0255E
+P 3075 4450
+F 0 "M2" H 3075 4550 50  0000 C CNN
+F 1 "Mech_Cutout" H 3075 4350 50  0000 C CNN
+F 2 "Mech Cutouts:11mm" H 3075 4450 50  0001 C CNN
+F 3 "" H 3075 4450 50  0000 C CNN
+	1    3075 4450
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

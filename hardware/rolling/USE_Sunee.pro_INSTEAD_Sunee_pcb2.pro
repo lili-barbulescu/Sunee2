@@ -1,6 +1,10 @@
-update=Mon 18 Sep 2017 10:08:24 PM EEST
+update=22/05/2015 07:44:53
 version=1
 last_client=kicad
+[general]
+version=1
+RootSch=
+BoardNm=
 [pcbnew]
 version=1
 LastNetListRead=
@@ -23,11 +27,9 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [eeschema]
 version=1
-LibDir=symbols
+LibDir=
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -58,9 +60,3 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=symbols/bma253
-LibName31=symbols/buzzer
-LibName32=symbols/mdbt42v
-LibName33=symbols/si1133
-LibName34=symbols/battery
-LibName35=symbols/mech

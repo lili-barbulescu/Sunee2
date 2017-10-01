@@ -33,6 +33,7 @@ LIBS:buzzer
 LIBS:mdbt42v
 LIBS:si1133
 LIBS:battery
+LIBS:mech
 LIBS:Sunee-cache
 EELAYER 25 0
 EELAYER END
@@ -255,14 +256,14 @@ Wire Wire Line
 	2875 3075 2525 3075
 Wire Wire Line
 	2525 3175 2875 3175
-Text Label 4675 3075 2    60   ~ 0
+Text Label 5125 3150 2    60   ~ 0
 SDA_UP
-Text Label 4675 3175 2    60   ~ 0
+Text Label 5125 3250 2    60   ~ 0
 SCL_UP
 Wire Wire Line
-	4675 3175 4050 3175
+	4050 3175 4150 3175
 Wire Wire Line
-	4675 3075 4050 3075
+	4050 3075 4325 3075
 Text GLabel 2550 2975 0    60   BiDi ~ 0
 GND
 Wire Wire Line
@@ -288,28 +289,6 @@ F 2 "Socket_Strips:Socket_Strip_Straight_1x04" H 3075 3025 50  0001 C CNN
 F 3 "" H 3075 3025 50  0000 C CNN
 	1    3075 3025
 	1    0    0    -1  
-$EndComp
-$Comp
-L CONN_01X04 PD4
-U 1 1 59B0787B
-P 3075 3525
-F 0 "PD4" H 3075 3775 50  0000 C CNN
-F 1 "CONN_01X04" V 3175 3525 50  0001 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x04" H 3075 3525 50  0001 C CNN
-F 3 "" H 3075 3525 50  0000 C CNN
-	1    3075 3525
-	1    0    0    -1  
-$EndComp
-$Comp
-L CONN_01X04 PU4
-U 1 1 59B079C0
-P 3850 3525
-F 0 "PU4" H 3850 3775 50  0000 C CNN
-F 1 "CONN_01X04" V 3950 3525 50  0001 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x04" H 3850 3525 50  0001 C CNN
-F 3 "" H 3850 3525 50  0000 C CNN
-	1    3850 3525
-	-1   0    0    -1  
 $EndComp
 Text Label 4750 1625 0    60   ~ 0
 INT_UV_UP
@@ -404,4 +383,68 @@ Wire Wire Line
 	4050 3375 4225 3375
 Wire Wire Line
 	4225 3375 4225 3300
+$Comp
+L CONN_01X05 PD4
+U 1 1 59BFE4A2
+P 3075 3575
+F 0 "PD4" H 3075 3875 50  0000 C CNN
+F 1 "CONN_01X05" V 3175 3575 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x05" H 3075 3575 50  0001 C CNN
+F 3 "" H 3075 3575 50  0000 C CNN
+	1    3075 3575
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X05 PU4
+U 1 1 59BFE5E7
+P 3850 3575
+F 0 "PU4" H 3850 3875 50  0000 C CNN
+F 1 "CONN_01X05" V 3950 3575 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x05" H 3850 3575 50  0001 C CNN
+F 3 "" H 3850 3575 50  0000 C CNN
+	1    3850 3575
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2525 3775 2875 3775
+Text GLabel 2525 3775 0    60   BiDi ~ 0
+GND
+Text GLabel 4250 3775 2    60   BiDi ~ 0
+GND_UP
+Wire Wire Line
+	4250 3775 4050 3775
+$Comp
+L R_Small R14
+U 1 1 59C00AFB
+P 4250 3175
+F 0 "R14" V 4175 3225 50  0000 L CNN
+F 1 "100" V 4325 3125 50  0000 L CNN
+F 2 "Resistors_SMD:R_0402" H 4250 3175 50  0001 C CNN
+F 3 "" H 4250 3175 50  0000 C CNN
+	1    4250 3175
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R_Small R15
+U 1 1 59C00B5B
+P 4425 3075
+F 0 "R15" V 4500 2950 50  0000 L CNN
+F 1 "100" V 4500 3125 50  0000 L CNN
+F 2 "Resistors_SMD:R_0402" H 4425 3075 50  0001 C CNN
+F 3 "" H 4425 3075 50  0000 C CNN
+	1    4425 3075
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4350 3175 4675 3175
+Wire Wire Line
+	4675 3175 4675 3250
+Wire Wire Line
+	4675 3250 5125 3250
+Wire Wire Line
+	5125 3150 4675 3150
+Wire Wire Line
+	4675 3150 4675 3075
+Wire Wire Line
+	4675 3075 4525 3075
 $EndSCHEMATC

@@ -10,4 +10,6 @@
   (lib (name K135)(type KiCad)(uri "$(KIPRJMOD)/K135.pretty")(options "")(descr ""))
   (lib (name connect)(type KiCad)(uri "$(KIPRJMOD)/connect.pretty")(options "")(descr ""))
   (lib (name ASMB-MTB0-0A3A2)(type KiCad)(uri "$(KIPRJMOD)/ASMB-MTB0-0A3A2.pretty")(options "")(descr ""))
+  (lib (name "Mech Cutouts")(type KiCad)(uri "$(KIPRJMOD)/Mech Cutouts.pretty")(options "")(descr ""))
+  (lib (name JSX08001SAQNL)(type KiCad)(uri "$(KIPRJMOD)/JSX08001SAQNL.pretty")(options "")(descr ""))
 )
