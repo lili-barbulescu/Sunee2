@@ -3,9 +3,9 @@
   (general
     (links 105)
     (no_connects 0)
-    (area 88.069 54.748666 163.8325 83.0786)
+    (area 91.301499 56.439999 161.301501 81.291501)
     (thickness 1.6)
-    (drawings 18)
+    (drawings 11)
     (tracks 514)
     (zones 0)
     (modules 49)
@@ -66,7 +66,7 @@
     (grid_origin 158.6865 65.786)
     (visible_elements 7FFFFFFF)
     (pcbplotparams
-      (layerselection 0x010f0_80000001)
+      (layerselection 0x00030_80000001)
       (usegerberextensions false)
       (excludeedgelayer true)
       (linewidth 0.100000)
@@ -84,12 +84,12 @@
       (plotvalue true)
       (plotinvisibletext false)
       (padsonsilk false)
-      (subtractmaskfromsilk true)
+      (subtractmaskfromsilk false)
       (outputformat 1)
       (mirror false)
-      (drillshape 0)
+      (drillshape 1)
       (scaleselection 1)
-      (outputdirectory GERBERS/))
+      (outputdirectory ""))
   )
 
   (net 0 "")
@@ -366,7 +366,7 @@
     (tags "capacitor 0402")
     (path /59A43647/59A57061)
     (attr smd)
-    (fp_text reference 1.0uF (at 0.5715 -1.778 180) (layer F.SilkS)
+    (fp_text reference 1.0uF (at 0.0635 -1.397 180) (layer F.SilkS)
       (effects (font (size 0.8 0.8) (thickness 0.15)))
     )
     (fp_text value C_Small (at 0 1.7 180) (layer F.Fab) hide
@@ -418,14 +418,14 @@
     )
   )
 
-  (module Resistors_SMD:R_0402 (layer F.Cu) (tedit 59D74986) (tstamp 59B180CF)
+  (module Resistors_SMD:R_0402 (layer F.Cu) (tedit 59C3BF52) (tstamp 59B180CF)
     (at 118.11 64.008 180)
     (descr "Resistor SMD 0402, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0402")
     (path /59A43647/59A56FB5)
     (attr smd)
-    (fp_text reference 15nH1 (at -1.2065 -2.9845 270) (layer F.SilkS)
-      (effects (font (size 0.8 0.8) (thickness 0.15)))
+    (fp_text reference 15nH1 (at 0 -1.8 180) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value L_Small (at 0 1.8 180) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -637,7 +637,7 @@
     (tags "capacitor 0402")
     (path /59A43647/59A69C81)
     (attr smd)
-    (fp_text reference C7 (at 0.508 1.651 270) (layer F.SilkS)
+    (fp_text reference C7 (at 0.635 1.2065 270) (layer F.SilkS)
       (effects (font (size 0.8 0.8) (thickness 0.15)))
     )
     (fp_text value 0.1uF (at 0 1.7 270) (layer F.Fab) hide
@@ -1370,7 +1370,7 @@
     (descr "Through hole socket strip")
     (tags "socket strip")
     (path /59A4369B/59BFE4A2)
-    (fp_text reference PD4 (at 3.4925 3.3655 450) (layer F.SilkS)
+    (fp_text reference PD4 (at 3.81 2.413 450) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value CONN_01X05 (at 0 -3.1 270) (layer F.Fab) hide
@@ -1501,7 +1501,7 @@
     )
   )
 
-  (module "Mech Cutouts:11mm" (layer F.Cu) (tedit 59D74891) (tstamp 59C0216B)
+  (module "Mech Cutouts:11mm" (layer F.Cu) (tedit 59CE9128) (tstamp 59C0216B)
     (at 127.762 62.738)
     (path /59C02445)
     (fp_text reference M1 (at -1.3 -0.5 270) (layer F.SilkS) hide
@@ -1510,7 +1510,7 @@
     (fp_text value Mech_Cutout (at 1.3 0 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (pad 1 thru_hole oval (at 0 0) (size 0.5 11) (drill oval 0.5 11) (layers *.Cu *.Mask))
+    (pad 1 thru_hole oval (at 0 0) (size 0.5 11) (drill oval 0.5 10.2) (layers *.Cu *.Mask))
   )
 
   (module "Mech Cutouts:11mm" (layer F.Cu) (tedit 59C01A58) (tstamp 59C0216F)
@@ -1677,13 +1677,6 @@
       (net 2 GND))
   )
 
-  (gr_line (start 116.7003 64.6684) (end 117.4623 64.6684) (layer F.SilkS) (width 0.2))
-  (gr_line (start 116.7003 64.6684) (end 116.7003 62.611) (layer F.SilkS) (width 0.2))
-  (gr_line (start 115.7351 65.6082) (end 115.7351 62.6364) (layer F.SilkS) (width 0.2))
-  (gr_line (start 117.4877 65.6336) (end 115.7605 65.6336) (layer F.SilkS) (width 0.2))
-  (gr_line (start 117.094 66.2305) (end 117.094 65.659) (layer F.SilkS) (width 0.2))
-  (gr_line (start 118.364 67.056) (end 118.364 64.8335) (layer F.SilkS) (width 0.2))
-  (gr_line (start 118.8085 67.056) (end 118.364 67.056) (layer F.SilkS) (width 0.2))
   (gr_line (start 118.237 56.8325) (end 118.237 57.0865) (layer F.SilkS) (width 0.2))
   (gr_line (start 121.793 56.8325) (end 118.237 56.8325) (layer F.SilkS) (width 0.2))
   (gr_line (start 91.3765 81.2165) (end 91.3765 79.121) (layer Edge.Cuts) (width 0.15))

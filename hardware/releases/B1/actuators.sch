@@ -1,0 +1,327 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:bma253
+LIBS:buzzer
+LIBS:mdbt42v
+LIBS:si1133
+LIBS:battery
+LIBS:mech
+LIBS:Sunee-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Led_RGB_CA D1
+U 1 1 59A5D950
+P 1225 975
+F 0 "D1" H 1225 1325 50  0000 C CNN
+F 1 "LED[1..3]" H 1225 625 50  0000 C CNN
+F 2 "ASMB-MTB0-0A3A2:ASMB-MTB0-0A3A2" H 1180 925 50  0001 C CNN
+F 3 "" H 1180 925 50  0000 C CNN
+	1    1225 975 
+	-1   0    0    1   
+$EndComp
+$Comp
+L Led_RGB_CA D2
+U 1 1 59A5DA10
+P 1250 1850
+F 0 "D2" H 1250 2200 50  0000 C CNN
+F 1 "LED[4..6]" H 1250 1500 50  0000 C CNN
+F 2 "ASMB-MTB0-0A3A2:ASMB-MTB0-0A3A2" H 1205 1800 50  0001 C CNN
+F 3 "" H 1205 1800 50  0000 C CNN
+	1    1250 1850
+	-1   0    0    1   
+$EndComp
+$Comp
+L R_Small R8
+U 1 1 59A5DAC4
+P 2600 775
+F 0 "R8" V 2675 600 50  0000 L CNN
+F 1 "330" V 2500 725 50  0000 L CNN
+F 2 "Resistors_SMD:R_0402" H 2600 775 50  0001 C CNN
+F 3 "" H 2600 775 50  0000 C CNN
+	1    2600 775 
+	0    1    1    0   
+$EndComp
+$Comp
+L R_Small R9
+U 1 1 59A5DB19
+P 2600 975
+F 0 "R9" V 2675 800 50  0000 L CNN
+F 1 "330" V 2525 925 50  0000 L CNN
+F 2 "Resistors_SMD:R_0402" H 2600 975 50  0001 C CNN
+F 3 "" H 2600 975 50  0000 C CNN
+	1    2600 975 
+	0    1    1    0   
+$EndComp
+$Comp
+L R_Small R10
+U 1 1 59A5DB52
+P 2600 1175
+F 0 "R10" V 2700 975 50  0000 L CNN
+F 1 "330" V 2525 1125 50  0000 L CNN
+F 2 "Resistors_SMD:R_0402" H 2600 1175 50  0001 C CNN
+F 3 "" H 2600 1175 50  0000 C CNN
+	1    2600 1175
+	0    1    1    0   
+$EndComp
+$Comp
+L R_Small R11
+U 1 1 59A5DB6F
+P 2625 1650
+F 0 "R11" V 2675 1425 50  0000 L CNN
+F 1 "330" V 2525 1600 50  0000 L CNN
+F 2 "Resistors_SMD:R_0402" H 2625 1650 50  0001 C CNN
+F 3 "" H 2625 1650 50  0000 C CNN
+	1    2625 1650
+	0    1    1    0   
+$EndComp
+$Comp
+L R_Small R12
+U 1 1 59A5DB92
+P 2625 1850
+F 0 "R12" V 2700 1625 50  0000 L CNN
+F 1 "330" V 2550 1800 50  0000 L CNN
+F 2 "Resistors_SMD:R_0402" H 2625 1850 50  0001 C CNN
+F 3 "" H 2625 1850 50  0000 C CNN
+	1    2625 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L R_Small R13
+U 1 1 59A5DBBB
+P 2625 2050
+F 0 "R13" V 2700 1825 50  0000 L CNN
+F 1 "330" V 2550 2000 50  0000 L CNN
+F 2 "Resistors_SMD:R_0402" H 2625 2050 50  0001 C CNN
+F 3 "" H 2625 2050 50  0000 C CNN
+	1    2625 2050
+	0    1    1    0   
+$EndComp
+Text GLabel 850  1850 0    39   BiDi ~ 0
+VCC_UP
+Text GLabel 825  975  0    39   BiDi ~ 0
+VCC_UP
+Entry Wire Line
+	3000 775  3100 875 
+Entry Wire Line
+	3000 975  3100 1075
+Entry Wire Line
+	3000 1175 3100 1275
+Entry Wire Line
+	3000 1650 3100 1750
+Entry Wire Line
+	3000 1850 3100 1950
+Entry Wire Line
+	3000 2050 3100 2150
+Text Label 3175 2150 0    39   ~ 0
+LED[1..6]
+Text HLabel 3475 2150 2    60   Input ~ 0
+LED[1..6]
+$Comp
+L BUZZER BZ1
+U 1 1 59A5F9D2
+P 2150 3325
+F 0 "BZ1" H 2525 2975 60  0000 C CNN
+F 1 "BUZZER" H 2550 3675 60  0000 C CNN
+F 2 "PS1240P02CT3:PS1240P02" H 2275 3325 60  0001 C CNN
+F 3 "" H 2275 3325 60  0000 C CNN
+	1    2150 3325
+	1    0    0    -1  
+$EndComp
+Text HLabel 1050 2725 0    60   Input ~ 0
+BUZZER
+$Comp
+L R_Small R7
+U 1 1 59A6096F
+P 1375 3250
+F 0 "R7" V 1575 3275 50  0000 L CNN
+F 1 "330" V 1475 3200 50  0000 L CNN
+F 2 "Resistors_SMD:R_0402" H 1375 3250 50  0001 C CNN
+F 3 "" H 1375 3250 50  0000 C CNN
+	1    1375 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C_Small C8
+U 1 1 59A84B40
+P 1625 3250
+F 0 "C8" H 1635 3320 50  0000 L CNN
+F 1 "1uF" V 1725 3075 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 1625 3250 50  0001 C CNN
+F 3 "" H 1625 3250 50  0000 C CNN
+	1    1625 3250
+	0    -1   -1   0   
+$EndComp
+Text Label 2775 775  0    60   ~ 0
+LED1
+Text Label 2775 975  0    60   ~ 0
+LED2
+Text Label 2775 1175 0    60   ~ 0
+LED3
+Text Label 2775 1650 0    60   ~ 0
+LED4
+Text Label 2775 1850 0    60   ~ 0
+LED5
+Text Label 2775 2050 0    60   ~ 0
+LED6
+$Comp
+L CONN_01X03 LED[1..3]D1
+U 1 1 59B19548
+P 2125 975
+F 0 "LED[1..3]D1" H 2125 725 50  0000 C CNN
+F 1 "CONN_01X03" V 2250 875 50  0001 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x03" H 2125 975 50  0001 C CNN
+F 3 "" H 2125 975 50  0000 C CNN
+	1    2125 975 
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X03 LED[1..3]U1
+U 1 1 59B19747
+P 1700 975
+F 0 "LED[1..3]U1" H 1700 1225 50  0000 C CNN
+F 1 "CONN_01X03" V 1800 975 50  0001 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x03" H 1700 975 50  0001 C CNN
+F 3 "" H 1700 975 50  0000 C CNN
+	1    1700 975 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2325 775  2500 775 
+Wire Wire Line
+	2325 975  2500 975 
+Wire Wire Line
+	2325 1175 2500 1175
+Wire Wire Line
+	2350 1650 2525 1650
+Wire Wire Line
+	2350 1850 2525 1850
+Wire Wire Line
+	2350 2050 2525 2050
+Wire Wire Line
+	1050 1850 850  1850
+Wire Wire Line
+	1025 975  825  975 
+Wire Wire Line
+	2725 1650 3000 1650
+Wire Wire Line
+	2725 1850 3000 1850
+Wire Wire Line
+	2725 2050 3000 2050
+Wire Wire Line
+	2700 775  3000 775 
+Wire Wire Line
+	2700 975  3000 975 
+Wire Wire Line
+	2700 1175 3000 1175
+Wire Bus Line
+	3100 875  3100 2150
+Wire Bus Line
+	3100 2150 3475 2150
+Wire Wire Line
+	1675 3400 1925 3400
+Wire Wire Line
+	1725 3250 1925 3250
+Wire Wire Line
+	1525 3250 1475 3250
+Wire Wire Line
+	2325 775  2325 875 
+Wire Wire Line
+	2325 1075 2325 1175
+Wire Wire Line
+	1500 975  1425 975 
+Wire Wire Line
+	1500 875  1425 875 
+Wire Wire Line
+	1425 875  1425 775 
+Wire Wire Line
+	1500 1075 1425 1075
+Wire Wire Line
+	1425 1075 1425 1175
+$Comp
+L CONN_01X03 LED[4..6]D1
+U 1 1 59B19E9F
+P 2150 1850
+F 0 "LED[4..6]D1" H 2150 1600 50  0000 C CNN
+F 1 "CONN_01X03" V 2250 1850 50  0001 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x03" H 2150 1850 50  0001 C CNN
+F 3 "" H 2150 1850 50  0000 C CNN
+	1    2150 1850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X03 LED[4..6]U1
+U 1 1 59B19EA5
+P 1725 1850
+F 0 "LED[4..6]U1" H 1725 2075 50  0000 C CNN
+F 1 "CONN_01X03" V 1825 1850 50  0001 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x03" H 1725 1850 50  0001 C CNN
+F 3 "" H 1725 1850 50  0000 C CNN
+	1    1725 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 1850 1525 1850
+Wire Wire Line
+	1525 1750 1450 1750
+Wire Wire Line
+	1450 1750 1450 1650
+Wire Wire Line
+	1525 1950 1450 1950
+Wire Wire Line
+	1450 1950 1450 2050
+Wire Wire Line
+	2350 1950 2350 2050
+Wire Wire Line
+	2350 1750 2350 1650
+Text GLabel 1200 2725 2    60   Input ~ 0
+BUZZ_D
+Wire Wire Line
+	1200 2725 1050 2725
+Text GLabel 1125 3250 0    60   Input ~ 0
+BUZZ_U
+Wire Wire Line
+	1125 3250 1275 3250
+Text GLabel 1675 3400 0    60   BiDi ~ 0
+GND_UP
+$EndSCHEMATC
