@@ -1,0 +1,3 @@
+Check that OOCD has acces to devs.
+->rule file to be placed in /etc/udev/rules.d/
+->file provided w/ OOCD
