@@ -1,0 +1,2470 @@
+Archive member included to satisfy reference by file (symbol)
+
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-atexit.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/crt0.o (atexit)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-exit.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/crt0.o (exit)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-fini.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/crt0.o (__libc_fini_array)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-impure.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-exit.o) (_global_impure_ptr)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-init.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/crt0.o (__libc_init_array)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-memset.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/crt0.o (memset)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-__atexit.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-atexit.o) (__register_exitproc)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-__call_atexit.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-__atexit.o) (__call_exitprocs)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libnosys.a(_exit.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-exit.o) (_exit)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-memcpy.o)
+                              obj/nrf52_SEGGER_RTT.c.o (memcpy)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-strcpy.o)
+                              obj/nrf52_SEGGER_RTT.c.o (strcpy)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-strlen.o)
+                              obj/nrf52_SEGGER_RTT.c.o (strlen)
+
+Allocating common symbols
+Common symbol       size              file
+
+_SEGGER_RTT         0x78              obj/nrf52_SEGGER_RTT.c.o
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/crti.o
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/crti.o
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/crti.o
+ .data          0x0000000000000000        0x4 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .ARM.extab     0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-atexit.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-atexit.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-atexit.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-exit.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-exit.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-exit.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-fini.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-fini.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-fini.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-impure.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-impure.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-impure.o)
+ .data._impure_ptr
+                0x0000000000000000        0x4 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-impure.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-init.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-init.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-init.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-memset.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-memset.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-memset.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-__atexit.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-__atexit.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-__atexit.o)
+ .data.__atexit_dummy
+                0x0000000000000000        0x4 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-__atexit.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-__call_atexit.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-__call_atexit.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-__call_atexit.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libnosys.a(_exit.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libnosys.a(_exit.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libnosys.a(_exit.o)
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_backend_serial.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_backend_serial.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_backend_serial.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_backend_serial.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_backend_serial.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_backend_serial.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_backend_serial.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_backend_serial.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_backend_serial.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_backend_serial.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_backend_serial.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_backend_serial.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_backend_serial.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_backend_serial.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_backend_serial.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_backend_serial.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_backend_serial.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_backend_serial.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_backend_serial.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_backend_serial.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_backend_serial.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_backend_serial.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_backend_serial.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_backend_serial.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_backend_serial.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_backend_serial.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_backend_serial.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_backend_serial.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_backend_serial.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_backend_serial.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_backend_serial.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_backend_serial.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_backend_serial.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_backend_serial.c.o
+ .text          0x0000000000000000        0x0 obj/nrf52_nrf_log_backend_serial.c.o
+ .data          0x0000000000000000        0x0 obj/nrf52_nrf_log_backend_serial.c.o
+ .bss           0x0000000000000000        0x0 obj/nrf52_nrf_log_backend_serial.c.o
+ .debug_info    0x0000000000000000       0xa2 obj/nrf52_nrf_log_backend_serial.c.o
+ .debug_abbrev  0x0000000000000000       0x47 obj/nrf52_nrf_log_backend_serial.c.o
+ .debug_aranges
+                0x0000000000000000       0x18 obj/nrf52_nrf_log_backend_serial.c.o
+ .debug_macro   0x0000000000000000      0x1c7 obj/nrf52_nrf_log_backend_serial.c.o
+ .debug_macro   0x0000000000000000      0x83e obj/nrf52_nrf_log_backend_serial.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_nrf_log_backend_serial.c.o
+ .debug_macro   0x0000000000000000       0x44 obj/nrf52_nrf_log_backend_serial.c.o
+ .debug_macro   0x0000000000000000       0xe3 obj/nrf52_nrf_log_backend_serial.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_nrf_log_backend_serial.c.o
+ .debug_macro   0x0000000000000000      0x1df obj/nrf52_nrf_log_backend_serial.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_nrf_log_backend_serial.c.o
+ .debug_macro   0x0000000000000000       0x58 obj/nrf52_nrf_log_backend_serial.c.o
+ .debug_macro   0x0000000000000000       0x35 obj/nrf52_nrf_log_backend_serial.c.o
+ .debug_macro   0x0000000000000000       0x9c obj/nrf52_nrf_log_backend_serial.c.o
+ .debug_macro   0x0000000000000000      0x166 obj/nrf52_nrf_log_backend_serial.c.o
+ .debug_macro   0x0000000000000000       0x52 obj/nrf52_nrf_log_backend_serial.c.o
+ .debug_macro   0x0000000000000000       0x16 obj/nrf52_nrf_log_backend_serial.c.o
+ .debug_macro   0x0000000000000000       0x43 obj/nrf52_nrf_log_backend_serial.c.o
+ .debug_macro   0x0000000000000000      0x180 obj/nrf52_nrf_log_backend_serial.c.o
+ .debug_macro   0x0000000000000000      0x29d obj/nrf52_nrf_log_backend_serial.c.o
+ .debug_macro   0x0000000000000000       0x10 obj/nrf52_nrf_log_backend_serial.c.o
+ .debug_macro   0x0000000000000000       0x35 obj/nrf52_nrf_log_backend_serial.c.o
+ .debug_macro   0x0000000000000000      0x320 obj/nrf52_nrf_log_backend_serial.c.o
+ .debug_macro   0x0000000000000000      0x16d obj/nrf52_nrf_log_backend_serial.c.o
+ .debug_macro   0x0000000000000000       0x2e obj/nrf52_nrf_log_backend_serial.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_nrf_log_backend_serial.c.o
+ .debug_macro   0x0000000000000000       0x8e obj/nrf52_nrf_log_backend_serial.c.o
+ .debug_macro   0x0000000000000000       0x8e obj/nrf52_nrf_log_backend_serial.c.o
+ .debug_macro   0x0000000000000000       0x1c obj/nrf52_nrf_log_backend_serial.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_nrf_log_backend_serial.c.o
+ .debug_macro   0x0000000000000000       0x3a obj/nrf52_nrf_log_backend_serial.c.o
+ .debug_macro   0x0000000000000000       0x26 obj/nrf52_nrf_log_backend_serial.c.o
+ .debug_macro   0x0000000000000000      0x30d obj/nrf52_nrf_log_backend_serial.c.o
+ .debug_macro   0x0000000000000000      0x1b6 obj/nrf52_nrf_log_backend_serial.c.o
+ .debug_macro   0x0000000000000000     0x6504 obj/nrf52_nrf_log_backend_serial.c.o
+ .debug_macro   0x0000000000000000      0x97c obj/nrf52_nrf_log_backend_serial.c.o
+ .debug_macro   0x0000000000000000      0x395 obj/nrf52_nrf_log_backend_serial.c.o
+ .debug_macro   0x0000000000000000       0x4b obj/nrf52_nrf_log_backend_serial.c.o
+ .debug_line    0x0000000000000000      0x3cc obj/nrf52_nrf_log_backend_serial.c.o
+ .debug_str     0x0000000000000000    0x30c04 obj/nrf52_nrf_log_backend_serial.c.o
+ .comment       0x0000000000000000       0x39 obj/nrf52_nrf_log_backend_serial.c.o
+ .ARM.attributes
+                0x0000000000000000       0x31 obj/nrf52_nrf_log_backend_serial.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_frontend.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_frontend.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_frontend.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_frontend.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_frontend.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_frontend.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_frontend.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_frontend.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_frontend.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_frontend.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_frontend.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_frontend.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_frontend.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_frontend.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_frontend.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_frontend.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_frontend.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_frontend.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_frontend.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_frontend.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_frontend.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_frontend.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_frontend.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_frontend.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_frontend.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_frontend.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_frontend.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_frontend.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_frontend.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_frontend.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_frontend.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_frontend.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_frontend.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_log_frontend.c.o
+ .text          0x0000000000000000        0x0 obj/nrf52_nrf_log_frontend.c.o
+ .data          0x0000000000000000        0x0 obj/nrf52_nrf_log_frontend.c.o
+ .bss           0x0000000000000000        0x0 obj/nrf52_nrf_log_frontend.c.o
+ .debug_info    0x0000000000000000       0xa2 obj/nrf52_nrf_log_frontend.c.o
+ .debug_abbrev  0x0000000000000000       0x47 obj/nrf52_nrf_log_frontend.c.o
+ .debug_aranges
+                0x0000000000000000       0x18 obj/nrf52_nrf_log_frontend.c.o
+ .debug_macro   0x0000000000000000      0x1c7 obj/nrf52_nrf_log_frontend.c.o
+ .debug_macro   0x0000000000000000      0x83e obj/nrf52_nrf_log_frontend.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_nrf_log_frontend.c.o
+ .debug_macro   0x0000000000000000       0x44 obj/nrf52_nrf_log_frontend.c.o
+ .debug_macro   0x0000000000000000       0xe3 obj/nrf52_nrf_log_frontend.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_nrf_log_frontend.c.o
+ .debug_macro   0x0000000000000000      0x1df obj/nrf52_nrf_log_frontend.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_nrf_log_frontend.c.o
+ .debug_macro   0x0000000000000000       0x58 obj/nrf52_nrf_log_frontend.c.o
+ .debug_macro   0x0000000000000000       0x35 obj/nrf52_nrf_log_frontend.c.o
+ .debug_macro   0x0000000000000000       0x9c obj/nrf52_nrf_log_frontend.c.o
+ .debug_macro   0x0000000000000000      0x166 obj/nrf52_nrf_log_frontend.c.o
+ .debug_macro   0x0000000000000000       0x52 obj/nrf52_nrf_log_frontend.c.o
+ .debug_macro   0x0000000000000000       0x16 obj/nrf52_nrf_log_frontend.c.o
+ .debug_macro   0x0000000000000000       0x43 obj/nrf52_nrf_log_frontend.c.o
+ .debug_macro   0x0000000000000000      0x180 obj/nrf52_nrf_log_frontend.c.o
+ .debug_macro   0x0000000000000000      0x29d obj/nrf52_nrf_log_frontend.c.o
+ .debug_macro   0x0000000000000000       0x10 obj/nrf52_nrf_log_frontend.c.o
+ .debug_macro   0x0000000000000000       0x35 obj/nrf52_nrf_log_frontend.c.o
+ .debug_macro   0x0000000000000000      0x320 obj/nrf52_nrf_log_frontend.c.o
+ .debug_macro   0x0000000000000000      0x16d obj/nrf52_nrf_log_frontend.c.o
+ .debug_macro   0x0000000000000000       0x2e obj/nrf52_nrf_log_frontend.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_nrf_log_frontend.c.o
+ .debug_macro   0x0000000000000000       0x8e obj/nrf52_nrf_log_frontend.c.o
+ .debug_macro   0x0000000000000000       0x8e obj/nrf52_nrf_log_frontend.c.o
+ .debug_macro   0x0000000000000000       0x1c obj/nrf52_nrf_log_frontend.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_nrf_log_frontend.c.o
+ .debug_macro   0x0000000000000000       0x3a obj/nrf52_nrf_log_frontend.c.o
+ .debug_macro   0x0000000000000000       0x26 obj/nrf52_nrf_log_frontend.c.o
+ .debug_macro   0x0000000000000000      0x30d obj/nrf52_nrf_log_frontend.c.o
+ .debug_macro   0x0000000000000000      0x1b6 obj/nrf52_nrf_log_frontend.c.o
+ .debug_macro   0x0000000000000000     0x6504 obj/nrf52_nrf_log_frontend.c.o
+ .debug_macro   0x0000000000000000      0x97c obj/nrf52_nrf_log_frontend.c.o
+ .debug_macro   0x0000000000000000      0x395 obj/nrf52_nrf_log_frontend.c.o
+ .debug_macro   0x0000000000000000       0x4b obj/nrf52_nrf_log_frontend.c.o
+ .debug_line    0x0000000000000000      0x3c6 obj/nrf52_nrf_log_frontend.c.o
+ .debug_str     0x0000000000000000    0x30bfe obj/nrf52_nrf_log_frontend.c.o
+ .comment       0x0000000000000000       0x39 obj/nrf52_nrf_log_frontend.c.o
+ .ARM.attributes
+                0x0000000000000000       0x31 obj/nrf52_nrf_log_frontend.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error.c.o
+ .text          0x0000000000000000        0x0 obj/nrf52_app_error.c.o
+ .data          0x0000000000000000        0x0 obj/nrf52_app_error.c.o
+ .bss           0x0000000000000000        0x0 obj/nrf52_app_error.c.o
+ .text.app_error_handler
+                0x0000000000000000       0x20 obj/nrf52_app_error.c.o
+ .text.app_error_save_and_stop
+                0x0000000000000000       0x64 obj/nrf52_app_error.c.o
+ .bss.m_error_data.5701
+                0x0000000000000000       0x20 obj/nrf52_app_error.c.o
+ .debug_macro   0x0000000000000000      0x83e obj/nrf52_app_error.c.o
+ .debug_macro   0x0000000000000000       0x1c obj/nrf52_app_error.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_app_error.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_app_error.c.o
+ .debug_macro   0x0000000000000000       0x44 obj/nrf52_app_error.c.o
+ .debug_macro   0x0000000000000000       0xe3 obj/nrf52_app_error.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_app_error.c.o
+ .debug_macro   0x0000000000000000      0x1df obj/nrf52_app_error.c.o
+ .debug_macro   0x0000000000000000       0x26 obj/nrf52_app_error.c.o
+ .debug_macro   0x0000000000000000      0x30d obj/nrf52_app_error.c.o
+ .debug_macro   0x0000000000000000      0x1b6 obj/nrf52_app_error.c.o
+ .debug_macro   0x0000000000000000     0x6504 obj/nrf52_app_error.c.o
+ .debug_macro   0x0000000000000000      0x97c obj/nrf52_app_error.c.o
+ .debug_macro   0x0000000000000000       0x58 obj/nrf52_app_error.c.o
+ .debug_macro   0x0000000000000000       0x35 obj/nrf52_app_error.c.o
+ .debug_macro   0x0000000000000000       0x9c obj/nrf52_app_error.c.o
+ .debug_macro   0x0000000000000000      0x29d obj/nrf52_app_error.c.o
+ .debug_macro   0x0000000000000000       0x52 obj/nrf52_app_error.c.o
+ .debug_macro   0x0000000000000000       0x16 obj/nrf52_app_error.c.o
+ .debug_macro   0x0000000000000000       0x43 obj/nrf52_app_error.c.o
+ .debug_macro   0x0000000000000000      0x180 obj/nrf52_app_error.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_app_error.c.o
+ .debug_macro   0x0000000000000000       0x8e obj/nrf52_app_error.c.o
+ .debug_macro   0x0000000000000000      0x320 obj/nrf52_app_error.c.o
+ .debug_macro   0x0000000000000000       0x8e obj/nrf52_app_error.c.o
+ .debug_macro   0x0000000000000000      0x16d obj/nrf52_app_error.c.o
+ .debug_macro   0x0000000000000000       0x35 obj/nrf52_app_error.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_app_error.c.o
+ .debug_macro   0x0000000000000000       0x4b obj/nrf52_app_error.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error_weak.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error_weak.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error_weak.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error_weak.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error_weak.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error_weak.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error_weak.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error_weak.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error_weak.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error_weak.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error_weak.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error_weak.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error_weak.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error_weak.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error_weak.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error_weak.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error_weak.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error_weak.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error_weak.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error_weak.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error_weak.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error_weak.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error_weak.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error_weak.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error_weak.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error_weak.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error_weak.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error_weak.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error_weak.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error_weak.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error_weak.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error_weak.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error_weak.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error_weak.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error_weak.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error_weak.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error_weak.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error_weak.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error_weak.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error_weak.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error_weak.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error_weak.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error_weak.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error_weak.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error_weak.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error_weak.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error_weak.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_error_weak.c.o
+ .text          0x0000000000000000        0x0 obj/nrf52_app_error_weak.c.o
+ .data          0x0000000000000000        0x0 obj/nrf52_app_error_weak.c.o
+ .bss           0x0000000000000000        0x0 obj/nrf52_app_error_weak.c.o
+ .debug_macro   0x0000000000000000      0x83e obj/nrf52_app_error_weak.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_app_error_weak.c.o
+ .debug_macro   0x0000000000000000       0x44 obj/nrf52_app_error_weak.c.o
+ .debug_macro   0x0000000000000000       0xe3 obj/nrf52_app_error_weak.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_app_error_weak.c.o
+ .debug_macro   0x0000000000000000      0x1df obj/nrf52_app_error_weak.c.o
+ .debug_macro   0x0000000000000000       0x58 obj/nrf52_app_error_weak.c.o
+ .debug_macro   0x0000000000000000       0x35 obj/nrf52_app_error_weak.c.o
+ .debug_macro   0x0000000000000000       0x9c obj/nrf52_app_error_weak.c.o
+ .debug_macro   0x0000000000000000       0x16 obj/nrf52_app_error_weak.c.o
+ .debug_macro   0x0000000000000000       0x97 obj/nrf52_app_error_weak.c.o
+ .debug_macro   0x0000000000000000      0x29d obj/nrf52_app_error_weak.c.o
+ .debug_macro   0x0000000000000000       0xef obj/nrf52_app_error_weak.c.o
+ .debug_macro   0x0000000000000000       0x10 obj/nrf52_app_error_weak.c.o
+ .debug_macro   0x0000000000000000       0x52 obj/nrf52_app_error_weak.c.o
+ .debug_macro   0x0000000000000000       0x16 obj/nrf52_app_error_weak.c.o
+ .debug_macro   0x0000000000000000       0x43 obj/nrf52_app_error_weak.c.o
+ .debug_macro   0x0000000000000000      0x180 obj/nrf52_app_error_weak.c.o
+ .debug_macro   0x0000000000000000       0x10 obj/nrf52_app_error_weak.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_app_error_weak.c.o
+ .debug_macro   0x0000000000000000       0xbe obj/nrf52_app_error_weak.c.o
+ .debug_macro   0x0000000000000000       0x16 obj/nrf52_app_error_weak.c.o
+ .debug_macro   0x0000000000000000      0x166 obj/nrf52_app_error_weak.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_app_error_weak.c.o
+ .debug_macro   0x0000000000000000       0x1c obj/nrf52_app_error_weak.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_app_error_weak.c.o
+ .debug_macro   0x0000000000000000       0x3a obj/nrf52_app_error_weak.c.o
+ .debug_macro   0x0000000000000000       0x26 obj/nrf52_app_error_weak.c.o
+ .debug_macro   0x0000000000000000      0x30d obj/nrf52_app_error_weak.c.o
+ .debug_macro   0x0000000000000000      0x1b6 obj/nrf52_app_error_weak.c.o
+ .debug_macro   0x0000000000000000     0x6504 obj/nrf52_app_error_weak.c.o
+ .debug_macro   0x0000000000000000      0x97c obj/nrf52_app_error_weak.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_app_error_weak.c.o
+ .debug_macro   0x0000000000000000       0x8e obj/nrf52_app_error_weak.c.o
+ .debug_macro   0x0000000000000000      0x320 obj/nrf52_app_error_weak.c.o
+ .debug_macro   0x0000000000000000       0x8e obj/nrf52_app_error_weak.c.o
+ .debug_macro   0x0000000000000000      0x16d obj/nrf52_app_error_weak.c.o
+ .debug_macro   0x0000000000000000       0x2b obj/nrf52_app_error_weak.c.o
+ .debug_macro   0x0000000000000000       0x16 obj/nrf52_app_error_weak.c.o
+ .debug_macro   0x0000000000000000       0x35 obj/nrf52_app_error_weak.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_app_error_weak.c.o
+ .debug_macro   0x0000000000000000      0x39b obj/nrf52_app_error_weak.c.o
+ .debug_macro   0x0000000000000000       0x4b obj/nrf52_app_error_weak.c.o
+ .debug_macro   0x0000000000000000      0x170 obj/nrf52_app_error_weak.c.o
+ .debug_macro   0x0000000000000000       0x5a obj/nrf52_app_error_weak.c.o
+ .debug_macro   0x0000000000000000       0x28 obj/nrf52_app_error_weak.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_app_error_weak.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_timer.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_timer.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_timer.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_timer.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_timer.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_timer.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_timer.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_timer.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_timer.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_timer.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_timer.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_timer.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_timer.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_timer.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_timer.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_timer.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_timer.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_timer.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_timer.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_timer.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_timer.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_timer.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_timer.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_timer.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_timer.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_timer.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_timer.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_timer.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_timer.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_timer.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_timer.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_timer.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_timer.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_timer.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_timer.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_timer.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_timer.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_timer.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_timer.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_timer.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_timer.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_timer.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_timer.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_timer.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_timer.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_timer.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_timer.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_timer.c.o
+ .text          0x0000000000000000        0x0 obj/nrf52_app_timer.c.o
+ .data          0x0000000000000000        0x0 obj/nrf52_app_timer.c.o
+ .bss           0x0000000000000000        0x0 obj/nrf52_app_timer.c.o
+ .text.app_timer_init
+                0x0000000000000000       0xb0 obj/nrf52_app_timer.c.o
+ .text.app_timer_create
+                0x0000000000000000       0x34 obj/nrf52_app_timer.c.o
+ .text.app_timer_start
+                0x0000000000000000       0xb4 obj/nrf52_app_timer.c.o
+ .text.app_timer_stop
+                0x0000000000000000       0x80 obj/nrf52_app_timer.c.o
+ .text.app_timer_stop_all
+                0x0000000000000000       0x6c obj/nrf52_app_timer.c.o
+ .text.app_timer_cnt_get
+                0x0000000000000000       0x10 obj/nrf52_app_timer.c.o
+ .text.app_timer_cnt_diff_compute
+                0x0000000000000000        0xc obj/nrf52_app_timer.c.o
+ .debug_macro   0x0000000000000000      0x83e obj/nrf52_app_timer.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_app_timer.c.o
+ .debug_macro   0x0000000000000000       0x44 obj/nrf52_app_timer.c.o
+ .debug_macro   0x0000000000000000       0xe3 obj/nrf52_app_timer.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_app_timer.c.o
+ .debug_macro   0x0000000000000000      0x1df obj/nrf52_app_timer.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_app_timer.c.o
+ .debug_macro   0x0000000000000000       0x58 obj/nrf52_app_timer.c.o
+ .debug_macro   0x0000000000000000       0x35 obj/nrf52_app_timer.c.o
+ .debug_macro   0x0000000000000000       0x9c obj/nrf52_app_timer.c.o
+ .debug_macro   0x0000000000000000      0x166 obj/nrf52_app_timer.c.o
+ .debug_macro   0x0000000000000000       0x52 obj/nrf52_app_timer.c.o
+ .debug_macro   0x0000000000000000       0x16 obj/nrf52_app_timer.c.o
+ .debug_macro   0x0000000000000000       0x43 obj/nrf52_app_timer.c.o
+ .debug_macro   0x0000000000000000      0x180 obj/nrf52_app_timer.c.o
+ .debug_macro   0x0000000000000000      0x29d obj/nrf52_app_timer.c.o
+ .debug_macro   0x0000000000000000       0x10 obj/nrf52_app_timer.c.o
+ .debug_macro   0x0000000000000000       0x35 obj/nrf52_app_timer.c.o
+ .debug_macro   0x0000000000000000      0x320 obj/nrf52_app_timer.c.o
+ .debug_macro   0x0000000000000000      0x16d obj/nrf52_app_timer.c.o
+ .debug_macro   0x0000000000000000       0x2e obj/nrf52_app_timer.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_app_timer.c.o
+ .debug_macro   0x0000000000000000       0x8e obj/nrf52_app_timer.c.o
+ .debug_macro   0x0000000000000000       0x8e obj/nrf52_app_timer.c.o
+ .debug_macro   0x0000000000000000       0x1c obj/nrf52_app_timer.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_app_timer.c.o
+ .debug_macro   0x0000000000000000       0x3a obj/nrf52_app_timer.c.o
+ .debug_macro   0x0000000000000000       0x26 obj/nrf52_app_timer.c.o
+ .debug_macro   0x0000000000000000      0x30d obj/nrf52_app_timer.c.o
+ .debug_macro   0x0000000000000000      0x1b6 obj/nrf52_app_timer.c.o
+ .debug_macro   0x0000000000000000     0x6504 obj/nrf52_app_timer.c.o
+ .debug_macro   0x0000000000000000      0x97c obj/nrf52_app_timer.c.o
+ .debug_macro   0x0000000000000000      0x395 obj/nrf52_app_timer.c.o
+ .debug_macro   0x0000000000000000       0x4b obj/nrf52_app_timer.c.o
+ .debug_macro   0x0000000000000000       0x10 obj/nrf52_app_timer.c.o
+ .debug_macro   0x0000000000000000       0x10 obj/nrf52_app_timer.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_app_timer.c.o
+ .debug_macro   0x0000000000000000       0xbe obj/nrf52_app_timer.c.o
+ .debug_macro   0x0000000000000000       0x16 obj/nrf52_app_timer.c.o
+ .debug_macro   0x0000000000000000      0x166 obj/nrf52_app_timer.c.o
+ .debug_macro   0x0000000000000000       0x2b obj/nrf52_app_timer.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_util_platform.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_util_platform.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_util_platform.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_util_platform.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_util_platform.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_util_platform.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_util_platform.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_util_platform.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_util_platform.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_util_platform.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_util_platform.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_util_platform.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_util_platform.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_util_platform.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_util_platform.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_util_platform.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_util_platform.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_util_platform.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_util_platform.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_util_platform.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_util_platform.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_util_platform.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_util_platform.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_util_platform.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_util_platform.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_util_platform.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_util_platform.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_util_platform.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_util_platform.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_util_platform.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_util_platform.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_util_platform.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_util_platform.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_util_platform.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_util_platform.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_util_platform.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_util_platform.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_util_platform.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_util_platform.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_app_util_platform.c.o
+ .text          0x0000000000000000        0x0 obj/nrf52_app_util_platform.c.o
+ .data          0x0000000000000000        0x0 obj/nrf52_app_util_platform.c.o
+ .bss           0x0000000000000000        0x0 obj/nrf52_app_util_platform.c.o
+ .text.app_util_disable_irq
+                0x0000000000000000       0x10 obj/nrf52_app_util_platform.c.o
+ .text.app_util_enable_irq
+                0x0000000000000000       0x14 obj/nrf52_app_util_platform.c.o
+ .text.app_util_critical_region_enter
+                0x0000000000000000       0x10 obj/nrf52_app_util_platform.c.o
+ .text.app_util_critical_region_exit
+                0x0000000000000000       0x14 obj/nrf52_app_util_platform.c.o
+ .bss.m_in_critical_region
+                0x0000000000000000        0x4 obj/nrf52_app_util_platform.c.o
+ .debug_info    0x0000000000000000      0x1ab obj/nrf52_app_util_platform.c.o
+ .debug_abbrev  0x0000000000000000       0xda obj/nrf52_app_util_platform.c.o
+ .debug_aranges
+                0x0000000000000000       0x38 obj/nrf52_app_util_platform.c.o
+ .debug_ranges  0x0000000000000000       0x40 obj/nrf52_app_util_platform.c.o
+ .debug_macro   0x0000000000000000      0x20c obj/nrf52_app_util_platform.c.o
+ .debug_macro   0x0000000000000000      0x83e obj/nrf52_app_util_platform.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_app_util_platform.c.o
+ .debug_macro   0x0000000000000000       0x44 obj/nrf52_app_util_platform.c.o
+ .debug_macro   0x0000000000000000       0xe3 obj/nrf52_app_util_platform.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_app_util_platform.c.o
+ .debug_macro   0x0000000000000000      0x1df obj/nrf52_app_util_platform.c.o
+ .debug_macro   0x0000000000000000       0x2e obj/nrf52_app_util_platform.c.o
+ .debug_macro   0x0000000000000000       0x1c obj/nrf52_app_util_platform.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_app_util_platform.c.o
+ .debug_macro   0x0000000000000000       0x3a obj/nrf52_app_util_platform.c.o
+ .debug_macro   0x0000000000000000       0x26 obj/nrf52_app_util_platform.c.o
+ .debug_macro   0x0000000000000000      0x30d obj/nrf52_app_util_platform.c.o
+ .debug_macro   0x0000000000000000      0x1b6 obj/nrf52_app_util_platform.c.o
+ .debug_macro   0x0000000000000000     0x6504 obj/nrf52_app_util_platform.c.o
+ .debug_macro   0x0000000000000000      0x97c obj/nrf52_app_util_platform.c.o
+ .debug_macro   0x0000000000000000       0x58 obj/nrf52_app_util_platform.c.o
+ .debug_macro   0x0000000000000000       0x35 obj/nrf52_app_util_platform.c.o
+ .debug_macro   0x0000000000000000       0x9c obj/nrf52_app_util_platform.c.o
+ .debug_macro   0x0000000000000000       0x16 obj/nrf52_app_util_platform.c.o
+ .debug_macro   0x0000000000000000       0x97 obj/nrf52_app_util_platform.c.o
+ .debug_macro   0x0000000000000000      0x29d obj/nrf52_app_util_platform.c.o
+ .debug_macro   0x0000000000000000       0xef obj/nrf52_app_util_platform.c.o
+ .debug_macro   0x0000000000000000       0x10 obj/nrf52_app_util_platform.c.o
+ .debug_macro   0x0000000000000000       0x52 obj/nrf52_app_util_platform.c.o
+ .debug_macro   0x0000000000000000       0x16 obj/nrf52_app_util_platform.c.o
+ .debug_macro   0x0000000000000000       0x43 obj/nrf52_app_util_platform.c.o
+ .debug_macro   0x0000000000000000      0x180 obj/nrf52_app_util_platform.c.o
+ .debug_macro   0x0000000000000000       0x10 obj/nrf52_app_util_platform.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_app_util_platform.c.o
+ .debug_macro   0x0000000000000000       0xbe obj/nrf52_app_util_platform.c.o
+ .debug_macro   0x0000000000000000       0x16 obj/nrf52_app_util_platform.c.o
+ .debug_macro   0x0000000000000000      0x166 obj/nrf52_app_util_platform.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_app_util_platform.c.o
+ .debug_macro   0x0000000000000000       0x8e obj/nrf52_app_util_platform.c.o
+ .debug_macro   0x0000000000000000      0x320 obj/nrf52_app_util_platform.c.o
+ .debug_macro   0x0000000000000000       0x8e obj/nrf52_app_util_platform.c.o
+ .debug_macro   0x0000000000000000      0x16d obj/nrf52_app_util_platform.c.o
+ .debug_macro   0x0000000000000000       0x2b obj/nrf52_app_util_platform.c.o
+ .debug_macro   0x0000000000000000       0x10 obj/nrf52_app_util_platform.c.o
+ .debug_macro   0x0000000000000000       0x72 obj/nrf52_app_util_platform.c.o
+ .debug_line    0x0000000000000000      0x43a obj/nrf52_app_util_platform.c.o
+ .debug_str     0x0000000000000000    0x2e7c3 obj/nrf52_app_util_platform.c.o
+ .comment       0x0000000000000000       0x39 obj/nrf52_app_util_platform.c.o
+ .debug_frame   0x0000000000000000       0x50 obj/nrf52_app_util_platform.c.o
+ .ARM.attributes
+                0x0000000000000000       0x31 obj/nrf52_app_util_platform.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_hardfault_implementation.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_hardfault_implementation.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_hardfault_implementation.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_hardfault_implementation.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_hardfault_implementation.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_hardfault_implementation.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_hardfault_implementation.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_hardfault_implementation.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_hardfault_implementation.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_hardfault_implementation.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_hardfault_implementation.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_hardfault_implementation.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_hardfault_implementation.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_hardfault_implementation.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_hardfault_implementation.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_hardfault_implementation.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_hardfault_implementation.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_hardfault_implementation.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_hardfault_implementation.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_hardfault_implementation.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_hardfault_implementation.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_hardfault_implementation.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_hardfault_implementation.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_hardfault_implementation.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_hardfault_implementation.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_hardfault_implementation.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_hardfault_implementation.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_hardfault_implementation.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_hardfault_implementation.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_hardfault_implementation.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_hardfault_implementation.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_hardfault_implementation.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_hardfault_implementation.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_hardfault_implementation.c.o
+ .text          0x0000000000000000        0x0 obj/nrf52_hardfault_implementation.c.o
+ .data          0x0000000000000000        0x0 obj/nrf52_hardfault_implementation.c.o
+ .bss           0x0000000000000000        0x0 obj/nrf52_hardfault_implementation.c.o
+ .debug_info    0x0000000000000000       0xa2 obj/nrf52_hardfault_implementation.c.o
+ .debug_abbrev  0x0000000000000000       0x47 obj/nrf52_hardfault_implementation.c.o
+ .debug_aranges
+                0x0000000000000000       0x18 obj/nrf52_hardfault_implementation.c.o
+ .debug_macro   0x0000000000000000      0x1c7 obj/nrf52_hardfault_implementation.c.o
+ .debug_macro   0x0000000000000000      0x83e obj/nrf52_hardfault_implementation.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_hardfault_implementation.c.o
+ .debug_macro   0x0000000000000000       0x44 obj/nrf52_hardfault_implementation.c.o
+ .debug_macro   0x0000000000000000       0xe3 obj/nrf52_hardfault_implementation.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_hardfault_implementation.c.o
+ .debug_macro   0x0000000000000000      0x1df obj/nrf52_hardfault_implementation.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_hardfault_implementation.c.o
+ .debug_macro   0x0000000000000000       0x58 obj/nrf52_hardfault_implementation.c.o
+ .debug_macro   0x0000000000000000       0x35 obj/nrf52_hardfault_implementation.c.o
+ .debug_macro   0x0000000000000000       0x9c obj/nrf52_hardfault_implementation.c.o
+ .debug_macro   0x0000000000000000      0x166 obj/nrf52_hardfault_implementation.c.o
+ .debug_macro   0x0000000000000000       0x52 obj/nrf52_hardfault_implementation.c.o
+ .debug_macro   0x0000000000000000       0x16 obj/nrf52_hardfault_implementation.c.o
+ .debug_macro   0x0000000000000000       0x43 obj/nrf52_hardfault_implementation.c.o
+ .debug_macro   0x0000000000000000      0x180 obj/nrf52_hardfault_implementation.c.o
+ .debug_macro   0x0000000000000000      0x29d obj/nrf52_hardfault_implementation.c.o
+ .debug_macro   0x0000000000000000       0x10 obj/nrf52_hardfault_implementation.c.o
+ .debug_macro   0x0000000000000000       0x35 obj/nrf52_hardfault_implementation.c.o
+ .debug_macro   0x0000000000000000      0x320 obj/nrf52_hardfault_implementation.c.o
+ .debug_macro   0x0000000000000000      0x16d obj/nrf52_hardfault_implementation.c.o
+ .debug_macro   0x0000000000000000       0x2e obj/nrf52_hardfault_implementation.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_hardfault_implementation.c.o
+ .debug_macro   0x0000000000000000       0x8e obj/nrf52_hardfault_implementation.c.o
+ .debug_macro   0x0000000000000000       0x8e obj/nrf52_hardfault_implementation.c.o
+ .debug_macro   0x0000000000000000       0x1c obj/nrf52_hardfault_implementation.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_hardfault_implementation.c.o
+ .debug_macro   0x0000000000000000       0x3a obj/nrf52_hardfault_implementation.c.o
+ .debug_macro   0x0000000000000000       0x26 obj/nrf52_hardfault_implementation.c.o
+ .debug_macro   0x0000000000000000      0x30d obj/nrf52_hardfault_implementation.c.o
+ .debug_macro   0x0000000000000000      0x1b6 obj/nrf52_hardfault_implementation.c.o
+ .debug_macro   0x0000000000000000     0x6504 obj/nrf52_hardfault_implementation.c.o
+ .debug_macro   0x0000000000000000      0x97c obj/nrf52_hardfault_implementation.c.o
+ .debug_macro   0x0000000000000000      0x395 obj/nrf52_hardfault_implementation.c.o
+ .debug_macro   0x0000000000000000       0x4b obj/nrf52_hardfault_implementation.c.o
+ .debug_line    0x0000000000000000      0x3d0 obj/nrf52_hardfault_implementation.c.o
+ .debug_str     0x0000000000000000    0x30c08 obj/nrf52_hardfault_implementation.c.o
+ .comment       0x0000000000000000       0x39 obj/nrf52_hardfault_implementation.c.o
+ .ARM.attributes
+                0x0000000000000000       0x31 obj/nrf52_hardfault_implementation.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_assert.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_assert.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_assert.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_assert.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_assert.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_assert.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_assert.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_assert.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_assert.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_assert.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_assert.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_assert.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_assert.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_assert.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_assert.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_assert.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_assert.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_assert.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_assert.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_assert.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_assert.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_assert.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_assert.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_assert.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_assert.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_assert.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_assert.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_assert.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_assert.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_assert.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_assert.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_assert.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_assert.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_assert.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_assert.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_assert.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_assert.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_assert.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_assert.c.o
+ .text          0x0000000000000000        0x0 obj/nrf52_nrf_assert.c.o
+ .data          0x0000000000000000        0x0 obj/nrf52_nrf_assert.c.o
+ .bss           0x0000000000000000        0x0 obj/nrf52_nrf_assert.c.o
+ .text.assert_nrf_callback
+                0x0000000000000000       0x1c obj/nrf52_nrf_assert.c.o
+ .debug_info    0x0000000000000000      0x16c obj/nrf52_nrf_assert.c.o
+ .debug_abbrev  0x0000000000000000       0xcd obj/nrf52_nrf_assert.c.o
+ .debug_loc     0x0000000000000000       0x5a obj/nrf52_nrf_assert.c.o
+ .debug_aranges
+                0x0000000000000000       0x20 obj/nrf52_nrf_assert.c.o
+ .debug_ranges  0x0000000000000000       0x10 obj/nrf52_nrf_assert.c.o
+ .debug_macro   0x0000000000000000      0x1f9 obj/nrf52_nrf_assert.c.o
+ .debug_macro   0x0000000000000000      0x83e obj/nrf52_nrf_assert.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_nrf_assert.c.o
+ .debug_macro   0x0000000000000000       0x44 obj/nrf52_nrf_assert.c.o
+ .debug_macro   0x0000000000000000       0xe3 obj/nrf52_nrf_assert.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_nrf_assert.c.o
+ .debug_macro   0x0000000000000000      0x1df obj/nrf52_nrf_assert.c.o
+ .debug_macro   0x0000000000000000       0x1c obj/nrf52_nrf_assert.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_nrf_assert.c.o
+ .debug_macro   0x0000000000000000       0x3a obj/nrf52_nrf_assert.c.o
+ .debug_macro   0x0000000000000000       0x26 obj/nrf52_nrf_assert.c.o
+ .debug_macro   0x0000000000000000      0x30d obj/nrf52_nrf_assert.c.o
+ .debug_macro   0x0000000000000000      0x1b6 obj/nrf52_nrf_assert.c.o
+ .debug_macro   0x0000000000000000     0x6504 obj/nrf52_nrf_assert.c.o
+ .debug_macro   0x0000000000000000      0x97c obj/nrf52_nrf_assert.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_nrf_assert.c.o
+ .debug_macro   0x0000000000000000       0x58 obj/nrf52_nrf_assert.c.o
+ .debug_macro   0x0000000000000000       0x35 obj/nrf52_nrf_assert.c.o
+ .debug_macro   0x0000000000000000       0x9c obj/nrf52_nrf_assert.c.o
+ .debug_macro   0x0000000000000000       0x16 obj/nrf52_nrf_assert.c.o
+ .debug_macro   0x0000000000000000       0x97 obj/nrf52_nrf_assert.c.o
+ .debug_macro   0x0000000000000000      0x29d obj/nrf52_nrf_assert.c.o
+ .debug_macro   0x0000000000000000       0xef obj/nrf52_nrf_assert.c.o
+ .debug_macro   0x0000000000000000       0x10 obj/nrf52_nrf_assert.c.o
+ .debug_macro   0x0000000000000000       0x52 obj/nrf52_nrf_assert.c.o
+ .debug_macro   0x0000000000000000       0x16 obj/nrf52_nrf_assert.c.o
+ .debug_macro   0x0000000000000000       0x43 obj/nrf52_nrf_assert.c.o
+ .debug_macro   0x0000000000000000      0x180 obj/nrf52_nrf_assert.c.o
+ .debug_macro   0x0000000000000000       0x10 obj/nrf52_nrf_assert.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_nrf_assert.c.o
+ .debug_macro   0x0000000000000000       0xbe obj/nrf52_nrf_assert.c.o
+ .debug_macro   0x0000000000000000       0x16 obj/nrf52_nrf_assert.c.o
+ .debug_macro   0x0000000000000000      0x166 obj/nrf52_nrf_assert.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_nrf_assert.c.o
+ .debug_macro   0x0000000000000000       0x8e obj/nrf52_nrf_assert.c.o
+ .debug_macro   0x0000000000000000      0x320 obj/nrf52_nrf_assert.c.o
+ .debug_macro   0x0000000000000000       0x8e obj/nrf52_nrf_assert.c.o
+ .debug_macro   0x0000000000000000      0x16d obj/nrf52_nrf_assert.c.o
+ .debug_macro   0x0000000000000000       0x2b obj/nrf52_nrf_assert.c.o
+ .debug_macro   0x0000000000000000       0x10 obj/nrf52_nrf_assert.c.o
+ .debug_line    0x0000000000000000      0x3be obj/nrf52_nrf_assert.c.o
+ .debug_str     0x0000000000000000    0x2e5b3 obj/nrf52_nrf_assert.c.o
+ .comment       0x0000000000000000       0x39 obj/nrf52_nrf_assert.c.o
+ .debug_frame   0x0000000000000000       0x28 obj/nrf52_nrf_assert.c.o
+ .ARM.attributes
+                0x0000000000000000       0x31 obj/nrf52_nrf_assert.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_sdk_errors.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_sdk_errors.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_sdk_errors.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_sdk_errors.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_sdk_errors.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_sdk_errors.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_sdk_errors.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_sdk_errors.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_sdk_errors.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_sdk_errors.c.o
+ .text          0x0000000000000000        0x0 obj/nrf52_sdk_errors.c.o
+ .data          0x0000000000000000        0x0 obj/nrf52_sdk_errors.c.o
+ .bss           0x0000000000000000        0x0 obj/nrf52_sdk_errors.c.o
+ .debug_info    0x0000000000000000       0x68 obj/nrf52_sdk_errors.c.o
+ .debug_abbrev  0x0000000000000000       0x29 obj/nrf52_sdk_errors.c.o
+ .debug_aranges
+                0x0000000000000000       0x18 obj/nrf52_sdk_errors.c.o
+ .debug_macro   0x0000000000000000       0x7e obj/nrf52_sdk_errors.c.o
+ .debug_macro   0x0000000000000000      0x83e obj/nrf52_sdk_errors.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_sdk_errors.c.o
+ .debug_macro   0x0000000000000000       0x44 obj/nrf52_sdk_errors.c.o
+ .debug_macro   0x0000000000000000       0xe3 obj/nrf52_sdk_errors.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_sdk_errors.c.o
+ .debug_macro   0x0000000000000000      0x1df obj/nrf52_sdk_errors.c.o
+ .debug_macro   0x0000000000000000       0x8e obj/nrf52_sdk_errors.c.o
+ .debug_macro   0x0000000000000000      0x320 obj/nrf52_sdk_errors.c.o
+ .debug_macro   0x0000000000000000       0x8e obj/nrf52_sdk_errors.c.o
+ .debug_macro   0x0000000000000000      0x16d obj/nrf52_sdk_errors.c.o
+ .debug_line    0x0000000000000000      0x19c obj/nrf52_sdk_errors.c.o
+ .debug_str     0x0000000000000000     0x482e obj/nrf52_sdk_errors.c.o
+ .comment       0x0000000000000000       0x39 obj/nrf52_sdk_errors.c.o
+ .ARM.attributes
+                0x0000000000000000       0x31 obj/nrf52_sdk_errors.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_boards.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_boards.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_boards.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_boards.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_boards.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_boards.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_boards.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_boards.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_boards.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_boards.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_boards.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_boards.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_boards.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_boards.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_boards.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_boards.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_boards.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_boards.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_boards.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_boards.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_boards.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_boards.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_boards.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_boards.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_boards.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_boards.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_boards.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_boards.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_boards.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_boards.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_boards.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_boards.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_boards.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_boards.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_boards.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_boards.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_boards.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_boards.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_boards.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_boards.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_boards.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_boards.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_boards.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_boards.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_boards.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_boards.c.o
+ .text          0x0000000000000000        0x0 obj/nrf52_boards.c.o
+ .data          0x0000000000000000        0x0 obj/nrf52_boards.c.o
+ .bss           0x0000000000000000        0x0 obj/nrf52_boards.c.o
+ .text.bsp_board_led_state_get
+                0x0000000000000000       0x1c obj/nrf52_boards.c.o
+ .text.bsp_board_led_on
+                0x0000000000000000       0x1c obj/nrf52_boards.c.o
+ .text.bsp_board_led_off
+                0x0000000000000000       0x18 obj/nrf52_boards.c.o
+ .text.bsp_board_leds_off
+                0x0000000000000000       0x24 obj/nrf52_boards.c.o
+ .text.bsp_board_leds_on
+                0x0000000000000000       0x24 obj/nrf52_boards.c.o
+ .text.bsp_board_led_invert
+                0x0000000000000000       0x34 obj/nrf52_boards.c.o
+ .text.bsp_board_leds_init
+                0x0000000000000000       0x3c obj/nrf52_boards.c.o
+ .text.bsp_board_led_idx_to_pin
+                0x0000000000000000        0xc obj/nrf52_boards.c.o
+ .text.bsp_board_pin_to_led_idx
+                0x0000000000000000       0x28 obj/nrf52_boards.c.o
+ .text.bsp_board_button_state_get
+                0x0000000000000000       0x1c obj/nrf52_boards.c.o
+ .text.bsp_board_buttons_init
+                0x0000000000000000       0x20 obj/nrf52_boards.c.o
+ .text.bsp_board_pin_to_button_idx
+                0x0000000000000000       0x28 obj/nrf52_boards.c.o
+ .text.bsp_board_button_idx_to_pin
+                0x0000000000000000        0xc obj/nrf52_boards.c.o
+ .rodata.m_board_btn_list
+                0x0000000000000000        0x4 obj/nrf52_boards.c.o
+ .rodata.m_board_led_list
+                0x0000000000000000        0x4 obj/nrf52_boards.c.o
+ .debug_info    0x0000000000000000      0xbaa obj/nrf52_boards.c.o
+ .debug_abbrev  0x0000000000000000      0x263 obj/nrf52_boards.c.o
+ .debug_loc     0x0000000000000000      0x7d9 obj/nrf52_boards.c.o
+ .debug_aranges
+                0x0000000000000000       0x80 obj/nrf52_boards.c.o
+ .debug_ranges  0x0000000000000000      0x130 obj/nrf52_boards.c.o
+ .debug_macro   0x0000000000000000      0x264 obj/nrf52_boards.c.o
+ .debug_macro   0x0000000000000000      0x83e obj/nrf52_boards.c.o
+ .debug_macro   0x0000000000000000       0x1c obj/nrf52_boards.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_boards.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_boards.c.o
+ .debug_macro   0x0000000000000000       0x44 obj/nrf52_boards.c.o
+ .debug_macro   0x0000000000000000       0xe3 obj/nrf52_boards.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_boards.c.o
+ .debug_macro   0x0000000000000000      0x1df obj/nrf52_boards.c.o
+ .debug_macro   0x0000000000000000       0x34 obj/nrf52_boards.c.o
+ .debug_macro   0x0000000000000000       0x26 obj/nrf52_boards.c.o
+ .debug_macro   0x0000000000000000      0x30d obj/nrf52_boards.c.o
+ .debug_macro   0x0000000000000000      0x1b6 obj/nrf52_boards.c.o
+ .debug_macro   0x0000000000000000     0x6504 obj/nrf52_boards.c.o
+ .debug_macro   0x0000000000000000      0x97c obj/nrf52_boards.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_boards.c.o
+ .debug_macro   0x0000000000000000      0x168 obj/nrf52_boards.c.o
+ .debug_macro   0x0000000000000000       0x58 obj/nrf52_boards.c.o
+ .debug_macro   0x0000000000000000       0x35 obj/nrf52_boards.c.o
+ .debug_macro   0x0000000000000000       0x9c obj/nrf52_boards.c.o
+ .debug_macro   0x0000000000000000       0x16 obj/nrf52_boards.c.o
+ .debug_macro   0x0000000000000000       0x97 obj/nrf52_boards.c.o
+ .debug_macro   0x0000000000000000      0x29d obj/nrf52_boards.c.o
+ .debug_macro   0x0000000000000000       0xef obj/nrf52_boards.c.o
+ .debug_macro   0x0000000000000000       0x10 obj/nrf52_boards.c.o
+ .debug_macro   0x0000000000000000       0x52 obj/nrf52_boards.c.o
+ .debug_macro   0x0000000000000000       0x16 obj/nrf52_boards.c.o
+ .debug_macro   0x0000000000000000       0x43 obj/nrf52_boards.c.o
+ .debug_macro   0x0000000000000000      0x180 obj/nrf52_boards.c.o
+ .debug_macro   0x0000000000000000       0x10 obj/nrf52_boards.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_boards.c.o
+ .debug_macro   0x0000000000000000       0xbe obj/nrf52_boards.c.o
+ .debug_macro   0x0000000000000000       0x16 obj/nrf52_boards.c.o
+ .debug_macro   0x0000000000000000      0x166 obj/nrf52_boards.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_boards.c.o
+ .debug_macro   0x0000000000000000       0x8e obj/nrf52_boards.c.o
+ .debug_macro   0x0000000000000000      0x320 obj/nrf52_boards.c.o
+ .debug_macro   0x0000000000000000       0x8e obj/nrf52_boards.c.o
+ .debug_macro   0x0000000000000000      0x16d obj/nrf52_boards.c.o
+ .debug_macro   0x0000000000000000       0x2b obj/nrf52_boards.c.o
+ .debug_macro   0x0000000000000000       0x10 obj/nrf52_boards.c.o
+ .debug_macro   0x0000000000000000       0x16 obj/nrf52_boards.c.o
+ .debug_macro   0x0000000000000000       0x35 obj/nrf52_boards.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_boards.c.o
+ .debug_macro   0x0000000000000000       0x16 obj/nrf52_boards.c.o
+ .debug_macro   0x0000000000000000      0x246 obj/nrf52_boards.c.o
+ .debug_macro   0x0000000000000000      0x115 obj/nrf52_boards.c.o
+ .debug_line    0x0000000000000000      0x635 obj/nrf52_boards.c.o
+ .debug_str     0x0000000000000000    0x2fd3a obj/nrf52_boards.c.o
+ .comment       0x0000000000000000       0x39 obj/nrf52_boards.c.o
+ .debug_frame   0x0000000000000000       0xe8 obj/nrf52_boards.c.o
+ .ARM.attributes
+                0x0000000000000000       0x31 obj/nrf52_boards.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_clock.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_clock.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_clock.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_clock.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_clock.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_clock.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_clock.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_clock.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_clock.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_clock.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_clock.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_clock.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_clock.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_clock.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_clock.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_clock.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_clock.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_clock.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_clock.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_clock.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_clock.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_clock.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_clock.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_clock.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_clock.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_clock.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_clock.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_clock.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_clock.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_clock.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_clock.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_clock.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_clock.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_clock.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_clock.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_clock.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_clock.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_clock.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_clock.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_clock.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_clock.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_clock.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_clock.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_clock.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_clock.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_clock.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_clock.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_clock.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_clock.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_clock.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_clock.c.o
+ .text          0x0000000000000000        0x0 obj/nrf52_nrf_drv_clock.c.o
+ .data          0x0000000000000000        0x0 obj/nrf52_nrf_drv_clock.c.o
+ .bss           0x0000000000000000        0x0 obj/nrf52_nrf_drv_clock.c.o
+ .text.nrf_drv_clock_init_check
+                0x0000000000000000        0xc obj/nrf52_nrf_drv_clock.c.o
+ .text.nrf_drv_clock_init
+                0x0000000000000000       0x40 obj/nrf52_nrf_drv_clock.c.o
+ .text.nrf_drv_clock_uninit
+                0x0000000000000000       0x60 obj/nrf52_nrf_drv_clock.c.o
+ .text.nrf_drv_clock_lfclk_request
+                0x0000000000000000       0x7c obj/nrf52_nrf_drv_clock.c.o
+ .text.nrf_drv_clock_lfclk_release
+                0x0000000000000000       0x44 obj/nrf52_nrf_drv_clock.c.o
+ .text.nrf_drv_clock_lfclk_is_running
+                0x0000000000000000       0x10 obj/nrf52_nrf_drv_clock.c.o
+ .text.nrf_drv_clock_hfclk_request
+                0x0000000000000000       0x74 obj/nrf52_nrf_drv_clock.c.o
+ .text.nrf_drv_clock_hfclk_release
+                0x0000000000000000       0x48 obj/nrf52_nrf_drv_clock.c.o
+ .text.nrf_drv_clock_hfclk_is_running
+                0x0000000000000000       0x28 obj/nrf52_nrf_drv_clock.c.o
+ .text.nrf_drv_clock_calibration_start
+                0x0000000000000000        0x4 obj/nrf52_nrf_drv_clock.c.o
+ .text.nrf_drv_clock_calibration_abort
+                0x0000000000000000        0x4 obj/nrf52_nrf_drv_clock.c.o
+ .text.nrf_drv_clock_is_calibrating
+                0x0000000000000000        0x4 obj/nrf52_nrf_drv_clock.c.o
+ .debug_macro   0x0000000000000000      0x83e obj/nrf52_nrf_drv_clock.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_nrf_drv_clock.c.o
+ .debug_macro   0x0000000000000000       0x44 obj/nrf52_nrf_drv_clock.c.o
+ .debug_macro   0x0000000000000000       0xe3 obj/nrf52_nrf_drv_clock.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_nrf_drv_clock.c.o
+ .debug_macro   0x0000000000000000      0x1df obj/nrf52_nrf_drv_clock.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_nrf_drv_clock.c.o
+ .debug_macro   0x0000000000000000       0x58 obj/nrf52_nrf_drv_clock.c.o
+ .debug_macro   0x0000000000000000       0x35 obj/nrf52_nrf_drv_clock.c.o
+ .debug_macro   0x0000000000000000       0x9c obj/nrf52_nrf_drv_clock.c.o
+ .debug_macro   0x0000000000000000      0x166 obj/nrf52_nrf_drv_clock.c.o
+ .debug_macro   0x0000000000000000       0x52 obj/nrf52_nrf_drv_clock.c.o
+ .debug_macro   0x0000000000000000       0x16 obj/nrf52_nrf_drv_clock.c.o
+ .debug_macro   0x0000000000000000       0x43 obj/nrf52_nrf_drv_clock.c.o
+ .debug_macro   0x0000000000000000      0x180 obj/nrf52_nrf_drv_clock.c.o
+ .debug_macro   0x0000000000000000      0x29d obj/nrf52_nrf_drv_clock.c.o
+ .debug_macro   0x0000000000000000       0x10 obj/nrf52_nrf_drv_clock.c.o
+ .debug_macro   0x0000000000000000       0x35 obj/nrf52_nrf_drv_clock.c.o
+ .debug_macro   0x0000000000000000      0x320 obj/nrf52_nrf_drv_clock.c.o
+ .debug_macro   0x0000000000000000      0x16d obj/nrf52_nrf_drv_clock.c.o
+ .debug_macro   0x0000000000000000       0x2e obj/nrf52_nrf_drv_clock.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_nrf_drv_clock.c.o
+ .debug_macro   0x0000000000000000       0x8e obj/nrf52_nrf_drv_clock.c.o
+ .debug_macro   0x0000000000000000       0x8e obj/nrf52_nrf_drv_clock.c.o
+ .debug_macro   0x0000000000000000       0x1c obj/nrf52_nrf_drv_clock.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_nrf_drv_clock.c.o
+ .debug_macro   0x0000000000000000       0x3a obj/nrf52_nrf_drv_clock.c.o
+ .debug_macro   0x0000000000000000       0x26 obj/nrf52_nrf_drv_clock.c.o
+ .debug_macro   0x0000000000000000      0x30d obj/nrf52_nrf_drv_clock.c.o
+ .debug_macro   0x0000000000000000      0x1b6 obj/nrf52_nrf_drv_clock.c.o
+ .debug_macro   0x0000000000000000     0x6504 obj/nrf52_nrf_drv_clock.c.o
+ .debug_macro   0x0000000000000000      0x97c obj/nrf52_nrf_drv_clock.c.o
+ .debug_macro   0x0000000000000000      0x395 obj/nrf52_nrf_drv_clock.c.o
+ .debug_macro   0x0000000000000000       0x4b obj/nrf52_nrf_drv_clock.c.o
+ .debug_macro   0x0000000000000000       0x1c obj/nrf52_nrf_drv_clock.c.o
+ .debug_macro   0x0000000000000000       0x10 obj/nrf52_nrf_drv_clock.c.o
+ .debug_macro   0x0000000000000000       0x10 obj/nrf52_nrf_drv_clock.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_nrf_drv_clock.c.o
+ .debug_macro   0x0000000000000000       0xbe obj/nrf52_nrf_drv_clock.c.o
+ .debug_macro   0x0000000000000000       0x16 obj/nrf52_nrf_drv_clock.c.o
+ .debug_macro   0x0000000000000000      0x166 obj/nrf52_nrf_drv_clock.c.o
+ .debug_macro   0x0000000000000000       0x2b obj/nrf52_nrf_drv_clock.c.o
+ .debug_macro   0x0000000000000000       0x10 obj/nrf52_nrf_drv_clock.c.o
+ .debug_macro   0x0000000000000000       0x72 obj/nrf52_nrf_drv_clock.c.o
+ .debug_macro   0x0000000000000000      0x170 obj/nrf52_nrf_drv_clock.c.o
+ .debug_macro   0x0000000000000000       0x5a obj/nrf52_nrf_drv_clock.c.o
+ .debug_macro   0x0000000000000000       0x28 obj/nrf52_nrf_drv_clock.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_nrf_drv_clock.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_common.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_common.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_common.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_common.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_common.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_common.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_common.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_common.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_common.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_common.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_common.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_common.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_common.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_common.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_common.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_common.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_common.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_common.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_common.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_common.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_common.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_common.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_common.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_common.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_common.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_common.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_common.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_common.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_common.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_common.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_common.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_common.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_common.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_common.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_common.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_common.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_common.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_common.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_common.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_common.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_common.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_common.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_common.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_common.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_common.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_common.c.o
+ .text          0x0000000000000000        0x0 obj/nrf52_nrf_drv_common.c.o
+ .data          0x0000000000000000        0x0 obj/nrf52_nrf_drv_common.c.o
+ .bss           0x0000000000000000        0x0 obj/nrf52_nrf_drv_common.c.o
+ .text.nrf_drv_common_clock_irq_disable
+                0x0000000000000000       0x10 obj/nrf52_nrf_drv_common.c.o
+ .text.nrf_drv_common_irq_enable
+                0x0000000000000000       0x80 obj/nrf52_nrf_drv_common.c.o
+ .debug_info    0x0000000000000000      0x4c2 obj/nrf52_nrf_drv_common.c.o
+ .debug_abbrev  0x0000000000000000      0x184 obj/nrf52_nrf_drv_common.c.o
+ .debug_loc     0x0000000000000000       0xa2 obj/nrf52_nrf_drv_common.c.o
+ .debug_aranges
+                0x0000000000000000       0x28 obj/nrf52_nrf_drv_common.c.o
+ .debug_ranges  0x0000000000000000       0x48 obj/nrf52_nrf_drv_common.c.o
+ .debug_macro   0x0000000000000000      0x276 obj/nrf52_nrf_drv_common.c.o
+ .debug_macro   0x0000000000000000      0x83e obj/nrf52_nrf_drv_common.c.o
+ .debug_macro   0x0000000000000000      0x166 obj/nrf52_nrf_drv_common.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_nrf_drv_common.c.o
+ .debug_macro   0x0000000000000000       0x44 obj/nrf52_nrf_drv_common.c.o
+ .debug_macro   0x0000000000000000       0xe3 obj/nrf52_nrf_drv_common.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_nrf_drv_common.c.o
+ .debug_macro   0x0000000000000000      0x1df obj/nrf52_nrf_drv_common.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_nrf_drv_common.c.o
+ .debug_macro   0x0000000000000000       0x1c obj/nrf52_nrf_drv_common.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_nrf_drv_common.c.o
+ .debug_macro   0x0000000000000000       0x3a obj/nrf52_nrf_drv_common.c.o
+ .debug_macro   0x0000000000000000       0x26 obj/nrf52_nrf_drv_common.c.o
+ .debug_macro   0x0000000000000000      0x30d obj/nrf52_nrf_drv_common.c.o
+ .debug_macro   0x0000000000000000      0x1b6 obj/nrf52_nrf_drv_common.c.o
+ .debug_macro   0x0000000000000000     0x6504 obj/nrf52_nrf_drv_common.c.o
+ .debug_macro   0x0000000000000000      0x97c obj/nrf52_nrf_drv_common.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_nrf_drv_common.c.o
+ .debug_macro   0x0000000000000000       0x8e obj/nrf52_nrf_drv_common.c.o
+ .debug_macro   0x0000000000000000      0x320 obj/nrf52_nrf_drv_common.c.o
+ .debug_macro   0x0000000000000000       0x8e obj/nrf52_nrf_drv_common.c.o
+ .debug_macro   0x0000000000000000       0x58 obj/nrf52_nrf_drv_common.c.o
+ .debug_macro   0x0000000000000000       0x35 obj/nrf52_nrf_drv_common.c.o
+ .debug_macro   0x0000000000000000       0x9c obj/nrf52_nrf_drv_common.c.o
+ .debug_macro   0x0000000000000000       0x52 obj/nrf52_nrf_drv_common.c.o
+ .debug_macro   0x0000000000000000       0x16 obj/nrf52_nrf_drv_common.c.o
+ .debug_macro   0x0000000000000000       0x43 obj/nrf52_nrf_drv_common.c.o
+ .debug_macro   0x0000000000000000      0x180 obj/nrf52_nrf_drv_common.c.o
+ .debug_macro   0x0000000000000000      0x29d obj/nrf52_nrf_drv_common.c.o
+ .debug_macro   0x0000000000000000       0x10 obj/nrf52_nrf_drv_common.c.o
+ .debug_macro   0x0000000000000000       0x35 obj/nrf52_nrf_drv_common.c.o
+ .debug_macro   0x0000000000000000      0x16d obj/nrf52_nrf_drv_common.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_nrf_drv_common.c.o
+ .debug_macro   0x0000000000000000      0x39b obj/nrf52_nrf_drv_common.c.o
+ .debug_macro   0x0000000000000000       0x4b obj/nrf52_nrf_drv_common.c.o
+ .debug_macro   0x0000000000000000       0x1c obj/nrf52_nrf_drv_common.c.o
+ .debug_macro   0x0000000000000000       0x10 obj/nrf52_nrf_drv_common.c.o
+ .debug_macro   0x0000000000000000       0x10 obj/nrf52_nrf_drv_common.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_nrf_drv_common.c.o
+ .debug_macro   0x0000000000000000       0xbe obj/nrf52_nrf_drv_common.c.o
+ .debug_macro   0x0000000000000000       0x16 obj/nrf52_nrf_drv_common.c.o
+ .debug_macro   0x0000000000000000      0x166 obj/nrf52_nrf_drv_common.c.o
+ .debug_macro   0x0000000000000000       0x2b obj/nrf52_nrf_drv_common.c.o
+ .debug_macro   0x0000000000000000       0x10 obj/nrf52_nrf_drv_common.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_nrf_drv_common.c.o
+ .debug_macro   0x0000000000000000       0x72 obj/nrf52_nrf_drv_common.c.o
+ .debug_macro   0x0000000000000000      0x168 obj/nrf52_nrf_drv_common.c.o
+ .debug_line    0x0000000000000000      0x514 obj/nrf52_nrf_drv_common.c.o
+ .debug_str     0x0000000000000000    0x322ea obj/nrf52_nrf_drv_common.c.o
+ .comment       0x0000000000000000       0x39 obj/nrf52_nrf_drv_common.c.o
+ .debug_frame   0x0000000000000000       0x40 obj/nrf52_nrf_drv_common.c.o
+ .ARM.attributes
+                0x0000000000000000       0x31 obj/nrf52_nrf_drv_common.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_drv_uart.c.o
+ .text          0x0000000000000000        0x0 obj/nrf52_nrf_drv_uart.c.o
+ .data          0x0000000000000000        0x0 obj/nrf52_nrf_drv_uart.c.o
+ .bss           0x0000000000000000        0x0 obj/nrf52_nrf_drv_uart.c.o
+ .text.nrf_drv_uart_init
+                0x0000000000000000      0x148 obj/nrf52_nrf_drv_uart.c.o
+ .text.nrf_drv_uart_uninit
+                0x0000000000000000       0xfc obj/nrf52_nrf_drv_uart.c.o
+ .text.nrf_drv_uart_tx
+                0x0000000000000000      0x128 obj/nrf52_nrf_drv_uart.c.o
+ .text.nrf_drv_uart_tx_in_progress
+                0x0000000000000000       0x1c obj/nrf52_nrf_drv_uart.c.o
+ .text.nrf_drv_uart_rx
+                0x0000000000000000      0x1b4 obj/nrf52_nrf_drv_uart.c.o
+ .text.nrf_drv_uart_rx_enable
+                0x0000000000000000       0x3c obj/nrf52_nrf_drv_uart.c.o
+ .text.nrf_drv_uart_rx_disable
+                0x0000000000000000       0x1c obj/nrf52_nrf_drv_uart.c.o
+ .text.nrf_drv_uart_errorsrc_get
+                0x0000000000000000       0x18 obj/nrf52_nrf_drv_uart.c.o
+ .text.nrf_drv_uart_tx_abort
+                0x0000000000000000       0x48 obj/nrf52_nrf_drv_uart.c.o
+ .text.nrf_drv_uart_rx_abort
+                0x0000000000000000       0x14 obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x0000000000000000      0x83e obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x0000000000000000       0x44 obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x0000000000000000       0xe3 obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x0000000000000000      0x1df obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x0000000000000000       0x58 obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x0000000000000000       0x35 obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x0000000000000000       0x9c obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x0000000000000000      0x166 obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x0000000000000000       0x52 obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x0000000000000000       0x16 obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x0000000000000000       0x43 obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x0000000000000000      0x180 obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x0000000000000000      0x29d obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x0000000000000000       0x10 obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x0000000000000000       0x35 obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x0000000000000000      0x320 obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x0000000000000000      0x16d obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x0000000000000000       0x2e obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x0000000000000000       0x8e obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x0000000000000000       0x8e obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x0000000000000000       0x1c obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x0000000000000000       0x3a obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x0000000000000000       0x26 obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x0000000000000000      0x30d obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x0000000000000000      0x1b6 obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x0000000000000000     0x6504 obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x0000000000000000      0x97c obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x0000000000000000      0x395 obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x0000000000000000       0x4b obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x0000000000000000      0x168 obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x0000000000000000       0x1c obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x0000000000000000       0x10 obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x0000000000000000       0x10 obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x0000000000000000       0xbe obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x0000000000000000       0x16 obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x0000000000000000      0x166 obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x0000000000000000       0x2b obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x0000000000000000       0x10 obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x0000000000000000       0x28 obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x0000000000000000       0x16 obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x0000000000000000       0x16 obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x0000000000000000       0x72 obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x0000000000000000       0x16 obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x0000000000000000      0x170 obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x0000000000000000       0x5a obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x0000000000000000       0x28 obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_nrf_drv_uart.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_nvic.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_nvic.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_nvic.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_nvic.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_nvic.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_nvic.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_nvic.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_nvic.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_nvic.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_nvic.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_nvic.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_nvic.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_nvic.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_nvic.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_nvic.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_nvic.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_nvic.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_nvic.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_nvic.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_nvic.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_nvic.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_nvic.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_nvic.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_nvic.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_nvic.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_nvic.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_nvic.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_nvic.c.o
+ .text          0x0000000000000000        0x0 obj/nrf52_nrf_nvic.c.o
+ .data          0x0000000000000000        0x0 obj/nrf52_nrf_nvic.c.o
+ .bss           0x0000000000000000        0x0 obj/nrf52_nrf_nvic.c.o
+ .text.sd_nvic_EnableIRQ
+                0x0000000000000000       0x18 obj/nrf52_nrf_nvic.c.o
+ .text.sd_nvic_DisableIRQ
+                0x0000000000000000       0x18 obj/nrf52_nrf_nvic.c.o
+ .text.sd_nvic_GetPendingIRQ
+                0x0000000000000000       0x28 obj/nrf52_nrf_nvic.c.o
+ .text.sd_nvic_SetPendingIRQ
+                0x0000000000000000       0x1c obj/nrf52_nrf_nvic.c.o
+ .text.sd_nvic_ClearPendingIRQ
+                0x0000000000000000       0x1c obj/nrf52_nrf_nvic.c.o
+ .text.sd_nvic_SetPriority
+                0x0000000000000000       0x6c obj/nrf52_nrf_nvic.c.o
+ .text.sd_nvic_GetPriority
+                0x0000000000000000       0x48 obj/nrf52_nrf_nvic.c.o
+ .text.sd_nvic_SystemReset
+                0x0000000000000000       0x1c obj/nrf52_nrf_nvic.c.o
+ .text.sd_nvic_critical_region_enter
+                0x0000000000000000       0x1c obj/nrf52_nrf_nvic.c.o
+ .text.sd_nvic_critical_region_exit
+                0x0000000000000000       0x1c obj/nrf52_nrf_nvic.c.o
+ .bss.m_in_critical_region
+                0x0000000000000000        0x1 obj/nrf52_nrf_nvic.c.o
+ .debug_info    0x0000000000000000      0x711 obj/nrf52_nrf_nvic.c.o
+ .debug_abbrev  0x0000000000000000      0x1b9 obj/nrf52_nrf_nvic.c.o
+ .debug_loc     0x0000000000000000      0x1df obj/nrf52_nrf_nvic.c.o
+ .debug_aranges
+                0x0000000000000000       0x68 obj/nrf52_nrf_nvic.c.o
+ .debug_ranges  0x0000000000000000       0xc0 obj/nrf52_nrf_nvic.c.o
+ .debug_macro   0x0000000000000000      0x180 obj/nrf52_nrf_nvic.c.o
+ .debug_macro   0x0000000000000000      0x83e obj/nrf52_nrf_nvic.c.o
+ .debug_macro   0x0000000000000000       0x58 obj/nrf52_nrf_nvic.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_nrf_nvic.c.o
+ .debug_macro   0x0000000000000000       0x35 obj/nrf52_nrf_nvic.c.o
+ .debug_macro   0x0000000000000000       0x9c obj/nrf52_nrf_nvic.c.o
+ .debug_macro   0x0000000000000000       0x16 obj/nrf52_nrf_nvic.c.o
+ .debug_macro   0x0000000000000000      0x10e obj/nrf52_nrf_nvic.c.o
+ .debug_macro   0x0000000000000000       0x7f obj/nrf52_nrf_nvic.c.o
+ .debug_macro   0x0000000000000000       0x4a obj/nrf52_nrf_nvic.c.o
+ .debug_macro   0x0000000000000000       0x52 obj/nrf52_nrf_nvic.c.o
+ .debug_macro   0x0000000000000000       0x16 obj/nrf52_nrf_nvic.c.o
+ .debug_macro   0x0000000000000000       0x43 obj/nrf52_nrf_nvic.c.o
+ .debug_macro   0x0000000000000000      0x180 obj/nrf52_nrf_nvic.c.o
+ .debug_macro   0x0000000000000000      0x29d obj/nrf52_nrf_nvic.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_nrf_nvic.c.o
+ .debug_macro   0x0000000000000000       0xe3 obj/nrf52_nrf_nvic.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_nrf_nvic.c.o
+ .debug_macro   0x0000000000000000      0x1df obj/nrf52_nrf_nvic.c.o
+ .debug_macro   0x0000000000000000       0x1c obj/nrf52_nrf_nvic.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_nrf_nvic.c.o
+ .debug_macro   0x0000000000000000       0x3a obj/nrf52_nrf_nvic.c.o
+ .debug_macro   0x0000000000000000       0x26 obj/nrf52_nrf_nvic.c.o
+ .debug_macro   0x0000000000000000      0x30d obj/nrf52_nrf_nvic.c.o
+ .debug_macro   0x0000000000000000      0x1b6 obj/nrf52_nrf_nvic.c.o
+ .debug_macro   0x0000000000000000     0x6504 obj/nrf52_nrf_nvic.c.o
+ .debug_macro   0x0000000000000000      0x97c obj/nrf52_nrf_nvic.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_nrf_nvic.c.o
+ .debug_macro   0x0000000000000000       0x8e obj/nrf52_nrf_nvic.c.o
+ .debug_line    0x0000000000000000      0x45d obj/nrf52_nrf_nvic.c.o
+ .debug_str     0x0000000000000000    0x2c7e3 obj/nrf52_nrf_nvic.c.o
+ .comment       0x0000000000000000       0x39 obj/nrf52_nrf_nvic.c.o
+ .debug_frame   0x0000000000000000       0xc4 obj/nrf52_nrf_nvic.c.o
+ .ARM.attributes
+                0x0000000000000000       0x31 obj/nrf52_nrf_nvic.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_soc.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_soc.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_soc.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_soc.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_soc.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_soc.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_soc.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_soc.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_soc.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_soc.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_soc.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_soc.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_soc.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_soc.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_soc.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_soc.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_soc.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_soc.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_soc.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_soc.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_soc.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_soc.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_soc.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_soc.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_soc.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_soc.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_soc.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_nrf_soc.c.o
+ .text          0x0000000000000000        0x0 obj/nrf52_nrf_soc.c.o
+ .data          0x0000000000000000        0x0 obj/nrf52_nrf_soc.c.o
+ .bss           0x0000000000000000        0x0 obj/nrf52_nrf_soc.c.o
+ .text.sd_app_evt_wait
+                0x0000000000000000        0x8 obj/nrf52_nrf_soc.c.o
+ .debug_info    0x0000000000000000       0xc2 obj/nrf52_nrf_soc.c.o
+ .debug_abbrev  0x0000000000000000       0x72 obj/nrf52_nrf_soc.c.o
+ .debug_aranges
+                0x0000000000000000       0x20 obj/nrf52_nrf_soc.c.o
+ .debug_ranges  0x0000000000000000       0x10 obj/nrf52_nrf_soc.c.o
+ .debug_macro   0x0000000000000000      0x180 obj/nrf52_nrf_soc.c.o
+ .debug_macro   0x0000000000000000      0x83e obj/nrf52_nrf_soc.c.o
+ .debug_macro   0x0000000000000000       0x58 obj/nrf52_nrf_soc.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_nrf_soc.c.o
+ .debug_macro   0x0000000000000000       0x35 obj/nrf52_nrf_soc.c.o
+ .debug_macro   0x0000000000000000       0x9c obj/nrf52_nrf_soc.c.o
+ .debug_macro   0x0000000000000000       0x16 obj/nrf52_nrf_soc.c.o
+ .debug_macro   0x0000000000000000      0x10e obj/nrf52_nrf_soc.c.o
+ .debug_macro   0x0000000000000000       0x7f obj/nrf52_nrf_soc.c.o
+ .debug_macro   0x0000000000000000       0x4a obj/nrf52_nrf_soc.c.o
+ .debug_macro   0x0000000000000000       0x52 obj/nrf52_nrf_soc.c.o
+ .debug_macro   0x0000000000000000       0x16 obj/nrf52_nrf_soc.c.o
+ .debug_macro   0x0000000000000000       0x43 obj/nrf52_nrf_soc.c.o
+ .debug_macro   0x0000000000000000      0x180 obj/nrf52_nrf_soc.c.o
+ .debug_macro   0x0000000000000000      0x29d obj/nrf52_nrf_soc.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_nrf_soc.c.o
+ .debug_macro   0x0000000000000000       0xe3 obj/nrf52_nrf_soc.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_nrf_soc.c.o
+ .debug_macro   0x0000000000000000      0x1df obj/nrf52_nrf_soc.c.o
+ .debug_macro   0x0000000000000000       0x1c obj/nrf52_nrf_soc.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_nrf_soc.c.o
+ .debug_macro   0x0000000000000000       0x3a obj/nrf52_nrf_soc.c.o
+ .debug_macro   0x0000000000000000       0x26 obj/nrf52_nrf_soc.c.o
+ .debug_macro   0x0000000000000000      0x30d obj/nrf52_nrf_soc.c.o
+ .debug_macro   0x0000000000000000      0x1b6 obj/nrf52_nrf_soc.c.o
+ .debug_macro   0x0000000000000000     0x6504 obj/nrf52_nrf_soc.c.o
+ .debug_macro   0x0000000000000000      0x97c obj/nrf52_nrf_soc.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_nrf_soc.c.o
+ .debug_macro   0x0000000000000000       0x8e obj/nrf52_nrf_soc.c.o
+ .debug_line    0x0000000000000000      0x30a obj/nrf52_nrf_soc.c.o
+ .debug_str     0x0000000000000000    0x2c3d0 obj/nrf52_nrf_soc.c.o
+ .comment       0x0000000000000000       0x39 obj/nrf52_nrf_soc.c.o
+ .debug_frame   0x0000000000000000       0x20 obj/nrf52_nrf_soc.c.o
+ .ARM.attributes
+                0x0000000000000000       0x31 obj/nrf52_nrf_soc.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_main.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_main.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_main.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_main.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_main.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_main.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_main.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_main.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_main.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_main.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_main.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_main.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_main.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_main.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_main.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_main.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_main.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_main.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_main.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_main.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_main.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_main.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_main.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_main.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_main.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_main.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_main.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_main.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_main.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_main.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_main.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_main.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_main.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_main.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_main.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_main.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_main.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_main.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_main.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_main.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_main.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_main.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_main.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_main.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_main.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_main.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_main.c.o
+ .text          0x0000000000000000        0x0 obj/nrf52_main.c.o
+ .data          0x0000000000000000        0x0 obj/nrf52_main.c.o
+ .bss           0x0000000000000000        0x0 obj/nrf52_main.c.o
+ .text.blink_led
+                0x0000000000000000       0x44 obj/nrf52_main.c.o
+ .debug_macro   0x0000000000000000      0x83e obj/nrf52_main.c.o
+ .debug_macro   0x0000000000000000       0x1c obj/nrf52_main.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_main.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_main.c.o
+ .debug_macro   0x0000000000000000       0x44 obj/nrf52_main.c.o
+ .debug_macro   0x0000000000000000       0xe3 obj/nrf52_main.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_main.c.o
+ .debug_macro   0x0000000000000000      0x1df obj/nrf52_main.c.o
+ .debug_macro   0x0000000000000000       0x34 obj/nrf52_main.c.o
+ .debug_macro   0x0000000000000000       0x26 obj/nrf52_main.c.o
+ .debug_macro   0x0000000000000000      0x30d obj/nrf52_main.c.o
+ .debug_macro   0x0000000000000000      0x1b6 obj/nrf52_main.c.o
+ .debug_macro   0x0000000000000000     0x6504 obj/nrf52_main.c.o
+ .debug_macro   0x0000000000000000      0x97c obj/nrf52_main.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_main.c.o
+ .debug_macro   0x0000000000000000      0x168 obj/nrf52_main.c.o
+ .debug_macro   0x0000000000000000       0x58 obj/nrf52_main.c.o
+ .debug_macro   0x0000000000000000       0x35 obj/nrf52_main.c.o
+ .debug_macro   0x0000000000000000       0x9c obj/nrf52_main.c.o
+ .debug_macro   0x0000000000000000       0x16 obj/nrf52_main.c.o
+ .debug_macro   0x0000000000000000       0x97 obj/nrf52_main.c.o
+ .debug_macro   0x0000000000000000      0x29d obj/nrf52_main.c.o
+ .debug_macro   0x0000000000000000       0xef obj/nrf52_main.c.o
+ .debug_macro   0x0000000000000000       0x10 obj/nrf52_main.c.o
+ .debug_macro   0x0000000000000000       0x52 obj/nrf52_main.c.o
+ .debug_macro   0x0000000000000000       0x16 obj/nrf52_main.c.o
+ .debug_macro   0x0000000000000000       0x43 obj/nrf52_main.c.o
+ .debug_macro   0x0000000000000000      0x180 obj/nrf52_main.c.o
+ .debug_macro   0x0000000000000000       0x10 obj/nrf52_main.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_main.c.o
+ .debug_macro   0x0000000000000000       0xbe obj/nrf52_main.c.o
+ .debug_macro   0x0000000000000000       0x16 obj/nrf52_main.c.o
+ .debug_macro   0x0000000000000000      0x166 obj/nrf52_main.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_main.c.o
+ .debug_macro   0x0000000000000000       0x8e obj/nrf52_main.c.o
+ .debug_macro   0x0000000000000000      0x320 obj/nrf52_main.c.o
+ .debug_macro   0x0000000000000000       0x8e obj/nrf52_main.c.o
+ .debug_macro   0x0000000000000000      0x16d obj/nrf52_main.c.o
+ .debug_macro   0x0000000000000000       0x2b obj/nrf52_main.c.o
+ .debug_macro   0x0000000000000000       0x10 obj/nrf52_main.c.o
+ .debug_macro   0x0000000000000000       0x16 obj/nrf52_main.c.o
+ .debug_macro   0x0000000000000000       0x35 obj/nrf52_main.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_main.c.o
+ .debug_macro   0x0000000000000000       0x16 obj/nrf52_main.c.o
+ .debug_macro   0x0000000000000000      0x246 obj/nrf52_main.c.o
+ .debug_macro   0x0000000000000000      0x115 obj/nrf52_main.c.o
+ .debug_macro   0x0000000000000000       0x10 obj/nrf52_main.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_RTT_Syscalls_GCC.c.o
+ .text          0x0000000000000000        0x0 obj/nrf52_RTT_Syscalls_GCC.c.o
+ .data          0x0000000000000000        0x0 obj/nrf52_RTT_Syscalls_GCC.c.o
+ .bss           0x0000000000000000        0x0 obj/nrf52_RTT_Syscalls_GCC.c.o
+ .debug_info    0x0000000000000000       0x21 obj/nrf52_RTT_Syscalls_GCC.c.o
+ .debug_abbrev  0x0000000000000000       0x13 obj/nrf52_RTT_Syscalls_GCC.c.o
+ .debug_aranges
+                0x0000000000000000       0x18 obj/nrf52_RTT_Syscalls_GCC.c.o
+ .debug_macro   0x0000000000000000       0x11 obj/nrf52_RTT_Syscalls_GCC.c.o
+ .debug_macro   0x0000000000000000      0x83e obj/nrf52_RTT_Syscalls_GCC.c.o
+ .debug_line    0x0000000000000000       0x57 obj/nrf52_RTT_Syscalls_GCC.c.o
+ .debug_str     0x0000000000000000     0x238f obj/nrf52_RTT_Syscalls_GCC.c.o
+ .comment       0x0000000000000000       0x39 obj/nrf52_RTT_Syscalls_GCC.c.o
+ .ARM.attributes
+                0x0000000000000000       0x31 obj/nrf52_RTT_Syscalls_GCC.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_SEGGER_RTT.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_SEGGER_RTT.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_SEGGER_RTT.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_SEGGER_RTT.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_SEGGER_RTT.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_SEGGER_RTT.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_SEGGER_RTT.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_SEGGER_RTT.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_SEGGER_RTT.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_SEGGER_RTT.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_SEGGER_RTT.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_SEGGER_RTT.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_SEGGER_RTT.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_SEGGER_RTT.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_SEGGER_RTT.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_SEGGER_RTT.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_SEGGER_RTT.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_SEGGER_RTT.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_SEGGER_RTT.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_SEGGER_RTT.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_SEGGER_RTT.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_SEGGER_RTT.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_SEGGER_RTT.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_SEGGER_RTT.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_SEGGER_RTT.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_SEGGER_RTT.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_SEGGER_RTT.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_SEGGER_RTT.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_SEGGER_RTT.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_SEGGER_RTT.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_SEGGER_RTT.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_SEGGER_RTT.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_SEGGER_RTT.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_SEGGER_RTT.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_SEGGER_RTT.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_SEGGER_RTT.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_SEGGER_RTT.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_SEGGER_RTT.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_SEGGER_RTT.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_SEGGER_RTT.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_SEGGER_RTT.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_SEGGER_RTT.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_SEGGER_RTT.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_SEGGER_RTT.c.o
+ .text          0x0000000000000000        0x0 obj/nrf52_SEGGER_RTT.c.o
+ .data          0x0000000000000000        0x0 obj/nrf52_SEGGER_RTT.c.o
+ .bss           0x0000000000000000        0x0 obj/nrf52_SEGGER_RTT.c.o
+ .text.SEGGER_RTT_ReadNoLock
+                0x0000000000000000      0x12c obj/nrf52_SEGGER_RTT.c.o
+ .text.SEGGER_RTT_Read
+                0x0000000000000000      0x140 obj/nrf52_SEGGER_RTT.c.o
+ .text.SEGGER_RTT_WriteSkipNoLock
+                0x0000000000000000       0xa4 obj/nrf52_SEGGER_RTT.c.o
+ .text.SEGGER_RTT_WriteNoLock
+                0x0000000000000000      0x190 obj/nrf52_SEGGER_RTT.c.o
+ .text.SEGGER_RTT_Write
+                0x0000000000000000      0x200 obj/nrf52_SEGGER_RTT.c.o
+ .text.SEGGER_RTT_WriteString
+                0x0000000000000000      0x204 obj/nrf52_SEGGER_RTT.c.o
+ .text.SEGGER_RTT_GetKey
+                0x0000000000000000      0x114 obj/nrf52_SEGGER_RTT.c.o
+ .text.SEGGER_RTT_WaitKey
+                0x0000000000000000      0x124 obj/nrf52_SEGGER_RTT.c.o
+ .text.SEGGER_RTT_HasKey
+                0x0000000000000000       0x6c obj/nrf52_SEGGER_RTT.c.o
+ .text.SEGGER_RTT_HasData
+                0x0000000000000000       0x1c obj/nrf52_SEGGER_RTT.c.o
+ .text.SEGGER_RTT_ConfigUpBuffer
+                0x0000000000000000       0xcc obj/nrf52_SEGGER_RTT.c.o
+ .text.SEGGER_RTT_ConfigDownBuffer
+                0x0000000000000000       0xc4 obj/nrf52_SEGGER_RTT.c.o
+ .text.SEGGER_RTT_SetNameUpBuffer
+                0x0000000000000000       0x94 obj/nrf52_SEGGER_RTT.c.o
+ .text.SEGGER_RTT_SetNameDownBuffer
+                0x0000000000000000       0x94 obj/nrf52_SEGGER_RTT.c.o
+ .text.SEGGER_RTT_Init
+                0x0000000000000000       0x60 obj/nrf52_SEGGER_RTT.c.o
+ .text.SEGGER_RTT_SetTerminal
+                0x0000000000000000      0x168 obj/nrf52_SEGGER_RTT.c.o
+ .text.SEGGER_RTT_TerminalOut
+                0x0000000000000000      0x470 obj/nrf52_SEGGER_RTT.c.o
+ .bss._ActiveTerminal
+                0x0000000000000000        0x1 obj/nrf52_SEGGER_RTT.c.o
+ .rodata.str1.4
+                0x0000000000000000       0x17 obj/nrf52_SEGGER_RTT.c.o
+ .bss._acDownBuffer
+                0x0000000000000000       0x10 obj/nrf52_SEGGER_RTT.c.o
+ .bss._acUpBuffer
+                0x0000000000000000       0x40 obj/nrf52_SEGGER_RTT.c.o
+ .rodata._aTerminalId
+                0x0000000000000000       0x10 obj/nrf52_SEGGER_RTT.c.o
+ .debug_info    0x0000000000000000     0x2342 obj/nrf52_SEGGER_RTT.c.o
+ .debug_abbrev  0x0000000000000000      0x300 obj/nrf52_SEGGER_RTT.c.o
+ .debug_loc     0x0000000000000000     0x44ce obj/nrf52_SEGGER_RTT.c.o
+ .debug_aranges
+                0x0000000000000000       0xa0 obj/nrf52_SEGGER_RTT.c.o
+ .debug_ranges  0x0000000000000000      0x4a0 obj/nrf52_SEGGER_RTT.c.o
+ .debug_macro   0x0000000000000000      0x254 obj/nrf52_SEGGER_RTT.c.o
+ .debug_macro   0x0000000000000000      0x83e obj/nrf52_SEGGER_RTT.c.o
+ .debug_macro   0x0000000000000000      0x320 obj/nrf52_SEGGER_RTT.c.o
+ .debug_macro   0x0000000000000000       0x2e obj/nrf52_SEGGER_RTT.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_SEGGER_RTT.c.o
+ .debug_macro   0x0000000000000000       0x44 obj/nrf52_SEGGER_RTT.c.o
+ .debug_macro   0x0000000000000000       0xe3 obj/nrf52_SEGGER_RTT.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_SEGGER_RTT.c.o
+ .debug_macro   0x0000000000000000      0x1df obj/nrf52_SEGGER_RTT.c.o
+ .debug_macro   0x0000000000000000       0x1c obj/nrf52_SEGGER_RTT.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_SEGGER_RTT.c.o
+ .debug_macro   0x0000000000000000       0x3a obj/nrf52_SEGGER_RTT.c.o
+ .debug_macro   0x0000000000000000       0x26 obj/nrf52_SEGGER_RTT.c.o
+ .debug_macro   0x0000000000000000      0x30d obj/nrf52_SEGGER_RTT.c.o
+ .debug_macro   0x0000000000000000      0x1b6 obj/nrf52_SEGGER_RTT.c.o
+ .debug_macro   0x0000000000000000     0x6504 obj/nrf52_SEGGER_RTT.c.o
+ .debug_macro   0x0000000000000000      0x97c obj/nrf52_SEGGER_RTT.c.o
+ .debug_macro   0x0000000000000000       0x58 obj/nrf52_SEGGER_RTT.c.o
+ .debug_macro   0x0000000000000000       0x35 obj/nrf52_SEGGER_RTT.c.o
+ .debug_macro   0x0000000000000000       0x9c obj/nrf52_SEGGER_RTT.c.o
+ .debug_macro   0x0000000000000000       0x16 obj/nrf52_SEGGER_RTT.c.o
+ .debug_macro   0x0000000000000000       0x97 obj/nrf52_SEGGER_RTT.c.o
+ .debug_macro   0x0000000000000000      0x29d obj/nrf52_SEGGER_RTT.c.o
+ .debug_macro   0x0000000000000000       0xef obj/nrf52_SEGGER_RTT.c.o
+ .debug_macro   0x0000000000000000       0x10 obj/nrf52_SEGGER_RTT.c.o
+ .debug_macro   0x0000000000000000       0x52 obj/nrf52_SEGGER_RTT.c.o
+ .debug_macro   0x0000000000000000       0x16 obj/nrf52_SEGGER_RTT.c.o
+ .debug_macro   0x0000000000000000       0x43 obj/nrf52_SEGGER_RTT.c.o
+ .debug_macro   0x0000000000000000      0x180 obj/nrf52_SEGGER_RTT.c.o
+ .debug_macro   0x0000000000000000       0x10 obj/nrf52_SEGGER_RTT.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_SEGGER_RTT.c.o
+ .debug_macro   0x0000000000000000       0xbe obj/nrf52_SEGGER_RTT.c.o
+ .debug_macro   0x0000000000000000       0x16 obj/nrf52_SEGGER_RTT.c.o
+ .debug_macro   0x0000000000000000      0x166 obj/nrf52_SEGGER_RTT.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_SEGGER_RTT.c.o
+ .debug_macro   0x0000000000000000       0x8e obj/nrf52_SEGGER_RTT.c.o
+ .debug_macro   0x0000000000000000       0x8e obj/nrf52_SEGGER_RTT.c.o
+ .debug_macro   0x0000000000000000      0x16d obj/nrf52_SEGGER_RTT.c.o
+ .debug_macro   0x0000000000000000       0x2b obj/nrf52_SEGGER_RTT.c.o
+ .debug_macro   0x0000000000000000       0x10 obj/nrf52_SEGGER_RTT.c.o
+ .debug_macro   0x0000000000000000       0x72 obj/nrf52_SEGGER_RTT.c.o
+ .debug_macro   0x0000000000000000       0x34 obj/nrf52_SEGGER_RTT.c.o
+ .debug_macro   0x0000000000000000      0x114 obj/nrf52_SEGGER_RTT.c.o
+ .debug_macro   0x0000000000000000       0x16 obj/nrf52_SEGGER_RTT.c.o
+ .debug_macro   0x0000000000000000       0x35 obj/nrf52_SEGGER_RTT.c.o
+ .debug_line    0x0000000000000000      0xd35 obj/nrf52_SEGGER_RTT.c.o
+ .debug_str     0x0000000000000000    0x2f251 obj/nrf52_SEGGER_RTT.c.o
+ .comment       0x0000000000000000       0x39 obj/nrf52_SEGGER_RTT.c.o
+ .debug_frame   0x0000000000000000      0x28c obj/nrf52_SEGGER_RTT.c.o
+ .ARM.attributes
+                0x0000000000000000       0x31 obj/nrf52_SEGGER_RTT.c.o
+ COMMON         0x0000000000000000       0x78 obj/nrf52_SEGGER_RTT.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_SEGGER_RTT_printf.c.o
+ .text          0x0000000000000000        0x0 obj/nrf52_SEGGER_RTT_printf.c.o
+ .data          0x0000000000000000        0x0 obj/nrf52_SEGGER_RTT_printf.c.o
+ .bss           0x0000000000000000        0x0 obj/nrf52_SEGGER_RTT_printf.c.o
+ .debug_info    0x0000000000000000       0x21 obj/nrf52_SEGGER_RTT_printf.c.o
+ .debug_abbrev  0x0000000000000000       0x13 obj/nrf52_SEGGER_RTT_printf.c.o
+ .debug_aranges
+                0x0000000000000000       0x18 obj/nrf52_SEGGER_RTT_printf.c.o
+ .debug_macro   0x0000000000000000       0x11 obj/nrf52_SEGGER_RTT_printf.c.o
+ .debug_macro   0x0000000000000000      0x83e obj/nrf52_SEGGER_RTT_printf.c.o
+ .debug_line    0x0000000000000000       0x58 obj/nrf52_SEGGER_RTT_printf.c.o
+ .debug_str     0x0000000000000000     0x2390 obj/nrf52_SEGGER_RTT_printf.c.o
+ .comment       0x0000000000000000       0x39 obj/nrf52_SEGGER_RTT_printf.c.o
+ .ARM.attributes
+                0x0000000000000000       0x31 obj/nrf52_SEGGER_RTT_printf.c.o
+ .data          0x0000000000000000        0x0 obj/nrf52_gcc_startup_nrf51.S.o
+ .bss           0x0000000000000000        0x0 obj/nrf52_gcc_startup_nrf51.S.o
+ .group         0x0000000000000000        0x8 obj/nrf52_system_nrf51.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_system_nrf51.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_system_nrf51.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_system_nrf51.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_system_nrf51.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_system_nrf51.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_system_nrf51.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_system_nrf51.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_system_nrf51.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_system_nrf51.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_system_nrf51.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_system_nrf51.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_system_nrf51.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_system_nrf51.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_system_nrf51.c.o
+ .group         0x0000000000000000        0x8 obj/nrf52_system_nrf51.c.o
+ .text          0x0000000000000000        0x0 obj/nrf52_system_nrf51.c.o
+ .data          0x0000000000000000        0x0 obj/nrf52_system_nrf51.c.o
+ .bss           0x0000000000000000        0x0 obj/nrf52_system_nrf51.c.o
+ .text.SystemCoreClockUpdate
+                0x0000000000000000       0x10 obj/nrf52_system_nrf51.c.o
+ .debug_macro   0x0000000000000000      0x83e obj/nrf52_system_nrf51.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_system_nrf51.c.o
+ .debug_macro   0x0000000000000000       0x44 obj/nrf52_system_nrf51.c.o
+ .debug_macro   0x0000000000000000       0xe3 obj/nrf52_system_nrf51.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_system_nrf51.c.o
+ .debug_macro   0x0000000000000000      0x1df obj/nrf52_system_nrf51.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_system_nrf51.c.o
+ .debug_macro   0x0000000000000000       0x1c obj/nrf52_system_nrf51.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_system_nrf51.c.o
+ .debug_macro   0x0000000000000000       0x3a obj/nrf52_system_nrf51.c.o
+ .debug_macro   0x0000000000000000       0x26 obj/nrf52_system_nrf51.c.o
+ .debug_macro   0x0000000000000000      0x30d obj/nrf52_system_nrf51.c.o
+ .debug_macro   0x0000000000000000      0x1b6 obj/nrf52_system_nrf51.c.o
+ .debug_macro   0x0000000000000000     0x6504 obj/nrf52_system_nrf51.c.o
+ .debug_macro   0x0000000000000000      0x97c obj/nrf52_system_nrf51.c.o
+ .debug_macro   0x0000000000000000       0x22 obj/nrf52_system_nrf51.c.o
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-memcpy.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-memcpy.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-memcpy.o)
+ .text.memcpy   0x0000000000000000       0x12 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-memcpy.o)
+ .debug_info    0x0000000000000000      0x102 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-memcpy.o)
+ .debug_abbrev  0x0000000000000000       0xa4 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-memcpy.o)
+ .debug_loc     0x0000000000000000       0xcf /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-memcpy.o)
+ .debug_aranges
+                0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-memcpy.o)
+ .debug_ranges  0x0000000000000000       0x10 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-memcpy.o)
+ .debug_line    0x0000000000000000       0xf1 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-memcpy.o)
+ .debug_str     0x0000000000000000      0x1e8 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-memcpy.o)
+ .comment       0x0000000000000000       0x39 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-memcpy.o)
+ .debug_frame   0x0000000000000000       0x28 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-memcpy.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-memcpy.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-strcpy.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-strcpy.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-strcpy.o)
+ .text.strcpy   0x0000000000000000       0x10 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-strcpy.o)
+ .debug_info    0x0000000000000000       0xbd /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-strcpy.o)
+ .debug_abbrev  0x0000000000000000       0x72 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-strcpy.o)
+ .debug_loc     0x0000000000000000       0x21 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-strcpy.o)
+ .debug_aranges
+                0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-strcpy.o)
+ .debug_ranges  0x0000000000000000       0x10 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-strcpy.o)
+ .debug_line    0x0000000000000000       0xbc /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-strcpy.o)
+ .debug_str     0x0000000000000000      0x1da /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-strcpy.o)
+ .comment       0x0000000000000000       0x39 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-strcpy.o)
+ .debug_frame   0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-strcpy.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-strcpy.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-strlen.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-strlen.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-strlen.o)
+ .text.strlen   0x0000000000000000        0xe /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-strlen.o)
+ .debug_info    0x0000000000000000       0xcd /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-strlen.o)
+ .debug_abbrev  0x0000000000000000       0x8c /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-strlen.o)
+ .debug_loc     0x0000000000000000       0x21 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-strlen.o)
+ .debug_aranges
+                0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-strlen.o)
+ .debug_ranges  0x0000000000000000       0x10 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-strlen.o)
+ .debug_line    0x0000000000000000       0xfa /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-strlen.o)
+ .debug_str     0x0000000000000000      0x1e9 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-strlen.o)
+ .comment       0x0000000000000000       0x39 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-strlen.o)
+ .debug_frame   0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-strlen.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-strlen.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtend.o
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtend.o
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtend.o
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtn.o
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtn.o
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+FLASH            0x0000000000000000 0x0000000000040000 xr
+RAM              0x0000000020000000 0x0000000000008000 xrw
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+
+.text           0x0000000000000000      0xe90
+ *(.isr_vector)
+ .isr_vector    0x0000000000000000       0xc0 obj/nrf52_gcc_startup_nrf51.S.o
+                0x0000000000000000                __isr_vector
+ *(.text*)
+ .text          0x00000000000000c0       0xb4 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
+ .text          0x0000000000000174       0x6c /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/crt0.o
+                0x0000000000000174                _mainCRTStartup
+                0x0000000000000174                _start
+ .text.atexit   0x00000000000001e0       0x10 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-atexit.o)
+                0x00000000000001e0                atexit
+ .text.exit     0x00000000000001f0       0x2c /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-exit.o)
+                0x00000000000001f0                exit
+ .text.__libc_fini_array
+                0x000000000000021c       0x28 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-fini.o)
+                0x000000000000021c                __libc_fini_array
+ .text.__libc_init_array
+                0x0000000000000244       0x4c /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-init.o)
+                0x0000000000000244                __libc_init_array
+ .text.memset   0x0000000000000290       0x10 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-memset.o)
+                0x0000000000000290                memset
+ .text.__register_exitproc
+                0x00000000000002a0       0xb8 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-__atexit.o)
+                0x00000000000002a0                __register_exitproc
+ .text.__call_exitprocs
+                0x0000000000000358       0xe8 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-__call_atexit.o)
+                0x0000000000000358                __call_exitprocs
+ .text._exit    0x0000000000000440        0x4 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libnosys.a(_exit.o)
+                0x0000000000000440                _exit
+ .text.app_error_handler_bare
+                0x0000000000000444       0x20 obj/nrf52_app_error.c.o
+                0x0000000000000444                app_error_handler_bare
+ .text.app_error_fault_handler
+                0x0000000000000464       0x1c obj/nrf52_app_error_weak.c.o
+                0x0000000000000464                app_error_fault_handler
+ .text.rtc1_stop
+                0x0000000000000480       0x84 obj/nrf52_app_timer.c.o
+ .text.RTC1_IRQHandler
+                0x0000000000000504       0xdc obj/nrf52_app_timer.c.o
+                0x0000000000000504                RTC1_IRQHandler
+ .text.SWI0_IRQHandler
+                0x00000000000005e0      0x420 obj/nrf52_app_timer.c.o
+                0x00000000000005e0                SWI0_IRQHandler
+ .text.POWER_CLOCK_IRQHandler
+                0x0000000000000a00       0x7c obj/nrf52_nrf_drv_clock.c.o
+                0x0000000000000a00                POWER_CLOCK_IRQHandler
+ .text.UART0_IRQHandler
+                0x0000000000000a7c      0x198 obj/nrf52_nrf_drv_uart.c.o
+                0x0000000000000a7c                UART0_IRQHandler
+ .text.startup.main
+                0x0000000000000c14      0x120 obj/nrf52_main.c.o
+                0x0000000000000c14                main
+ .text          0x0000000000000d34       0x4c obj/nrf52_gcc_startup_nrf51.S.o
+                0x0000000000000d34                Reset_Handler
+                0x0000000000000d74                NMI_Handler
+                0x0000000000000d76                HardFault_Handler
+                0x0000000000000d78                SVC_Handler
+                0x0000000000000d7a                PendSV_Handler
+                0x0000000000000d7c                SysTick_Handler
+                0x0000000000000d7e                TIMER2_IRQHandler
+                0x0000000000000d7e                SPI0_TWI0_IRQHandler
+                0x0000000000000d7e                RTC0_IRQHandler
+                0x0000000000000d7e                GPIOTE_IRQHandler
+                0x0000000000000d7e                RADIO_IRQHandler
+                0x0000000000000d7e                LPCOMP_IRQHandler
+                0x0000000000000d7e                SWI4_IRQHandler
+                0x0000000000000d7e                TEMP_IRQHandler
+                0x0000000000000d7e                QDEC_IRQHandler
+                0x0000000000000d7e                SWI5_IRQHandler
+                0x0000000000000d7e                TIMER0_IRQHandler
+                0x0000000000000d7e                TIMER1_IRQHandler
+                0x0000000000000d7e                ECB_IRQHandler
+                0x0000000000000d7e                Default_Handler
+                0x0000000000000d7e                ADC_IRQHandler
+                0x0000000000000d7e                SWI3_IRQHandler
+                0x0000000000000d7e                CCM_AAR_IRQHandler
+                0x0000000000000d7e                WDT_IRQHandler
+                0x0000000000000d7e                SWI2_IRQHandler
+                0x0000000000000d7e                RNG_IRQHandler
+                0x0000000000000d7e                SPI1_TWI1_IRQHandler
+                0x0000000000000d7e                SWI1_IRQHandler
+ .text.SystemInit
+                0x0000000000000d80       0xec obj/nrf52_system_nrf51.c.o
+                0x0000000000000d80                SystemInit
+ *(.init)
+ .init          0x0000000000000e6c        0x4 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/crti.o
+                0x0000000000000e6c                _init
+ .init          0x0000000000000e70        0x8 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtn.o
+ *(.fini)
+ .fini          0x0000000000000e78        0x4 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/crti.o
+                0x0000000000000e78                _fini
+ .fini          0x0000000000000e7c        0x8 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtn.o
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o *crtend?.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+ *(.rodata*)
+ .rodata.str1.1
+                0x0000000000000e84        0x2 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-impure.o)
+ *fill*         0x0000000000000e86        0x2 
+ .rodata._global_impure_ptr
+                0x0000000000000e88        0x4 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-impure.o)
+                0x0000000000000e88                _global_impure_ptr
+ *(.eh_frame*)
+ .eh_frame      0x0000000000000e8c        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
+ .eh_frame      0x0000000000000e8c        0x4 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtend.o
+
+.glue_7         0x0000000000000e90        0x0
+ .glue_7        0x0000000000000e90        0x0 linker stubs
+
+.glue_7t        0x0000000000000e90        0x0
+ .glue_7t       0x0000000000000e90        0x0 linker stubs
+
+.vfp11_veneer   0x0000000000000e90        0x0
+ .vfp11_veneer  0x0000000000000e90        0x0 linker stubs
+
+.v4_bx          0x0000000000000e90        0x0
+ .v4_bx         0x0000000000000e90        0x0 linker stubs
+
+.iplt           0x0000000000000e90        0x0
+ .iplt          0x0000000000000e90        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x0000000000000e90                __exidx_start = .
+
+.ARM.exidx      0x0000000000000e90        0x8
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+ .ARM.exidx     0x0000000000000e90        0x8 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/crt0.o
+                0x0000000000000e98                __exidx_end = .
+                0x0000000000000e98                __etext = .
+
+.rel.dyn        0x0000000000000e98        0x0
+ .rel.iplt      0x0000000000000e98        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
+
+.data           0x0000000020000000       0x70 load address 0x0000000000000e98
+                0x0000000020000000                __data_start__ = .
+ *(vtable)
+ *(.data*)
+ .data.impure_data
+                0x0000000020000000       0x60 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-impure.o)
+ .data.SystemCoreClock
+                0x0000000020000060        0x4 obj/nrf52_system_nrf51.c.o
+                0x0000000020000060                SystemCoreClock
+                0x0000000020000064                . = ALIGN (0x4)
+                0x0000000020000064                PROVIDE (__preinit_array_start, .)
+ *(.preinit_array)
+                0x0000000020000064                PROVIDE (__preinit_array_end, .)
+                0x0000000020000064                . = ALIGN (0x4)
+                0x0000000020000064                PROVIDE (__init_array_start, .)
+ *(SORT(.init_array.*))
+ *(.init_array)
+ .init_array    0x0000000020000064        0x4 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
+                0x0000000020000068                PROVIDE (__init_array_end, .)
+                0x0000000020000068                . = ALIGN (0x4)
+                0x0000000020000068                PROVIDE (__fini_array_start, .)
+ *(SORT(.fini_array.*))
+ *(.fini_array)
+ .fini_array    0x0000000020000068        0x4 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
+                0x000000002000006c                PROVIDE (__fini_array_end, .)
+ *(.jcr*)
+ .jcr           0x000000002000006c        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
+ .jcr           0x000000002000006c        0x4 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtend.o
+                0x0000000020000070                . = ALIGN (0x4)
+                0x0000000020000070                __data_end__ = .
+LOAD /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/crti.o
+LOAD /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
+LOAD /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/crt0.o
+LOAD /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a
+LOAD /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libnosys.a
+LOAD obj/nrf52_nrf_log_backend_serial.c.o
+LOAD obj/nrf52_nrf_log_frontend.c.o
+LOAD obj/nrf52_app_error.c.o
+LOAD obj/nrf52_app_error_weak.c.o
+LOAD obj/nrf52_app_timer.c.o
+LOAD obj/nrf52_app_util_platform.c.o
+LOAD obj/nrf52_hardfault_implementation.c.o
+LOAD obj/nrf52_nrf_assert.c.o
+LOAD obj/nrf52_sdk_errors.c.o
+LOAD obj/nrf52_boards.c.o
+LOAD obj/nrf52_nrf_drv_clock.c.o
+LOAD obj/nrf52_nrf_drv_common.c.o
+LOAD obj/nrf52_nrf_drv_uart.c.o
+LOAD obj/nrf52_nrf_nvic.c.o
+LOAD obj/nrf52_nrf_soc.c.o
+LOAD obj/nrf52_main.c.o
+LOAD obj/nrf52_RTT_Syscalls_GCC.c.o
+LOAD obj/nrf52_SEGGER_RTT.c.o
+LOAD obj/nrf52_SEGGER_RTT_printf.c.o
+LOAD obj/nrf52_gcc_startup_nrf51.S.o
+LOAD obj/nrf52_system_nrf51.c.o
+LOAD /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libm.a
+START GROUP
+LOAD /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a
+LOAD /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a
+END GROUP
+START GROUP
+LOAD /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a
+LOAD /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a
+END GROUP
+LOAD /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtend.o
+LOAD /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtn.o
+START GROUP
+LOAD /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a
+LOAD /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc.a
+LOAD /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libnosys.a
+END GROUP
+
+.tm_clone_table
+                0x0000000020000070        0x0 load address 0x0000000000000f08
+ .tm_clone_table
+                0x0000000020000070        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
+ .tm_clone_table
+                0x0000000020000070        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtend.o
+
+.igot.plt       0x0000000020000070        0x0 load address 0x0000000000000f08
+ .igot.plt      0x0000000020000070        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
+
+.fs_data        0x0000000020000070        0x0
+                [!provide]                        PROVIDE (__start_fs_data, .)
+ *(.fs_data)
+                [!provide]                        PROVIDE (__stop_fs_data, .)
+
+.pwr_mgmt_data  0x0000000020000070        0x0
+                [!provide]                        PROVIDE (__start_pwr_mgmt_data, .)
+ *(.pwr_mgmt_data)
+                [!provide]                        PROVIDE (__stop_pwr_mgmt_data, .)
+
+.bss            0x0000000020000070      0x100 load address 0x0000000000000f08
+                0x0000000020000070                . = ALIGN (0x4)
+                0x0000000020000070                __bss_start__ = .
+ *(.bss*)
+ .bss           0x0000000020000070       0x1c /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
+ .bss._global_atexit0
+                0x000000002000008c       0x8c /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-__atexit.o)
+ .bss._global_atexit
+                0x0000000020000118        0x4 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-__call_atexit.o)
+                0x0000000020000118                _global_atexit
+ .bss.m_ticks_latest
+                0x000000002000011c        0x4 obj/nrf52_app_timer.c.o
+ .bss.mp_timer_id_head
+                0x0000000020000120        0x4 obj/nrf52_app_timer.c.o
+ .bss.m_evt_schedule_func
+                0x0000000020000124        0x4 obj/nrf52_app_timer.c.o
+ .bss.m_ticks_elapsed_q_read_ind
+                0x0000000020000128        0x1 obj/nrf52_app_timer.c.o
+ .bss.m_ticks_elapsed_q_write_ind
+                0x0000000020000129        0x1 obj/nrf52_app_timer.c.o
+ .bss.m_rtc1_reset
+                0x000000002000012a        0x1 obj/nrf52_app_timer.c.o
+ *fill*         0x000000002000012b        0x1 
+ .bss.m_op_queue
+                0x000000002000012c        0x8 obj/nrf52_app_timer.c.o
+ .bss.m_ticks_elapsed
+                0x0000000020000134        0x8 obj/nrf52_app_timer.c.o
+ .bss.m_rtc1_running
+                0x000000002000013c        0x1 obj/nrf52_app_timer.c.o
+ *fill*         0x000000002000013d        0x3 
+ .bss.m_clock_cb
+                0x0000000020000140       0x14 obj/nrf52_nrf_drv_clock.c.o
+ .bss.m_cb      0x0000000020000154       0x1c obj/nrf52_nrf_drv_uart.c.o
+ *(COMMON)
+                0x0000000020000170                . = ALIGN (0x4)
+                0x0000000020000170                __bss_end__ = .
+
+.heap           0x0000000020000170      0x800
+                0x0000000020000170                __HeapBase = .
+                0x0000000020000170                __end__ = .
+                [!provide]                        PROVIDE (end, .)
+ *(.heap*)
+ .heap          0x0000000020000170      0x800 obj/nrf52_gcc_startup_nrf51.S.o
+                0x0000000020000970                __HeapLimit = .
+
+.stack_dummy    0x0000000020000170      0x800
+ *(.stack*)
+ .stack         0x0000000020000170      0x800 obj/nrf52_gcc_startup_nrf51.S.o
+                0x0000000020008000                __StackTop = (ORIGIN (RAM) + LENGTH (RAM))
+                0x0000000020007800                __StackLimit = (__StackTop - SIZEOF (.stack_dummy))
+                0x0000000020008000                PROVIDE (__stack, __StackTop)
+                0x0000000000000001                ASSERT ((__StackLimit >= __HeapLimit), region RAM overflowed with stack)
+OUTPUT(obj/nrf52.out elf32-littlearm)
+
+.ARM.attributes
+                0x0000000000000000       0x28
+ .ARM.attributes
+                0x0000000000000000       0x1e /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/crti.o
+ .ARM.attributes
+                0x000000000000001e       0x2c /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
+ .ARM.attributes
+                0x000000000000004a       0x1b /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .ARM.attributes
+                0x0000000000000065       0x2c /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-atexit.o)
+ .ARM.attributes
+                0x0000000000000091       0x2c /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-exit.o)
+ .ARM.attributes
+                0x00000000000000bd       0x2c /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-fini.o)
+ .ARM.attributes
+                0x00000000000000e9       0x2c /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-impure.o)
+ .ARM.attributes
+                0x0000000000000115       0x2c /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-init.o)
+ .ARM.attributes
+                0x0000000000000141       0x2c /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-memset.o)
+ .ARM.attributes
+                0x000000000000016d       0x2c /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-__atexit.o)
+ .ARM.attributes
+                0x0000000000000199       0x2c /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-__call_atexit.o)
+ .ARM.attributes
+                0x00000000000001c5       0x2c /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libnosys.a(_exit.o)
+ .ARM.attributes
+                0x00000000000001f1       0x31 obj/nrf52_app_error.c.o
+ .ARM.attributes
+                0x0000000000000222       0x31 obj/nrf52_app_error_weak.c.o
+ .ARM.attributes
+                0x0000000000000253       0x31 obj/nrf52_app_timer.c.o
+ .ARM.attributes
+                0x0000000000000284       0x31 obj/nrf52_nrf_drv_clock.c.o
+ .ARM.attributes
+                0x00000000000002b5       0x31 obj/nrf52_nrf_drv_uart.c.o
+ .ARM.attributes
+                0x00000000000002e6       0x31 obj/nrf52_main.c.o
+ .ARM.attributes
+                0x0000000000000317       0x1b obj/nrf52_gcc_startup_nrf51.S.o
+ .ARM.attributes
+                0x0000000000000332       0x31 obj/nrf52_system_nrf51.c.o
+ .ARM.attributes
+                0x0000000000000363       0x2c /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtend.o
+ .ARM.attributes
+                0x000000000000038f       0x1e /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtn.o
+
+.comment        0x0000000000000000       0x70
+ .comment       0x0000000000000000       0x38 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
+                                         0x39 (size before relaxing)
+ .comment       0x0000000000000038       0x38 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-atexit.o)
+                                         0x39 (size before relaxing)
+ .comment       0x0000000000000070       0x39 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-exit.o)
+ .comment       0x0000000000000070       0x39 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-fini.o)
+ .comment       0x0000000000000070       0x39 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-impure.o)
+ .comment       0x0000000000000070       0x39 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-init.o)
+ .comment       0x0000000000000070       0x39 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-memset.o)
+ .comment       0x0000000000000070       0x39 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-__atexit.o)
+ .comment       0x0000000000000070       0x39 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-__call_atexit.o)
+ .comment       0x0000000000000070       0x39 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libnosys.a(_exit.o)
+ .comment       0x0000000000000070       0x39 obj/nrf52_app_error.c.o
+ .comment       0x0000000000000070       0x39 obj/nrf52_app_error_weak.c.o
+ .comment       0x0000000000000070       0x39 obj/nrf52_app_timer.c.o
+ .comment       0x0000000000000070       0x39 obj/nrf52_nrf_drv_clock.c.o
+ .comment       0x0000000000000070       0x39 obj/nrf52_nrf_drv_uart.c.o
+ .comment       0x0000000000000070       0x39 obj/nrf52_main.c.o
+ .comment       0x0000000000000070       0x39 obj/nrf52_system_nrf51.c.o
+ .comment       0x0000000000000070       0x39 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtend.o
+
+.debug_line     0x0000000000000000     0x3846
+ .debug_line    0x0000000000000000       0x80 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .debug_line    0x0000000000000080       0xc3 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-atexit.o)
+ .debug_line    0x0000000000000143      0x169 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-exit.o)
+ .debug_line    0x00000000000002ac       0x9b /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-fini.o)
+ .debug_line    0x0000000000000347       0xf1 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-impure.o)
+ .debug_line    0x0000000000000438       0xb5 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-init.o)
+ .debug_line    0x00000000000004ed       0xed /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-memset.o)
+ .debug_line    0x00000000000005da      0x17e /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-__atexit.o)
+ .debug_line    0x0000000000000758      0x172 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-__call_atexit.o)
+ .debug_line    0x00000000000008ca       0x5d /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libnosys.a(_exit.o)
+ .debug_line    0x0000000000000927      0x4fe obj/nrf52_app_error.c.o
+ .debug_line    0x0000000000000e25      0x4bc obj/nrf52_app_error_weak.c.o
+ .debug_line    0x00000000000012e1      0x97f obj/nrf52_app_timer.c.o
+ .debug_line    0x0000000000001c60      0x815 obj/nrf52_nrf_drv_clock.c.o
+ .debug_line    0x0000000000002475      0xbd2 obj/nrf52_nrf_drv_uart.c.o
+ .debug_line    0x0000000000003047      0x586 obj/nrf52_main.c.o
+ .debug_line    0x00000000000035cd      0x279 obj/nrf52_system_nrf51.c.o
+
+.debug_info     0x0000000000000000     0x78c3
+ .debug_info    0x0000000000000000       0xa8 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .debug_info    0x00000000000000a8      0x10a /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-atexit.o)
+ .debug_info    0x00000000000001b2      0x7a6 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-exit.o)
+ .debug_info    0x0000000000000958       0xeb /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-fini.o)
+ .debug_info    0x0000000000000a43      0x7d3 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-impure.o)
+ .debug_info    0x0000000000001216      0x105 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-init.o)
+ .debug_info    0x000000000000131b       0xd3 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-memset.o)
+ .debug_info    0x00000000000013ee      0x23b /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-__atexit.o)
+ .debug_info    0x0000000000001629      0x242 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-__call_atexit.o)
+ .debug_info    0x000000000000186b       0x58 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libnosys.a(_exit.o)
+ .debug_info    0x00000000000018c3      0x334 obj/nrf52_app_error.c.o
+ .debug_info    0x0000000000001bf7      0x1f3 obj/nrf52_app_error_weak.c.o
+ .debug_info    0x0000000000001dea     0x19da obj/nrf52_app_timer.c.o
+ .debug_info    0x00000000000037c4     0x1032 obj/nrf52_nrf_drv_clock.c.o
+ .debug_info    0x00000000000047f6     0x2a5e obj/nrf52_nrf_drv_uart.c.o
+ .debug_info    0x0000000000007254      0x492 obj/nrf52_main.c.o
+ .debug_info    0x00000000000076e6      0x1dd obj/nrf52_system_nrf51.c.o
+
+.debug_abbrev   0x0000000000000000     0x19ea
+ .debug_abbrev  0x0000000000000000       0x14 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .debug_abbrev  0x0000000000000014       0xb5 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-atexit.o)
+ .debug_abbrev  0x00000000000000c9      0x18b /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-exit.o)
+ .debug_abbrev  0x0000000000000254       0xb8 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-fini.o)
+ .debug_abbrev  0x000000000000030c      0x136 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-impure.o)
+ .debug_abbrev  0x0000000000000442       0xba /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-init.o)
+ .debug_abbrev  0x00000000000004fc       0x8e /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-memset.o)
+ .debug_abbrev  0x000000000000058a      0x180 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-__atexit.o)
+ .debug_abbrev  0x000000000000070a      0x16d /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-__call_atexit.o)
+ .debug_abbrev  0x0000000000000877       0x55 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libnosys.a(_exit.o)
+ .debug_abbrev  0x00000000000008cc      0x130 obj/nrf52_app_error.c.o
+ .debug_abbrev  0x00000000000009fc      0x108 obj/nrf52_app_error_weak.c.o
+ .debug_abbrev  0x0000000000000b04      0x436 obj/nrf52_app_timer.c.o
+ .debug_abbrev  0x0000000000000f3a      0x437 obj/nrf52_nrf_drv_clock.c.o
+ .debug_abbrev  0x0000000000001371      0x3c1 obj/nrf52_nrf_drv_uart.c.o
+ .debug_abbrev  0x0000000000001732      0x1ba obj/nrf52_main.c.o
+ .debug_abbrev  0x00000000000018ec       0xfe obj/nrf52_system_nrf51.c.o
+
+.debug_aranges  0x0000000000000000      0x330
+ .debug_aranges
+                0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .debug_aranges
+                0x0000000000000020       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-atexit.o)
+ .debug_aranges
+                0x0000000000000040       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-exit.o)
+ .debug_aranges
+                0x0000000000000060       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-fini.o)
+ .debug_aranges
+                0x0000000000000080       0x18 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-impure.o)
+ .debug_aranges
+                0x0000000000000098       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-init.o)
+ .debug_aranges
+                0x00000000000000b8       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-memset.o)
+ .debug_aranges
+                0x00000000000000d8       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-__atexit.o)
+ .debug_aranges
+                0x00000000000000f8       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-__call_atexit.o)
+ .debug_aranges
+                0x0000000000000118       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libnosys.a(_exit.o)
+ .debug_aranges
+                0x0000000000000138       0x30 obj/nrf52_app_error.c.o
+ .debug_aranges
+                0x0000000000000168       0x20 obj/nrf52_app_error_weak.c.o
+ .debug_aranges
+                0x0000000000000188       0x68 obj/nrf52_app_timer.c.o
+ .debug_aranges
+                0x00000000000001f0       0x80 obj/nrf52_nrf_drv_clock.c.o
+ .debug_aranges
+                0x0000000000000270       0x70 obj/nrf52_nrf_drv_uart.c.o
+ .debug_aranges
+                0x00000000000002e0       0x28 obj/nrf52_main.c.o
+ .debug_aranges
+                0x0000000000000308       0x28 obj/nrf52_system_nrf51.c.o
+
+.debug_loc      0x0000000000000000     0x2f06
+ .debug_loc     0x0000000000000000       0x2c /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-atexit.o)
+ .debug_loc     0x000000000000002c       0x1e /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-exit.o)
+ .debug_loc     0x000000000000004a       0x2b /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-fini.o)
+ .debug_loc     0x0000000000000075       0x3c /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-init.o)
+ .debug_loc     0x00000000000000b1       0x87 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-memset.o)
+ .debug_loc     0x0000000000000138      0x198 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-__atexit.o)
+ .debug_loc     0x00000000000002d0      0x18c /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-__call_atexit.o)
+ .debug_loc     0x000000000000045c      0x149 obj/nrf52_app_error.c.o
+ .debug_loc     0x00000000000005a5       0x21 obj/nrf52_app_error_weak.c.o
+ .debug_loc     0x00000000000005c6      0xdff obj/nrf52_app_timer.c.o
+ .debug_loc     0x00000000000013c5      0x267 obj/nrf52_nrf_drv_clock.c.o
+ .debug_loc     0x000000000000162c     0x1832 obj/nrf52_nrf_drv_uart.c.o
+ .debug_loc     0x0000000000002e5e       0xa8 obj/nrf52_main.c.o
+
+.debug_ranges   0x0000000000000000      0xdf8
+ .debug_ranges  0x0000000000000000       0x10 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-atexit.o)
+ .debug_ranges  0x0000000000000010       0x10 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-exit.o)
+ .debug_ranges  0x0000000000000020       0x10 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-fini.o)
+ .debug_ranges  0x0000000000000030       0x10 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-init.o)
+ .debug_ranges  0x0000000000000040       0x10 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-memset.o)
+ .debug_ranges  0x0000000000000050       0x10 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-__atexit.o)
+ .debug_ranges  0x0000000000000060       0x10 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-__call_atexit.o)
+ .debug_ranges  0x0000000000000070       0x10 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libnosys.a(_exit.o)
+ .debug_ranges  0x0000000000000080       0x20 obj/nrf52_app_error.c.o
+ .debug_ranges  0x00000000000000a0       0x10 obj/nrf52_app_error_weak.c.o
+ .debug_ranges  0x00000000000000b0      0x4f8 obj/nrf52_app_timer.c.o
+ .debug_ranges  0x00000000000005a8      0x278 obj/nrf52_nrf_drv_clock.c.o
+ .debug_ranges  0x0000000000000820      0x510 obj/nrf52_nrf_drv_uart.c.o
+ .debug_ranges  0x0000000000000d30       0x50 obj/nrf52_main.c.o
+ .debug_ranges  0x0000000000000d80       0x78 obj/nrf52_system_nrf51.c.o
+
+.debug_str      0x0000000000000000    0x37d16
+ .debug_str     0x0000000000000000      0x181 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-atexit.o)
+                                        0x211 (size before relaxing)
+ .debug_str     0x0000000000000181      0x34e /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-exit.o)
+                                        0x546 (size before relaxing)
+ .debug_str     0x00000000000004cf       0xce /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-fini.o)
+                                        0x209 (size before relaxing)
+ .debug_str     0x000000000000059d       0xe1 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-impure.o)
+                                        0x57c (size before relaxing)
+ .debug_str     0x000000000000067e       0x8a /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-init.o)
+                                        0x233 (size before relaxing)
+ .debug_str     0x0000000000000708       0x9f /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-memset.o)
+                                        0x1d4 (size before relaxing)
+ .debug_str     0x00000000000007a7       0xaf /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-__atexit.o)
+                                        0x2b7 (size before relaxing)
+ .debug_str     0x0000000000000856       0x56 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-__call_atexit.o)
+                                        0x27d (size before relaxing)
+ .debug_str     0x00000000000008ac       0xfd /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libnosys.a(_exit.o)
+                                        0x103 (size before relaxing)
+ .debug_str     0x00000000000009a9    0x32fc8 obj/nrf52_app_error.c.o
+                                      0x33270 (size before relaxing)
+ .debug_str     0x0000000000033971       0xac obj/nrf52_app_error_weak.c.o
+                                      0x331bd (size before relaxing)
+ .debug_str     0x0000000000033a1d     0x11e6 obj/nrf52_app_timer.c.o
+                                      0x32bd9 (size before relaxing)
+ .debug_str     0x0000000000034c03      0xad0 obj/nrf52_nrf_drv_clock.c.o
+                                      0x340ce (size before relaxing)
+ .debug_str     0x00000000000356d3     0x15d1 obj/nrf52_nrf_drv_uart.c.o
+                                      0x34e56 (size before relaxing)
+ .debug_str     0x0000000000036ca4      0xf54 obj/nrf52_main.c.o
+                                      0x2f965 (size before relaxing)
+ .debug_str     0x0000000000037bf8      0x11e obj/nrf52_system_nrf51.c.o
+                                      0x29c09 (size before relaxing)
+
+.debug_frame    0x0000000000000000      0x5e4
+ .debug_frame   0x0000000000000000       0x28 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-atexit.o)
+ .debug_frame   0x0000000000000028       0x28 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-exit.o)
+ .debug_frame   0x0000000000000050       0x2c /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-fini.o)
+ .debug_frame   0x000000000000007c       0x2c /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-init.o)
+ .debug_frame   0x00000000000000a8       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-memset.o)
+ .debug_frame   0x00000000000000c8       0x34 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-__atexit.o)
+ .debug_frame   0x00000000000000fc       0x30 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-__call_atexit.o)
+ .debug_frame   0x000000000000012c       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libnosys.a(_exit.o)
+ .debug_frame   0x000000000000014c       0x5c obj/nrf52_app_error.c.o
+ .debug_frame   0x00000000000001a8       0x20 obj/nrf52_app_error_weak.c.o
+ .debug_frame   0x00000000000001c8      0x130 obj/nrf52_app_timer.c.o
+ .debug_frame   0x00000000000002f8      0x120 obj/nrf52_nrf_drv_clock.c.o
+ .debug_frame   0x0000000000000418      0x150 obj/nrf52_nrf_drv_uart.c.o
+ .debug_frame   0x0000000000000568       0x4c obj/nrf52_main.c.o
+ .debug_frame   0x00000000000005b4       0x30 obj/nrf52_system_nrf51.c.o
+
+.debug_macro    0x0000000000000000     0x1d92
+ .debug_macro   0x0000000000000000      0x26d obj/nrf52_app_error.c.o
+ .debug_macro   0x000000000000026d       0x34 obj/nrf52_app_error.c.o
+ .debug_macro   0x00000000000002a1       0x22 obj/nrf52_app_error.c.o
+ .debug_macro   0x00000000000002c3       0x16 obj/nrf52_app_error.c.o
+ .debug_macro   0x00000000000002d9       0x97 obj/nrf52_app_error.c.o
+ .debug_macro   0x0000000000000370       0xef obj/nrf52_app_error.c.o
+ .debug_macro   0x000000000000045f       0x10 obj/nrf52_app_error.c.o
+ .debug_macro   0x000000000000046f       0x10 obj/nrf52_app_error.c.o
+ .debug_macro   0x000000000000047f       0x22 obj/nrf52_app_error.c.o
+ .debug_macro   0x00000000000004a1       0xbe obj/nrf52_app_error.c.o
+ .debug_macro   0x000000000000055f       0x16 obj/nrf52_app_error.c.o
+ .debug_macro   0x0000000000000575      0x166 obj/nrf52_app_error.c.o
+ .debug_macro   0x00000000000006db       0x2b obj/nrf52_app_error.c.o
+ .debug_macro   0x0000000000000706       0x22 obj/nrf52_app_error.c.o
+ .debug_macro   0x0000000000000728       0x16 obj/nrf52_app_error.c.o
+ .debug_macro   0x000000000000073e      0x39b obj/nrf52_app_error.c.o
+ .debug_macro   0x0000000000000ad9      0x170 obj/nrf52_app_error.c.o
+ .debug_macro   0x0000000000000c49       0x5a obj/nrf52_app_error.c.o
+ .debug_macro   0x0000000000000ca3       0x28 obj/nrf52_app_error.c.o
+ .debug_macro   0x0000000000000ccb       0x22 obj/nrf52_app_error.c.o
+ .debug_macro   0x0000000000000ced      0x26d obj/nrf52_app_error_weak.c.o
+ .debug_macro   0x0000000000000f5a       0x1c obj/nrf52_app_error_weak.c.o
+ .debug_macro   0x0000000000000f76      0x2da obj/nrf52_app_timer.c.o
+ .debug_macro   0x0000000000001250       0x1c obj/nrf52_app_timer.c.o
+ .debug_macro   0x000000000000126c       0x36 obj/nrf52_app_timer.c.o
+ .debug_macro   0x00000000000012a2       0x16 obj/nrf52_app_timer.c.o
+ .debug_macro   0x00000000000012b8       0x22 obj/nrf52_app_timer.c.o
+ .debug_macro   0x00000000000012da       0x10 obj/nrf52_app_timer.c.o
+ .debug_macro   0x00000000000012ea       0x10 obj/nrf52_app_timer.c.o
+ .debug_macro   0x00000000000012fa       0x72 obj/nrf52_app_timer.c.o
+ .debug_macro   0x000000000000136c      0x2f4 obj/nrf52_nrf_drv_clock.c.o
+ .debug_macro   0x0000000000001660       0x10 obj/nrf52_nrf_drv_clock.c.o
+ .debug_macro   0x0000000000001670       0x28 obj/nrf52_nrf_drv_clock.c.o
+ .debug_macro   0x0000000000001698       0x16 obj/nrf52_nrf_drv_clock.c.o
+ .debug_macro   0x00000000000016ae      0x331 obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x00000000000019df       0x10 obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x00000000000019ef       0x36 obj/nrf52_nrf_drv_uart.c.o
+ .debug_macro   0x0000000000001a25      0x29d obj/nrf52_main.c.o
+ .debug_macro   0x0000000000001cc2       0xd0 obj/nrf52_system_nrf51.c.o
