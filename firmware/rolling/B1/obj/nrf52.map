@@ -147,7 +147,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x395 obj/nrf52_nrf_log_backend_serial.c.o
  .debug_macro   0x0000000000000000       0x4b obj/nrf52_nrf_log_backend_serial.c.o
  .debug_line    0x0000000000000000      0x3cc obj/nrf52_nrf_log_backend_serial.c.o
- .debug_str     0x0000000000000000    0x30c04 obj/nrf52_nrf_log_backend_serial.c.o
+ .debug_str     0x0000000000000000    0x30bfe obj/nrf52_nrf_log_backend_serial.c.o
  .comment       0x0000000000000000       0x39 obj/nrf52_nrf_log_backend_serial.c.o
  .ARM.attributes
                 0x0000000000000000       0x31 obj/nrf52_nrf_log_backend_serial.c.o
@@ -228,7 +228,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x395 obj/nrf52_nrf_log_frontend.c.o
  .debug_macro   0x0000000000000000       0x4b obj/nrf52_nrf_log_frontend.c.o
  .debug_line    0x0000000000000000      0x3c6 obj/nrf52_nrf_log_frontend.c.o
- .debug_str     0x0000000000000000    0x30bfe obj/nrf52_nrf_log_frontend.c.o
+ .debug_str     0x0000000000000000    0x30bf8 obj/nrf52_nrf_log_frontend.c.o
  .comment       0x0000000000000000       0x39 obj/nrf52_nrf_log_frontend.c.o
  .ARM.attributes
                 0x0000000000000000       0x31 obj/nrf52_nrf_log_frontend.c.o
@@ -622,7 +622,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x10 obj/nrf52_app_util_platform.c.o
  .debug_macro   0x0000000000000000       0x72 obj/nrf52_app_util_platform.c.o
  .debug_line    0x0000000000000000      0x43a obj/nrf52_app_util_platform.c.o
- .debug_str     0x0000000000000000    0x2e7c3 obj/nrf52_app_util_platform.c.o
+ .debug_str     0x0000000000000000    0x2e7bd obj/nrf52_app_util_platform.c.o
  .comment       0x0000000000000000       0x39 obj/nrf52_app_util_platform.c.o
  .debug_frame   0x0000000000000000       0x50 obj/nrf52_app_util_platform.c.o
  .ARM.attributes
@@ -704,7 +704,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x395 obj/nrf52_hardfault_implementation.c.o
  .debug_macro   0x0000000000000000       0x4b obj/nrf52_hardfault_implementation.c.o
  .debug_line    0x0000000000000000      0x3d0 obj/nrf52_hardfault_implementation.c.o
- .debug_str     0x0000000000000000    0x30c08 obj/nrf52_hardfault_implementation.c.o
+ .debug_str     0x0000000000000000    0x30c02 obj/nrf52_hardfault_implementation.c.o
  .comment       0x0000000000000000       0x39 obj/nrf52_hardfault_implementation.c.o
  .ARM.attributes
                 0x0000000000000000       0x31 obj/nrf52_hardfault_implementation.c.o
@@ -799,7 +799,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x2b obj/nrf52_nrf_assert.c.o
  .debug_macro   0x0000000000000000       0x10 obj/nrf52_nrf_assert.c.o
  .debug_line    0x0000000000000000      0x3be obj/nrf52_nrf_assert.c.o
- .debug_str     0x0000000000000000    0x2e5b3 obj/nrf52_nrf_assert.c.o
+ .debug_str     0x0000000000000000    0x2e5ad obj/nrf52_nrf_assert.c.o
  .comment       0x0000000000000000       0x39 obj/nrf52_nrf_assert.c.o
  .debug_frame   0x0000000000000000       0x28 obj/nrf52_nrf_assert.c.o
  .ARM.attributes
@@ -833,7 +833,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x8e obj/nrf52_sdk_errors.c.o
  .debug_macro   0x0000000000000000      0x16d obj/nrf52_sdk_errors.c.o
  .debug_line    0x0000000000000000      0x19c obj/nrf52_sdk_errors.c.o
- .debug_str     0x0000000000000000     0x482e obj/nrf52_sdk_errors.c.o
+ .debug_str     0x0000000000000000     0x4828 obj/nrf52_sdk_errors.c.o
  .comment       0x0000000000000000       0x39 obj/nrf52_sdk_errors.c.o
  .ARM.attributes
                 0x0000000000000000       0x31 obj/nrf52_sdk_errors.c.o
@@ -970,7 +970,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x246 obj/nrf52_boards.c.o
  .debug_macro   0x0000000000000000      0x115 obj/nrf52_boards.c.o
  .debug_line    0x0000000000000000      0x635 obj/nrf52_boards.c.o
- .debug_str     0x0000000000000000    0x2fd3a obj/nrf52_boards.c.o
+ .debug_str     0x0000000000000000    0x2fd34 obj/nrf52_boards.c.o
  .comment       0x0000000000000000       0x39 obj/nrf52_boards.c.o
  .debug_frame   0x0000000000000000       0xe8 obj/nrf52_boards.c.o
  .ARM.attributes
@@ -1208,7 +1208,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x72 obj/nrf52_nrf_drv_common.c.o
  .debug_macro   0x0000000000000000      0x168 obj/nrf52_nrf_drv_common.c.o
  .debug_line    0x0000000000000000      0x514 obj/nrf52_nrf_drv_common.c.o
- .debug_str     0x0000000000000000    0x322ea obj/nrf52_nrf_drv_common.c.o
+ .debug_str     0x0000000000000000    0x322e4 obj/nrf52_nrf_drv_common.c.o
  .comment       0x0000000000000000       0x39 obj/nrf52_nrf_drv_common.c.o
  .debug_frame   0x0000000000000000       0x40 obj/nrf52_nrf_drv_common.c.o
  .ARM.attributes
@@ -1435,7 +1435,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 obj/nrf52_nrf_nvic.c.o
  .debug_macro   0x0000000000000000       0x8e obj/nrf52_nrf_nvic.c.o
  .debug_line    0x0000000000000000      0x45d obj/nrf52_nrf_nvic.c.o
- .debug_str     0x0000000000000000    0x2c7e3 obj/nrf52_nrf_nvic.c.o
+ .debug_str     0x0000000000000000    0x2c7dd obj/nrf52_nrf_nvic.c.o
  .comment       0x0000000000000000       0x39 obj/nrf52_nrf_nvic.c.o
  .debug_frame   0x0000000000000000       0xc4 obj/nrf52_nrf_nvic.c.o
  .ARM.attributes
@@ -1508,7 +1508,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 obj/nrf52_nrf_soc.c.o
  .debug_macro   0x0000000000000000       0x8e obj/nrf52_nrf_soc.c.o
  .debug_line    0x0000000000000000      0x30a obj/nrf52_nrf_soc.c.o
- .debug_str     0x0000000000000000    0x2c3d0 obj/nrf52_nrf_soc.c.o
+ .debug_str     0x0000000000000000    0x2c3ca obj/nrf52_nrf_soc.c.o
  .comment       0x0000000000000000       0x39 obj/nrf52_nrf_soc.c.o
  .debug_frame   0x0000000000000000       0x20 obj/nrf52_nrf_soc.c.o
  .ARM.attributes
@@ -1623,7 +1623,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x11 obj/nrf52_RTT_Syscalls_GCC.c.o
  .debug_macro   0x0000000000000000      0x83e obj/nrf52_RTT_Syscalls_GCC.c.o
  .debug_line    0x0000000000000000       0x57 obj/nrf52_RTT_Syscalls_GCC.c.o
- .debug_str     0x0000000000000000     0x238f obj/nrf52_RTT_Syscalls_GCC.c.o
+ .debug_str     0x0000000000000000     0x2389 obj/nrf52_RTT_Syscalls_GCC.c.o
  .comment       0x0000000000000000       0x39 obj/nrf52_RTT_Syscalls_GCC.c.o
  .ARM.attributes
                 0x0000000000000000       0x31 obj/nrf52_RTT_Syscalls_GCC.c.o
@@ -1770,7 +1770,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x16 obj/nrf52_SEGGER_RTT.c.o
  .debug_macro   0x0000000000000000       0x35 obj/nrf52_SEGGER_RTT.c.o
  .debug_line    0x0000000000000000      0xd35 obj/nrf52_SEGGER_RTT.c.o
- .debug_str     0x0000000000000000    0x2f251 obj/nrf52_SEGGER_RTT.c.o
+ .debug_str     0x0000000000000000    0x2f24b obj/nrf52_SEGGER_RTT.c.o
  .comment       0x0000000000000000       0x39 obj/nrf52_SEGGER_RTT.c.o
  .debug_frame   0x0000000000000000      0x28c obj/nrf52_SEGGER_RTT.c.o
  .ARM.attributes
@@ -1787,7 +1787,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x11 obj/nrf52_SEGGER_RTT_printf.c.o
  .debug_macro   0x0000000000000000      0x83e obj/nrf52_SEGGER_RTT_printf.c.o
  .debug_line    0x0000000000000000       0x58 obj/nrf52_SEGGER_RTT_printf.c.o
- .debug_str     0x0000000000000000     0x2390 obj/nrf52_SEGGER_RTT_printf.c.o
+ .debug_str     0x0000000000000000     0x238a obj/nrf52_SEGGER_RTT_printf.c.o
  .comment       0x0000000000000000       0x39 obj/nrf52_SEGGER_RTT_printf.c.o
  .ARM.attributes
                 0x0000000000000000       0x31 obj/nrf52_SEGGER_RTT_printf.c.o
@@ -2271,7 +2271,7 @@ OUTPUT(obj/nrf52.out elf32-littlearm)
  .debug_line    0x0000000000003047      0x586 obj/nrf52_main.c.o
  .debug_line    0x00000000000035cd      0x279 obj/nrf52_system_nrf51.c.o
 
-.debug_info     0x0000000000000000     0x78c3
+.debug_info     0x0000000000000000     0x78bc
  .debug_info    0x0000000000000000       0xa8 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/crt0.o
  .debug_info    0x00000000000000a8      0x10a /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-atexit.o)
  .debug_info    0x00000000000001b2      0x7a6 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-exit.o)
@@ -2287,8 +2287,8 @@ OUTPUT(obj/nrf52.out elf32-littlearm)
  .debug_info    0x0000000000001dea     0x19da obj/nrf52_app_timer.c.o
  .debug_info    0x00000000000037c4     0x1032 obj/nrf52_nrf_drv_clock.c.o
  .debug_info    0x00000000000047f6     0x2a5e obj/nrf52_nrf_drv_uart.c.o
- .debug_info    0x0000000000007254      0x492 obj/nrf52_main.c.o
- .debug_info    0x00000000000076e6      0x1dd obj/nrf52_system_nrf51.c.o
+ .debug_info    0x0000000000007254      0x48b obj/nrf52_main.c.o
+ .debug_info    0x00000000000076df      0x1dd obj/nrf52_system_nrf51.c.o
 
 .debug_abbrev   0x0000000000000000     0x19ea
  .debug_abbrev  0x0000000000000000       0x14 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/crt0.o
@@ -2377,7 +2377,7 @@ OUTPUT(obj/nrf52.out elf32-littlearm)
  .debug_ranges  0x0000000000000d30       0x50 obj/nrf52_main.c.o
  .debug_ranges  0x0000000000000d80       0x78 obj/nrf52_system_nrf51.c.o
 
-.debug_str      0x0000000000000000    0x37d16
+.debug_str      0x0000000000000000    0x37d10
  .debug_str     0x0000000000000000      0x181 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-atexit.o)
                                         0x211 (size before relaxing)
  .debug_str     0x0000000000000181      0x34e /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-exit.o)
@@ -2396,20 +2396,20 @@ OUTPUT(obj/nrf52.out elf32-littlearm)
                                         0x27d (size before relaxing)
  .debug_str     0x00000000000008ac       0xfd /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libnosys.a(_exit.o)
                                         0x103 (size before relaxing)
- .debug_str     0x00000000000009a9    0x32fc8 obj/nrf52_app_error.c.o
-                                      0x33270 (size before relaxing)
- .debug_str     0x0000000000033971       0xac obj/nrf52_app_error_weak.c.o
-                                      0x331bd (size before relaxing)
- .debug_str     0x0000000000033a1d     0x11e6 obj/nrf52_app_timer.c.o
-                                      0x32bd9 (size before relaxing)
- .debug_str     0x0000000000034c03      0xad0 obj/nrf52_nrf_drv_clock.c.o
-                                      0x340ce (size before relaxing)
- .debug_str     0x00000000000356d3     0x15d1 obj/nrf52_nrf_drv_uart.c.o
-                                      0x34e56 (size before relaxing)
- .debug_str     0x0000000000036ca4      0xf54 obj/nrf52_main.c.o
-                                      0x2f965 (size before relaxing)
- .debug_str     0x0000000000037bf8      0x11e obj/nrf52_system_nrf51.c.o
-                                      0x29c09 (size before relaxing)
+ .debug_str     0x00000000000009a9    0x32fc2 obj/nrf52_app_error.c.o
+                                      0x3326a (size before relaxing)
+ .debug_str     0x000000000003396b       0xac obj/nrf52_app_error_weak.c.o
+                                      0x331b7 (size before relaxing)
+ .debug_str     0x0000000000033a17     0x11e6 obj/nrf52_app_timer.c.o
+                                      0x32bd3 (size before relaxing)
+ .debug_str     0x0000000000034bfd      0xad0 obj/nrf52_nrf_drv_clock.c.o
+                                      0x340c8 (size before relaxing)
+ .debug_str     0x00000000000356cd     0x15d1 obj/nrf52_nrf_drv_uart.c.o
+                                      0x34e50 (size before relaxing)
+ .debug_str     0x0000000000036c9e      0xf54 obj/nrf52_main.c.o
+                                      0x2f95f (size before relaxing)
+ .debug_str     0x0000000000037bf2      0x11e obj/nrf52_system_nrf51.c.o
+                                      0x29c03 (size before relaxing)
 
 .debug_frame    0x0000000000000000      0x5e4
  .debug_frame   0x0000000000000000       0x28 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-atexit.o)

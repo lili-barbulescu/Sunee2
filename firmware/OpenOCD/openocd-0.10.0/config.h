@@ -11,7 +11,7 @@
 #define BUILD_AMTJTAGACCEL 0
 
 /* 0 if you do not want the Olimex ARM-JTAG-EW Programmer. */
-#define BUILD_ARMJTAGEW 1
+/* #undef BUILD_ARMJTAGEW */
 
 /* 0 if you don't want at91rm9200. */
 #define BUILD_AT91RM9200 0
@@ -83,7 +83,7 @@
 #define BUILD_REMOTE_BITBANG 0
 
 /* 0 if you do not want the Raisonance RLink JTAG Programmer. */
-#define BUILD_RLINK 1
+/* #undef BUILD_RLINK */
 
 /* 0 if you don't want SysfsGPIO driver. */
 #define BUILD_SYSFSGPIO 0
@@ -95,7 +95,7 @@
 #define BUILD_ULINK 1
 
 /* 0 if you do not want the USBProg JTAG Programmer. */
-#define BUILD_USBPROG 1
+/* #undef BUILD_USBPROG */
 
 /* 0 if you do not want the Altera USB-Blaster Compatible. */
 /* #undef BUILD_USB_BLASTER */

@@ -130,10 +130,10 @@ am__append_21 = $(ULINK_FIRMWARE) \
 am__append_22 = src/jtag/drivers/libusb1_common.c
 am__append_23 = $(LIBUSB1_CFLAGS)
 am__append_24 = $(LIBUSB1_LIBS)
-am__append_25 = src/jtag/drivers/usb_common.c
-am__append_26 = $(LIBUSB0_CFLAGS)
-am__append_27 = $(LIBUSB0_LIBS)
-#am__append_28 = src/jtag/drivers/libusb0_common.c
+#am__append_25 = src/jtag/drivers/usb_common.c
+#am__append_26 = $(LIBUSB0_CFLAGS)
+#am__append_27 = $(LIBUSB0_LIBS)
+##am__append_28 = src/jtag/drivers/libusb0_common.c
 #am__append_29 = $(LIBFTDI_CFLAGS)
 #am__append_30 = $(LIBFTDI_LIBS)
 #am__append_31 = $(HIDAPI_CFLAGS)
@@ -160,8 +160,8 @@ am__append_48 = src/jtag/drivers/usb_blaster/ublast2_access_libusb.c
 #am__append_52 = src/jtag/drivers/gw16012.c
 #am__append_53 = src/jtag/drivers/bitq.c
 #am__append_54 = src/jtag/drivers/presto.c
-am__append_55 = src/jtag/drivers/usbprog.c
-am__append_56 = src/jtag/drivers/rlink.c src/jtag/drivers/rlink_speed_table.c
+#am__append_55 = src/jtag/drivers/usbprog.c
+#am__append_56 = src/jtag/drivers/rlink.c src/jtag/drivers/rlink_speed_table.c
 am__append_57 = src/jtag/drivers/ulink.c
 am__append_58 = -lm
 am__append_59 = src/jtag/drivers/versaloon/usbtoxxx/usbtogpio.c \
@@ -171,7 +171,7 @@ am__append_59 = src/jtag/drivers/versaloon/usbtoxxx/usbtogpio.c \
 	src/jtag/drivers/versaloon/usbtoxxx/usbtoxxx.c \
 	src/jtag/drivers/versaloon/versaloon.c \
 	src/jtag/drivers/vsllink.c
-am__append_60 = src/jtag/drivers/arm-jtag-ew.c
+#am__append_60 = src/jtag/drivers/arm-jtag-ew.c
 #am__append_61 = src/jtag/drivers/buspirate.c
 #am__append_62 = src/jtag/drivers/remote_bitbang.c
 am__append_63 = src/jtag/drivers/stlink_usb.c \
@@ -322,8 +322,8 @@ am_src_jtag_aice_libocdaice_la_rpath =
 am__DEPENDENCIES_1 =
 am__DEPENDENCIES_2 =  \
 	$(am__DEPENDENCIES_1)
-am__DEPENDENCIES_3 =  \
-	$(am__DEPENDENCIES_1)
+#am__DEPENDENCIES_3 =  \
+#	$(am__DEPENDENCIES_1)
 #am__DEPENDENCIES_4 =  \
 #	$(am__DEPENDENCIES_1)
 #am__DEPENDENCIES_5 =  \
@@ -374,8 +374,8 @@ am__src_jtag_drivers_libocdjtagdrivers_la_SOURCES_DIST =  \
 	src/jtag/drivers/versaloon/versaloon_include.h \
 	src/jtag/drivers/versaloon/versaloon_internal.h
 am__objects_6 = src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-libusb1_common.lo
-am__objects_7 = src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-usb_common.lo
-#am__objects_8 = src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-libusb0_common.lo
+#am__objects_7 = src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-usb_common.lo
+##am__objects_8 = src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-libusb0_common.lo
 am__objects_9 = src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-jlink.lo
 #am__objects_10 = src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-bitbang.lo
 #am__objects_11 = src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-parport.lo
@@ -389,9 +389,9 @@ am__objects_13 = src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-ftdi.lo 
 #am__objects_18 = src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-gw16012.lo
 #am__objects_19 = src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-bitq.lo
 #am__objects_20 = src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-presto.lo
-am__objects_21 = src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-usbprog.lo
-am__objects_22 = src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-rlink.lo \
-	src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-rlink_speed_table.lo
+#am__objects_21 = src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-usbprog.lo
+#am__objects_22 = src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-rlink.lo \
+#	src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-rlink_speed_table.lo
 am__objects_23 = src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-ulink.lo
 am__objects_24 = src/jtag/drivers/versaloon/usbtoxxx/src_jtag_drivers_libocdjtagdrivers_la-usbtogpio.lo \
 	src/jtag/drivers/versaloon/usbtoxxx/src_jtag_drivers_libocdjtagdrivers_la-usbtojtagraw.lo \
@@ -400,7 +400,7 @@ am__objects_24 = src/jtag/drivers/versaloon/usbtoxxx/src_jtag_drivers_libocdjtag
 	src/jtag/drivers/versaloon/usbtoxxx/src_jtag_drivers_libocdjtagdrivers_la-usbtoxxx.lo \
 	src/jtag/drivers/versaloon/src_jtag_drivers_libocdjtagdrivers_la-versaloon.lo \
 	src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-vsllink.lo
-am__objects_25 = src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-arm-jtag-ew.lo
+#am__objects_25 = src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-arm-jtag-ew.lo
 #am__objects_26 = src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-buspirate.lo
 #am__objects_27 = src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-remote_bitbang.lo
 am__objects_28 = src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-stlink_usb.lo \
@@ -932,13 +932,13 @@ distuninstallcheck_listfiles = find . -type f -print
 am__distuninstallcheck_listfiles = $(distuninstallcheck_listfiles) \
   | sed 's|^\./|$(prefix)/|' | grep -v '$(infodir)/dir$$'
 distcleancheck_listfiles = find . -type f -print
-ACLOCAL = ${SHELL} /home/mihai/Programs/openocd_nrf52/openocd-code/missing aclocal-1.15
+ACLOCAL = ${SHELL} /home/lili/Sunee/Sunee/firmware/OpenOCD/openocd-0.10.0/missing aclocal-1.15
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 1
 AR = ar
-AUTOCONF = ${SHELL} /home/mihai/Programs/openocd_nrf52/openocd-code/missing autoconf
-AUTOHEADER = ${SHELL} /home/mihai/Programs/openocd_nrf52/openocd-code/missing autoheader
-AUTOMAKE = ${SHELL} /home/mihai/Programs/openocd_nrf52/openocd-code/missing automake-1.15
+AUTOCONF = ${SHELL} /home/lili/Sunee/Sunee/firmware/OpenOCD/openocd-0.10.0/missing autoconf
+AUTOHEADER = ${SHELL} /home/lili/Sunee/Sunee/firmware/OpenOCD/openocd-0.10.0/missing autoheader
+AUTOMAKE = ${SHELL} /home/lili/Sunee/Sunee/firmware/OpenOCD/openocd-0.10.0/missing automake-1.15
 AWK = gawk
 CC = gcc
 CCDEPMODE = depmode=gcc3
@@ -978,14 +978,14 @@ LIBS = -ldl
 LIBTOOL = $(SHELL) $(top_builddir)/libtool
 LIBTOOL_DEPS = ./ltmain.sh
 LIBUSB0_CFLAGS = 
-LIBUSB0_LIBS = -lusb
+LIBUSB0_LIBS = 
 LIBUSB1_CFLAGS = -isystem /usr/include/libusb-1.0
 LIBUSB1_LIBS = -lusb-1.0
 LIPO = 
 LN_S = ln -s
 LTLIBOBJS = 
 LT_SYS_LIBRARY_PATH = 
-MAKEINFO = makeinfo
+MAKEINFO = echo makeinfo missing; true
 MANIFEST_TOOL = :
 MKDIR_P = /bin/mkdir -p
 NM = /usr/bin/nm -B
@@ -1011,10 +1011,10 @@ SET_MAKE =
 SHELL = /bin/bash
 STRIP = strip
 VERSION = 0.10.0+dev
-abs_builddir = /home/mihai/Programs/openocd_nrf52/openocd-code
-abs_srcdir = /home/mihai/Programs/openocd_nrf52/openocd-code
-abs_top_builddir = /home/mihai/Programs/openocd_nrf52/openocd-code
-abs_top_srcdir = /home/mihai/Programs/openocd_nrf52/openocd-code
+abs_builddir = /home/lili/Sunee/Sunee/firmware/OpenOCD/openocd-0.10.0
+abs_srcdir = /home/lili/Sunee/Sunee/firmware/OpenOCD/openocd-0.10.0
+abs_top_builddir = /home/lili/Sunee/Sunee/firmware/OpenOCD/openocd-0.10.0
+abs_top_srcdir = /home/lili/Sunee/Sunee/firmware/OpenOCD/openocd-0.10.0
 ac_ct_AR = ar
 ac_ct_CC = gcc
 ac_ct_DUMPBIN = 
@@ -1045,7 +1045,7 @@ host_vendor = pc
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/mihai/Programs/openocd_nrf52/openocd-code/install-sh
+install_sh = ${SHELL} /home/lili/Sunee/Sunee/firmware/OpenOCD/openocd-0.10.0/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale

@@ -36,7 +36,7 @@
 #define JAYLINK_VERSION_PACKAGE_MICRO		0
 
 /** Version number string of the libjaylink package. */
-#define JAYLINK_VERSION_PACKAGE_STRING		"0.2.0-git-8645845"
+#define JAYLINK_VERSION_PACKAGE_STRING		"0.2.0"
 
 /** <i>Current</i> version number of the libjaylink libtool interface. */
 #define JAYLINK_VERSION_LIBRARY_CURRENT		0

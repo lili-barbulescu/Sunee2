@@ -205,7 +205,7 @@ erase:
 	nrfjprog --family nrf52 -e
 
 flash:
-	sudo -A ../../OpenOCD/flash.sh
+	sudo -A ./flash.sh
 #	nrfjprog --family nrf52 --program $(OUTPUT_DIRECTORY)/nrf51422_xxac.hex
 
 run:
