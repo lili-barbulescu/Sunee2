@@ -45,11 +45,17 @@
 /* 0 if you do not want the ST-Link JTAG Programmer. */
 #undef BUILD_HLADAPTER_STLINK
 
+/* 0 if you don't want imx_gpio. */
+#undef BUILD_IMX_GPIO
+
 /* 0 if you do not want the SEGGER J-Link Programmer. */
 #undef BUILD_JLINK
 
 /* 0 if you don't want JTAG VPI. */
 #undef BUILD_JTAG_VPI
+
+/* 0 if you do not want the Cypress KitProg Programmer. */
+#undef BUILD_KITPROG
 
 /* Use the dummy minidriver. */
 #undef BUILD_MINIDRIVER_DUMMY
@@ -80,6 +86,9 @@
 
 /* 0 if you don't want SysfsGPIO driver. */
 #undef BUILD_SYSFSGPIO
+
+/* 0 if you don't want 64-bit addresses. */
+#undef BUILD_TARGET64
 
 /* 0 if you do not want the Keil ULINK JTAG Programmer. */
 #undef BUILD_ULINK

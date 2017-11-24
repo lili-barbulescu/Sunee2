@@ -97,6 +97,7 @@ src/flash/nor/kinetis.lo: src/flash/nor/kinetis.c \
  src/target/target.h src/target/armv7m_trace.h src/target/cortex_m.h \
  src/target/armv7m.h \
  src/flash/nor/../../../contrib/loaders/watchdog/armv7m_kinetis_wdog.inc \
+ src/flash/nor/../../../contrib/loaders/watchdog/armv7m_kinetis_wdog32.inc \
  src/flash/nor/../../../contrib/loaders/flash/kinetis/kinetis_flash.inc
 
 /usr/include/stdc-predef.h:
@@ -386,5 +387,7 @@ src/target/cortex_m.h:
 src/target/armv7m.h:
 
 src/flash/nor/../../../contrib/loaders/watchdog/armv7m_kinetis_wdog.inc:
+
+src/flash/nor/../../../contrib/loaders/watchdog/armv7m_kinetis_wdog32.inc:
 
 src/flash/nor/../../../contrib/loaders/flash/kinetis/kinetis_flash.inc:

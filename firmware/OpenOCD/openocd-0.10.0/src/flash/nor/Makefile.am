@@ -10,6 +10,10 @@ NOR_DRIVERS = \
 	%D%/aduc702x.c \
 	%D%/aducm360.c \
 	%D%/ambiqmicro.c \
+	%D%/ath79.c \
+	%D%/fm4.c \
+	%D%/kinetis_ke.c \
+	%D%/xmc1xxx.c \
 	%D%/at91sam4.c \
 	%D%/at91sam4l.c \
 	%D%/at91samd.c \
@@ -18,29 +22,18 @@ NOR_DRIVERS = \
 	%D%/atsamv.c \
 	%D%/avrf.c \
 	%D%/cfi.c \
-	%D%/dsp5680xx_flash.c \
 	%D%/efm32.c \
 	%D%/em357.c \
 	%D%/faux.c \
-	%D%/fm3.c \
-	%D%/fm4.c \
 	%D%/jtagspi.c \
-	%D%/kinetis.c \
-	%D%/kinetis_ke.c \
 	%D%/lpc2000.c \
 	%D%/lpc288x.c \
 	%D%/lpc2900.c \
 	%D%/lpcspifi.c \
 	%D%/mdr.c \
-	%D%/mrvlqspi.c \
-	%D%/niietcm4.c \
 	%D%/non_cfi.c \
-	%D%/nrf51.c \
-	%D%/numicro.c \
 	%D%/ocl.c \
 	%D%/pic32mx.c \
-	%D%/psoc4.c \
-	%D%/sim3x.c \
 	%D%/spi.c \
 	%D%/stmsmi.c \
 	%D%/stellaris.c \
@@ -53,8 +46,27 @@ NOR_DRIVERS = \
 	%D%/str9xpec.c \
 	%D%/tms470.c \
 	%D%/virtual.c \
-	%D%/xmc1xxx.c \
-	%D%/xmc4xxx.c
+	%D%/fm3.c \
+	%D%/dsp5680xx_flash.c \
+	%D%/kinetis.c \
+	%D%/numicro.c \
+	%D%/nrf5.c \
+	%D%/nrf52.c \
+	%D%/mrvlqspi.c \
+	%D%/psoc4.c \
+	%D%/sim3x.c \
+	%D%/xmc4xxx.c \
+	%D%/niietcm4.c
+
+
+noinst_HEADERS = \
+	%D%/core.h \
+	%D%/cfi.h \
+	%D%/driver.h \
+	%D%/imp.h \
+	%D%/non_cfi.h \
+	%D%/ocl.h \
+	%D%/spi.h
 
 NORHEADERS = \
 	%D%/core.h \

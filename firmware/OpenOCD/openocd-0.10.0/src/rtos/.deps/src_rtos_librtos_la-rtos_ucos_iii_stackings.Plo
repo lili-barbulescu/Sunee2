@@ -87,7 +87,7 @@ src/rtos/src_rtos_librtos_la-rtos_ucos_iii_stackings.lo: \
  src/helper/replacements.h src/rtos/rtos.h src/server/server.h \
  src/helper/log.h src/helper/command.h src/helper/jim-nvp.h jimtcl/jim.h \
  jimtcl/jim-win32compat.h jimtcl/jim-config.h \
- src/rtos/rtos_standard_stackings.h src/target/armv7m.h \
+ src/rtos/rtos_standard_stackings.h src/rtos/rtos.h src/target/armv7m.h \
  src/target/arm_adi_v5.h src/helper/list.h src/target/arm_jtag.h \
  src/jtag/jtag.h src/helper/binarybuffer.h src/helper/list.h \
  src/jtag/minidriver.h src/jtag/minidriver_imp.h src/jtag/commands.h \
@@ -333,6 +333,8 @@ jimtcl/jim-win32compat.h:
 jimtcl/jim-config.h:
 
 src/rtos/rtos_standard_stackings.h:
+
+src/rtos/rtos.h:
 
 src/target/armv7m.h:
 

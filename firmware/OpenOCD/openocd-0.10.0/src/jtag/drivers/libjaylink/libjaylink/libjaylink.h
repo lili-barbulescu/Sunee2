@@ -77,7 +77,9 @@ enum jaylink_log_level {
 	/** Output informational messages. */
 	JAYLINK_LOG_LEVEL_INFO = 3,
 	/** Output debug messages. */
-	JAYLINK_LOG_LEVEL_DEBUG = 4
+	JAYLINK_LOG_LEVEL_DEBUG = 4,
+	/** Output I/O debug messages. */
+	JAYLINK_LOG_LEVEL_DEBUG_IO = 5
 };
 
 /** Default libjaylink log domain. */
@@ -95,7 +97,9 @@ enum jaylink_capability {
 /** Host interfaces. */
 enum jaylink_host_interface {
 	/** Universal Serial Bus (USB). */
-	JAYLINK_HIF_USB = (1 << 0)
+	JAYLINK_HIF_USB = (1 << 0),
+	/** Transmission Control Protocol (TCP). */
+	JAYLINK_HIF_TCP = (1 << 1)
 };
 
 /**
@@ -135,6 +139,8 @@ enum jaylink_device_capability {
 	JAYLINK_DEV_CAP_SET_TARGET_POWER = 13,
 	/** Device supports target interface selection. */
 	JAYLINK_DEV_CAP_SELECT_TIF = 17,
+	/** Device supports retrieval of counter values. */
+	JAYLINK_DEV_CAP_GET_COUNTERS = 19,
 	/** Device supports capturing of SWO trace data. */
 	JAYLINK_DEV_CAP_SWO = 23,
 	/** Device supports file I/O operations. */
@@ -164,6 +170,17 @@ enum jaylink_hardware_info {
 	JAYLINK_HW_INFO_ITARGET = (1 << 2),
 	/** Peak current consumption of the target in mA. */
 	JAYLINK_HW_INFO_ITARGET_PEAK = (1 << 3)
+};
+
+/** Device counters. */
+enum jaylink_counter {
+	/** Time the device is connected to a target in milliseconds. */
+	JAYLINK_COUNTER_TARGET_TIME = (1 << 0),
+	/**
+	 * Number of times the device was connected or disconnected from a
+	 * target.
+	 */
+	JAYLINK_COUNTER_TARGET_CONNECTIONS = (1 << 1)
 };
 
 /** Device hardware types. */
@@ -312,6 +329,21 @@ struct jaylink_connection {
 /** Maximum number of connections that can be registered on a device. */
 #define JAYLINK_MAX_CONNECTIONS			16
 
+/** Media Access Control (MAC) address length in bytes. */
+#define JAYLINK_MAC_ADDRESS_LENGTH		6
+
+/**
+ * Maximum length of a device's nickname including trailing null-terminator in
+ * bytes.
+ */
+#define JAYLINK_NICKNAME_MAX_LENGTH		32
+
+/**
+ * Maximum length of a device's product name including trailing null-terminator
+ * in bytes.
+ */
+#define JAYLINK_PRODUCT_NAME_MAX_LENGTH		32
+
 /** Maximum length of a filename in bytes. */
 #define JAYLINK_FILE_NAME_MAX_LENGTH		255
 
@@ -398,6 +430,17 @@ JAYLINK_API int jaylink_device_get_serial_number(
 JAYLINK_API int jaylink_device_get_usb_address(
 		const struct jaylink_device *dev,
 		enum jaylink_usb_address *address);
+JAYLINK_API int jaylink_device_get_ipv4_address(
+		const struct jaylink_device *dev, char *address);
+JAYLINK_API int jaylink_device_get_mac_address(
+		const struct jaylink_device *dev, uint8_t *address);
+JAYLINK_API int jaylink_device_get_hardware_version(
+		const struct jaylink_device *dev,
+		struct jaylink_hardware_version *version);
+JAYLINK_API int jaylink_device_get_product_name(
+		const struct jaylink_device *dev, char *name);
+JAYLINK_API int jaylink_device_get_nickname(const struct jaylink_device *dev,
+		char *nickname);
 JAYLINK_API struct jaylink_device *jaylink_ref_device(
 		struct jaylink_device *dev);
 JAYLINK_API void jaylink_unref_device(struct jaylink_device *dev);
@@ -411,6 +454,8 @@ JAYLINK_API int jaylink_get_firmware_version(
 		size_t *length);
 JAYLINK_API int jaylink_get_hardware_info(struct jaylink_device_handle *devh,
 		uint32_t mask, uint32_t *info);
+JAYLINK_API int jaylink_get_counters(struct jaylink_device_handle *devh,
+		uint32_t mask, uint32_t *values);
 JAYLINK_API int jaylink_get_hardware_version(
 		struct jaylink_device_handle *devh,
 		struct jaylink_hardware_version *version);

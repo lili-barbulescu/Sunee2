@@ -28,6 +28,7 @@ extern struct flash_driver at91sam4_flash;
 extern struct flash_driver at91sam4l_flash;
 extern struct flash_driver at91sam7_flash;
 extern struct flash_driver at91samd_flash;
+extern struct flash_driver ath79_flash;
 extern struct flash_driver atsamv_flash;
 extern struct flash_driver avr_flash;
 extern struct flash_driver cfi_flash;
@@ -45,8 +46,10 @@ extern struct flash_driver lpc288x_flash;
 extern struct flash_driver lpc2900_flash;
 extern struct flash_driver lpcspifi_flash;
 extern struct flash_driver mdr_flash;
+extern struct flash_driver nrf52_flash;
 extern struct flash_driver mrvlqspi_flash;
 extern struct flash_driver niietcm4_flash;
+extern struct flash_driver nrf5_flash;
 extern struct flash_driver nrf51_flash;
 extern struct flash_driver numicro_flash;
 extern struct flash_driver ocl_flash;
@@ -80,6 +83,7 @@ static struct flash_driver *flash_drivers[] = {
 	&at91sam4l_flash,
 	&at91sam7_flash,
 	&at91samd_flash,
+	&ath79_flash,
 	&atsamv_flash,
 	&avr_flash,
 	&cfi_flash,
@@ -97,10 +101,13 @@ static struct flash_driver *flash_drivers[] = {
 	&lpc2900_flash,
 	&lpcspifi_flash,
 	&mdr_flash,
+	&numicro_flash,
+	&nrf51_flash,
+	&nrf52_flash,
 	&mrvlqspi_flash,
 	&niietcm4_flash,
+	&nrf5_flash,
 	&nrf51_flash,
-	&numicro_flash,
 	&ocl_flash,
 	&pic32mx_flash,
 	&psoc4_flash,

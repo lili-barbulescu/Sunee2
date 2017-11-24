@@ -15,7 +15,7 @@
 void blink_led (int msk)
 {
 	NRF_GPIO->OUTCLR = msk;
-        nrf_delay_ms(2000);
+        nrf_delay_ms(1000);
         NRF_GPIO->OUTSET = msk;
 }
 

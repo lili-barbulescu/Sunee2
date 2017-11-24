@@ -82,7 +82,7 @@ F 3 "" H 5400 1975 50  0001 C CNN
 	1    5400 1975
 	1    0    0    -1  
 $EndComp
-Text HLabel 2525 3475 0    60   Output ~ 0
+Text HLabel 3150 3000 0    60   Output ~ 0
 INT_UV
 $Comp
 L R R6
@@ -100,7 +100,7 @@ L BMA253 ACC1
 U 1 1 59A5A90C
 P 8500 1575
 F 0 "ACC1" H 8800 1925 60  0000 C CNN
-F 1 "BMA253" H 8850 1200 60  0000 C CNN
+F 1 "BMA253" H 8800 1200 60  0000 C CNN
 F 2 "BMA250E:BMA250E" H 8375 1425 60  0001 C CNN
 F 3 "" H 8375 1425 60  0000 C CNN
 	1    8500 1575
@@ -122,7 +122,7 @@ L C C4
 U 1 1 59A5D521
 P 9100 1950
 F 0 "C4" H 9125 2050 50  0000 L CNN
-F 1 "100nF" H 9125 1850 50  0000 L CNN
+F 1 "100nF" H 9300 1900 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0402" H 9138 1800 50  0001 C CNN
 F 3 "" H 9100 1950 50  0001 C CNN
 	1    9100 1950
@@ -140,9 +140,15 @@ F 3 "" H 3550 1325 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5400 825  5400 1825
+	5400 825  5400 875 
 Wire Wire Line
-	4750 1625 5525 1625
+	5400 875  5400 1525
+Wire Wire Line
+	5400 1525 5400 1825
+Wire Wire Line
+	4750 1625 5250 1625
+Wire Wire Line
+	5250 1625 5525 1625
 Wire Wire Line
 	5400 1525 5525 1525
 Connection ~ 5400 1525
@@ -158,16 +164,22 @@ Wire Wire Line
 Wire Wire Line
 	6475 1525 6200 1525
 Wire Wire Line
-	7600 1550 8125 1550
+	7500 1550 8125 1550
 Wire Wire Line
-	8025 2000 8025 2250
+	8025 2000 8025 2075
 Wire Wire Line
-	8025 725  8025 1700
+	8025 2075 8025 2250
+Wire Wire Line
+	8025 950  8025 1150
+Wire Wire Line
+	8025 1150 8025 1625
+Wire Wire Line
+	8025 1625 8025 1700
 Wire Wire Line
 	8025 1625 8125 1625
 Connection ~ 8025 1625
 Wire Wire Line
-	7600 1475 8125 1475
+	7900 1475 8125 1475
 Wire Wire Line
 	8450 875  8450 1200
 Wire Wire Line
@@ -178,28 +190,38 @@ Connection ~ 8025 1150
 Wire Wire Line
 	8900 1500 9250 1500
 Wire Wire Line
-	9250 1500 9250 2625
+	9250 1500 9250 1575
+Wire Wire Line
+	9250 1575 9250 2175
+Wire Wire Line
+	9250 2175 9250 2350
 Wire Wire Line
 	8900 1575 9250 1575
 Connection ~ 9250 1575
 Wire Wire Line
-	9100 2100 9100 2525
+	9100 2100 9100 2175
 Wire Wire Line
 	3550 1175 3550 1025
 Wire Wire Line
 	3550 1475 3550 1600
 Wire Wire Line
 	5400 2125 5400 2275
-Connection ~ 9250 2525
+Connection ~ 9250 2175
 Wire Wire Line
-	6475 1200 6475 1625
+	6475 1200 6475 1325
+Wire Wire Line
+	6475 1325 6475 1525
+Wire Wire Line
+	6475 1525 6475 1625
 Connection ~ 6475 1325
 Connection ~ 6475 1525
 Wire Wire Line
 	5250 925  5250 875 
 Connection ~ 5400 875 
 Wire Wire Line
-	9100 725  9100 1800
+	9100 1350 9100 1650
+Wire Wire Line
+	9100 1650 9100 1800
 Wire Wire Line
 	8900 1650 9100 1650
 Connection ~ 9100 1650
@@ -228,7 +250,9 @@ F 3 "" H 1425 2750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1650 2325 1650 2750
+	1650 2325 1650 2600
+Wire Wire Line
+	1650 2600 1650 2750
 Wire Wire Line
 	1275 2600 1150 2600
 Wire Wire Line
@@ -242,78 +266,26 @@ Wire Wire Line
 	8600 2025 8600 1925
 Wire Wire Line
 	8525 1925 8525 2025
-Wire Wire Line
-	2550 2875 2875 2875
-Wire Wire Line
-	4675 2875 4050 2875
-Wire Wire Line
-	4675 2975 4050 2975
-Text HLabel 2525 3075 0    60   BiDi ~ 0
+Text HLabel 2925 2550 0    60   BiDi ~ 0
 SDA
-Text HLabel 2525 3175 0    60   Input ~ 0
+Text HLabel 2925 2700 0    60   Input ~ 0
 SCL
-Wire Wire Line
-	2875 3075 2525 3075
-Wire Wire Line
-	2525 3175 2875 3175
-Text Label 5125 3150 2    60   ~ 0
+Text Label 3850 2550 2    60   ~ 0
 SDA_UP
-Text Label 5125 3250 2    60   ~ 0
+Text Label 3975 2700 2    60   ~ 0
 SCL_UP
-Wire Wire Line
-	4050 3175 4150 3175
-Wire Wire Line
-	4050 3075 4325 3075
-Text GLabel 2550 2975 0    60   BiDi ~ 0
-GND
-Wire Wire Line
-	2550 2975 2875 2975
-$Comp
-L CONN_01X04 PU3
-U 1 1 59B0733A
-P 3850 3025
-F 0 "PU3" H 3850 3275 50  0000 C CNN
-F 1 "CONN_01X04" V 3950 3025 50  0001 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x04" H 3850 3025 50  0001 C CNN
-F 3 "" H 3850 3025 50  0000 C CNN
-	1    3850 3025
-	-1   0    0    -1  
-$EndComp
-$Comp
-L CONN_01X04 PD3
-U 1 1 59B077DC
-P 3075 3025
-F 0 "PD3" H 3075 3275 50  0000 C CNN
-F 1 "CONN_01X04" V 3175 3025 50  0001 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x04" H 3075 3025 50  0001 C CNN
-F 3 "" H 3075 3025 50  0000 C CNN
-	1    3075 3025
-	1    0    0    -1  
-$EndComp
 Text Label 4750 1625 0    60   ~ 0
 INT_UV_UP
-Text HLabel 2525 3575 0    60   Output ~ 0
+Text HLabel 3150 3100 0    60   Output ~ 0
 INT_ACC2
-Text HLabel 2525 3675 0    60   Output ~ 0
+Text HLabel 3150 3200 0    60   Output ~ 0
 INT_ACC1
-Wire Wire Line
-	2525 3375 2875 3375
-Wire Wire Line
-	2875 3475 2525 3475
-Wire Wire Line
-	2525 3675 2875 3675
-Text Label 4650 3575 2    60   ~ 0
+Text Label 4000 3100 2    60   ~ 0
 INT_ACC2_UP
-Text Label 4650 3675 2    60   ~ 0
+Text Label 4000 3200 2    60   ~ 0
 INT_ACC1_UP
-Text Label 4650 3475 2    60   ~ 0
+Text Label 4000 3000 2    60   ~ 0
 INT_UV_UP
-Wire Wire Line
-	4650 3675 4050 3675
-Wire Wire Line
-	4050 3475 4650 3475
-Text Label 8025 2250 0    60   ~ 0
-GND_UP
 Wire Wire Line
 	6475 900  6475 825 
 Text Label 8525 2025 3    60   ~ 0
@@ -326,8 +298,8 @@ Connection ~ 8025 2075
 Wire Wire Line
 	8450 2075 8450 1925
 Wire Wire Line
-	9100 2525 9250 2525
-Text Label 7600 1550 0    60   ~ 0
+	9100 2175 9250 2175
+Text Label 7500 1550 0    60   ~ 0
 SDA_UP
 Text Label 8450 875  0    60   ~ 0
 SCL_UP
@@ -343,108 +315,64 @@ Text Label 1150 2600 2    60   ~ 0
 SDA_UP
 Text Label 1150 2750 2    60   ~ 0
 SCL_UP
-Text GLabel 2525 3375 0    60   Input ~ 0
-BUZZ_D
-Wire Wire Line
-	2525 3575 2875 3575
-Text GLabel 4225 3300 2    60   Input ~ 0
-BUZZ_U
-Wire Wire Line
-	4050 3575 4650 3575
-Text GLabel 4675 2975 2    60   BiDi ~ 0
-GND_UP
 Text GLabel 1650 2325 2    60   BiDi ~ 0
-VCC_UP
-Text GLabel 3550 1025 2    60   BiDi ~ 0
-VCC_UP
-Text GLabel 5400 825  2    60   BiDi ~ 0
-VCC_UP
-Text GLabel 6475 825  2    60   BiDi ~ 0
-VCC_UP
-Text GLabel 8025 725  2    60   BiDi ~ 0
-VCC_UP
-Text GLabel 9100 725  2    60   BiDi ~ 0
-VCC_UP
-Text GLabel 9250 2625 2    60   BiDi ~ 0
-GND_UP
-Text GLabel 7600 1475 0    60   BiDi ~ 0
-GND_UP
-Text GLabel 6575 1425 2    60   BiDi ~ 0
-GND_UP
-Text GLabel 5400 2275 2    60   BiDi ~ 0
-GND_UP
-Text GLabel 4675 2875 2    60   BiDi ~ 0
-VCC_UP
-Text GLabel 2550 2875 0    60   BiDi ~ 0
 VCC
-Text GLabel 3550 1600 2    60   BiDi ~ 0
-GND_UP
-Wire Wire Line
-	4050 3375 4225 3375
-Wire Wire Line
-	4225 3375 4225 3300
-$Comp
-L CONN_01X05 PD4
-U 1 1 59BFE4A2
-P 3075 3575
-F 0 "PD4" H 3075 3875 50  0000 C CNN
-F 1 "CONN_01X05" V 3175 3575 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x05" H 3075 3575 50  0001 C CNN
-F 3 "" H 3075 3575 50  0000 C CNN
-	1    3075 3575
-	1    0    0    -1  
-$EndComp
-$Comp
-L CONN_01X05 PU4
-U 1 1 59BFE5E7
-P 3850 3575
-F 0 "PU4" H 3850 3875 50  0000 C CNN
-F 1 "CONN_01X05" V 3950 3575 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x05" H 3850 3575 50  0001 C CNN
-F 3 "" H 3850 3575 50  0000 C CNN
-	1    3850 3575
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	2525 3775 2875 3775
-Text GLabel 2525 3775 0    60   BiDi ~ 0
+Text GLabel 3550 1025 2    60   BiDi ~ 0
+VCC
+Text GLabel 5400 825  2    60   BiDi ~ 0
+VCC
+Text GLabel 6475 825  2    60   BiDi ~ 0
+VCC
+Text GLabel 8025 950  2    60   BiDi ~ 0
+VCC
+Text GLabel 9100 1350 2    60   BiDi ~ 0
+VCC
+Text GLabel 9250 2350 2    60   BiDi ~ 0
 GND
-Text GLabel 4250 3775 2    60   BiDi ~ 0
-GND_UP
-Wire Wire Line
-	4250 3775 4050 3775
+Text GLabel 7900 1475 1    60   BiDi ~ 0
+GND
+Text GLabel 6575 1425 2    60   BiDi ~ 0
+GND
+Text GLabel 5400 2275 2    60   BiDi ~ 0
+GND
+Text GLabel 3550 1600 2    60   BiDi ~ 0
+GND
 $Comp
 L R_Small R14
 U 1 1 59C00AFB
-P 4250 3175
-F 0 "R14" V 4175 3225 50  0000 L CNN
-F 1 "100" V 4325 3125 50  0000 L CNN
-F 2 "Resistors_SMD:R_0402" H 4250 3175 50  0001 C CNN
-F 3 "" H 4250 3175 50  0000 C CNN
-	1    4250 3175
+P 3225 2700
+F 0 "R14" V 3300 2525 50  0000 L CNN
+F 1 "100" V 3275 2775 50  0000 L CNN
+F 2 "Resistors_SMD:R_0402" H 3225 2700 50  0001 C CNN
+F 3 "" H 3225 2700 50  0000 C CNN
+	1    3225 2700
 	0    -1   -1   0   
 $EndComp
 $Comp
 L R_Small R15
 U 1 1 59C00B5B
-P 4425 3075
-F 0 "R15" V 4500 2950 50  0000 L CNN
-F 1 "100" V 4500 3125 50  0000 L CNN
-F 2 "Resistors_SMD:R_0402" H 4425 3075 50  0001 C CNN
-F 3 "" H 4425 3075 50  0000 C CNN
-	1    4425 3075
+P 3275 2550
+F 0 "R15" V 3350 2425 50  0000 L CNN
+F 1 "100" V 3325 2650 50  0000 L CNN
+F 2 "Resistors_SMD:R_0402" H 3275 2550 50  0001 C CNN
+F 3 "" H 3275 2550 50  0000 C CNN
+	1    3275 2550
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	4350 3175 4675 3175
+	3325 2700 3975 2700
 Wire Wire Line
-	4675 3175 4675 3250
+	3375 2550 3850 2550
 Wire Wire Line
-	4675 3250 5125 3250
+	2925 2700 3125 2700
 Wire Wire Line
-	5125 3150 4675 3150
+	2925 2550 3175 2550
 Wire Wire Line
-	4675 3150 4675 3075
+	3150 3000 4000 3000
 Wire Wire Line
-	4675 3075 4525 3075
+	3150 3100 4000 3100
+Wire Wire Line
+	4000 3200 3150 3200
+Text GLabel 8025 2250 2    60   BiDi ~ 0
+GND
 $EndSCHEMATC

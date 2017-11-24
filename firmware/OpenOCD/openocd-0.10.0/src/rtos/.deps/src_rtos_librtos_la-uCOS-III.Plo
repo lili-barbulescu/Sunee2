@@ -84,13 +84,11 @@ src/rtos/src_rtos_librtos_la-uCOS-III.lo: src/rtos/uCOS-III.c \
  /usr/include/x86_64-linux-gnu/bits/fcntl2.h src/helper/types.h \
  /usr/include/inttypes.h \
  /usr/lib/gcc/x86_64-linux-gnu/5/include/stdbool.h \
- src/helper/replacements.h src/helper/time_support.h src/jtag/jtag.h \
- src/helper/binarybuffer.h src/helper/list.h src/helper/log.h \
- src/helper/command.h src/helper/jim-nvp.h jimtcl/jim.h \
- jimtcl/jim-win32compat.h jimtcl/jim-config.h src/jtag/minidriver.h \
- src/jtag/minidriver_imp.h src/jtag/commands.h src/target/target.h \
- src/helper/list.h src/target/target_type.h src/rtos/rtos.h \
- src/server/server.h src/rtos/rtos_ucos_iii_stackings.h src/rtos/rtos.h
+ src/helper/replacements.h src/helper/log.h src/helper/command.h \
+ src/helper/jim-nvp.h jimtcl/jim.h jimtcl/jim-win32compat.h \
+ jimtcl/jim-config.h src/helper/time_support.h src/rtos/rtos.h \
+ src/server/server.h src/target/target.h src/helper/list.h \
+ src/target/target_type.h src/rtos/rtos_ucos_iii_stackings.h
 
 /usr/include/stdc-predef.h:
 
@@ -314,14 +312,6 @@ src/helper/types.h:
 
 src/helper/replacements.h:
 
-src/helper/time_support.h:
-
-src/jtag/jtag.h:
-
-src/helper/binarybuffer.h:
-
-src/helper/list.h:
-
 src/helper/log.h:
 
 src/helper/command.h:
@@ -334,11 +324,11 @@ jimtcl/jim-win32compat.h:
 
 jimtcl/jim-config.h:
 
-src/jtag/minidriver.h:
+src/helper/time_support.h:
 
-src/jtag/minidriver_imp.h:
+src/rtos/rtos.h:
 
-src/jtag/commands.h:
+src/server/server.h:
 
 src/target/target.h:
 
@@ -346,10 +336,4 @@ src/helper/list.h:
 
 src/target/target_type.h:
 
-src/rtos/rtos.h:
-
-src/server/server.h:
-
 src/rtos/rtos_ucos_iii_stackings.h:
-
-src/rtos/rtos.h:

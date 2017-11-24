@@ -243,14 +243,14 @@ distuninstallcheck_listfiles = find . -type f -print
 am__distuninstallcheck_listfiles = $(distuninstallcheck_listfiles) \
   | sed 's|^\./|$(prefix)/|' | grep -v '$(infodir)/dir$$'
 distcleancheck_listfiles = find . -type f -print
-ACLOCAL = ${SHELL} /home/mihai/Temp/openocd-0.10.0/src/jtag/drivers/libjaylink/build-aux/missing aclocal-1.15
+ACLOCAL = ${SHELL} /home/mihai/Programs/openocd_nrf52/openocd-code/src/jtag/drivers/libjaylink/build-aux/missing aclocal-1.15
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 1
 AM_LIBTOOLFLAGS = --silent
 AR = ar
-AUTOCONF = ${SHELL} /home/mihai/Temp/openocd-0.10.0/src/jtag/drivers/libjaylink/build-aux/missing autoconf
-AUTOHEADER = ${SHELL} /home/mihai/Temp/openocd-0.10.0/src/jtag/drivers/libjaylink/build-aux/missing autoheader
-AUTOMAKE = ${SHELL} /home/mihai/Temp/openocd-0.10.0/src/jtag/drivers/libjaylink/build-aux/missing automake-1.15
+AUTOCONF = ${SHELL} /home/mihai/Programs/openocd_nrf52/openocd-code/src/jtag/drivers/libjaylink/build-aux/missing autoconf
+AUTOHEADER = ${SHELL} /home/mihai/Programs/openocd_nrf52/openocd-code/src/jtag/drivers/libjaylink/build-aux/missing autoheader
+AUTOMAKE = ${SHELL} /home/mihai/Programs/openocd_nrf52/openocd-code/src/jtag/drivers/libjaylink/build-aux/missing automake-1.15
 AWK = gawk
 CC = gcc
 CCDEPMODE = depmode=gcc3
@@ -278,14 +278,15 @@ INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
 JAYLINK_CFLAGS = -Wall -Wextra -Werror -fvisibility=hidden
 JAYLINK_LDFLAGS = 
 JAYLINK_LIBS = 
+JAYLINK_PKG_LIBS = libusb-1.0
 JAYLINK_VERSION_LIBRARY = 0:0:0
 JAYLINK_VERSION_LIBRARY_AGE = 0
 JAYLINK_VERSION_LIBRARY_CURRENT = 0
 JAYLINK_VERSION_LIBRARY_REVISION = 0
-JAYLINK_VERSION_PACKAGE = 0.1.0
+JAYLINK_VERSION_PACKAGE = 0.2.0-git-8645845
 JAYLINK_VERSION_PACKAGE_MAJOR = 0
 JAYLINK_VERSION_PACKAGE_MICRO = 0
-JAYLINK_VERSION_PACKAGE_MINOR = 1
+JAYLINK_VERSION_PACKAGE_MINOR = 2
 LD = /usr/bin/ld -m elf_x86_64
 LDFLAGS = 
 LIBOBJS = 
@@ -295,7 +296,7 @@ LIPO =
 LN_S = ln -s
 LTLIBOBJS = 
 LT_SYS_LIBRARY_PATH = 
-MAKEINFO = ${SHELL} /home/mihai/Temp/openocd-0.10.0/src/jtag/drivers/libjaylink/build-aux/missing makeinfo
+MAKEINFO = ${SHELL} /home/mihai/Programs/openocd_nrf52/openocd-code/src/jtag/drivers/libjaylink/build-aux/missing makeinfo
 MANIFEST_TOOL = :
 MKDIR_P = /bin/mkdir -p
 NM = /usr/bin/nm -B
@@ -307,10 +308,10 @@ OTOOL64 =
 PACKAGE = libjaylink
 PACKAGE_BUGREPORT = jaylink-dev@marcschink.de
 PACKAGE_NAME = libjaylink
-PACKAGE_STRING = libjaylink 0.1.0
+PACKAGE_STRING = libjaylink 0.2.0
 PACKAGE_TARNAME = libjaylink
 PACKAGE_URL = http://git.zapb.de/libjaylink.git
-PACKAGE_VERSION = 0.1.0
+PACKAGE_VERSION = 0.2.0
 PATH_SEPARATOR = :
 PKG_CONFIG = /usr/bin/pkg-config
 PKG_CONFIG_LIBDIR = 
@@ -320,11 +321,11 @@ SED = /bin/sed
 SET_MAKE = 
 SHELL = /bin/bash
 STRIP = strip
-VERSION = 0.1.0
-abs_builddir = /home/mihai/Temp/openocd-0.10.0/src/jtag/drivers/libjaylink
-abs_srcdir = /home/mihai/Temp/openocd-0.10.0/src/jtag/drivers/libjaylink
-abs_top_builddir = /home/mihai/Temp/openocd-0.10.0/src/jtag/drivers/libjaylink
-abs_top_srcdir = /home/mihai/Temp/openocd-0.10.0/src/jtag/drivers/libjaylink
+VERSION = 0.2.0
+abs_builddir = /home/mihai/Programs/openocd_nrf52/openocd-code/src/jtag/drivers/libjaylink
+abs_srcdir = /home/mihai/Programs/openocd_nrf52/openocd-code/src/jtag/drivers/libjaylink
+abs_top_builddir = /home/mihai/Programs/openocd_nrf52/openocd-code/src/jtag/drivers/libjaylink
+abs_top_srcdir = /home/mihai/Programs/openocd_nrf52/openocd-code/src/jtag/drivers/libjaylink
 ac_ct_AR = ar
 ac_ct_CC = gcc
 ac_ct_DUMPBIN = 
@@ -353,7 +354,7 @@ host_vendor = pc
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/mihai/Temp/openocd-0.10.0/src/jtag/drivers/libjaylink/build-aux/install-sh
+install_sh = ${SHELL} /home/mihai/Programs/openocd_nrf52/openocd-code/src/jtag/drivers/libjaylink/build-aux/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 libusb_CFLAGS = -I/usr/include/libusb-1.0
@@ -367,6 +368,7 @@ pdfdir = ${docdir}
 prefix = /usr/local
 program_transform_name = s,x,x,
 psdir = ${docdir}
+runstatedir = ${localstatedir}/run
 sbindir = ${exec_prefix}/sbin
 sharedstatedir = ${prefix}/com
 srcdir = .
@@ -574,12 +576,6 @@ distclean-tags:
 	-rm -f cscope.out cscope.in.out cscope.po.out cscope.files
 
 distdir: $(DISTFILES)
-	@case `sed 15q $(srcdir)/NEWS` in \
-	*"$(VERSION)"*) : ;; \
-	*) \
-	  echo "NEWS not updated; not releasing" 1>&2; \
-	  exit 1;; \
-	esac
 	$(am__remove_distdir)
 	test -d "$(distdir)" || mkdir "$(distdir)"
 	@srcdirstrip=`echo "$(srcdir)" | sed 's/[].[^$$\\*]/\\\\&/g'`; \

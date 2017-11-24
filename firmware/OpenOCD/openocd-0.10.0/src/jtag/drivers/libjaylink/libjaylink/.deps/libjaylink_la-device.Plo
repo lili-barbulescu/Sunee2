@@ -1,4 +1,4 @@
-libjaylink_la-device.lo: device.c /usr/include/stdc-predef.h \
+libjaylink_la-device.lo: device.c /usr/include/stdc-predef.h ../config.h \
  /usr/include/stdlib.h /usr/include/features.h \
  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -53,6 +53,8 @@ libjaylink_la-device.lo: device.c /usr/include/stdc-predef.h \
  libjaylink-internal.h
 
 /usr/include/stdc-predef.h:
+
+../config.h:
 
 /usr/include/stdlib.h:
 

@@ -34,7 +34,7 @@ libjaylink_la-emucom.lo: emucom.c /usr/include/stdc-predef.h \
  /usr/include/asm-generic/sockios.h \
  /usr/include/x86_64-linux-gnu/bits/socket2.h \
  /usr/include/x86_64-linux-gnu/bits/in.h version.h libjaylink-internal.h \
- /usr/include/libusb-1.0/libusb.h \
+ ../config.h /usr/include/libusb-1.0/libusb.h \
  /usr/include/x86_64-linux-gnu/sys/time.h /usr/include/xlocale.h \
  /usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/syslimits.h \
@@ -130,6 +130,8 @@ libjaylink.h:
 version.h:
 
 libjaylink-internal.h:
+
+../config.h:
 
 /usr/include/libusb-1.0/libusb.h:
 

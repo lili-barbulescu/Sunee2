@@ -30,13 +30,13 @@
 #define JAYLINK_VERSION_PACKAGE_MAJOR		0
 
 /** Minor version number of the libjaylink package. */
-#define JAYLINK_VERSION_PACKAGE_MINOR		1
+#define JAYLINK_VERSION_PACKAGE_MINOR		2
 
 /** Micro version number of the libjaylink package. */
 #define JAYLINK_VERSION_PACKAGE_MICRO		0
 
 /** Version number string of the libjaylink package. */
-#define JAYLINK_VERSION_PACKAGE_STRING		"0.1.0"
+#define JAYLINK_VERSION_PACKAGE_STRING		"0.2.0-git-8645845"
 
 /** <i>Current</i> version number of the libjaylink libtool interface. */
 #define JAYLINK_VERSION_LIBRARY_CURRENT		0

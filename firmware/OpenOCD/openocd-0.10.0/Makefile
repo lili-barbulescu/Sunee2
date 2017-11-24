@@ -17,6 +17,7 @@
 
 
 
+
 am__is_gnu_make = { \
   if test -z '$(MAKELEVEL)'; then \
     false; \
@@ -101,11 +102,11 @@ am__append_4 = $(top_builddir)/jimtcl/libjim.a
 
 # banner output includes RELSTR appended to $VERSION from the configure script
 # guess-rev.sh returns either a repository version ID or "-snapshot"
-am__append_6 = -DRELSTR=\"\" -DGITVERSION=\"\"
-#am__append_7 = -DRELSTR=\"`$(top_srcdir)/guess-rev.sh \
-#	$(top_srcdir)`\" -DGITVERSION=\"`cd \
-#	$(top_srcdir) && git describe`\" \
-#	-DPKGBLDDATE=\"`date +%F-%R`\"
+#am__append_6 = -DRELSTR=\"\" -DGITVERSION=\"\"
+am__append_7 = -DRELSTR=\"`$(top_srcdir)/guess-rev.sh \
+	$(top_srcdir)`\" -DGITVERSION=\"`cd \
+	$(top_srcdir) && git describe`\" \
+	-DPKGBLDDATE=\"`date +%F-%R`\"
 #am__append_8 = src/helper/ioutil.c
 am__append_9 = src/helper/ioutil_stubs.c
 # FD_* macros are sloppy with their signs on MinGW32 platform
@@ -129,10 +130,10 @@ am__append_21 = $(ULINK_FIRMWARE) \
 am__append_22 = src/jtag/drivers/libusb1_common.c
 am__append_23 = $(LIBUSB1_CFLAGS)
 am__append_24 = $(LIBUSB1_LIBS)
-#am__append_25 = src/jtag/drivers/usb_common.c
-#am__append_26 = $(LIBUSB0_CFLAGS)
-#am__append_27 = $(LIBUSB0_LIBS)
-##am__append_28 = src/jtag/drivers/libusb0_common.c
+am__append_25 = src/jtag/drivers/usb_common.c
+am__append_26 = $(LIBUSB0_CFLAGS)
+am__append_27 = $(LIBUSB0_LIBS)
+#am__append_28 = src/jtag/drivers/libusb0_common.c
 #am__append_29 = $(LIBFTDI_CFLAGS)
 #am__append_30 = $(LIBFTDI_LIBS)
 #am__append_31 = $(HIDAPI_CFLAGS)
@@ -159,8 +160,8 @@ am__append_48 = src/jtag/drivers/usb_blaster/ublast2_access_libusb.c
 #am__append_52 = src/jtag/drivers/gw16012.c
 #am__append_53 = src/jtag/drivers/bitq.c
 #am__append_54 = src/jtag/drivers/presto.c
-#am__append_55 = src/jtag/drivers/usbprog.c
-#am__append_56 = src/jtag/drivers/rlink.c src/jtag/drivers/rlink_speed_table.c
+am__append_55 = src/jtag/drivers/usbprog.c
+am__append_56 = src/jtag/drivers/rlink.c src/jtag/drivers/rlink_speed_table.c
 am__append_57 = src/jtag/drivers/ulink.c
 am__append_58 = -lm
 am__append_59 = src/jtag/drivers/versaloon/usbtoxxx/usbtogpio.c \
@@ -170,7 +171,7 @@ am__append_59 = src/jtag/drivers/versaloon/usbtoxxx/usbtogpio.c \
 	src/jtag/drivers/versaloon/usbtoxxx/usbtoxxx.c \
 	src/jtag/drivers/versaloon/versaloon.c \
 	src/jtag/drivers/vsllink.c
-#am__append_60 = src/jtag/drivers/arm-jtag-ew.c
+am__append_60 = src/jtag/drivers/arm-jtag-ew.c
 #am__append_61 = src/jtag/drivers/buspirate.c
 #am__append_62 = src/jtag/drivers/remote_bitbang.c
 am__append_63 = src/jtag/drivers/stlink_usb.c \
@@ -181,12 +182,15 @@ am__append_65 = src/jtag/drivers/opendous.c
 #am__append_67 = src/jtag/drivers/bcm2835gpio.c
 #am__append_68 = src/jtag/drivers/openjtag.c
 #am__append_69 = src/jtag/drivers/cmsis_dap_usb.c
-am__append_70 = $(top_builddir)/src/jtag/drivers/libocdjtagdrivers.la
+#am__append_70 = src/jtag/drivers/imx_gpio.c
+#am__append_71 = src/jtag/drivers/kitprog.c
+am__append_72 = $(top_builddir)/src/jtag/drivers/libocdjtagdrivers.la
+am__append_73 = $(ARMV8_SRC)
 
 # FD_* macros are sloppy with their signs on MinGW32 platform
-#am__append_71 = -Wno-sign-compare
+#am__append_74 = -Wno-sign-compare
 # FD_* macros are sloppy with their signs on MinGW32 platform
-#am__append_72 = -Wno-sign-compare
+#am__append_75 = -Wno-sign-compare
 subdir = .
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/config_subdir.m4 \
@@ -196,7 +200,8 @@ am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
 DIST_COMMON = $(srcdir)/Makefile.am $(top_srcdir)/configure \
 	$(am__configure_deps) $(srcdir)/doc/version.texi \
 	$(srcdir)/doc/stamp-vti $(am__dist_ulink_DATA_DIST) \
-	$(nobase_dist_pkgdata_DATA) $(am__DIST_COMMON)
+	$(nobase_dist_pkgdata_DATA) $(noinst_HEADERS) \
+	$(am__DIST_COMMON)
 am__CONFIG_DISTCLEAN_FILES = config.status config.cache config.log \
  configure.lineno config.status.lineno
 mkinstalldirs = $(install_sh) -d
@@ -233,29 +238,30 @@ src_flash_nand_libocdflashnand_la_OBJECTS =  \
 	$(am_src_flash_nand_libocdflashnand_la_OBJECTS)
 src_flash_nor_libocdflashnor_la_LIBADD =
 am__objects_3 = src/flash/nor/aduc702x.lo src/flash/nor/aducm360.lo \
-	src/flash/nor/ambiqmicro.lo src/flash/nor/at91sam4.lo \
+	src/flash/nor/ambiqmicro.lo src/flash/nor/ath79.lo \
+	src/flash/nor/fm4.lo src/flash/nor/kinetis_ke.lo \
+	src/flash/nor/xmc1xxx.lo src/flash/nor/at91sam4.lo \
 	src/flash/nor/at91sam4l.lo src/flash/nor/at91samd.lo \
 	src/flash/nor/at91sam3.lo src/flash/nor/at91sam7.lo \
 	src/flash/nor/atsamv.lo src/flash/nor/avrf.lo \
-	src/flash/nor/cfi.lo src/flash/nor/dsp5680xx_flash.lo \
-	src/flash/nor/efm32.lo src/flash/nor/em357.lo \
-	src/flash/nor/faux.lo src/flash/nor/fm3.lo \
-	src/flash/nor/fm4.lo src/flash/nor/jtagspi.lo \
-	src/flash/nor/kinetis.lo src/flash/nor/kinetis_ke.lo \
-	src/flash/nor/lpc2000.lo src/flash/nor/lpc288x.lo \
-	src/flash/nor/lpc2900.lo src/flash/nor/lpcspifi.lo \
-	src/flash/nor/mdr.lo src/flash/nor/mrvlqspi.lo \
-	src/flash/nor/niietcm4.lo src/flash/nor/non_cfi.lo \
-	src/flash/nor/nrf51.lo src/flash/nor/numicro.lo \
-	src/flash/nor/ocl.lo src/flash/nor/pic32mx.lo \
+	src/flash/nor/cfi.lo src/flash/nor/efm32.lo \
+	src/flash/nor/em357.lo src/flash/nor/faux.lo \
+	src/flash/nor/jtagspi.lo src/flash/nor/lpc2000.lo \
+	src/flash/nor/lpc288x.lo src/flash/nor/lpc2900.lo \
+	src/flash/nor/lpcspifi.lo src/flash/nor/mdr.lo \
+	src/flash/nor/non_cfi.lo src/flash/nor/ocl.lo \
+	src/flash/nor/pic32mx.lo src/flash/nor/spi.lo \
+	src/flash/nor/stmsmi.lo src/flash/nor/stellaris.lo \
+	src/flash/nor/stm32f1x.lo src/flash/nor/stm32f2x.lo \
+	src/flash/nor/stm32lx.lo src/flash/nor/stm32l4x.lo \
+	src/flash/nor/str7x.lo src/flash/nor/str9x.lo \
+	src/flash/nor/str9xpec.lo src/flash/nor/tms470.lo \
+	src/flash/nor/virtual.lo src/flash/nor/fm3.lo \
+	src/flash/nor/dsp5680xx_flash.lo src/flash/nor/kinetis.lo \
+	src/flash/nor/numicro.lo src/flash/nor/nrf5.lo \
+	src/flash/nor/nrf52.lo src/flash/nor/mrvlqspi.lo \
 	src/flash/nor/psoc4.lo src/flash/nor/sim3x.lo \
-	src/flash/nor/spi.lo src/flash/nor/stmsmi.lo \
-	src/flash/nor/stellaris.lo src/flash/nor/stm32f1x.lo \
-	src/flash/nor/stm32f2x.lo src/flash/nor/stm32lx.lo \
-	src/flash/nor/stm32l4x.lo src/flash/nor/str7x.lo \
-	src/flash/nor/str9x.lo src/flash/nor/str9xpec.lo \
-	src/flash/nor/tms470.lo src/flash/nor/virtual.lo \
-	src/flash/nor/xmc1xxx.lo src/flash/nor/xmc4xxx.lo
+	src/flash/nor/xmc4xxx.lo src/flash/nor/niietcm4.lo
 am_src_flash_nor_libocdflashnor_la_OBJECTS = src/flash/nor/core.lo \
 	src/flash/nor/tcl.lo $(am__objects_3) src/flash/nor/drivers.lo \
 	$(am__objects_2)
@@ -316,8 +322,8 @@ am_src_jtag_aice_libocdaice_la_rpath =
 am__DEPENDENCIES_1 =
 am__DEPENDENCIES_2 =  \
 	$(am__DEPENDENCIES_1)
-#am__DEPENDENCIES_3 =  \
-#	$(am__DEPENDENCIES_1)
+am__DEPENDENCIES_3 =  \
+	$(am__DEPENDENCIES_1)
 #am__DEPENDENCIES_4 =  \
 #	$(am__DEPENDENCIES_1)
 #am__DEPENDENCIES_5 =  \
@@ -353,6 +359,7 @@ am__src_jtag_drivers_libocdjtagdrivers_la_SOURCES_DIST =  \
 	src/jtag/drivers/osbdm.c src/jtag/drivers/opendous.c \
 	src/jtag/drivers/sysfsgpio.c src/jtag/drivers/bcm2835gpio.c \
 	src/jtag/drivers/openjtag.c src/jtag/drivers/cmsis_dap_usb.c \
+	src/jtag/drivers/imx_gpio.c src/jtag/drivers/kitprog.c \
 	src/jtag/drivers/bitbang.h src/jtag/drivers/bitq.h \
 	src/jtag/drivers/libusb0_common.h \
 	src/jtag/drivers/libusb1_common.h \
@@ -367,8 +374,8 @@ am__src_jtag_drivers_libocdjtagdrivers_la_SOURCES_DIST =  \
 	src/jtag/drivers/versaloon/versaloon_include.h \
 	src/jtag/drivers/versaloon/versaloon_internal.h
 am__objects_6 = src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-libusb1_common.lo
-#am__objects_7 = src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-usb_common.lo
-##am__objects_8 = src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-libusb0_common.lo
+am__objects_7 = src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-usb_common.lo
+#am__objects_8 = src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-libusb0_common.lo
 am__objects_9 = src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-jlink.lo
 #am__objects_10 = src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-bitbang.lo
 #am__objects_11 = src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-parport.lo
@@ -382,9 +389,9 @@ am__objects_13 = src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-ftdi.lo 
 #am__objects_18 = src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-gw16012.lo
 #am__objects_19 = src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-bitq.lo
 #am__objects_20 = src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-presto.lo
-#am__objects_21 = src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-usbprog.lo
-#am__objects_22 = src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-rlink.lo \
-#	src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-rlink_speed_table.lo
+am__objects_21 = src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-usbprog.lo
+am__objects_22 = src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-rlink.lo \
+	src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-rlink_speed_table.lo
 am__objects_23 = src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-ulink.lo
 am__objects_24 = src/jtag/drivers/versaloon/usbtoxxx/src_jtag_drivers_libocdjtagdrivers_la-usbtogpio.lo \
 	src/jtag/drivers/versaloon/usbtoxxx/src_jtag_drivers_libocdjtagdrivers_la-usbtojtagraw.lo \
@@ -393,7 +400,7 @@ am__objects_24 = src/jtag/drivers/versaloon/usbtoxxx/src_jtag_drivers_libocdjtag
 	src/jtag/drivers/versaloon/usbtoxxx/src_jtag_drivers_libocdjtagdrivers_la-usbtoxxx.lo \
 	src/jtag/drivers/versaloon/src_jtag_drivers_libocdjtagdrivers_la-versaloon.lo \
 	src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-vsllink.lo
-#am__objects_25 = src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-arm-jtag-ew.lo
+am__objects_25 = src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-arm-jtag-ew.lo
 #am__objects_26 = src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-buspirate.lo
 #am__objects_27 = src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-remote_bitbang.lo
 am__objects_28 = src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-stlink_usb.lo \
@@ -404,7 +411,9 @@ am__objects_30 = src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-opendous
 #am__objects_32 = src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-bcm2835gpio.lo
 #am__objects_33 = src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-openjtag.lo
 #am__objects_34 = src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-cmsis_dap_usb.lo
-am__objects_35 = src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-driver.lo \
+#am__objects_35 = src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-imx_gpio.lo
+#am__objects_36 = src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-kitprog.lo
+am__objects_37 = src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-driver.lo \
 	$(am__objects_6) $(am__objects_7) \
 	$(am__objects_8) $(am__objects_9) \
 	$(am__objects_10) $(am__objects_11) \
@@ -419,9 +428,10 @@ am__objects_35 = src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-driver.l
 	$(am__objects_28) $(am__objects_29) \
 	$(am__objects_30) $(am__objects_31) \
 	$(am__objects_32) $(am__objects_33) \
-	$(am__objects_34)
+	$(am__objects_34) $(am__objects_35) \
+	$(am__objects_36)
 am_src_jtag_drivers_libocdjtagdrivers_la_OBJECTS =  \
-	$(am__objects_35) $(am__objects_2)
+	$(am__objects_37) $(am__objects_2)
 src_jtag_drivers_libocdjtagdrivers_la_OBJECTS =  \
 	$(am_src_jtag_drivers_libocdjtagdrivers_la_OBJECTS)
 am_src_jtag_drivers_libocdjtagdrivers_la_rpath =
@@ -431,13 +441,13 @@ am__src_jtag_drivers_usb_blaster_libocdusbblaster_la_SOURCES_DIST =  \
 	src/jtag/drivers/usb_blaster/ublast_access.h \
 	src/jtag/drivers/usb_blaster/ublast_access_ftdi.c \
 	src/jtag/drivers/usb_blaster/ublast2_access_libusb.c
-#am__objects_36 = src/jtag/drivers/usb_blaster/src_jtag_drivers_usb_blaster_libocdusbblaster_la-ublast_access_ftdi.lo
-am__objects_37 = src/jtag/drivers/usb_blaster/src_jtag_drivers_usb_blaster_libocdusbblaster_la-ublast2_access_libusb.lo
-am__objects_38 = src/jtag/drivers/usb_blaster/src_jtag_drivers_usb_blaster_libocdusbblaster_la-usb_blaster.lo \
-	$(am__objects_36) \
-	$(am__objects_37)
+#am__objects_38 = src/jtag/drivers/usb_blaster/src_jtag_drivers_usb_blaster_libocdusbblaster_la-ublast_access_ftdi.lo
+am__objects_39 = src/jtag/drivers/usb_blaster/src_jtag_drivers_usb_blaster_libocdusbblaster_la-ublast2_access_libusb.lo
+am__objects_40 = src/jtag/drivers/usb_blaster/src_jtag_drivers_usb_blaster_libocdusbblaster_la-usb_blaster.lo \
+	$(am__objects_38) \
+	$(am__objects_39)
 am_src_jtag_drivers_usb_blaster_libocdusbblaster_la_OBJECTS =  \
-	$(am__objects_38)
+	$(am__objects_40)
 src_jtag_drivers_usb_blaster_libocdusbblaster_la_OBJECTS = $(am_src_jtag_drivers_usb_blaster_libocdusbblaster_la_OBJECTS)
 am_src_jtag_drivers_usb_blaster_libocdusbblaster_la_rpath =
 src_jtag_hla_libocdhla_la_LIBADD =
@@ -454,7 +464,7 @@ src_jtag_hla_libocdhla_la_OBJECTS =  \
 	$(am_src_jtag_hla_libocdhla_la_OBJECTS)
 am_src_jtag_hla_libocdhla_la_rpath =
 src_jtag_libjtag_la_DEPENDENCIES = $(am__append_17) $(am__append_19) \
-	$(am__append_70)
+	$(am__append_72)
 am__src_jtag_libjtag_la_SOURCES_DIST = src/jtag/adapter.c \
 	src/jtag/core.c src/jtag/interface.c src/jtag/interfaces.c \
 	src/jtag/tcl.c src/jtag/commands.h src/jtag/driver.h \
@@ -464,15 +474,15 @@ am__src_jtag_libjtag_la_SOURCES_DIST = src/jtag/adapter.c \
 	src/jtag/minidummy/jtag_minidriver.h src/jtag/swd.h \
 	src/jtag/tcl.h src/jtag/zy1000/zy1000.c \
 	src/jtag/minidummy/minidummy.c src/jtag/commands.c
-##am__objects_39 =  \
+##am__objects_41 =  \
 ##	src/jtag/zy1000/zy1000.lo
-##am__objects_40 = src/jtag/minidummy/minidummy.lo \
+##am__objects_42 = src/jtag/minidummy/minidummy.lo \
 ##	src/jtag/commands.lo
-am__objects_41 = src/jtag/commands.lo
-am__objects_42 = $(am__objects_39) $(am__objects_40) $(am__objects_41)
+am__objects_43 = src/jtag/commands.lo
+am__objects_44 = $(am__objects_41) $(am__objects_42) $(am__objects_43)
 am_src_jtag_libjtag_la_OBJECTS = src/jtag/adapter.lo src/jtag/core.lo \
 	src/jtag/interface.lo src/jtag/interfaces.lo src/jtag/tcl.lo \
-	$(am__objects_42)
+	$(am__objects_44)
 src_jtag_libjtag_la_OBJECTS = $(am_src_jtag_libjtag_la_OBJECTS)
 src_libopenocd_la_DEPENDENCIES = src/xsvf/libxsvf.la src/svf/libsvf.la \
 	src/pld/libpld.la src/jtag/libjtag.la \
@@ -540,11 +550,12 @@ am__src_target_libtarget_la_SOURCES_DIST = src/target/algorithm.c \
 	src/target/adi_v5_jtag.c src/target/adi_v5_swd.c \
 	src/target/embeddedice.c src/target/trace.c src/target/etb.c \
 	src/target/etm.c src/target/oocd_trace.c \
-	src/target/etm_dummy.c src/target/armv4_5.c \
-	src/target/armv4_5_mmu.c src/target/armv4_5_cache.c \
-	src/target/arm7_9_common.c src/target/arm7tdmi.c \
-	src/target/arm720t.c src/target/arm9tdmi.c \
-	src/target/arm920t.c src/target/arm966e.c src/target/arm946e.c \
+	src/target/etm_dummy.c src/target/arm_cti.c \
+	src/target/armv4_5.c src/target/armv4_5_mmu.c \
+	src/target/armv4_5_cache.c src/target/arm7_9_common.c \
+	src/target/arm7tdmi.c src/target/arm720t.c \
+	src/target/arm9tdmi.c src/target/arm920t.c \
+	src/target/arm966e.c src/target/arm946e.c \
 	src/target/arm926ejs.c src/target/feroceon.c \
 	src/target/arm11.c src/target/arm11_dbgtap.c \
 	src/target/armv7m.c src/target/armv7m_trace.c \
@@ -564,31 +575,36 @@ am__src_target_libtarget_la_SOURCES_DIST = src/target/algorithm.c \
 	src/target/lakemont.c src/target/x86_32_common.c \
 	src/target/avrt.c src/target/dsp563xx.c \
 	src/target/dsp563xx_once.c src/target/dsp5680xx.c \
-	src/target/hla_target.c src/target/algorithm.h \
-	src/target/arm.h src/target/arm_dpm.h src/target/arm_jtag.h \
-	src/target/arm_adi_v5.h src/target/armv7a_cache.h \
-	src/target/armv7a_cache_l2x.h src/target/arm_disassembler.h \
-	src/target/arm_opcodes.h src/target/arm_simulator.h \
-	src/target/arm_semihosting.h src/target/arm7_9_common.h \
-	src/target/arm7tdmi.h src/target/arm720t.h \
-	src/target/arm9tdmi.h src/target/arm920t.h \
-	src/target/arm926ejs.h src/target/arm966e.h \
-	src/target/arm946e.h src/target/arm11.h \
+	src/target/hla_target.c src/target/armv8_dpm.c \
+	src/target/armv8_opcodes.c src/target/aarch64.c \
+	src/target/armv8.c src/target/armv8_cache.c \
+	src/target/algorithm.h src/target/arm.h src/target/arm_dpm.h \
+	src/target/arm_jtag.h src/target/arm_adi_v5.h \
+	src/target/armv7a_cache.h src/target/armv7a_cache_l2x.h \
+	src/target/arm_disassembler.h src/target/arm_opcodes.h \
+	src/target/arm_simulator.h src/target/arm_semihosting.h \
+	src/target/arm7_9_common.h src/target/arm7tdmi.h \
+	src/target/arm720t.h src/target/arm9tdmi.h \
+	src/target/arm920t.h src/target/arm926ejs.h \
+	src/target/arm966e.h src/target/arm946e.h src/target/arm11.h \
 	src/target/arm11_dbgtap.h src/target/armv4_5.h \
 	src/target/armv4_5_mmu.h src/target/armv4_5_cache.h \
 	src/target/armv7a.h src/target/armv7m.h \
-	src/target/armv7m_trace.h src/target/avrt.h \
+	src/target/armv7m_trace.h src/target/armv8.h \
+	src/target/armv8_dpm.h src/target/armv8_opcodes.h \
+	src/target/armv8_cache.h src/target/avrt.h \
 	src/target/dsp563xx.h src/target/dsp563xx_once.h \
 	src/target/dsp5680xx.h src/target/breakpoints.h \
 	src/target/cortex_m.h src/target/cortex_a.h \
-	src/target/embeddedice.h src/target/etb.h src/target/etm.h \
-	src/target/etm_dummy.h src/target/image.h src/target/mips32.h \
-	src/target/mips_m4k.h src/target/mips_ejtag.h \
-	src/target/mips32_pracc.h src/target/mips32_dmaacc.h \
-	src/target/oocd_trace.h src/target/register.h \
-	src/target/target.h src/target/target_type.h \
-	src/target/trace.h src/target/target_request.h \
-	src/target/xscale.h src/target/smp.h src/target/avr32_ap7k.h \
+	src/target/aarch64.h src/target/embeddedice.h src/target/etb.h \
+	src/target/etm.h src/target/etm_dummy.h src/target/image.h \
+	src/target/mips32.h src/target/mips_m4k.h \
+	src/target/mips_ejtag.h src/target/mips32_pracc.h \
+	src/target/mips32_dmaacc.h src/target/oocd_trace.h \
+	src/target/register.h src/target/target.h \
+	src/target/target_type.h src/target/trace.h \
+	src/target/target_request.h src/target/xscale.h \
+	src/target/smp.h src/target/avr32_ap7k.h \
 	src/target/avr32_jtag.h src/target/avr32_mem.h \
 	src/target/avr32_regs.h src/target/nds32.h \
 	src/target/nds32_cmd.h src/target/nds32_disassembler.h \
@@ -597,51 +613,55 @@ am__src_target_libtarget_la_SOURCES_DIST = src/target/algorithm.c \
 	src/target/nds32_v2.h src/target/nds32_v3_common.h \
 	src/target/nds32_v3.h src/target/nds32_v3m.h \
 	src/target/nds32_aice.h src/target/lakemont.h \
-	src/target/x86_32_common.h
-am__objects_43 = src/target/algorithm.lo src/target/register.lo \
+	src/target/x86_32_common.h src/target/arm_cti.h
+am__objects_45 = src/target/algorithm.lo src/target/register.lo \
 	src/target/image.lo src/target/breakpoints.lo \
 	src/target/target.lo src/target/target_request.lo \
 	src/target/testee.lo src/target/smp.lo
-#am__objects_44 = src/target/oocd_trace.lo
-am__objects_45 = src/target/arm_dpm.lo src/target/arm_jtag.lo \
+#am__objects_46 = src/target/oocd_trace.lo
+am__objects_47 = src/target/arm_dpm.lo src/target/arm_jtag.lo \
 	src/target/arm_disassembler.lo src/target/arm_simulator.lo \
 	src/target/arm_semihosting.lo src/target/arm_adi_v5.lo \
 	src/target/armv7a_cache.lo src/target/armv7a_cache_l2x.lo \
 	src/target/adi_v5_jtag.lo src/target/adi_v5_swd.lo \
 	src/target/embeddedice.lo src/target/trace.lo \
-	src/target/etb.lo src/target/etm.lo $(am__objects_44) \
-	src/target/etm_dummy.lo
-am__objects_46 = src/target/arm7_9_common.lo src/target/arm7tdmi.lo \
+	src/target/etb.lo src/target/etm.lo $(am__objects_46) \
+	src/target/etm_dummy.lo src/target/arm_cti.lo
+am__objects_48 = src/target/arm7_9_common.lo src/target/arm7tdmi.lo \
 	src/target/arm720t.lo src/target/arm9tdmi.lo \
 	src/target/arm920t.lo src/target/arm966e.lo \
 	src/target/arm946e.lo src/target/arm926ejs.lo \
 	src/target/feroceon.lo
-am__objects_47 = src/target/armv4_5.lo src/target/armv4_5_mmu.lo \
-	src/target/armv4_5_cache.lo $(am__objects_46)
-am__objects_48 = src/target/arm11.lo src/target/arm11_dbgtap.lo
-am__objects_49 = src/target/armv7m.lo src/target/armv7m_trace.lo \
+am__objects_49 = src/target/armv4_5.lo src/target/armv4_5_mmu.lo \
+	src/target/armv4_5_cache.lo $(am__objects_48)
+am__objects_50 = src/target/arm11.lo src/target/arm11_dbgtap.lo
+am__objects_51 = src/target/armv7m.lo src/target/armv7m_trace.lo \
 	src/target/cortex_m.lo src/target/armv7a.lo \
 	src/target/cortex_a.lo src/target/ls1_sap.lo
-am__objects_50 = src/target/fa526.lo src/target/xscale.lo
-am__objects_51 = src/target/avr32_ap7k.lo src/target/avr32_jtag.lo \
+am__objects_52 = src/target/fa526.lo src/target/xscale.lo
+am__objects_53 = src/target/avr32_ap7k.lo src/target/avr32_jtag.lo \
 	src/target/avr32_mem.lo src/target/avr32_regs.lo
-am__objects_52 = src/target/mips32.lo src/target/mips_m4k.lo \
+am__objects_54 = src/target/mips32.lo src/target/mips_m4k.lo \
 	src/target/mips32_pracc.lo src/target/mips32_dmaacc.lo \
 	src/target/mips_ejtag.lo
-am__objects_53 = src/target/nds32.lo src/target/nds32_reg.lo \
+am__objects_55 = src/target/nds32.lo src/target/nds32_reg.lo \
 	src/target/nds32_cmd.lo src/target/nds32_disassembler.lo \
 	src/target/nds32_tlb.lo src/target/nds32_v2.lo \
 	src/target/nds32_v3_common.lo src/target/nds32_v3.lo \
 	src/target/nds32_v3m.lo src/target/nds32_aice.lo
-am__objects_54 = src/target/quark_x10xx.lo src/target/quark_d20xx.lo \
+am__objects_56 = src/target/quark_x10xx.lo src/target/quark_d20xx.lo \
 	src/target/lakemont.lo src/target/x86_32_common.lo
-am_src_target_libtarget_la_OBJECTS = $(am__objects_43) \
-	$(am__objects_45) $(am__objects_47) $(am__objects_48) \
-	$(am__objects_49) $(am__objects_50) $(am__objects_51) \
-	$(am__objects_52) $(am__objects_53) $(am__objects_54) \
+am__objects_57 = src/target/armv8_dpm.lo src/target/armv8_opcodes.lo \
+	src/target/aarch64.lo src/target/armv8.lo \
+	src/target/armv8_cache.lo
+am__objects_58 = $(am__objects_57)
+am_src_target_libtarget_la_OBJECTS = $(am__objects_45) \
+	$(am__objects_47) $(am__objects_49) $(am__objects_50) \
+	$(am__objects_51) $(am__objects_52) $(am__objects_53) \
+	$(am__objects_54) $(am__objects_55) $(am__objects_56) \
 	src/target/avrt.lo src/target/dsp563xx.lo \
 	src/target/dsp563xx_once.lo src/target/dsp5680xx.lo \
-	src/target/hla_target.lo
+	src/target/hla_target.lo $(am__objects_58)
 src_target_libtarget_la_OBJECTS =  \
 	$(am_src_target_libtarget_la_OBJECTS)
 src_target_openrisc_libopenrisc_la_LIBADD =
@@ -820,6 +840,7 @@ NROFF = nroff
 MANS = $(dist_man_MANS)
 am__dist_ulink_DATA_DIST = $(ULINK_FIRMWARE)/ulink_firmware.hex
 DATA = $(dist_ulink_DATA) $(nobase_dist_pkgdata_DATA)
+HEADERS = $(noinst_HEADERS)
 RECURSIVE_CLEAN_TARGETS = mostlyclean-recursive clean-recursive	\
   distclean-recursive maintainer-clean-recursive
 am__recursive_targets = \
@@ -911,13 +932,13 @@ distuninstallcheck_listfiles = find . -type f -print
 am__distuninstallcheck_listfiles = $(distuninstallcheck_listfiles) \
   | sed 's|^\./|$(prefix)/|' | grep -v '$(infodir)/dir$$'
 distcleancheck_listfiles = find . -type f -print
-ACLOCAL = ${SHELL} /home/mihai/Temp/openocd-0.10.0/missing aclocal-1.15
+ACLOCAL = ${SHELL} /home/mihai/Programs/openocd_nrf52/openocd-code/missing aclocal-1.15
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 1
 AR = ar
-AUTOCONF = ${SHELL} /home/mihai/Temp/openocd-0.10.0/missing autoconf
-AUTOHEADER = ${SHELL} /home/mihai/Temp/openocd-0.10.0/missing autoheader
-AUTOMAKE = ${SHELL} /home/mihai/Temp/openocd-0.10.0/missing automake-1.15
+AUTOCONF = ${SHELL} /home/mihai/Programs/openocd_nrf52/openocd-code/missing autoconf
+AUTOHEADER = ${SHELL} /home/mihai/Programs/openocd_nrf52/openocd-code/missing autoheader
+AUTOMAKE = ${SHELL} /home/mihai/Programs/openocd_nrf52/openocd-code/missing automake-1.15
 AWK = gawk
 CC = gcc
 CCDEPMODE = depmode=gcc3
@@ -957,7 +978,7 @@ LIBS = -ldl
 LIBTOOL = $(SHELL) $(top_builddir)/libtool
 LIBTOOL_DEPS = ./ltmain.sh
 LIBUSB0_CFLAGS = 
-LIBUSB0_LIBS = 
+LIBUSB0_LIBS = -lusb
 LIBUSB1_CFLAGS = -isystem /usr/include/libusb-1.0
 LIBUSB1_LIBS = -lusb-1.0
 LIPO = 
@@ -976,10 +997,10 @@ OTOOL64 =
 PACKAGE = openocd
 PACKAGE_BUGREPORT = OpenOCD Mailing List <openocd-devel@lists.sourceforge.net>
 PACKAGE_NAME = openocd
-PACKAGE_STRING = openocd 0.10.0
+PACKAGE_STRING = openocd 0.10.0+dev
 PACKAGE_TARNAME = openocd
 PACKAGE_URL = 
-PACKAGE_VERSION = 0.10.0
+PACKAGE_VERSION = 0.10.0+dev
 PATH_SEPARATOR = :
 PKG_CONFIG = /usr/bin/pkg-config
 PKG_CONFIG_LIBDIR = 
@@ -989,11 +1010,11 @@ SED = /bin/sed
 SET_MAKE = 
 SHELL = /bin/bash
 STRIP = strip
-VERSION = 0.10.0
-abs_builddir = /home/mihai/Temp/openocd-0.10.0
-abs_srcdir = /home/mihai/Temp/openocd-0.10.0
-abs_top_builddir = /home/mihai/Temp/openocd-0.10.0
-abs_top_srcdir = /home/mihai/Temp/openocd-0.10.0
+VERSION = 0.10.0+dev
+abs_builddir = /home/mihai/Programs/openocd_nrf52/openocd-code
+abs_srcdir = /home/mihai/Programs/openocd_nrf52/openocd-code
+abs_top_builddir = /home/mihai/Programs/openocd_nrf52/openocd-code
+abs_top_srcdir = /home/mihai/Programs/openocd_nrf52/openocd-code
 ac_ct_AR = ar
 ac_ct_CC = gcc
 ac_ct_DUMPBIN = 
@@ -1024,7 +1045,7 @@ host_vendor = pc
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/mihai/Temp/openocd-0.10.0/install-sh
+install_sh = ${SHELL} /home/mihai/Programs/openocd_nrf52/openocd-code/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -1036,6 +1057,7 @@ pdfdir = ${docdir}
 prefix = /usr/local
 program_transform_name = s,x,x,
 psdir = ${docdir}
+runstatedir = ${localstatedir}/run
 sbindir = ${exec_prefix}/sbin
 sharedstatedir = ${prefix}/com
 srcdir = .
@@ -1153,7 +1175,7 @@ src_helper_libhelper_la_SOURCES = src/helper/binarybuffer.c \
 src_helper_libhelper_la_CFLAGS = $(AM_CFLAGS) $(am__append_10)
 JTAG_SRCS = $(am__append_11) $(am__append_12) $(am__append_15)
 src_jtag_libjtag_la_LIBADD = $(am__append_17) $(am__append_19) \
-	$(am__append_70)
+	$(am__append_72)
 ##JTAG_MINIDRIVER_DIR = src/jtag/minidummy
 ##JTAG_MINIDRIVER_DIR = src/jtag/zy1000
 MINIDRIVER_IMP_DIR = src/jtag/drivers
@@ -1213,7 +1235,8 @@ DRIVERFILES = src/jtag/drivers/driver.c \
 	$(am__append_63) $(am__append_64) \
 	$(am__append_65) $(am__append_66) \
 	$(am__append_67) $(am__append_68) \
-	$(am__append_69)
+	$(am__append_69) $(am__append_70) \
+	$(am__append_71)
 src_jtag_drivers_usb_blaster_libocdusbblaster_la_SOURCES = $(USB_BLASTER_SRC)
 src_jtag_drivers_usb_blaster_libocdusbblaster_la_CPPFLAGS = -I$(top_srcdir)/src/jtag/drivers $(AM_CPPFLAGS) $(LIBUSB1_CFLAGS) $(LIBFTDI_CFLAGS)
 USB_BLASTER_SRC = src/jtag/drivers/usb_blaster/usb_blaster.c \
@@ -1273,40 +1296,43 @@ src_target_libtarget_la_SOURCES = $(TARGET_CORE_SRC) $(ARM_DEBUG_SRC) \
 	$(AVR32_SRC) $(MIPS32_SRC) $(NDS32_SRC) $(INTEL_IA32_SRC) \
 	src/target/avrt.c src/target/dsp563xx.c \
 	src/target/dsp563xx_once.c src/target/dsp5680xx.c \
-	src/target/hla_target.c src/target/algorithm.h \
-	src/target/arm.h src/target/arm_dpm.h src/target/arm_jtag.h \
-	src/target/arm_adi_v5.h src/target/armv7a_cache.h \
-	src/target/armv7a_cache_l2x.h src/target/arm_disassembler.h \
-	src/target/arm_opcodes.h src/target/arm_simulator.h \
-	src/target/arm_semihosting.h src/target/arm7_9_common.h \
-	src/target/arm7tdmi.h src/target/arm720t.h \
-	src/target/arm9tdmi.h src/target/arm920t.h \
-	src/target/arm926ejs.h src/target/arm966e.h \
-	src/target/arm946e.h src/target/arm11.h \
+	src/target/hla_target.c $(am__append_73) \
+	src/target/algorithm.h src/target/arm.h src/target/arm_dpm.h \
+	src/target/arm_jtag.h src/target/arm_adi_v5.h \
+	src/target/armv7a_cache.h src/target/armv7a_cache_l2x.h \
+	src/target/arm_disassembler.h src/target/arm_opcodes.h \
+	src/target/arm_simulator.h src/target/arm_semihosting.h \
+	src/target/arm7_9_common.h src/target/arm7tdmi.h \
+	src/target/arm720t.h src/target/arm9tdmi.h \
+	src/target/arm920t.h src/target/arm926ejs.h \
+	src/target/arm966e.h src/target/arm946e.h src/target/arm11.h \
 	src/target/arm11_dbgtap.h src/target/armv4_5.h \
 	src/target/armv4_5_mmu.h src/target/armv4_5_cache.h \
 	src/target/armv7a.h src/target/armv7m.h \
-	src/target/armv7m_trace.h src/target/avrt.h \
+	src/target/armv7m_trace.h src/target/armv8.h \
+	src/target/armv8_dpm.h src/target/armv8_opcodes.h \
+	src/target/armv8_cache.h src/target/avrt.h \
 	src/target/dsp563xx.h src/target/dsp563xx_once.h \
 	src/target/dsp5680xx.h src/target/breakpoints.h \
 	src/target/cortex_m.h src/target/cortex_a.h \
-	src/target/embeddedice.h src/target/etb.h src/target/etm.h \
-	src/target/etm_dummy.h src/target/image.h src/target/mips32.h \
-	src/target/mips_m4k.h src/target/mips_ejtag.h \
-	src/target/mips32_pracc.h src/target/mips32_dmaacc.h \
-	src/target/oocd_trace.h src/target/register.h \
-	src/target/target.h src/target/target_type.h \
-	src/target/trace.h src/target/target_request.h \
-	src/target/trace.h src/target/xscale.h src/target/smp.h \
-	src/target/avr32_ap7k.h src/target/avr32_jtag.h \
-	src/target/avr32_mem.h src/target/avr32_regs.h \
-	src/target/nds32.h src/target/nds32_cmd.h \
-	src/target/nds32_disassembler.h src/target/nds32_edm.h \
-	src/target/nds32_insn.h src/target/nds32_reg.h \
-	src/target/nds32_tlb.h src/target/nds32_v2.h \
-	src/target/nds32_v3_common.h src/target/nds32_v3.h \
-	src/target/nds32_v3m.h src/target/nds32_aice.h \
-	src/target/lakemont.h src/target/x86_32_common.h
+	src/target/aarch64.h src/target/embeddedice.h src/target/etb.h \
+	src/target/etm.h src/target/etm_dummy.h src/target/image.h \
+	src/target/mips32.h src/target/mips_m4k.h \
+	src/target/mips_ejtag.h src/target/mips32_pracc.h \
+	src/target/mips32_dmaacc.h src/target/oocd_trace.h \
+	src/target/register.h src/target/target.h \
+	src/target/target_type.h src/target/trace.h \
+	src/target/target_request.h src/target/trace.h \
+	src/target/xscale.h src/target/smp.h src/target/avr32_ap7k.h \
+	src/target/avr32_jtag.h src/target/avr32_mem.h \
+	src/target/avr32_regs.h src/target/nds32.h \
+	src/target/nds32_cmd.h src/target/nds32_disassembler.h \
+	src/target/nds32_edm.h src/target/nds32_insn.h \
+	src/target/nds32_reg.h src/target/nds32_tlb.h \
+	src/target/nds32_v2.h src/target/nds32_v3_common.h \
+	src/target/nds32_v3.h src/target/nds32_v3m.h \
+	src/target/nds32_aice.h src/target/lakemont.h \
+	src/target/x86_32_common.h src/target/arm_cti.h
 TARGET_CORE_SRC = \
 	src/target/algorithm.c \
 	src/target/register.c \
@@ -1350,6 +1376,13 @@ ARMV7_SRC = \
 	src/target/cortex_a.c \
 	src/target/ls1_sap.c
 
+ARMV8_SRC = \
+	src/target/armv8_dpm.c \
+	src/target/armv8_opcodes.c \
+	src/target/aarch64.c \
+	src/target/armv8.c \
+	src/target/armv8_cache.c
+
 ARM_DEBUG_SRC = \
 	src/target/arm_dpm.c \
 	src/target/arm_jtag.c \
@@ -1366,7 +1399,8 @@ ARM_DEBUG_SRC = \
 	src/target/etb.c \
 	src/target/etm.c \
 	$(OOCD_TRACE_FILES) \
-	src/target/etm_dummy.c
+	src/target/etm_dummy.c \
+	src/target/arm_cti.c
 
 AVR32_SRC = \
 	src/target/avr32_ap7k.c \
@@ -1436,7 +1470,7 @@ src_rtos_librtos_la_SOURCES = \
 	src/rtos/rtos_mqx_stackings.h \
 	src/rtos/rtos_ucos_iii_stackings.h
 
-src_rtos_librtos_la_CFLAGS = $(AM_CFLAGS) $(am__append_71)
+src_rtos_librtos_la_CFLAGS = $(AM_CFLAGS) $(am__append_74)
 src_server_libserver_la_SOURCES = \
 	src/server/server.c \
 	src/server/telnet_server.c \
@@ -1448,7 +1482,7 @@ src_server_libserver_la_SOURCES = \
 	src/server/tcl_server.c \
 	src/server/tcl_server.h
 
-src_server_libserver_la_CFLAGS = $(AM_CFLAGS) $(am__append_72)
+src_server_libserver_la_CFLAGS = $(AM_CFLAGS) $(am__append_75)
 src_flash_libflash_la_SOURCES = \
 	src/flash/common.c src/flash/common.h \
 	src/flash/mflash.c src/flash/mflash.h
@@ -1468,6 +1502,10 @@ NOR_DRIVERS = \
 	src/flash/nor/aduc702x.c \
 	src/flash/nor/aducm360.c \
 	src/flash/nor/ambiqmicro.c \
+	src/flash/nor/ath79.c \
+	src/flash/nor/fm4.c \
+	src/flash/nor/kinetis_ke.c \
+	src/flash/nor/xmc1xxx.c \
 	src/flash/nor/at91sam4.c \
 	src/flash/nor/at91sam4l.c \
 	src/flash/nor/at91samd.c \
@@ -1476,29 +1514,18 @@ NOR_DRIVERS = \
 	src/flash/nor/atsamv.c \
 	src/flash/nor/avrf.c \
 	src/flash/nor/cfi.c \
-	src/flash/nor/dsp5680xx_flash.c \
 	src/flash/nor/efm32.c \
 	src/flash/nor/em357.c \
 	src/flash/nor/faux.c \
-	src/flash/nor/fm3.c \
-	src/flash/nor/fm4.c \
 	src/flash/nor/jtagspi.c \
-	src/flash/nor/kinetis.c \
-	src/flash/nor/kinetis_ke.c \
 	src/flash/nor/lpc2000.c \
 	src/flash/nor/lpc288x.c \
 	src/flash/nor/lpc2900.c \
 	src/flash/nor/lpcspifi.c \
 	src/flash/nor/mdr.c \
-	src/flash/nor/mrvlqspi.c \
-	src/flash/nor/niietcm4.c \
 	src/flash/nor/non_cfi.c \
-	src/flash/nor/nrf51.c \
-	src/flash/nor/numicro.c \
 	src/flash/nor/ocl.c \
 	src/flash/nor/pic32mx.c \
-	src/flash/nor/psoc4.c \
-	src/flash/nor/sim3x.c \
 	src/flash/nor/spi.c \
 	src/flash/nor/stmsmi.c \
 	src/flash/nor/stellaris.c \
@@ -1511,8 +1538,26 @@ NOR_DRIVERS = \
 	src/flash/nor/str9xpec.c \
 	src/flash/nor/tms470.c \
 	src/flash/nor/virtual.c \
-	src/flash/nor/xmc1xxx.c \
-	src/flash/nor/xmc4xxx.c
+	src/flash/nor/fm3.c \
+	src/flash/nor/dsp5680xx_flash.c \
+	src/flash/nor/kinetis.c \
+	src/flash/nor/numicro.c \
+	src/flash/nor/nrf5.c \
+	src/flash/nor/nrf52.c \
+	src/flash/nor/mrvlqspi.c \
+	src/flash/nor/psoc4.c \
+	src/flash/nor/sim3x.c \
+	src/flash/nor/xmc4xxx.c \
+	src/flash/nor/niietcm4.c
+
+noinst_HEADERS = \
+	src/flash/nor/core.h \
+	src/flash/nor/cfi.h \
+	src/flash/nor/driver.h \
+	src/flash/nor/imp.h \
+	src/flash/nor/non_cfi.h \
+	src/flash/nor/ocl.h \
+	src/flash/nor/spi.h
 
 NORHEADERS = \
 	src/flash/nor/core.h \
@@ -1721,6 +1766,14 @@ src/flash/nor/aducm360.lo: src/flash/nor/$(am__dirstamp) \
 	src/flash/nor/$(DEPDIR)/$(am__dirstamp)
 src/flash/nor/ambiqmicro.lo: src/flash/nor/$(am__dirstamp) \
 	src/flash/nor/$(DEPDIR)/$(am__dirstamp)
+src/flash/nor/ath79.lo: src/flash/nor/$(am__dirstamp) \
+	src/flash/nor/$(DEPDIR)/$(am__dirstamp)
+src/flash/nor/fm4.lo: src/flash/nor/$(am__dirstamp) \
+	src/flash/nor/$(DEPDIR)/$(am__dirstamp)
+src/flash/nor/kinetis_ke.lo: src/flash/nor/$(am__dirstamp) \
+	src/flash/nor/$(DEPDIR)/$(am__dirstamp)
+src/flash/nor/xmc1xxx.lo: src/flash/nor/$(am__dirstamp) \
+	src/flash/nor/$(DEPDIR)/$(am__dirstamp)
 src/flash/nor/at91sam4.lo: src/flash/nor/$(am__dirstamp) \
 	src/flash/nor/$(DEPDIR)/$(am__dirstamp)
 src/flash/nor/at91sam4l.lo: src/flash/nor/$(am__dirstamp) \
@@ -1737,23 +1790,13 @@ src/flash/nor/avrf.lo: src/flash/nor/$(am__dirstamp) \
 	src/flash/nor/$(DEPDIR)/$(am__dirstamp)
 src/flash/nor/cfi.lo: src/flash/nor/$(am__dirstamp) \
 	src/flash/nor/$(DEPDIR)/$(am__dirstamp)
-src/flash/nor/dsp5680xx_flash.lo: src/flash/nor/$(am__dirstamp) \
-	src/flash/nor/$(DEPDIR)/$(am__dirstamp)
 src/flash/nor/efm32.lo: src/flash/nor/$(am__dirstamp) \
 	src/flash/nor/$(DEPDIR)/$(am__dirstamp)
 src/flash/nor/em357.lo: src/flash/nor/$(am__dirstamp) \
 	src/flash/nor/$(DEPDIR)/$(am__dirstamp)
 src/flash/nor/faux.lo: src/flash/nor/$(am__dirstamp) \
 	src/flash/nor/$(DEPDIR)/$(am__dirstamp)
-src/flash/nor/fm3.lo: src/flash/nor/$(am__dirstamp) \
-	src/flash/nor/$(DEPDIR)/$(am__dirstamp)
-src/flash/nor/fm4.lo: src/flash/nor/$(am__dirstamp) \
-	src/flash/nor/$(DEPDIR)/$(am__dirstamp)
 src/flash/nor/jtagspi.lo: src/flash/nor/$(am__dirstamp) \
-	src/flash/nor/$(DEPDIR)/$(am__dirstamp)
-src/flash/nor/kinetis.lo: src/flash/nor/$(am__dirstamp) \
-	src/flash/nor/$(DEPDIR)/$(am__dirstamp)
-src/flash/nor/kinetis_ke.lo: src/flash/nor/$(am__dirstamp) \
 	src/flash/nor/$(DEPDIR)/$(am__dirstamp)
 src/flash/nor/lpc2000.lo: src/flash/nor/$(am__dirstamp) \
 	src/flash/nor/$(DEPDIR)/$(am__dirstamp)
@@ -1765,23 +1808,11 @@ src/flash/nor/lpcspifi.lo: src/flash/nor/$(am__dirstamp) \
 	src/flash/nor/$(DEPDIR)/$(am__dirstamp)
 src/flash/nor/mdr.lo: src/flash/nor/$(am__dirstamp) \
 	src/flash/nor/$(DEPDIR)/$(am__dirstamp)
-src/flash/nor/mrvlqspi.lo: src/flash/nor/$(am__dirstamp) \
-	src/flash/nor/$(DEPDIR)/$(am__dirstamp)
-src/flash/nor/niietcm4.lo: src/flash/nor/$(am__dirstamp) \
-	src/flash/nor/$(DEPDIR)/$(am__dirstamp)
 src/flash/nor/non_cfi.lo: src/flash/nor/$(am__dirstamp) \
-	src/flash/nor/$(DEPDIR)/$(am__dirstamp)
-src/flash/nor/nrf51.lo: src/flash/nor/$(am__dirstamp) \
-	src/flash/nor/$(DEPDIR)/$(am__dirstamp)
-src/flash/nor/numicro.lo: src/flash/nor/$(am__dirstamp) \
 	src/flash/nor/$(DEPDIR)/$(am__dirstamp)
 src/flash/nor/ocl.lo: src/flash/nor/$(am__dirstamp) \
 	src/flash/nor/$(DEPDIR)/$(am__dirstamp)
 src/flash/nor/pic32mx.lo: src/flash/nor/$(am__dirstamp) \
-	src/flash/nor/$(DEPDIR)/$(am__dirstamp)
-src/flash/nor/psoc4.lo: src/flash/nor/$(am__dirstamp) \
-	src/flash/nor/$(DEPDIR)/$(am__dirstamp)
-src/flash/nor/sim3x.lo: src/flash/nor/$(am__dirstamp) \
 	src/flash/nor/$(DEPDIR)/$(am__dirstamp)
 src/flash/nor/spi.lo: src/flash/nor/$(am__dirstamp) \
 	src/flash/nor/$(DEPDIR)/$(am__dirstamp)
@@ -1807,9 +1838,27 @@ src/flash/nor/tms470.lo: src/flash/nor/$(am__dirstamp) \
 	src/flash/nor/$(DEPDIR)/$(am__dirstamp)
 src/flash/nor/virtual.lo: src/flash/nor/$(am__dirstamp) \
 	src/flash/nor/$(DEPDIR)/$(am__dirstamp)
-src/flash/nor/xmc1xxx.lo: src/flash/nor/$(am__dirstamp) \
+src/flash/nor/fm3.lo: src/flash/nor/$(am__dirstamp) \
+	src/flash/nor/$(DEPDIR)/$(am__dirstamp)
+src/flash/nor/dsp5680xx_flash.lo: src/flash/nor/$(am__dirstamp) \
+	src/flash/nor/$(DEPDIR)/$(am__dirstamp)
+src/flash/nor/kinetis.lo: src/flash/nor/$(am__dirstamp) \
+	src/flash/nor/$(DEPDIR)/$(am__dirstamp)
+src/flash/nor/numicro.lo: src/flash/nor/$(am__dirstamp) \
+	src/flash/nor/$(DEPDIR)/$(am__dirstamp)
+src/flash/nor/nrf5.lo: src/flash/nor/$(am__dirstamp) \
+	src/flash/nor/$(DEPDIR)/$(am__dirstamp)
+src/flash/nor/nrf52.lo: src/flash/nor/$(am__dirstamp) \
+	src/flash/nor/$(DEPDIR)/$(am__dirstamp)
+src/flash/nor/mrvlqspi.lo: src/flash/nor/$(am__dirstamp) \
+	src/flash/nor/$(DEPDIR)/$(am__dirstamp)
+src/flash/nor/psoc4.lo: src/flash/nor/$(am__dirstamp) \
+	src/flash/nor/$(DEPDIR)/$(am__dirstamp)
+src/flash/nor/sim3x.lo: src/flash/nor/$(am__dirstamp) \
 	src/flash/nor/$(DEPDIR)/$(am__dirstamp)
 src/flash/nor/xmc4xxx.lo: src/flash/nor/$(am__dirstamp) \
+	src/flash/nor/$(DEPDIR)/$(am__dirstamp)
+src/flash/nor/niietcm4.lo: src/flash/nor/$(am__dirstamp) \
 	src/flash/nor/$(DEPDIR)/$(am__dirstamp)
 src/flash/nor/drivers.lo: src/flash/nor/$(am__dirstamp) \
 	src/flash/nor/$(DEPDIR)/$(am__dirstamp)
@@ -2023,6 +2072,12 @@ src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-openjtag.lo:  \
 	src/jtag/drivers/$(am__dirstamp) \
 	src/jtag/drivers/$(DEPDIR)/$(am__dirstamp)
 src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-cmsis_dap_usb.lo:  \
+	src/jtag/drivers/$(am__dirstamp) \
+	src/jtag/drivers/$(DEPDIR)/$(am__dirstamp)
+src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-imx_gpio.lo:  \
+	src/jtag/drivers/$(am__dirstamp) \
+	src/jtag/drivers/$(DEPDIR)/$(am__dirstamp)
+src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-kitprog.lo:  \
 	src/jtag/drivers/$(am__dirstamp) \
 	src/jtag/drivers/$(DEPDIR)/$(am__dirstamp)
 
@@ -2256,6 +2311,8 @@ src/target/oocd_trace.lo: src/target/$(am__dirstamp) \
 	src/target/$(DEPDIR)/$(am__dirstamp)
 src/target/etm_dummy.lo: src/target/$(am__dirstamp) \
 	src/target/$(DEPDIR)/$(am__dirstamp)
+src/target/arm_cti.lo: src/target/$(am__dirstamp) \
+	src/target/$(DEPDIR)/$(am__dirstamp)
 src/target/armv4_5.lo: src/target/$(am__dirstamp) \
 	src/target/$(DEPDIR)/$(am__dirstamp)
 src/target/armv4_5_mmu.lo: src/target/$(am__dirstamp) \
@@ -2355,6 +2412,16 @@ src/target/dsp563xx_once.lo: src/target/$(am__dirstamp) \
 src/target/dsp5680xx.lo: src/target/$(am__dirstamp) \
 	src/target/$(DEPDIR)/$(am__dirstamp)
 src/target/hla_target.lo: src/target/$(am__dirstamp) \
+	src/target/$(DEPDIR)/$(am__dirstamp)
+src/target/armv8_dpm.lo: src/target/$(am__dirstamp) \
+	src/target/$(DEPDIR)/$(am__dirstamp)
+src/target/armv8_opcodes.lo: src/target/$(am__dirstamp) \
+	src/target/$(DEPDIR)/$(am__dirstamp)
+src/target/aarch64.lo: src/target/$(am__dirstamp) \
+	src/target/$(DEPDIR)/$(am__dirstamp)
+src/target/armv8.lo: src/target/$(am__dirstamp) \
+	src/target/$(DEPDIR)/$(am__dirstamp)
+src/target/armv8_cache.lo: src/target/$(am__dirstamp) \
 	src/target/$(DEPDIR)/$(am__dirstamp)
 
 src/target/libtarget.la: $(src_target_libtarget_la_OBJECTS) $(src_target_libtarget_la_DEPENDENCIES) $(EXTRA_src_target_libtarget_la_DEPENDENCIES) src/target/$(am__dirstamp)
@@ -2547,6 +2614,7 @@ include src/flash/nor/$(DEPDIR)/at91sam4.Plo
 include src/flash/nor/$(DEPDIR)/at91sam4l.Plo
 include src/flash/nor/$(DEPDIR)/at91sam7.Plo
 include src/flash/nor/$(DEPDIR)/at91samd.Plo
+include src/flash/nor/$(DEPDIR)/ath79.Plo
 include src/flash/nor/$(DEPDIR)/atsamv.Plo
 include src/flash/nor/$(DEPDIR)/avrf.Plo
 include src/flash/nor/$(DEPDIR)/cfi.Plo
@@ -2569,7 +2637,8 @@ include src/flash/nor/$(DEPDIR)/mdr.Plo
 include src/flash/nor/$(DEPDIR)/mrvlqspi.Plo
 include src/flash/nor/$(DEPDIR)/niietcm4.Plo
 include src/flash/nor/$(DEPDIR)/non_cfi.Plo
-include src/flash/nor/$(DEPDIR)/nrf51.Plo
+include src/flash/nor/$(DEPDIR)/nrf5.Plo
+include src/flash/nor/$(DEPDIR)/nrf52.Plo
 include src/flash/nor/$(DEPDIR)/numicro.Plo
 include src/flash/nor/$(DEPDIR)/ocl.Plo
 include src/flash/nor/$(DEPDIR)/pic32mx.Plo
@@ -2628,8 +2697,10 @@ include src/jtag/drivers/$(DEPDIR)/src_jtag_drivers_libocdjtagdrivers_la-dummy.P
 include src/jtag/drivers/$(DEPDIR)/src_jtag_drivers_libocdjtagdrivers_la-ep93xx.Plo
 include src/jtag/drivers/$(DEPDIR)/src_jtag_drivers_libocdjtagdrivers_la-ftdi.Plo
 include src/jtag/drivers/$(DEPDIR)/src_jtag_drivers_libocdjtagdrivers_la-gw16012.Plo
+include src/jtag/drivers/$(DEPDIR)/src_jtag_drivers_libocdjtagdrivers_la-imx_gpio.Plo
 include src/jtag/drivers/$(DEPDIR)/src_jtag_drivers_libocdjtagdrivers_la-jlink.Plo
 include src/jtag/drivers/$(DEPDIR)/src_jtag_drivers_libocdjtagdrivers_la-jtag_vpi.Plo
+include src/jtag/drivers/$(DEPDIR)/src_jtag_drivers_libocdjtagdrivers_la-kitprog.Plo
 include src/jtag/drivers/$(DEPDIR)/src_jtag_drivers_libocdjtagdrivers_la-libusb0_common.Plo
 include src/jtag/drivers/$(DEPDIR)/src_jtag_drivers_libocdjtagdrivers_la-libusb1_common.Plo
 include src/jtag/drivers/$(DEPDIR)/src_jtag_drivers_libocdjtagdrivers_la-mpsse.Plo
@@ -2687,6 +2758,7 @@ include src/server/$(DEPDIR)/src_server_libserver_la-server_stubs.Plo
 include src/server/$(DEPDIR)/src_server_libserver_la-tcl_server.Plo
 include src/server/$(DEPDIR)/src_server_libserver_la-telnet_server.Plo
 include src/svf/$(DEPDIR)/svf.Plo
+include src/target/$(DEPDIR)/aarch64.Plo
 include src/target/$(DEPDIR)/adi_v5_jtag.Plo
 include src/target/$(DEPDIR)/adi_v5_swd.Plo
 include src/target/$(DEPDIR)/algorithm.Plo
@@ -2701,6 +2773,7 @@ include src/target/$(DEPDIR)/arm946e.Plo
 include src/target/$(DEPDIR)/arm966e.Plo
 include src/target/$(DEPDIR)/arm9tdmi.Plo
 include src/target/$(DEPDIR)/arm_adi_v5.Plo
+include src/target/$(DEPDIR)/arm_cti.Plo
 include src/target/$(DEPDIR)/arm_disassembler.Plo
 include src/target/$(DEPDIR)/arm_dpm.Plo
 include src/target/$(DEPDIR)/arm_jtag.Plo
@@ -2714,6 +2787,10 @@ include src/target/$(DEPDIR)/armv7a_cache.Plo
 include src/target/$(DEPDIR)/armv7a_cache_l2x.Plo
 include src/target/$(DEPDIR)/armv7m.Plo
 include src/target/$(DEPDIR)/armv7m_trace.Plo
+include src/target/$(DEPDIR)/armv8.Plo
+include src/target/$(DEPDIR)/armv8_cache.Plo
+include src/target/$(DEPDIR)/armv8_dpm.Plo
+include src/target/$(DEPDIR)/armv8_opcodes.Plo
 include src/target/$(DEPDIR)/avr32_ap7k.Plo
 include src/target/$(DEPDIR)/avr32_jtag.Plo
 include src/target/$(DEPDIR)/avr32_mem.Plo
@@ -3199,6 +3276,20 @@ src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-cmsis_dap_usb.lo: src/jta
 #	$(AM_V_CC)source='src/jtag/drivers/cmsis_dap_usb.c' object='src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-cmsis_dap_usb.lo' libtool=yes \
 #	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
 #	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(src_jtag_drivers_libocdjtagdrivers_la_CPPFLAGS) $(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS) -c -o src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-cmsis_dap_usb.lo `test -f 'src/jtag/drivers/cmsis_dap_usb.c' || echo '$(srcdir)/'`src/jtag/drivers/cmsis_dap_usb.c
+
+src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-imx_gpio.lo: src/jtag/drivers/imx_gpio.c
+	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(src_jtag_drivers_libocdjtagdrivers_la_CPPFLAGS) $(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS) -MT src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-imx_gpio.lo -MD -MP -MF src/jtag/drivers/$(DEPDIR)/src_jtag_drivers_libocdjtagdrivers_la-imx_gpio.Tpo -c -o src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-imx_gpio.lo `test -f 'src/jtag/drivers/imx_gpio.c' || echo '$(srcdir)/'`src/jtag/drivers/imx_gpio.c
+	$(AM_V_at)$(am__mv) src/jtag/drivers/$(DEPDIR)/src_jtag_drivers_libocdjtagdrivers_la-imx_gpio.Tpo src/jtag/drivers/$(DEPDIR)/src_jtag_drivers_libocdjtagdrivers_la-imx_gpio.Plo
+#	$(AM_V_CC)source='src/jtag/drivers/imx_gpio.c' object='src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-imx_gpio.lo' libtool=yes \
+#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
+#	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(src_jtag_drivers_libocdjtagdrivers_la_CPPFLAGS) $(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS) -c -o src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-imx_gpio.lo `test -f 'src/jtag/drivers/imx_gpio.c' || echo '$(srcdir)/'`src/jtag/drivers/imx_gpio.c
+
+src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-kitprog.lo: src/jtag/drivers/kitprog.c
+	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(src_jtag_drivers_libocdjtagdrivers_la_CPPFLAGS) $(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS) -MT src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-kitprog.lo -MD -MP -MF src/jtag/drivers/$(DEPDIR)/src_jtag_drivers_libocdjtagdrivers_la-kitprog.Tpo -c -o src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-kitprog.lo `test -f 'src/jtag/drivers/kitprog.c' || echo '$(srcdir)/'`src/jtag/drivers/kitprog.c
+	$(AM_V_at)$(am__mv) src/jtag/drivers/$(DEPDIR)/src_jtag_drivers_libocdjtagdrivers_la-kitprog.Tpo src/jtag/drivers/$(DEPDIR)/src_jtag_drivers_libocdjtagdrivers_la-kitprog.Plo
+#	$(AM_V_CC)source='src/jtag/drivers/kitprog.c' object='src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-kitprog.lo' libtool=yes \
+#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
+#	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(src_jtag_drivers_libocdjtagdrivers_la_CPPFLAGS) $(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS) -c -o src/jtag/drivers/src_jtag_drivers_libocdjtagdrivers_la-kitprog.lo `test -f 'src/jtag/drivers/kitprog.c' || echo '$(srcdir)/'`src/jtag/drivers/kitprog.c
 
 src/jtag/drivers/usb_blaster/src_jtag_drivers_usb_blaster_libocdusbblaster_la-usb_blaster.lo: src/jtag/drivers/usb_blaster/usb_blaster.c
 	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(src_jtag_drivers_usb_blaster_libocdusbblaster_la_CPPFLAGS) $(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS) -MT src/jtag/drivers/usb_blaster/src_jtag_drivers_usb_blaster_libocdusbblaster_la-usb_blaster.lo -MD -MP -MF src/jtag/drivers/usb_blaster/$(DEPDIR)/src_jtag_drivers_usb_blaster_libocdusbblaster_la-usb_blaster.Tpo -c -o src/jtag/drivers/usb_blaster/src_jtag_drivers_usb_blaster_libocdusbblaster_la-usb_blaster.lo `test -f 'src/jtag/drivers/usb_blaster/usb_blaster.c' || echo '$(srcdir)/'`src/jtag/drivers/usb_blaster/usb_blaster.c
@@ -3954,7 +4045,7 @@ check-am: all-am
 check: $(BUILT_SOURCES)
 	$(MAKE) $(AM_MAKEFLAGS) check-recursive
 all-am: Makefile $(INFO_DEPS) $(LTLIBRARIES) $(PROGRAMS) $(MANS) \
-		$(DATA) config.h
+		$(DATA) $(HEADERS) config.h
 installdirs: installdirs-recursive
 installdirs-am:
 	for dir in "$(DESTDIR)$(bindir)" "$(DESTDIR)$(infodir)" "$(DESTDIR)$(man1dir)" "$(DESTDIR)$(ulinkdir)" "$(DESTDIR)$(pkgdatadir)"; do \

@@ -89,6 +89,9 @@ PRE_UNINSTALL = :
 POST_UNINSTALL = :
 build_triplet = x86_64-pc-linux-gnu
 host_triplet = x86_64-pc-linux-gnu
+am__append_1 = discovery_usb.c transport_usb.c
+am__append_2 = $(libusb_CFLAGS)
+am__append_3 = $(libusb_LIBS)
 subdir = libjaylink
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/m4/jaylink.m4 \
@@ -136,17 +139,27 @@ am__installdirs = "$(DESTDIR)$(libdir)" \
 	"$(DESTDIR)$(library_includedir)"
 LTLIBRARIES = $(lib_LTLIBRARIES) $(noinst_LTLIBRARIES)
 am__DEPENDENCIES_1 =
+am__DEPENDENCIES_2 = $(am__DEPENDENCIES_1)
 libjaylink_la_DEPENDENCIES = $(am__DEPENDENCIES_1) \
-	$(am__DEPENDENCIES_1)
+	$(am__DEPENDENCIES_2)
+am__libjaylink_la_SOURCES_DIST = buffer.c core.c device.c discovery.c \
+	discovery_tcp.c emucom.c error.c fileio.c jtag.c list.c log.c \
+	socket.c strutil.c swd.c swo.c target.c transport.c \
+	transport_tcp.c util.c version.c discovery_usb.c \
+	transport_usb.c
+am__objects_1 = libjaylink_la-discovery_usb.lo \
+	libjaylink_la-transport_usb.lo
 am_libjaylink_la_OBJECTS = libjaylink_la-buffer.lo \
 	libjaylink_la-core.lo libjaylink_la-device.lo \
-	libjaylink_la-discovery.lo libjaylink_la-emucom.lo \
-	libjaylink_la-error.lo libjaylink_la-fileio.lo \
-	libjaylink_la-jtag.lo libjaylink_la-list.lo \
-	libjaylink_la-log.lo libjaylink_la-strutil.lo \
+	libjaylink_la-discovery.lo libjaylink_la-discovery_tcp.lo \
+	libjaylink_la-emucom.lo libjaylink_la-error.lo \
+	libjaylink_la-fileio.lo libjaylink_la-jtag.lo \
+	libjaylink_la-list.lo libjaylink_la-log.lo \
+	libjaylink_la-socket.lo libjaylink_la-strutil.lo \
 	libjaylink_la-swd.lo libjaylink_la-swo.lo \
 	libjaylink_la-target.lo libjaylink_la-transport.lo \
-	libjaylink_la-util.lo libjaylink_la-version.lo
+	libjaylink_la-transport_tcp.lo libjaylink_la-util.lo \
+	libjaylink_la-version.lo $(am__objects_1)
 libjaylink_la_OBJECTS = $(am_libjaylink_la_OBJECTS)
 AM_V_lt = $(am__v_lt_$(V))
 am__v_lt_ = $(am__v_lt_$(AM_DEFAULT_VERBOSITY))
@@ -192,7 +205,7 @@ am__v_CCLD_ = $(am__v_CCLD_$(AM_DEFAULT_VERBOSITY))
 am__v_CCLD_0 = @echo "  CCLD    " $@;
 am__v_CCLD_1 = 
 SOURCES = $(libjaylink_la_SOURCES)
-DIST_SOURCES = $(libjaylink_la_SOURCES)
+DIST_SOURCES = $(am__libjaylink_la_SOURCES_DIST)
 am__can_run_installinfo = \
   case $$AM_UPDATE_INFO_DIR in \
     n|no|NO) false;; \
@@ -223,14 +236,14 @@ CTAGS = ctags
 am__DIST_COMMON = $(srcdir)/Makefile.in $(srcdir)/version.h.in \
 	$(top_srcdir)/build-aux/depcomp
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
-ACLOCAL = ${SHELL} /home/mihai/Temp/openocd-0.10.0/src/jtag/drivers/libjaylink/build-aux/missing aclocal-1.15
+ACLOCAL = ${SHELL} /home/mihai/Programs/openocd_nrf52/openocd-code/src/jtag/drivers/libjaylink/build-aux/missing aclocal-1.15
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 1
 AM_LIBTOOLFLAGS = --silent
 AR = ar
-AUTOCONF = ${SHELL} /home/mihai/Temp/openocd-0.10.0/src/jtag/drivers/libjaylink/build-aux/missing autoconf
-AUTOHEADER = ${SHELL} /home/mihai/Temp/openocd-0.10.0/src/jtag/drivers/libjaylink/build-aux/missing autoheader
-AUTOMAKE = ${SHELL} /home/mihai/Temp/openocd-0.10.0/src/jtag/drivers/libjaylink/build-aux/missing automake-1.15
+AUTOCONF = ${SHELL} /home/mihai/Programs/openocd_nrf52/openocd-code/src/jtag/drivers/libjaylink/build-aux/missing autoconf
+AUTOHEADER = ${SHELL} /home/mihai/Programs/openocd_nrf52/openocd-code/src/jtag/drivers/libjaylink/build-aux/missing autoheader
+AUTOMAKE = ${SHELL} /home/mihai/Programs/openocd_nrf52/openocd-code/src/jtag/drivers/libjaylink/build-aux/missing automake-1.15
 AWK = gawk
 CC = gcc
 CCDEPMODE = depmode=gcc3
@@ -258,14 +271,15 @@ INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
 JAYLINK_CFLAGS = -Wall -Wextra -Werror -fvisibility=hidden
 JAYLINK_LDFLAGS = 
 JAYLINK_LIBS = 
+JAYLINK_PKG_LIBS = libusb-1.0
 JAYLINK_VERSION_LIBRARY = 0:0:0
 JAYLINK_VERSION_LIBRARY_AGE = 0
 JAYLINK_VERSION_LIBRARY_CURRENT = 0
 JAYLINK_VERSION_LIBRARY_REVISION = 0
-JAYLINK_VERSION_PACKAGE = 0.1.0
+JAYLINK_VERSION_PACKAGE = 0.2.0-git-8645845
 JAYLINK_VERSION_PACKAGE_MAJOR = 0
 JAYLINK_VERSION_PACKAGE_MICRO = 0
-JAYLINK_VERSION_PACKAGE_MINOR = 1
+JAYLINK_VERSION_PACKAGE_MINOR = 2
 LD = /usr/bin/ld -m elf_x86_64
 LDFLAGS = 
 LIBOBJS = 
@@ -275,7 +289,7 @@ LIPO =
 LN_S = ln -s
 LTLIBOBJS = 
 LT_SYS_LIBRARY_PATH = 
-MAKEINFO = ${SHELL} /home/mihai/Temp/openocd-0.10.0/src/jtag/drivers/libjaylink/build-aux/missing makeinfo
+MAKEINFO = ${SHELL} /home/mihai/Programs/openocd_nrf52/openocd-code/src/jtag/drivers/libjaylink/build-aux/missing makeinfo
 MANIFEST_TOOL = :
 MKDIR_P = /bin/mkdir -p
 NM = /usr/bin/nm -B
@@ -287,10 +301,10 @@ OTOOL64 =
 PACKAGE = libjaylink
 PACKAGE_BUGREPORT = jaylink-dev@marcschink.de
 PACKAGE_NAME = libjaylink
-PACKAGE_STRING = libjaylink 0.1.0
+PACKAGE_STRING = libjaylink 0.2.0
 PACKAGE_TARNAME = libjaylink
 PACKAGE_URL = http://git.zapb.de/libjaylink.git
-PACKAGE_VERSION = 0.1.0
+PACKAGE_VERSION = 0.2.0
 PATH_SEPARATOR = :
 PKG_CONFIG = /usr/bin/pkg-config
 PKG_CONFIG_LIBDIR = 
@@ -300,11 +314,11 @@ SED = /bin/sed
 SET_MAKE = 
 SHELL = /bin/bash
 STRIP = strip
-VERSION = 0.1.0
-abs_builddir = /home/mihai/Temp/openocd-0.10.0/src/jtag/drivers/libjaylink/libjaylink
-abs_srcdir = /home/mihai/Temp/openocd-0.10.0/src/jtag/drivers/libjaylink/libjaylink
-abs_top_builddir = /home/mihai/Temp/openocd-0.10.0/src/jtag/drivers/libjaylink
-abs_top_srcdir = /home/mihai/Temp/openocd-0.10.0/src/jtag/drivers/libjaylink
+VERSION = 0.2.0
+abs_builddir = /home/mihai/Programs/openocd_nrf52/openocd-code/src/jtag/drivers/libjaylink/libjaylink
+abs_srcdir = /home/mihai/Programs/openocd_nrf52/openocd-code/src/jtag/drivers/libjaylink/libjaylink
+abs_top_builddir = /home/mihai/Programs/openocd_nrf52/openocd-code/src/jtag/drivers/libjaylink
+abs_top_srcdir = /home/mihai/Programs/openocd_nrf52/openocd-code/src/jtag/drivers/libjaylink
 ac_ct_AR = ar
 ac_ct_CC = gcc
 ac_ct_DUMPBIN = 
@@ -333,7 +347,7 @@ host_vendor = pc
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/mihai/Temp/openocd-0.10.0/src/jtag/drivers/libjaylink/build-aux/install-sh
+install_sh = ${SHELL} /home/mihai/Programs/openocd_nrf52/openocd-code/src/jtag/drivers/libjaylink/build-aux/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 libusb_CFLAGS = -I/usr/include/libusb-1.0
@@ -347,6 +361,7 @@ pdfdir = ${docdir}
 prefix = /usr/local
 program_transform_name = s,x,x,
 psdir = ${docdir}
+runstatedir = ${localstatedir}/run
 sbindir = ${exec_prefix}/sbin
 sharedstatedir = ${prefix}/com
 srcdir = .
@@ -360,28 +375,13 @@ noinst_LTLIBRARIES = libjaylink.la
 #library_includedir = $(includedir)/libjaylink
 #library_include_HEADERS = libjaylink.h
 #nodist_library_include_HEADERS = version.h
-libjaylink_la_SOURCES = \
-	buffer.c \
-	core.c \
-	device.c \
-	discovery.c \
-	emucom.c \
-	error.c \
-	fileio.c \
-	jtag.c \
-	list.c \
-	log.c \
-	strutil.c \
-	swd.c \
-	swo.c \
-	target.c \
-	transport.c \
-	util.c \
-	version.c
-
-libjaylink_la_CFLAGS = $(JAYLINK_CFLAGS) $(libusb_CFLAGS)
+libjaylink_la_SOURCES = buffer.c core.c device.c discovery.c \
+	discovery_tcp.c emucom.c error.c fileio.c jtag.c list.c log.c \
+	socket.c strutil.c swd.c swo.c target.c transport.c \
+	transport_tcp.c util.c version.c $(am__append_1)
+libjaylink_la_CFLAGS = $(JAYLINK_CFLAGS) $(am__append_2)
 libjaylink_la_LDFLAGS = $(JAYLINK_LDFLAGS) -no-undefined
-libjaylink_la_LIBADD = $(JAYLINK_LIBS) $(libusb_LIBS)
+libjaylink_la_LIBADD = $(JAYLINK_LIBS) $(am__append_3)
 noinst_HEADERS = libjaylink-internal.h
 all: all-am
 
@@ -478,17 +478,22 @@ include ./$(DEPDIR)/libjaylink_la-buffer.Plo
 include ./$(DEPDIR)/libjaylink_la-core.Plo
 include ./$(DEPDIR)/libjaylink_la-device.Plo
 include ./$(DEPDIR)/libjaylink_la-discovery.Plo
+include ./$(DEPDIR)/libjaylink_la-discovery_tcp.Plo
+include ./$(DEPDIR)/libjaylink_la-discovery_usb.Plo
 include ./$(DEPDIR)/libjaylink_la-emucom.Plo
 include ./$(DEPDIR)/libjaylink_la-error.Plo
 include ./$(DEPDIR)/libjaylink_la-fileio.Plo
 include ./$(DEPDIR)/libjaylink_la-jtag.Plo
 include ./$(DEPDIR)/libjaylink_la-list.Plo
 include ./$(DEPDIR)/libjaylink_la-log.Plo
+include ./$(DEPDIR)/libjaylink_la-socket.Plo
 include ./$(DEPDIR)/libjaylink_la-strutil.Plo
 include ./$(DEPDIR)/libjaylink_la-swd.Plo
 include ./$(DEPDIR)/libjaylink_la-swo.Plo
 include ./$(DEPDIR)/libjaylink_la-target.Plo
 include ./$(DEPDIR)/libjaylink_la-transport.Plo
+include ./$(DEPDIR)/libjaylink_la-transport_tcp.Plo
+include ./$(DEPDIR)/libjaylink_la-transport_usb.Plo
 include ./$(DEPDIR)/libjaylink_la-util.Plo
 include ./$(DEPDIR)/libjaylink_la-version.Plo
 
@@ -541,6 +546,13 @@ libjaylink_la-discovery.lo: discovery.c
 #	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
 #	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libjaylink_la_CFLAGS) $(CFLAGS) -c -o libjaylink_la-discovery.lo `test -f 'discovery.c' || echo '$(srcdir)/'`discovery.c
 
+libjaylink_la-discovery_tcp.lo: discovery_tcp.c
+	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libjaylink_la_CFLAGS) $(CFLAGS) -MT libjaylink_la-discovery_tcp.lo -MD -MP -MF $(DEPDIR)/libjaylink_la-discovery_tcp.Tpo -c -o libjaylink_la-discovery_tcp.lo `test -f 'discovery_tcp.c' || echo '$(srcdir)/'`discovery_tcp.c
+	$(AM_V_at)$(am__mv) $(DEPDIR)/libjaylink_la-discovery_tcp.Tpo $(DEPDIR)/libjaylink_la-discovery_tcp.Plo
+#	$(AM_V_CC)source='discovery_tcp.c' object='libjaylink_la-discovery_tcp.lo' libtool=yes \
+#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
+#	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libjaylink_la_CFLAGS) $(CFLAGS) -c -o libjaylink_la-discovery_tcp.lo `test -f 'discovery_tcp.c' || echo '$(srcdir)/'`discovery_tcp.c
+
 libjaylink_la-emucom.lo: emucom.c
 	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libjaylink_la_CFLAGS) $(CFLAGS) -MT libjaylink_la-emucom.lo -MD -MP -MF $(DEPDIR)/libjaylink_la-emucom.Tpo -c -o libjaylink_la-emucom.lo `test -f 'emucom.c' || echo '$(srcdir)/'`emucom.c
 	$(AM_V_at)$(am__mv) $(DEPDIR)/libjaylink_la-emucom.Tpo $(DEPDIR)/libjaylink_la-emucom.Plo
@@ -583,6 +595,13 @@ libjaylink_la-log.lo: log.c
 #	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
 #	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libjaylink_la_CFLAGS) $(CFLAGS) -c -o libjaylink_la-log.lo `test -f 'log.c' || echo '$(srcdir)/'`log.c
 
+libjaylink_la-socket.lo: socket.c
+	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libjaylink_la_CFLAGS) $(CFLAGS) -MT libjaylink_la-socket.lo -MD -MP -MF $(DEPDIR)/libjaylink_la-socket.Tpo -c -o libjaylink_la-socket.lo `test -f 'socket.c' || echo '$(srcdir)/'`socket.c
+	$(AM_V_at)$(am__mv) $(DEPDIR)/libjaylink_la-socket.Tpo $(DEPDIR)/libjaylink_la-socket.Plo
+#	$(AM_V_CC)source='socket.c' object='libjaylink_la-socket.lo' libtool=yes \
+#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
+#	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libjaylink_la_CFLAGS) $(CFLAGS) -c -o libjaylink_la-socket.lo `test -f 'socket.c' || echo '$(srcdir)/'`socket.c
+
 libjaylink_la-strutil.lo: strutil.c
 	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libjaylink_la_CFLAGS) $(CFLAGS) -MT libjaylink_la-strutil.lo -MD -MP -MF $(DEPDIR)/libjaylink_la-strutil.Tpo -c -o libjaylink_la-strutil.lo `test -f 'strutil.c' || echo '$(srcdir)/'`strutil.c
 	$(AM_V_at)$(am__mv) $(DEPDIR)/libjaylink_la-strutil.Tpo $(DEPDIR)/libjaylink_la-strutil.Plo
@@ -618,6 +637,13 @@ libjaylink_la-transport.lo: transport.c
 #	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
 #	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libjaylink_la_CFLAGS) $(CFLAGS) -c -o libjaylink_la-transport.lo `test -f 'transport.c' || echo '$(srcdir)/'`transport.c
 
+libjaylink_la-transport_tcp.lo: transport_tcp.c
+	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libjaylink_la_CFLAGS) $(CFLAGS) -MT libjaylink_la-transport_tcp.lo -MD -MP -MF $(DEPDIR)/libjaylink_la-transport_tcp.Tpo -c -o libjaylink_la-transport_tcp.lo `test -f 'transport_tcp.c' || echo '$(srcdir)/'`transport_tcp.c
+	$(AM_V_at)$(am__mv) $(DEPDIR)/libjaylink_la-transport_tcp.Tpo $(DEPDIR)/libjaylink_la-transport_tcp.Plo
+#	$(AM_V_CC)source='transport_tcp.c' object='libjaylink_la-transport_tcp.lo' libtool=yes \
+#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
+#	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libjaylink_la_CFLAGS) $(CFLAGS) -c -o libjaylink_la-transport_tcp.lo `test -f 'transport_tcp.c' || echo '$(srcdir)/'`transport_tcp.c
+
 libjaylink_la-util.lo: util.c
 	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libjaylink_la_CFLAGS) $(CFLAGS) -MT libjaylink_la-util.lo -MD -MP -MF $(DEPDIR)/libjaylink_la-util.Tpo -c -o libjaylink_la-util.lo `test -f 'util.c' || echo '$(srcdir)/'`util.c
 	$(AM_V_at)$(am__mv) $(DEPDIR)/libjaylink_la-util.Tpo $(DEPDIR)/libjaylink_la-util.Plo
@@ -631,6 +657,20 @@ libjaylink_la-version.lo: version.c
 #	$(AM_V_CC)source='version.c' object='libjaylink_la-version.lo' libtool=yes \
 #	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
 #	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libjaylink_la_CFLAGS) $(CFLAGS) -c -o libjaylink_la-version.lo `test -f 'version.c' || echo '$(srcdir)/'`version.c
+
+libjaylink_la-discovery_usb.lo: discovery_usb.c
+	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libjaylink_la_CFLAGS) $(CFLAGS) -MT libjaylink_la-discovery_usb.lo -MD -MP -MF $(DEPDIR)/libjaylink_la-discovery_usb.Tpo -c -o libjaylink_la-discovery_usb.lo `test -f 'discovery_usb.c' || echo '$(srcdir)/'`discovery_usb.c
+	$(AM_V_at)$(am__mv) $(DEPDIR)/libjaylink_la-discovery_usb.Tpo $(DEPDIR)/libjaylink_la-discovery_usb.Plo
+#	$(AM_V_CC)source='discovery_usb.c' object='libjaylink_la-discovery_usb.lo' libtool=yes \
+#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
+#	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libjaylink_la_CFLAGS) $(CFLAGS) -c -o libjaylink_la-discovery_usb.lo `test -f 'discovery_usb.c' || echo '$(srcdir)/'`discovery_usb.c
+
+libjaylink_la-transport_usb.lo: transport_usb.c
+	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libjaylink_la_CFLAGS) $(CFLAGS) -MT libjaylink_la-transport_usb.lo -MD -MP -MF $(DEPDIR)/libjaylink_la-transport_usb.Tpo -c -o libjaylink_la-transport_usb.lo `test -f 'transport_usb.c' || echo '$(srcdir)/'`transport_usb.c
+	$(AM_V_at)$(am__mv) $(DEPDIR)/libjaylink_la-transport_usb.Tpo $(DEPDIR)/libjaylink_la-transport_usb.Plo
+#	$(AM_V_CC)source='transport_usb.c' object='libjaylink_la-transport_usb.lo' libtool=yes \
+#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
+#	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libjaylink_la_CFLAGS) $(CFLAGS) -c -o libjaylink_la-transport_usb.lo `test -f 'transport_usb.c' || echo '$(srcdir)/'`transport_usb.c
 
 mostlyclean-libtool:
 	-rm -f *.lo

@@ -19,7 +19,7 @@
 
 AC_PREREQ([2.64])
 
-AC_INIT([libjaylink], [0.1.0], [jaylink-dev@marcschink.de], [libjaylink],
+AC_INIT([libjaylink], [0.2.0], [jaylink-dev@marcschink.de], [libjaylink],
 	[http://git.zapb.de/libjaylink.git])
 AC_CONFIG_HEADERS([config.h])
 AC_CONFIG_MACRO_DIR([m4])
@@ -27,7 +27,7 @@ AC_CONFIG_AUX_DIR([build-aux])
 
 AC_CANONICAL_HOST
 
-AM_INIT_AUTOMAKE([-Wall -Werror check-news])
+AM_INIT_AUTOMAKE([-Wall -Werror])
 
 # Enable additional compiler warnings via -Wall and -Wextra. Use hidden
 # visibility for all non-static symbols by default with -fvisibility=hidden.
@@ -50,7 +50,11 @@ PKG_PROG_PKG_CONFIG
 # Checks for libraries.
 
 # Check for libusb-1.0 which is always needed.
-PKG_CHECK_MODULES([libusb], [libusb-1.0 >= 1.0.9])
+PKG_CHECK_MODULES([libusb], [libusb-1.0 >= 1.0.9],
+	[HAVE_LIBUSB=yes], [HAVE_LIBUSB=no])
+
+AS_IF([test "x$HAVE_LIBUSB" = "xyes"],
+	[libusb_msg="yes"], [libusb_msg="no (missing: libusb-1.0)"])
 
 # Checks for header files.
 
@@ -75,6 +79,24 @@ AC_ARG_ENABLE([subproject-build], AS_HELP_STRING([--enable-subproject-build],
 AM_CONDITIONAL([SUBPROJECT_BUILD],
 	[test "x$enable_subproject_build" = "xyes"])
 
+AC_ARG_WITH([libusb], [AS_HELP_STRING([--without-libusb],
+	[disable libusb support [default=detect]])])
+
+AS_IF([test "x$with_libusb" != "xno"],
+	[with_libusb="yes"])
+
+AS_IF([test "x$with_libusb$HAVE_LIBUSB" = "xyesyes"],
+	[AC_DEFINE([HAVE_LIBUSB], [1], [Define to 1 if libusb is available.])])
+
+AS_IF([test "x$with_libusb" != "xyes"],
+	[libusb_msg="no (disabled)"])
+
+AS_IF([test "x$with_libusb$HAVE_LIBUSB" = "xyesyes"],
+	[JAYLINK_PKG_LIBS="libusb-1.0"])
+
+AM_CONDITIONAL([HAVE_LIBUSB],
+	[test "x$with_libusb$HAVE_LIBUSB" = "xyesyes"])
+
 # Libtool interface version is not used for sub-project build as libjaylink is
 # built as libtool convenience library.
 AS_IF([test "x$enable_subproject_build" != "xyes"],
@@ -93,6 +115,7 @@ AS_CASE([$host_os], [mingw*], [JAYLINK_LIBS="$JAYLINK_LIBS -lws2_32"])
 AC_SUBST([JAYLINK_CFLAGS])
 AC_SUBST([JAYLINK_LDFLAGS])
 AC_SUBST([JAYLINK_LIBS])
+AC_SUBST([JAYLINK_PKG_LIBS])
 
 AC_CONFIG_FILES([Makefile])
 AC_CONFIG_FILES([libjaylink/Makefile])
@@ -109,4 +132,9 @@ echo " - Library version ................ $JAYLINK_VERSION_LIBRARY"
 echo " - Installation prefix ............ $prefix"
 echo " - Building on .................... $build"
 echo " - Building for ................... $host"
+
+echo
+echo "Enabled transports:"
+echo " - USB ............................ $libusb_msg"
+echo " - TCP ............................ yes"
 echo

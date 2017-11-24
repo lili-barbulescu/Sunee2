@@ -11,7 +11,7 @@
 #define BUILD_AMTJTAGACCEL 0
 
 /* 0 if you do not want the Olimex ARM-JTAG-EW Programmer. */
-/* #undef BUILD_ARMJTAGEW */
+#define BUILD_ARMJTAGEW 1
 
 /* 0 if you don't want at91rm9200. */
 #define BUILD_AT91RM9200 0
@@ -46,11 +46,17 @@
 /* 0 if you do not want the ST-Link JTAG Programmer. */
 #define BUILD_HLADAPTER_STLINK 1
 
+/* 0 if you don't want imx_gpio. */
+#define BUILD_IMX_GPIO 0
+
 /* 0 if you do not want the SEGGER J-Link Programmer. */
 #define BUILD_JLINK 1
 
 /* 0 if you don't want JTAG VPI. */
 #define BUILD_JTAG_VPI 0
+
+/* 0 if you do not want the Cypress KitProg Programmer. */
+/* #undef BUILD_KITPROG */
 
 /* Use the dummy minidriver. */
 /* #undef BUILD_MINIDRIVER_DUMMY */
@@ -77,16 +83,19 @@
 #define BUILD_REMOTE_BITBANG 0
 
 /* 0 if you do not want the Raisonance RLink JTAG Programmer. */
-/* #undef BUILD_RLINK */
+#define BUILD_RLINK 1
 
 /* 0 if you don't want SysfsGPIO driver. */
 #define BUILD_SYSFSGPIO 0
+
+/* 0 if you don't want 64-bit addresses. */
+#define BUILD_TARGET64 1
 
 /* 0 if you do not want the Keil ULINK JTAG Programmer. */
 #define BUILD_ULINK 1
 
 /* 0 if you do not want the USBProg JTAG Programmer. */
-/* #undef BUILD_USBPROG */
+#define BUILD_USBPROG 1
 
 /* 0 if you do not want the Altera USB-Blaster Compatible. */
 /* #undef BUILD_USB_BLASTER */
@@ -263,7 +272,7 @@
 #define PACKAGE_NAME "openocd"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "openocd 0.10.0"
+#define PACKAGE_STRING "openocd 0.10.0+dev"
 
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME "openocd"
@@ -272,7 +281,7 @@
 #define PACKAGE_URL ""
 
 /* Define to the version of this package. */
-#define PACKAGE_VERSION "0.10.0"
+#define PACKAGE_VERSION "0.10.0+dev"
 
 /* 0 if you don't want parport to use giveio. */
 #define PARPORT_USE_GIVEIO 0
@@ -287,7 +296,7 @@
 #define TIME_WITH_SYS_TIME 1
 
 /* Version number of package */
-#define VERSION "0.10.0"
+#define VERSION "0.10.0+dev"
 
 /* Define WORDS_BIGENDIAN to 1 if your processor stores words with the most
    significant byte first (like Motorola and SPARC, unlike Intel). */

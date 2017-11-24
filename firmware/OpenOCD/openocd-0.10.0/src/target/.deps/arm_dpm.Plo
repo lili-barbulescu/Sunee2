@@ -86,10 +86,10 @@ src/target/arm_dpm.lo: src/target/arm_dpm.c /usr/include/stdc-predef.h \
  src/helper/replacements.h src/target/arm.h src/helper/command.h \
  src/helper/jim-nvp.h jimtcl/jim.h jimtcl/jim-win32compat.h \
  jimtcl/jim-config.h src/target/target.h src/helper/list.h \
- src/target/arm_dpm.h src/jtag/jtag.h src/helper/binarybuffer.h \
- src/helper/list.h src/helper/log.h src/jtag/minidriver.h \
- src/jtag/minidriver_imp.h src/jtag/commands.h src/target/register.h \
- src/target/breakpoints.h src/target/target_type.h \
+ src/target/arm_dpm.h src/target/armv8_dpm.h src/jtag/jtag.h \
+ src/helper/binarybuffer.h src/helper/list.h src/helper/log.h \
+ src/jtag/minidriver.h src/jtag/minidriver_imp.h src/jtag/commands.h \
+ src/target/register.h src/target/breakpoints.h src/target/target_type.h \
  src/target/arm_opcodes.h
 
 /usr/include/stdc-predef.h:
@@ -331,6 +331,8 @@ src/target/target.h:
 src/helper/list.h:
 
 src/target/arm_dpm.h:
+
+src/target/armv8_dpm.h:
 
 src/jtag/jtag.h:
 

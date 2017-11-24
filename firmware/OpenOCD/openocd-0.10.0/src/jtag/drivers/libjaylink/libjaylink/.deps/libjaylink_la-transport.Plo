@@ -28,7 +28,7 @@ libjaylink_la-transport.lo: transport.c /usr/include/stdc-predef.h \
  /usr/lib/gcc/x86_64-linux-gnu/5/include/stdbool.h /usr/include/string.h \
  /usr/include/xlocale.h /usr/include/x86_64-linux-gnu/bits/string.h \
  /usr/include/x86_64-linux-gnu/bits/string2.h \
- /usr/include/x86_64-linux-gnu/bits/string3.h libjaylink.h \
+ /usr/include/x86_64-linux-gnu/bits/string3.h ../config.h libjaylink.h \
  /usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h \
  /usr/include/arpa/inet.h /usr/include/netinet/in.h \
  /usr/include/x86_64-linux-gnu/sys/socket.h \
@@ -127,6 +127,8 @@ libjaylink_la-transport.lo: transport.c /usr/include/stdc-predef.h \
 /usr/include/x86_64-linux-gnu/bits/string2.h:
 
 /usr/include/x86_64-linux-gnu/bits/string3.h:
+
+../config.h:
 
 libjaylink.h:
 

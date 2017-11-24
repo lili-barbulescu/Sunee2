@@ -10,6 +10,9 @@
 /* Define to 1 if you have the <inttypes.h> header file. */
 #define HAVE_INTTYPES_H 1
 
+/* Define to 1 if libusb is available. */
+#define HAVE_LIBUSB 1
+
 /* Define to 1 if you have the <memory.h> header file. */
 #define HAVE_MEMORY_H 1
 
@@ -47,7 +50,7 @@
 #define PACKAGE_NAME "libjaylink"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "libjaylink 0.1.0"
+#define PACKAGE_STRING "libjaylink 0.2.0"
 
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME "libjaylink"
@@ -56,13 +59,13 @@
 #define PACKAGE_URL "http://git.zapb.de/libjaylink.git"
 
 /* Define to the version of this package. */
-#define PACKAGE_VERSION "0.1.0"
+#define PACKAGE_VERSION "0.2.0"
 
 /* Define to 1 if you have the ANSI C header files. */
 #define STDC_HEADERS 1
 
 /* Version number of package */
-#define VERSION "0.1.0"
+#define VERSION "0.2.0"
 
 /* Define WORDS_BIGENDIAN to 1 if your processor stores words with the most
    significant byte first (like Motorola and SPARC, unlike Intel). */

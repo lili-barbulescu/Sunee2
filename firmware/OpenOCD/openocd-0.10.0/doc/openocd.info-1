@@ -1,8 +1,8 @@
-This is openocd.info, produced by makeinfo version 6.3 from
+This is openocd.info, produced by makeinfo version 6.1 from
 openocd.texi.
 
-This User's Guide documents release 0.10.0, dated 15 January 2017, of
-the Open On-Chip Debugger (OpenOCD).
+This User's Guide documents release 0.10.0+dev, dated 17 November 2017,
+of the Open On-Chip Debugger (OpenOCD).
 
    * Copyright (C) 2008 The OpenOCD Project
    * Copyright (C) 2007-2008 Spencer Oliver <spen@spen-soft.co.uk>
@@ -27,8 +27,8 @@ File: openocd.info,  Node: Top,  Next: About,  Up: (dir)
 OpenOCD User's Guide
 ********************
 
-This User's Guide documents release 0.10.0, dated 15 January 2017, of
-the Open On-Chip Debugger (OpenOCD).
+This User's Guide documents release 0.10.0+dev, dated 17 November 2017,
+of the Open On-Chip Debugger (OpenOCD).
 
    * Copyright (C) 2008 The OpenOCD Project
    * Copyright (C) 2007-2008 Spencer Oliver <spen@spen-soft.co.uk>
@@ -589,6 +589,10 @@ USB-based ones.
      A BCM2835-based board (e.g.  Raspberry Pi) using the GPIO pins of
      the expansion header.
 
+   * imx_gpio
+     A NXP i.MX-based board (e.g.  Wandboard) using the GPIO pins
+     (should work on any i.MX processor).
+
    * jtag_vpi
      A JTAG driver acting as a client for the JTAG VPI server interface.
 
@@ -669,7 +673,8 @@ bash$ openocd --help
 --version    | -v       display OpenOCD version
 --file       | -f       use configuration file <name>
 --search     | -s       dir to search for config files and scripts
---debug      | -d       set debug level <0-3>
+--debug      | -d       set debug level to 3
+             | -d<n>    set debug level to <level>
 --log_output | -l       redirect log output to file <name>
 --command    | -c       run <command>
 
@@ -2487,6 +2492,62 @@ when OpenOCD is configured, in order to be made available at run time.
 
           As a configuration command, it can be used only before 'init'.
 
+ -- Interface Driver: kitprog
+     This driver is for Cypress Semiconductor's KitProg adapters.  The
+     KitProg is an SWD-only adapter that is designed to be used with
+     Cypress's PSoC and PRoC device families, but it is possible to use
+     it with some other devices.  If you are using this adapter with a
+     PSoC or a PRoC, you may need to add 'kitprog_init_acquire_psoc' or
+     'kitprog acquire_psoc' to your configuration script.
+
+     Note that this driver is for the proprietary KitProg protocol, not
+     the CMSIS-DAP mode introduced in firmware 2.14.  If the KitProg is
+     in CMSIS-DAP mode, it cannot be used with this driver, and must
+     either be used with the cmsis-dap driver or switched back to
+     KitProg mode.  See the Cypress KitProg User Guide for instructions
+     on how to switch KitProg modes.
+
+     Known limitations:
+        * The frequency of SWCLK cannot be configured, and varies
+          between 1.6 MHz and 2.7 MHz.
+        * For firmware versions below 2.14, "JTAG to SWD" sequences are
+          replaced by "SWD line reset" in the driver.  This is for two
+          reasons.  First, the KitProg does not support sending
+          arbitrary SWD sequences, and only firmware 2.14 and later
+          implement both "JTAG to SWD" and "SWD line reset" in firmware.
+          Earlier firmware versions only implement "SWD line reset".
+          Second, due to a firmware quirk, an SWD sequence must be sent
+          after every target reset in order to re-establish
+          communications with the target.
+        * Due in part to the limitation above, KitProg devices with
+          firmware below version 2.14 will need to use
+          'kitprog_init_acquire_psoc' in order to communicate with PSoC
+          5LP devices.  This is because, assuming debug is not disabled
+          on the PSoC, the PSoC 5LP needs its JTAG interface switched to
+          SWD mode before communication can begin, but prior to firmware
+          2.14, "JTAG to SWD" could only be sent with an acquisition
+          sequence.
+
+      -- Config Command: kitprog_init_acquire_psoc
+          Indicate that a PSoC acquisition sequence needs to be run
+          during adapter init.  Please be aware that the acquisition
+          sequence hard-resets the target.
+
+      -- Config Command: kitprog_serial serial
+          Select a KitProg device by its SERIAL.  If left unspecified,
+          the first device detected by OpenOCD will be used.
+
+      -- Command: kitprog acquire_psoc
+          Run a PSoC acquisition sequence immediately.  Typically, this
+          should not be used outside of the target-specific
+          configuration scripts since it hard-resets the target as a
+          side-effect.  This is necessary for "reset halt" on some PSoC
+          4 series devices.
+
+      -- Command: kitprog info
+          Display various adapter information, such as the hardware
+          version, firmware version, and target voltage.
+
  -- Interface Driver: parport
      Supports PC parallel port bit-banging cables: Wigglers, PLD
      download cable, and more.  These interfaces have several commands,
@@ -2650,6 +2711,14 @@ when OpenOCD is configured, in order to be made available at run time.
 
      See 'interface/raspberrypi-native.cfg' for a sample config and
      pinout.
+
+ -- Interface Driver: imx_gpio
+     i.MX SoC is present in many community boards.  Wandboard is an
+     example of the one which is most popular.
+
+     This driver is mostly the same as bcm2835gpio.
+
+     See 'interface/imx-native.cfg' for a sample config and pinout.
 
  -- Interface Driver: openjtag
      OpenJTAG compatible USB adapter.  This defines some driver-specific
@@ -3539,6 +3608,7 @@ command to list them.
         * 'cortex_a' - this is an ARMv7 core with an MMU
         * 'cortex_m' - this is an ARMv7 core, supporting only the
           compact Thumb2 instruction set.
+        * 'aarch64' - this is an ARMv8-A core with an MMU
         * 'dragonite' - resembles arm966e
         * 'dsp563xx' - implements Freescale's 24-bit DSP. (Support for
           this is still incomplete.)
@@ -3569,8 +3639,8 @@ key point: _ARM is a technology licencing company_.  (See:
 <http://www.arm.com>.)  The CPU name used by OpenOCD will reflect the
 CPU design that was licenced, not a vendor brand which incorporates that
 design.  Name prefixes like arm7, arm9, arm11, and cortex reflect design
-generations; while names like ARMv4, ARMv5, ARMv6, and ARMv7 reflect an
-architecture version implemented by a CPU design.
+generations; while names like ARMv4, ARMv5, ARMv6, ARMv7 and ARMv8
+reflect an architecture version implemented by a CPU design.
 
 11.3 Target Configuration
 =========================
@@ -3694,6 +3764,11 @@ the boot loader.
           connected to.  Use this option with systems where multiple,
           independent cores are connected to separate access ports of
           the same DAP.
+
+        * '-ctibase' ADDRESS - set base address of Cross-Trigger
+          interface (CTI) connected to the target.  Currently, only the
+          'aarch64' target makes use of this option, where it is a
+          mandatory configuration for the target run control.
 
 11.4 Other $target_name Commands
 ================================
@@ -4065,20 +4140,24 @@ flashprotect.
      was written.  The flash bank to use is inferred from the ADDRESS of
      each block, and the specified length must stay within that bank.
 
- -- Command: flash write_bank num filename offset
+ -- Command: flash write_bank num filename [offset]
      Write the binary 'filename' to flash bank NUM, starting at OFFSET
-     bytes from the beginning of the bank.  The NUM parameter is a value
+     bytes from the beginning of the bank.  If OFFSET is omitted, start
+     at the beginning of the flash bank.  The NUM parameter is a value
      shown by 'flash banks'.
 
- -- Command: flash read_bank num filename offset length
+ -- Command: flash read_bank num filename [offset [length]]
      Read LENGTH bytes from the flash bank NUM starting at OFFSET and
-     write the contents to the binary 'filename'.  The NUM parameter is
+     write the contents to the binary 'filename'.  If OFFSET is omitted,
+     start at the beginning of the flash bank.  If LENGTH is omitted,
+     read the remaining bytes from the flash bank.  The NUM parameter is
      a value shown by 'flash banks'.
 
- -- Command: flash verify_bank num filename offset
+ -- Command: flash verify_bank num filename [offset]
      Compare the contents of the binary file FILENAME with the contents
-     of the flash NUM starting at OFFSET.  Fails if the contents do not
-     match.  The NUM parameter is a value shown by 'flash banks'.
+     of the flash bank NUM starting at OFFSET.  If OFFSET is omitted,
+     start at the beginning of the flash bank.  Fail if the contents do
+     not match.  The NUM parameter is a value shown by 'flash banks'.
 
  -- Command: flash write_image [erase] [unlock] filename [offset] [type]
      Write the image 'filename' to the current target's flash bank(s).
@@ -4290,6 +4369,39 @@ activate driver-specific commands.
      IDs hardcoded in the OpenOCD sources.
 
           flash bank $_FLASHNAME mrvlqspi 0x0 0 0 0 $_TARGETNAME 0x46010000
+
+ -- Flash Driver: ath79
+     Members of ATH79 SoC family from Atheros include a SPI interface
+     with 3 chip selects.  On reset a SPI flash connected to the first
+     chip select (CS0) is made directly read-accessible in the CPU
+     address space (up to 16MBytes) and is usually used to store the
+     bootloader and operating system.  Normal OpenOCD commands like
+     'mdw' can be used to display the flash content while it is in
+     memory-mapped mode (only the first 4MBytes are accessible without
+     additional configuration on reset).
+
+     The setup command only requires the BASE parameter in order to
+     identify the memory bank.  The actual value for the base address is
+     not otherwise used by the driver.  However the mapping is passed to
+     gdb.  Thus for the memory mapped flash (chipselect CS0) the base
+     address should be the actual memory mapped base address.  For
+     unmapped chipselects (CS1 and CS2) care should be taken to use a
+     base address that does not overlap with real memory regions.
+     Additional information, like flash size, are detected
+     automatically.  An optional additional parameter sets the
+     chipselect for the bank, with the default CS0.  CS1 and CS2 require
+     additional GPIO setup before they can be used since the alternate
+     function must be enabled on the GPIO pin CS1/CS2 is routed to on
+     the given SoC.
+
+          flash bank $_FLASHNAME ath79 0 0 0 0 $_TARGETNAME
+
+          # When using multiple chipselects the base should be different for each,
+          # otherwise the write_image command is not able to distinguish the
+          # banks.
+          flash bank flash0 ath79 0x00000000 0 0 0 $_TARGETNAME cs0
+          flash bank flash1 ath79 0x10000000 0 0 0 $_TARGETNAME cs1
+          flash bank flash2 ath79 0x20000000 0 0 0 $_TARGETNAME cs2
 
 12.4.2 Internal Flash (Microcontrollers)
 ----------------------------------------
@@ -4557,13 +4669,25 @@ activate driver-specific commands.
      supported, nor is Chip Erase (only Sector Erase is implemented)._
 
  -- Flash Driver: kinetis
-     Kx and KLx members of the Kinetis microcontroller family from
-     Freescale include internal flash and use ARM Cortex-M0+ or M4
-     cores.  The driver automatically recognizes flash size and a number
-     of flash banks (1-4) using the chip identification register, and
-     autoconfigures itself.
+     Kx, KLx, KVx and KE1x members of the Kinetis microcontroller family
+     from NXP (former Freescale) include internal flash and use ARM
+     Cortex-M0+ or M4 cores.  The driver automatically recognizes flash
+     size and a number of flash banks (1-4) using the chip
+     identification register, and autoconfigures itself.  Use kinetis_ke
+     driver for KE0x devices.
+
+     The KINETIS driver defines option:
+        * -sim-base ADDR ...  base of System Integration Module where
+          chip identification resides.  Driver tries two known locations
+          if option is omitted.
 
           flash bank $_FLASHNAME kinetis 0 0 0 0 $_TARGETNAME
+
+      -- Command: kinetis create_banks
+          Configuration command enables automatic creation of additional
+          flash banks based on real flash layout of device.  Banks are
+          created during device probe.  Use 'flash probe 0' to force
+          probe.
 
       -- Command: kinetis fcf_source [protection|write]
           Select what source is used when writing to a Flash
@@ -4632,10 +4756,11 @@ activate driver-specific commands.
           supported).  Command disables watchdog timer.
 
  -- Flash Driver: kinetis_ke
-     KE members of the Kinetis microcontroller family from Freescale
+     KE0x members of the Kinetis microcontroller family from Freescale
      include internal flash and use ARM Cortex-M0+.  The driver
-     automatically recognizes the KE family and sub-family using the
-     chip identification register, and autoconfigures itself.
+     automatically recognizes the KE0x sub-family using the chip
+     identification register, and autoconfigures itself.  Use kinetis
+     (not kinetis_ke) driver for KE1x devices.
 
           flash bank $_FLASHNAME kinetis_ke 0 0 0 0 $_TARGETNAME
 
@@ -4877,15 +5002,17 @@ activate driver-specific commands.
       -- Command: niietcm4 driver_info bank
           Show information about flash driver.
 
- -- Flash Driver: nrf51
+ -- Flash Driver: nrf5
      All members of the nRF51 microcontroller families from Nordic
      Semiconductor include internal flash and use ARM Cortex-M0 core.
+     Also, the nRF52832 microcontroller from Nordic Semiconductor, which
+     include internal flash and use an ARM Cortex-M4F core.
 
-          flash bank $_FLASHNAME nrf51 0 0x00000000 0 0 $_TARGETNAME
+          flash bank $_FLASHNAME nrf5 0 0x00000000 0 0 $_TARGETNAME
 
-     Some nrf51-specific commands are defined:
+     Some nrf5-specific commands are defined:
 
-      -- Command: nrf51 mass_erase
+      -- Command: nrf5 mass_erase
           Erases the contents of the code memory and user information
           configuration registers as well.  It must be noted that this
           command works only for chips that do not have factory
@@ -5053,17 +5180,22 @@ activate driver-specific commands.
 
       -- Command: stm32f2x options_read num
           Reads and displays user options and (where implemented)
-          boot_addr0 and boot_addr1.  The NUM parameter is a value shown
-          by 'flash banks'.
+          boot_addr0, boot_addr1, optcr2.  The NUM parameter is a value
+          shown by 'flash banks'.
 
       -- Command: stm32f2x options_write num user_options boot_addr0
                boot_addr1
           Writes user options and (where implemented) boot_addr0 and
           boot_addr1 in raw format.  Warning: The meaning of the various
           bits depends on the device, always check datasheet!  The NUM
-          parameter is a value shown by 'flash banks', user_options a 12
+          parameter is a value shown by 'flash banks', USER_OPTIONS a 12
           bit value, consisting of bits 31-28 and 7-0 of FLASH_OPTCR,
-          boot_addr0 and boot_addr1 two halfwords (of FLASH_OPTCR1).
+          BOOT_ADDR0 and BOOT_ADDR1 two halfwords (of FLASH_OPTCR1).
+
+      -- Command: stm32f2x optcr2_write num optcr2
+          Writes FLASH_OPTCR2 options.  Warning: Clearing PCROPi bits
+          requires a full mass erase!  The NUM parameter is a value
+          shown by 'flash banks', OPTCR2 a 32-bit word.
 
  -- Flash Driver: stm32lx
      All members of the STM32L microcontroller families from ST
@@ -5800,13 +5932,14 @@ Intent:
      exit code to the parent process.
 
  -- Command: debug_level [n]
-     Display debug level.  If N (from 0..3) is provided, then set it to
+     Display debug level.  If N (from 0..4) is provided, then set it to
      that level.  This affects the kind of messages sent to the server
      log.  Level 0 is error messages only; level 1 adds warnings; level
-     2 adds informational messages; and level 3 adds debugging messages.
-     The default is level 2, but that can be overridden on the command
-     line along with the location of that log file (which is normally
-     the server's standard output).  *Note Running::.
+     2 adds informational messages; level 3 adds debugging messages; and
+     level 4 adds verbose low-level debug messages.  The default is
+     level 2, but that can be overridden on the command line along with
+     the location of that log file (which is normally the server's
+     standard output).  *Note Running::.
 
  -- Command: echo [-n] message
      Logs a message at "user" priority.  Output MESSAGE to stdout.
@@ -6408,6 +6541,17 @@ available.
      operation requests by using a special SVC instruction that is
      trapped at the Supervisor Call vector by OpenOCD.
 
+ -- Command: arm semihosting_cmdline ['enable'|'disable']
+     Set the command line to be passed to the debuggee.
+
+          arm semihosting_cmdline argv0 argv1 argv2 ...
+
+     This option lets one set the command line arguments to be passed to
+     the program.  The first argument (argv0) is the program name in a
+     standard C environment (argv[0]).  Depending on the program (not
+     much programs look at argv[0]), argv0 is ignored and can be any
+     string.
+
  -- Command: arm semihosting_fileio ['enable'|'disable']
      Display status of semihosting fileio, after optionally changing
      that status.
@@ -6738,15 +6882,16 @@ implementations of the ARMv5TE architecture.
      fact is using coprocessor 14 register 7 itself) but all current
      ARM11 cores _except the ARM1176_ use the same six bits.
 
-16.5 ARMv7 Architecture
-=======================
+16.5 ARMv7 and ARMv8 Architecture
+=================================
 
-16.5.1 ARMv7 Debug Access Port (DAP) specific commands
-------------------------------------------------------
+16.5.1 ARMv7 and ARMv8 Debug Access Port (DAP) specific commands
+----------------------------------------------------------------
 
-These commands are specific to ARM architecture v7 Debug Access Port
-(DAP), included on Cortex-M and Cortex-A systems.  They are available in
-addition to other core-specific commands that may be available.
+These commands are specific to ARM architecture v7 and v8 Debug Access
+Port (DAP), included on Cortex-M and Cortex-A systems.  They are
+available in addition to other core-specific commands that may be
+available.
 
  -- Command: dap apid [num]
      Displays ID register from AP NUM, defaulting to the currently
@@ -6948,6 +7093,30 @@ addition to other core-specific commands that may be available.
      peripherals are uneffected.  A solution would be to use a
      'reset-init' event handler to manually reset the peripherals.
      *Note Target Events: targetevents.
+
+16.5.6 ARMv8-A specific commands
+--------------------------------
+
+ -- Command: aarch64 cache_info
+     Display information about target caches
+
+ -- Command: aarch64 dbginit
+     This command enables debugging by clearing the OS Lock and sticky
+     power-down and reset indications.  It also establishes the
+     expected, basic cross-trigger configuration the aarch64 target code
+     relies on.  In a configuration file, the command would typically be
+     called from a 'reset-end' or 'reset-deassert-post' handler, to
+     re-enable debugging after a system reset.  However, normally it is
+     not necessary to use the command at all.
+
+ -- Command: aarch64 smp_on|smp_off
+     Enable and disable SMP handling.  The state of SMP handling
+     influences the way targets in an SMP group are handled by the run
+     control.  With SMP handling enabled, issuing halt or resume to one
+     core will trigger halting or resuming of all cores in the group.
+     The command 'target smp' defines which targets are in the SMP
+     group.  With SMP handling disabled, all targets need to be treated
+     individually.
 
 16.6 Intel Architecture
 =======================

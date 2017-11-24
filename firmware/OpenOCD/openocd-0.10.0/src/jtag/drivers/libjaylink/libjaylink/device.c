@@ -17,6 +17,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+#ifdef HAVE_CONFIG_H
+#include "config.h"
+#endif
+
 #include <stdlib.h>
 #include <stdint.h>
 #include <stdbool.h>
@@ -27,7 +31,9 @@
 #include <sys/socket.h>
 #include <arpa/inet.h>
 #endif
+#ifdef HAVE_LIBUSB
 #include <libusb.h>
+#endif
 
 #include "libjaylink.h"
 #include "libjaylink-internal.h"
@@ -43,6 +49,7 @@
 #define CMD_GET_HW_STATUS	0x07
 #define CMD_REGISTER		0x09
 #define CMD_GET_HW_INFO		0xc1
+#define CMD_GET_COUNTERS	0xc2
 #define CMD_GET_FREE_MEMORY	0xd4
 #define CMD_GET_CAPS		0xe8
 #define CMD_GET_EXT_CAPS	0xed
@@ -86,7 +93,6 @@ JAYLINK_PRIV struct jaylink_device *device_allocate(
 
 	dev->ctx = ctx;
 	dev->ref_count = 1;
-	dev->usb_dev = NULL;
 
 	return dev;
 }
@@ -206,7 +212,7 @@ JAYLINK_API int jaylink_device_get_host_interface(
 	if (!dev || !iface)
 		return JAYLINK_ERR_ARG;
 
-	*iface = dev->interface;
+	*iface = dev->iface;
 
 	return JAYLINK_OK;
 }
@@ -253,7 +259,8 @@ JAYLINK_API int jaylink_device_get_serial_number(
  *
  * @retval JAYLINK_OK Success.
  * @retval JAYLINK_ERR_ARG Invalid arguments.
- * @retval JAYLINK_ERR_NOT_SUPPORTED Operation not supported.
+ * @retval JAYLINK_ERR_NOT_SUPPORTED Supported for devices with host interface
+ *                                   #JAYLINK_HIF_USB only.
  *
  * @see jaylink_device_get_serial_number()
  *
@@ -266,10 +273,177 @@ JAYLINK_API int jaylink_device_get_usb_address(
 	if (!dev || !address)
 		return JAYLINK_ERR_ARG;
 
-	if (dev->interface != JAYLINK_HIF_USB)
+	if (dev->iface != JAYLINK_HIF_USB)
 		return JAYLINK_ERR_NOT_SUPPORTED;
 
+#ifdef HAVE_LIBUSB
 	*address = dev->usb_address;
+
+	return JAYLINK_OK;
+#else
+	return JAYLINK_ERR_NOT_SUPPORTED;
+#endif
+}
+
+/**
+ * Get the IPv4 address string of a device.
+ *
+ * @param[in] dev Device instance.
+ * @param[out] address IPv4 address string in quad-dotted decimal format of the
+ *                     device on success and undefined on failure.
+ *
+ * @retval JAYLINK_OK Success.
+ * @retval JAYLINK_ERR_ARG Invalid arguments.
+ * @retval JAYLINK_ERR_NOT_SUPPORTED Supported for devices with host interface
+ *                                   #JAYLINK_HIF_TCP only.
+ *
+ * @since 0.2.0
+ */
+JAYLINK_API int jaylink_device_get_ipv4_address(
+		const struct jaylink_device *dev, char *address)
+{
+	if (!dev || !address)
+		return JAYLINK_ERR_ARG;
+
+	if (dev->iface != JAYLINK_HIF_TCP)
+		return JAYLINK_ERR_NOT_SUPPORTED;
+
+	memcpy(address, dev->ipv4_address, sizeof(dev->ipv4_address));
+
+	return JAYLINK_OK;
+}
+
+/**
+ * Get the MAC address of a device.
+ *
+ * @param[in] dev Device instance.
+ * @param[out] address MAC address of the device on success and undefined on
+ *                     failure. The length of the MAC address is
+ *                     #JAYLINK_MAC_ADDRESS_LENGTH bytes.
+ *
+ * @retval JAYLINK_OK Success.
+ * @retval JAYLINK_ERR_ARG Invalid arguments.
+ * @retval JAYLINK_ERR_NOT_SUPPORTED Supported for devices with host interface
+ *                                   #JAYLINK_HIF_TCP only.
+ * @retval JAYLINK_ERR_NOT_AVAILABLE MAC address is not available.
+ *
+ * @since 0.2.0
+ */
+JAYLINK_API int jaylink_device_get_mac_address(
+		const struct jaylink_device *dev, uint8_t *address)
+{
+	if (!dev || !address)
+		return JAYLINK_ERR_ARG;
+
+	if (dev->iface != JAYLINK_HIF_TCP)
+		return JAYLINK_ERR_NOT_SUPPORTED;
+
+	if (!dev->has_mac_address)
+		return JAYLINK_ERR_NOT_AVAILABLE;
+
+	memcpy(address, dev->mac_address, sizeof(dev->mac_address));
+
+	return JAYLINK_OK;
+}
+
+/**
+ * Get the hardware version of a device.
+ *
+ * @note The hardware type can not be obtained by this function, use
+ *       jaylink_get_hardware_version() instead.
+ *
+ * @param[in] dev Device instance.
+ * @param[out] version Hardware version of the device on success and undefined
+ *                     on failure.
+ *
+ * @retval JAYLINK_OK Success.
+ * @retval JAYLINK_ERR_ARG Invalid arguments.
+ * @retval JAYLINK_ERR_NOT_SUPPORTED Supported for devices with host interface
+ *                                   #JAYLINK_HIF_TCP only.
+ * @retval JAYLINK_ERR_NOT_AVAILABLE Hardware version is not available.
+ *
+ * @since 0.2.0
+ */
+JAYLINK_API int jaylink_device_get_hardware_version(
+		const struct jaylink_device *dev,
+		struct jaylink_hardware_version *version)
+{
+	if (!dev || !version)
+		return JAYLINK_ERR_ARG;
+
+	if (dev->iface != JAYLINK_HIF_TCP)
+		return JAYLINK_ERR_NOT_SUPPORTED;
+
+	if (!dev->has_hw_version)
+		return JAYLINK_ERR_NOT_AVAILABLE;
+
+	*version = dev->hw_version;
+
+	return JAYLINK_OK;
+}
+
+/**
+ * Get the product name of a device.
+ *
+ * @param[in] dev Device instance.
+ * @param[out] name Product name of the device on success and undefined on
+ *                  failure. The maximum length of the product name is
+ *                  #JAYLINK_PRODUCT_NAME_MAX_LENGTH bytes.
+ *
+ * @retval JAYLINK_OK Success.
+ * @retval JAYLINK_ERR_ARG Invalid arguments.
+ * @retval JAYLINK_ERR_NOT_SUPPORTED Supported for devices with host interface
+ *                                   #JAYLINK_HIF_TCP only.
+ * @retval JAYLINK_ERR_NOT_AVAILABLE Product name is not available.
+ *
+ * @since 0.2.0
+ */
+JAYLINK_API int jaylink_device_get_product_name(
+		const struct jaylink_device *dev, char *name)
+{
+	if (!dev || !name)
+		return JAYLINK_ERR_ARG;
+
+	if (dev->iface != JAYLINK_HIF_TCP)
+		return JAYLINK_ERR_NOT_SUPPORTED;
+
+	if (!dev->has_product_name)
+		return JAYLINK_ERR_NOT_AVAILABLE;
+
+	memcpy(name, dev->product_name, sizeof(dev->product_name));
+
+	return JAYLINK_OK;
+}
+
+/**
+ * Get the nickname of a device.
+ *
+ * @param[in] dev Device instance.
+ * @param[out] nickname Nickname of the device on success and undefined on
+ *                      failure. The maximum length of the nickname is
+ *                      #JAYLINK_NICKNAME_MAX_LENGTH bytes.
+ *
+ * @retval JAYLINK_OK Success.
+ * @retval JAYLINK_ERR_ARG Invalid arguments.
+ * @retval JAYLINK_ERR_NOT_SUPPORTED Supported for devices with host interface
+ *                                   #JAYLINK_HIF_TCP only.
+ * @retval JAYLINK_ERR_NOT_AVAILABLE Nickname is not available.
+ *
+ * @since 0.2.0
+ */
+JAYLINK_API int jaylink_device_get_nickname(const struct jaylink_device *dev,
+		char *nickname)
+{
+	if (!dev || !nickname)
+		return JAYLINK_ERR_ARG;
+
+	if (dev->iface != JAYLINK_HIF_TCP)
+		return JAYLINK_ERR_NOT_SUPPORTED;
+
+	if (!dev->has_nickname)
+		return JAYLINK_ERR_NOT_AVAILABLE;
+
+	memcpy(nickname, dev->nickname, sizeof(dev->nickname));
 
 	return JAYLINK_OK;
 }
@@ -312,15 +486,24 @@ JAYLINK_API void jaylink_unref_device(struct jaylink_device *dev)
 
 	if (!dev->ref_count) {
 		ctx = dev->ctx;
-
-		log_dbg(ctx, "Device destroyed (bus:address = %03u:%03u).",
-			libusb_get_bus_number(dev->usb_dev),
-			libusb_get_device_address(dev->usb_dev));
-
 		ctx->devs = list_remove(dev->ctx->devs, dev);
 
-		if (dev->usb_dev)
+		if (dev->iface == JAYLINK_HIF_USB) {
+#ifdef HAVE_LIBUSB
+			log_dbg(ctx, "Device destroyed (bus:address = "
+				"%03u:%03u).",
+				libusb_get_bus_number(dev->usb_dev),
+				libusb_get_device_address(dev->usb_dev));
+
 			libusb_unref_device(dev->usb_dev);
+#endif
+		} else if (dev->iface == JAYLINK_HIF_TCP) {
+			log_dbg(ctx, "Device destroyed (IPv4 address = %s).",
+				dev->ipv4_address);
+		} else {
+			log_err(ctx, "BUG: Invalid host interface: %u.",
+				dev->iface);
+		}
 
 		free(dev);
 	}
@@ -609,6 +792,85 @@ JAYLINK_API int jaylink_get_hardware_info(struct jaylink_device_handle *devh,
 
 	for (i = 0; i < num; i++)
 		info[i] = buffer_get_u32((uint8_t *)info,
+			i * sizeof(uint32_t));
+
+	return JAYLINK_OK;
+}
+
+/**
+ * Retrieve the counter values of a device.
+ *
+ * @note This function must only be used if the device has the
+ *       #JAYLINK_DEV_CAP_GET_COUNTERS capability.
+ *
+ * @param[in,out] devh Device handle.
+ * @param[in] mask A bit field where each set bit represents a counter value to
+ *                 request. See #jaylink_counter for a description of the
+ *                 counters and their bit positions.
+ * @param[out] values Array to store the counter values on success. Its content
+ *                    is undefined on failure. The array must be large enough
+ *                    to contain at least as many elements as bits set in @p
+ *                    mask.
+ *
+ * @retval JAYLINK_OK Success.
+ * @retval JAYLINK_ERR_ARG Invalid arguments.
+ * @retval JAYLINK_ERR_TIMEOUT A timeout occurred.
+ * @retval JAYLINK_ERR_IO Input/output error.
+ * @retval JAYLINK_ERR Other error conditions.
+ *
+ * @since 0.2.0
+ */
+JAYLINK_API int jaylink_get_counters(struct jaylink_device_handle *devh,
+		uint32_t mask, uint32_t *values)
+{
+	int ret;
+	struct jaylink_context *ctx;
+	uint8_t buf[5];
+	unsigned int i;
+	unsigned int num;
+	unsigned int length;
+
+	if (!devh || !mask || !values)
+		return JAYLINK_ERR_ARG;
+
+	ctx = devh->dev->ctx;
+	num = 0;
+
+	for (i = 0; i < 32; i++) {
+		if (mask & (1 << i))
+			num++;
+	}
+
+	length = num * sizeof(uint32_t);
+	ret = transport_start_write_read(devh, 5, length, true);
+
+	if (ret != JAYLINK_OK) {
+		log_err(ctx, "transport_start_write_read() failed: %s.",
+			jaylink_strerror(ret));
+		return ret;
+	}
+
+	buf[0] = CMD_GET_COUNTERS;
+	buffer_set_u32(buf, mask, 1);
+
+	ret = transport_write(devh, buf, 5);
+
+	if (ret != JAYLINK_OK) {
+		log_err(ctx, "transport_write() failed: %s.",
+			jaylink_strerror(ret));
+		return ret;
+	}
+
+	ret = transport_read(devh, (uint8_t *)values, length);
+
+	if (ret != JAYLINK_OK) {
+		log_err(ctx, "transport_read() failed: %s.",
+			jaylink_strerror(ret));
+		return ret;
+	}
+
+	for (i = 0; i < num; i++)
+		values[i] = buffer_get_u32((uint8_t *)values,
 			i * sizeof(uint32_t));
 
 	return JAYLINK_OK;
