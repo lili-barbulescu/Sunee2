@@ -1,0 +1,19 @@
+Pt compilare:
+
+1)Instaleaza tot ce e in  'installmefirst'
+2)Adauga calea catre make.exe in variabila Path
+(calea este probabil "C:\Program Files\GNU ARM Eclipse\Build Tools\2.8-201611221915\bin")
+3)Testeaza:
+3.1)In SDK intra in "examples\peripheral\blinky\pca10028\blank\armgcc"
+3.2)Deschide cmd aici (Alt+D,scrie cmd, Enter)
+3.3)In cmd scrie "make" fara ghilimele.
+
+Pt programare:
+1)Intra in <SDK>/examples\peripheral\blinky\pca10028\blank\armgcc
+2)Conecteaza programatorul si placa
+2)deschide un terminal si incearca comenzile:
+make erase
+make flash
+make run
+
+

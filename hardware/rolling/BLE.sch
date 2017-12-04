@@ -53,17 +53,6 @@ Text HLabel 3075 3175 0    60   Output ~ 0
 SCL
 Text HLabel 3450 3625 3    60   BiDi ~ 0
 SDA
-$Comp
-L MDBT42V MDBT42V_1
-U 1 1 59A49511
-P 3775 2950
-F 0 "MDBT42V_1" H 2875 2400 60  0000 C CNN
-F 1 "MDBT42V" H 3250 3650 60  0000 C CNN
-F 2 "MDBT42V:MDBT42V" H 3675 2975 60  0001 C CNN
-F 3 "" H 3675 2975 60  0000 C CNN
-	1    3775 2950
-	1    0    0    -1  
-$EndComp
 Text GLabel 3525 3625 3    39   Input ~ 0
 GND
 Text GLabel 3050 2650 0    39   Input ~ 0
@@ -109,50 +98,9 @@ F 3 "" H 5025 2850 50  0000 C CNN
 $EndComp
 Text GLabel 5175 2850 2    39   Input ~ 0
 GND
-Text Label 3125 2800 2    39   ~ 0
-BLE_RESET
-Text Label 1850 1000 0    39   ~ 0
-BLE_RESET
-$Comp
-L SW_PUSH SW2
-U 1 1 59A578FC
-P 1375 1000
-F 0 "SW2" H 1525 1110 50  0000 C CNN
-F 1 "SW_PUSH" H 1375 920 39  0000 C CNN
-F 2 "FSMSM:FSMSM" H 1375 1000 50  0001 C CNN
-F 3 "" H 1375 1000 50  0000 C CNN
-	1    1375 1000
-	1    0    0    -1  
-$EndComp
-Text GLabel 1075 625  0    39   Input ~ 0
-GND
-$Comp
-L R_Small R3
-U 1 1 59A58475
-P 1075 825
-F 0 "R3" H 1105 845 50  0000 L CNN
-F 1 "330" H 1105 785 50  0000 L CNN
-F 2 "Resistors_SMD:R_0402" H 1075 825 50  0001 C CNN
-F 3 "" H 1075 825 50  0000 C CNN
-	1    1075 825 
-	-1   0    0    1   
-$EndComp
-Text GLabel 1750 600  2    39   Input ~ 0
-VCC
-$Comp
-L R_Small R4
-U 1 1 59A58BA4
-P 1750 825
-F 0 "R4" H 1575 875 50  0000 L CNN
-F 1 "10K" H 1550 775 50  0000 L CNN
-F 2 "Resistors_SMD:R_0402" H 1750 825 50  0001 C CNN
-F 3 "" H 1750 825 50  0000 C CNN
-	1    1750 825 
-	-1   0    0    1   
-$EndComp
-Text HLabel 4450 2625 2    60   Output ~ 0
+Text HLabel 4425 2625 2    60   Output ~ 0
 BUZZER
-Text GLabel 2375 3050 2    39   Input ~ 0
+Text GLabel 2375 2950 2    39   Input ~ 0
 VCC
 Text GLabel 2375 2650 2    39   Input ~ 0
 GND
@@ -206,25 +154,10 @@ F 3 "" H 4000 3750 50  0000 C CNN
 $EndComp
 Text GLabel 4025 4100 3    39   Input ~ 0
 GND
-Text HLabel 4000 2275 2    60   Input ~ 0
+Text HLabel 4475 3200 3    60   Input ~ 0
 INT_UV
 Text HLabel 3625 3600 3    60   Input ~ 0
-INT_ACC1
-Text HLabel 3700 3600 3    60   Input ~ 0
 INT_ACC2
-Text GLabel 1750 1375 2    39   Input ~ 0
-GND
-$Comp
-L C_Small C9
-U 1 1 59B1A58E
-P 1750 1175
-F 0 "C9" H 1760 1245 50  0000 L CNN
-F 1 "0.1uF" H 1760 1095 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0402" H 1750 1175 50  0001 C CNN
-F 3 "" H 1750 1175 50  0000 C CNN
-	1    1750 1175
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3175 2650 3050 2650
 Wire Wire Line
@@ -241,12 +174,6 @@ Wire Wire Line
 	4925 2775 4925 2850
 Wire Wire Line
 	5125 2850 5175 2850
-Wire Wire Line
-	1675 1000 1850 1000
-Wire Wire Line
-	1075 925  1075 1000
-Wire Wire Line
-	1075 725  1075 625 
 Wire Wire Line
 	3175 3175 3075 3175
 Wire Wire Line
@@ -304,40 +231,12 @@ Wire Wire Line
 Wire Wire Line
 	3475 3600 3475 3575
 Wire Wire Line
-	3125 2800 3175 2800
-Wire Wire Line
-	1750 925  1750 1075
-Connection ~ 1750 1000
-Wire Wire Line
-	1750 725  1750 600 
-Wire Wire Line
-	1750 1275 1750 1375
-Wire Wire Line
 	4600 2950 4600 2925
 Connection ~ 4600 2925
-$Comp
-L CONN_01X05 P1
-U 1 1 59B1DD34
-P 2100 2850
-F 0 "P1" H 2100 3150 50  0000 C CNN
-F 1 "CONN_01X05" V 2200 2850 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x05" H 2100 2850 50  0001 C CNN
-F 3 "" H 2100 2850 50  0000 C CNN
-	1    2100 2850
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
-	2375 3050 2300 3050
+	2375 2950 2300 2950
 Wire Wire Line
 	3925 2375 3925 2300
-Wire Wire Line
-	3700 3600 3700 3575
-Wire Wire Line
-	3625 3575 3625 3600
-Wire Wire Line
-	4450 2625 4375 2625
-Wire Wire Line
-	4000 2275 4000 2375
 Wire Wire Line
 	3025 3100 3175 3100
 Text Label 3025 3100 0    39   ~ 0
@@ -370,4 +269,38 @@ Text Label 5400 1475 1    39   ~ 0
 LED6
 Text GLabel 3925 2300 1    39   Input ~ 0
 VCC
+$Comp
+L CONN_01X04 P1
+U 1 1 5A1B5D18
+P 2100 2800
+F 0 "P1" H 2100 3050 50  0000 C CNN
+F 1 "CONN_01X04" V 2200 2800 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x04" H 2100 2800 50  0001 C CNN
+F 3 "" H 2100 2800 50  0000 C CNN
+	1    2100 2800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4425 2625 4375 2625
+Text HLabel 3700 3600 3    60   Input ~ 0
+INT_ACC1
+$Comp
+L MDBT42V MDBT42V_1
+U 1 1 59A49511
+P 3775 2950
+F 0 "MDBT42V_1" H 2875 2400 60  0000 C CNN
+F 1 "MDBT42V" H 3250 3650 60  0000 C CNN
+F 2 "MDBT42V:MDBT42V" H 3675 2975 60  0001 C CNN
+F 3 "" H 3675 2975 60  0000 C CNN
+	1    3775 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 3575 3700 3600
+Wire Wire Line
+	3625 3575 3625 3600
+Wire Wire Line
+	4375 3000 4475 3000
+Wire Wire Line
+	4475 3000 4475 3200
 $EndSCHEMATC

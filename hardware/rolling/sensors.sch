@@ -128,27 +128,10 @@ F 3 "" H 9100 1950 50  0001 C CNN
 	1    9100 1950
 	1    0    0    -1  
 $EndComp
-$Comp
-L C C2
-U 1 1 59A6BF87
-P 3550 1325
-F 0 "C2" H 3575 1425 50  0000 L CNN
-F 1 "0.1uF" H 3575 1225 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0402" H 3588 1175 50  0001 C CNN
-F 3 "" H 3550 1325 50  0001 C CNN
-	1    3550 1325
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	5400 825  5400 875 
+	5400 825  5400 1825
 Wire Wire Line
-	5400 875  5400 1525
-Wire Wire Line
-	5400 1525 5400 1825
-Wire Wire Line
-	4750 1625 5250 1625
-Wire Wire Line
-	5250 1625 5525 1625
+	4750 1625 5525 1625
 Wire Wire Line
 	5400 1525 5525 1525
 Connection ~ 5400 1525
@@ -166,15 +149,9 @@ Wire Wire Line
 Wire Wire Line
 	7500 1550 8125 1550
 Wire Wire Line
-	8025 2000 8025 2075
+	8025 2000 8025 2250
 Wire Wire Line
-	8025 2075 8025 2250
-Wire Wire Line
-	8025 950  8025 1150
-Wire Wire Line
-	8025 1150 8025 1625
-Wire Wire Line
-	8025 1625 8025 1700
+	8025 950  8025 1700
 Wire Wire Line
 	8025 1625 8125 1625
 Connection ~ 8025 1625
@@ -190,38 +167,24 @@ Connection ~ 8025 1150
 Wire Wire Line
 	8900 1500 9250 1500
 Wire Wire Line
-	9250 1500 9250 1575
-Wire Wire Line
-	9250 1575 9250 2175
-Wire Wire Line
-	9250 2175 9250 2350
+	9250 1500 9250 2350
 Wire Wire Line
 	8900 1575 9250 1575
 Connection ~ 9250 1575
 Wire Wire Line
 	9100 2100 9100 2175
 Wire Wire Line
-	3550 1175 3550 1025
-Wire Wire Line
-	3550 1475 3550 1600
-Wire Wire Line
 	5400 2125 5400 2275
 Connection ~ 9250 2175
 Wire Wire Line
-	6475 1200 6475 1325
-Wire Wire Line
-	6475 1325 6475 1525
-Wire Wire Line
-	6475 1525 6475 1625
+	6475 1200 6475 1625
 Connection ~ 6475 1325
 Connection ~ 6475 1525
 Wire Wire Line
 	5250 925  5250 875 
 Connection ~ 5400 875 
 Wire Wire Line
-	9100 1350 9100 1650
-Wire Wire Line
-	9100 1650 9100 1800
+	9100 1350 9100 1800
 Wire Wire Line
 	8900 1650 9100 1650
 Connection ~ 9100 1650
@@ -250,9 +213,7 @@ F 3 "" H 1425 2750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1650 2325 1650 2600
-Wire Wire Line
-	1650 2600 1650 2750
+	1650 2325 1650 2750
 Wire Wire Line
 	1275 2600 1150 2600
 Wire Wire Line
@@ -317,8 +278,6 @@ Text Label 1150 2750 2    60   ~ 0
 SCL_UP
 Text GLabel 1650 2325 2    60   BiDi ~ 0
 VCC
-Text GLabel 3550 1025 2    60   BiDi ~ 0
-VCC
 Text GLabel 5400 825  2    60   BiDi ~ 0
 VCC
 Text GLabel 6475 825  2    60   BiDi ~ 0
@@ -334,8 +293,6 @@ GND
 Text GLabel 6575 1425 2    60   BiDi ~ 0
 GND
 Text GLabel 5400 2275 2    60   BiDi ~ 0
-GND
-Text GLabel 3550 1600 2    60   BiDi ~ 0
 GND
 $Comp
 L R_Small R14

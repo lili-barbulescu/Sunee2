@@ -1,0 +1,8 @@
+SMC_PMPROT=1 -> permite STOP MODE, LOW POWER MODE
+Daca se foloseste clock extern, clock monitoring trebuie dezactivat inainte de a intra in low power (exceptand wait)
+Wake Up Source trebuie setate inaintede a intra in low power mode:
+Int pt VLPS, WAIT, VLPW ;; LLWU pt LLSx, VLLSx
+Selectie power mode cu SMC_PMCTRL si SMC_STOPCTRL
+If none are enabled Reset and NMI will still wake the MCU from all low
+power modes.
+Set/Clear ARM SLEEPDEEP bit for STOP/WAIT.
