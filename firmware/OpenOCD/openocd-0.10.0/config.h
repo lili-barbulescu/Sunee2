@@ -11,7 +11,7 @@
 #define BUILD_AMTJTAGACCEL 0
 
 /* 0 if you do not want the Olimex ARM-JTAG-EW Programmer. */
-/* #undef BUILD_ARMJTAGEW */
+#define BUILD_ARMJTAGEW 1
 
 /* 0 if you don't want at91rm9200. */
 #define BUILD_AT91RM9200 0
@@ -83,7 +83,7 @@
 #define BUILD_REMOTE_BITBANG 0
 
 /* 0 if you do not want the Raisonance RLink JTAG Programmer. */
-/* #undef BUILD_RLINK */
+#define BUILD_RLINK 1
 
 /* 0 if you don't want SysfsGPIO driver. */
 #define BUILD_SYSFSGPIO 0
@@ -95,7 +95,7 @@
 #define BUILD_ULINK 1
 
 /* 0 if you do not want the USBProg JTAG Programmer. */
-/* #undef BUILD_USBPROG */
+#define BUILD_USBPROG 1
 
 /* 0 if you do not want the Altera USB-Blaster Compatible. */
 /* #undef BUILD_USB_BLASTER */
@@ -113,16 +113,16 @@
 #define BUILD_ZY1000_MASTER 0
 
 /* Define to 1 if you have the <arpa/inet.h> header file. */
-#define HAVE_ARPA_INET_H 1
+/* #undef HAVE_ARPA_INET_H */
 
 /* Define to 1 if you have the <dirent.h> header file. */
 #define HAVE_DIRENT_H 1
 
 /* Define to 1 if you have the <dlfcn.h> header file. */
-#define HAVE_DLFCN_H 1
+/* #undef HAVE_DLFCN_H */
 
 /* Define to 1 if you have the <elf.h> header file. */
-#define HAVE_ELF_H 1
+/* #undef HAVE_ELF_H */
 
 /* Define to 1 if you have the <fcntl.h> header file. */
 #define HAVE_FCNTL_H 1
@@ -131,7 +131,7 @@
 #define HAVE_GETTIMEOFDAY 1
 
 /* Define to 1 if you have the <ifaddrs.h> header file. */
-#define HAVE_IFADDRS_H 1
+/* #undef HAVE_IFADDRS_H */
 
 /* Define to 1 if you have the <inttypes.h> header file. */
 #define HAVE_INTTYPES_H 1
@@ -158,25 +158,25 @@
 #define HAVE_MEMORY_H 1
 
 /* Define to 1 if you have the <netdb.h> header file. */
-#define HAVE_NETDB_H 1
+/* #undef HAVE_NETDB_H */
 
 /* Define to 1 if you have the <netinet/in.h> header file. */
-#define HAVE_NETINET_IN_H 1
+/* #undef HAVE_NETINET_IN_H */
 
 /* Define to 1 if you have the <netinet/tcp.h> header file. */
-#define HAVE_NETINET_TCP_H 1
+/* #undef HAVE_NETINET_TCP_H */
 
 /* Define to 1 if you have the <net/if.h> header file. */
-#define HAVE_NET_IF_H 1
+/* #undef HAVE_NET_IF_H */
 
 /* Define to 1 if you have the <poll.h> header file. */
-#define HAVE_POLL_H 1
+/* #undef HAVE_POLL_H */
 
 /* Define to 1 if you have the <pthread.h> header file. */
 #define HAVE_PTHREAD_H 1
 
 /* Define to 1 if you have the `realpath' function. */
-#define HAVE_REALPATH 1
+/* #undef HAVE_REALPATH */
 
 /* Define to 1 if stdbool.h conforms to C99. */
 #define HAVE_STDBOOL_H 1
@@ -194,13 +194,13 @@
 #define HAVE_STRING_H 1
 
 /* Define to 1 if you have the `strndup' function. */
-#define HAVE_STRNDUP 1
+/* #undef HAVE_STRNDUP */
 
 /* Define to 1 if you have the `strnlen' function. */
 #define HAVE_STRNLEN 1
 
 /* Define to 1 if you have the <sys/ioctl.h> header file. */
-#define HAVE_SYS_IOCTL_H 1
+/* #undef HAVE_SYS_IOCTL_H */
 
 /* Define to 1 if you have the <sys/io.h> header file. */
 /* #undef HAVE_SYS_IO_H */
@@ -209,16 +209,16 @@
 #define HAVE_SYS_PARAM_H 1
 
 /* Define to 1 if you have the <sys/select.h> header file. */
-#define HAVE_SYS_SELECT_H 1
+/* #undef HAVE_SYS_SELECT_H */
 
 /* Define to 1 if you have the <sys/socket.h> header file. */
-#define HAVE_SYS_SOCKET_H 1
+/* #undef HAVE_SYS_SOCKET_H */
 
 /* Define to 1 if you have the <sys/stat.h> header file. */
 #define HAVE_SYS_STAT_H 1
 
 /* Define to 1 if you have the <sys/sysctl.h> header file. */
-#define HAVE_SYS_SYSCTL_H 1
+/* #undef HAVE_SYS_SYSCTL_H */
 
 /* Define to 1 if you have the <sys/time.h> header file. */
 #define HAVE_SYS_TIME_H 1
@@ -248,10 +248,10 @@
 #define IS_DARWIN 0
 
 /* 0 if not building for Mingw. */
-#define IS_MINGW 0
+#define IS_MINGW 1
 
 /* 0 if not building for Win32. */
-#define IS_WIN32 0
+#define IS_WIN32 1
 
 /* Define to the sub-directory where libtool stores uninstalled libraries. */
 #define LT_OBJDIR ".libs/"
@@ -284,10 +284,10 @@
 #define PACKAGE_VERSION "0.10.0+dev"
 
 /* 0 if you don't want parport to use giveio. */
-#define PARPORT_USE_GIVEIO 0
+#define PARPORT_USE_GIVEIO 1
 
 /* 0 if you don't want parport to use ppdev. */
-#define PARPORT_USE_PPDEV 1
+#define PARPORT_USE_PPDEV 0
 
 /* Define to 1 if you have the ANSI C header files. */
 #define STDC_HEADERS 1

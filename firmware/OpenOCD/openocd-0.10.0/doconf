@@ -1,0 +1,4 @@
+./configure \
+    --enable-stlink \
+    --host=i686-w64-mingw32 \
+    --disable-werror

@@ -20,6 +20,7 @@
 #endif
 #include "usb_common.h"
 
+#include <libusb.h>
 
 static bool jtag_usb_match(struct usb_device *dev,
 		const uint16_t vids[], const uint16_t pids[])

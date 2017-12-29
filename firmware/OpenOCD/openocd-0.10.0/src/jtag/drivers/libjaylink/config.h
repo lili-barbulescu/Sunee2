@@ -5,7 +5,7 @@
 /* #undef AC_APPLE_UNIVERSAL_BUILD */
 
 /* Define to 1 if you have the <dlfcn.h> header file. */
-#define HAVE_DLFCN_H 1
+/* #undef HAVE_DLFCN_H */
 
 /* Define to 1 if you have the <inttypes.h> header file. */
 #define HAVE_INTTYPES_H 1
@@ -80,4 +80,4 @@
 #endif
 
 /* Define to 1 to use C99 compatible stdio functions on MinGW. */
-/* #undef __USE_MINGW_ANSI_STDIO */
+#define __USE_MINGW_ANSI_STDIO 1

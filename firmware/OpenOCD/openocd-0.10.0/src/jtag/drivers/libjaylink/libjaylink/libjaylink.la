@@ -17,7 +17,7 @@ old_library='libjaylink.a'
 inherited_linker_flags=''
 
 # Libraries that this one depends upon.
-dependency_libs=' -lusb-1.0'
+dependency_libs=' -lws2_32 -lusb-1.0'
 
 # Names of additional weak libraries provided by this library
 weak_library_names=''
