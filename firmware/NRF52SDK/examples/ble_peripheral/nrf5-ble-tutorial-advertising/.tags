@@ -1,0 +1,981 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ADC_CONFIG_IRQ_PRIORITY	config/ble_app_template_s130_pca10028/nrf_drv_config.h	383;"	d
+ADC_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10036/nrf_drv_config.h	383;"	d
+ADC_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10040/nrf_drv_config.h	383;"	d
+ADC_ENABLED	config/ble_app_template_s130_pca10028/nrf_drv_config.h	380;"	d
+ADC_ENABLED	config/ble_app_template_s132_pca10036/nrf_drv_config.h	380;"	d
+ADC_ENABLED	config/ble_app_template_s132_pca10040/nrf_drv_config.h	380;"	d
+ADC_IRQHandler	pca10028/s130/arm5_no_packs/RTE/Device/nRF51422_xxAC/arm_startup_nrf51.s	/^ADC_IRQHandler$/;"	l
+APP_ADV_INTERVAL	main.c	60;"	d	file:
+APP_ADV_TIMEOUT_IN_SECONDS	main.c	61;"	d	file:
+APP_TIMER_OP_QUEUE_SIZE	main.c	64;"	d	file:
+APP_TIMER_PRESCALER	main.c	63;"	d	file:
+AR	pca10028/s130/armgcc/Makefile	/^AR              := '$(GNU_INSTALL_ROOT)\/bin\/$(GNU_PREFIX)-ar' -r$/;"	m
+AR	pca10040/s132/armgcc/Makefile	/^AR              := '$(GNU_INSTALL_ROOT)\/bin\/$(GNU_PREFIX)-ar' -r$/;"	m
+AS	pca10028/s130/armgcc/Makefile	/^AS              := '$(GNU_INSTALL_ROOT)\/bin\/$(GNU_PREFIX)-as'$/;"	m
+AS	pca10040/s132/armgcc/Makefile	/^AS              := '$(GNU_INSTALL_ROOT)\/bin\/$(GNU_PREFIX)-as'$/;"	m
+ASM_OBJECTS	pca10028/s130/armgcc/Makefile	/^ASM_OBJECTS = $(addprefix $(OBJECT_DIRECTORY)\/, $(ASM_SOURCE_FILE_NAMES:.s=.o) )$/;"	m
+ASM_OBJECTS	pca10040/s132/armgcc/Makefile	/^ASM_OBJECTS = $(addprefix $(OBJECT_DIRECTORY)\/, $(ASM_SOURCE_FILE_NAMES:.s=.o) )$/;"	m
+ASM_PATHS	pca10028/s130/armgcc/Makefile	/^ASM_PATHS = $(call remduplicates, $(dir $(ASM_SOURCE_FILES) ))$/;"	m
+ASM_PATHS	pca10040/s132/armgcc/Makefile	/^ASM_PATHS = $(call remduplicates, $(dir $(ASM_SOURCE_FILES) ))$/;"	m
+ASM_SOURCE_FILES	pca10028/s130/armgcc/Makefile	/^ASM_SOURCE_FILES  = $(abspath ..\/..\/..\/..\/..\/..\/components\/toolchain\/gcc\/gcc_startup_nrf51.s)$/;"	m
+ASM_SOURCE_FILES	pca10040/s132/armgcc/Makefile	/^ASM_SOURCE_FILES  = $(abspath ..\/..\/..\/..\/..\/..\/components\/toolchain\/gcc\/gcc_startup_nrf52.s)$/;"	m
+ASM_SOURCE_FILE_NAMES	pca10028/s130/armgcc/Makefile	/^ASM_SOURCE_FILE_NAMES = $(notdir $(ASM_SOURCE_FILES))$/;"	m
+ASM_SOURCE_FILE_NAMES	pca10040/s132/armgcc/Makefile	/^ASM_SOURCE_FILE_NAMES = $(notdir $(ASM_SOURCE_FILES))$/;"	m
+BUILD_DIRECTORIES	pca10028/s130/armgcc/Makefile	/^BUILD_DIRECTORIES := $(sort $(OBJECT_DIRECTORY) $(OUTPUT_BINARY_DIRECTORY) $(LISTING_DIRECTORY) )$/;"	m
+BUILD_DIRECTORIES	pca10040/s132/armgcc/Makefile	/^BUILD_DIRECTORIES := $(sort $(OBJECT_DIRECTORY) $(OUTPUT_BINARY_DIRECTORY) $(LISTING_DIRECTORY) )$/;"	m
+CC	pca10028/s130/armgcc/Makefile	/^CC              := '$(GNU_INSTALL_ROOT)\/bin\/$(GNU_PREFIX)-gcc'$/;"	m
+CC	pca10040/s132/armgcc/Makefile	/^CC              := '$(GNU_INSTALL_ROOT)\/bin\/$(GNU_PREFIX)-gcc'$/;"	m
+CCM_AAR_IRQHandler	pca10028/s130/arm5_no_packs/RTE/Device/nRF51422_xxAC/arm_startup_nrf51.s	/^CCM_AAR_IRQHandler$/;"	l
+CCM_AAR_IRQHandler	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^CCM_AAR_IRQHandler$/;"	l
+CENTRAL_LINK_COUNT	main.c	56;"	d	file:
+CFLAGS	pca10028/s130/armgcc/Makefile	/^CFLAGS  = -DNRF_LOG_USES_UART=1$/;"	m
+CFLAGS	pca10040/s132/armgcc/Makefile	/^CFLAGS  = -DNRF52$/;"	m
+CLOCK_CONFIG_IRQ_PRIORITY	config/ble_app_template_s130_pca10028/nrf_drv_config.h	35;"	d
+CLOCK_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10036/nrf_drv_config.h	35;"	d
+CLOCK_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10040/nrf_drv_config.h	35;"	d
+CLOCK_CONFIG_LF_SRC	config/ble_app_template_s130_pca10028/nrf_drv_config.h	34;"	d
+CLOCK_CONFIG_LF_SRC	config/ble_app_template_s132_pca10036/nrf_drv_config.h	34;"	d
+CLOCK_CONFIG_LF_SRC	config/ble_app_template_s132_pca10040/nrf_drv_config.h	34;"	d
+CLOCK_CONFIG_XTAL_FREQ	config/ble_app_template_s130_pca10028/nrf_drv_config.h	33;"	d
+CLOCK_CONFIG_XTAL_FREQ	config/ble_app_template_s132_pca10036/nrf_drv_config.h	33;"	d
+CLOCK_CONFIG_XTAL_FREQ	config/ble_app_template_s132_pca10040/nrf_drv_config.h	33;"	d
+CLOCK_ENABLED	config/ble_app_template_s130_pca10028/nrf_drv_config.h	30;"	d
+CLOCK_ENABLED	config/ble_app_template_s132_pca10036/nrf_drv_config.h	30;"	d
+CLOCK_ENABLED	config/ble_app_template_s132_pca10040/nrf_drv_config.h	30;"	d
+COMP_CONFIG_HYST	config/ble_app_template_s130_pca10028/nrf_drv_config.h	413;"	d
+COMP_CONFIG_HYST	config/ble_app_template_s132_pca10036/nrf_drv_config.h	413;"	d
+COMP_CONFIG_HYST	config/ble_app_template_s132_pca10040/nrf_drv_config.h	413;"	d
+COMP_CONFIG_INPUT	config/ble_app_template_s130_pca10028/nrf_drv_config.h	416;"	d
+COMP_CONFIG_INPUT	config/ble_app_template_s132_pca10036/nrf_drv_config.h	416;"	d
+COMP_CONFIG_INPUT	config/ble_app_template_s132_pca10040/nrf_drv_config.h	416;"	d
+COMP_CONFIG_IRQ_PRIORITY	config/ble_app_template_s130_pca10028/nrf_drv_config.h	415;"	d
+COMP_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10036/nrf_drv_config.h	415;"	d
+COMP_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10040/nrf_drv_config.h	415;"	d
+COMP_CONFIG_ISOURCE	config/ble_app_template_s130_pca10028/nrf_drv_config.h	414;"	d
+COMP_CONFIG_ISOURCE	config/ble_app_template_s132_pca10036/nrf_drv_config.h	414;"	d
+COMP_CONFIG_ISOURCE	config/ble_app_template_s132_pca10040/nrf_drv_config.h	414;"	d
+COMP_CONFIG_MAIN_MODE	config/ble_app_template_s130_pca10028/nrf_drv_config.h	411;"	d
+COMP_CONFIG_MAIN_MODE	config/ble_app_template_s132_pca10036/nrf_drv_config.h	411;"	d
+COMP_CONFIG_MAIN_MODE	config/ble_app_template_s132_pca10040/nrf_drv_config.h	411;"	d
+COMP_CONFIG_REF	config/ble_app_template_s130_pca10028/nrf_drv_config.h	410;"	d
+COMP_CONFIG_REF	config/ble_app_template_s132_pca10036/nrf_drv_config.h	410;"	d
+COMP_CONFIG_REF	config/ble_app_template_s132_pca10040/nrf_drv_config.h	410;"	d
+COMP_CONFIG_SPEED_MODE	config/ble_app_template_s130_pca10028/nrf_drv_config.h	412;"	d
+COMP_CONFIG_SPEED_MODE	config/ble_app_template_s132_pca10036/nrf_drv_config.h	412;"	d
+COMP_CONFIG_SPEED_MODE	config/ble_app_template_s132_pca10040/nrf_drv_config.h	412;"	d
+COMP_ENABLED	config/ble_app_template_s130_pca10028/nrf_drv_config.h	407;"	d
+COMP_ENABLED	config/ble_app_template_s132_pca10036/nrf_drv_config.h	407;"	d
+COMP_ENABLED	config/ble_app_template_s132_pca10040/nrf_drv_config.h	407;"	d
+COMP_LPCOMP_IRQHandler	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^COMP_LPCOMP_IRQHandler$/;"	l
+CONN_SUP_TIMEOUT	main.c	69;"	d	file:
+C_OBJECTS	pca10028/s130/armgcc/Makefile	/^C_OBJECTS = $(addprefix $(OBJECT_DIRECTORY)\/, $(C_SOURCE_FILE_NAMES:.c=.o) )$/;"	m
+C_OBJECTS	pca10040/s132/armgcc/Makefile	/^C_OBJECTS = $(addprefix $(OBJECT_DIRECTORY)\/, $(C_SOURCE_FILE_NAMES:.c=.o) )$/;"	m
+C_PATHS	pca10028/s130/armgcc/Makefile	/^C_PATHS = $(call remduplicates, $(dir $(C_SOURCE_FILES) ) )$/;"	m
+C_PATHS	pca10040/s132/armgcc/Makefile	/^C_PATHS = $(call remduplicates, $(dir $(C_SOURCE_FILES) ) )$/;"	m
+C_SOURCE_FILE_NAMES	pca10028/s130/armgcc/Makefile	/^C_SOURCE_FILE_NAMES = $(notdir $(C_SOURCE_FILES))$/;"	m
+C_SOURCE_FILE_NAMES	pca10040/s132/armgcc/Makefile	/^C_SOURCE_FILE_NAMES = $(notdir $(C_SOURCE_FILES))$/;"	m
+DEAD_BEEF	main.c	84;"	d	file:
+DEVICE_MANAGER_APP_CONTEXT_SIZE	config/device_manager_cnfg.h	92;"	d
+DEVICE_MANAGER_CNFG_H__	config/device_manager_cnfg.h	27;"	d
+DEVICE_MANAGER_MAX_APPLICATIONS	config/device_manager_cnfg.h	42;"	d
+DEVICE_MANAGER_MAX_BONDS	config/device_manager_cnfg.h	67;"	d
+DEVICE_MANAGER_MAX_CONNECTIONS	config/device_manager_cnfg.h	52;"	d
+DEVICE_NAME	main.c	59;"	d	file:
+DM_GATT_CCCD_COUNT	config/device_manager_cnfg.h	78;"	d
+Default_Handler	pca10028/s130/arm5_no_packs/RTE/Device/nRF51422_xxAC/arm_startup_nrf51.s	/^Default_Handler PROC$/;"	l
+Default_Handler	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^Default_Handler PROC$/;"	l
+ECB_IRQHandler	pca10028/s130/arm5_no_packs/RTE/Device/nRF51422_xxAC/arm_startup_nrf51.s	/^ECB_IRQHandler$/;"	l
+ECB_IRQHandler	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^ECB_IRQHandler$/;"	l
+EGU_ENABLED	config/ble_app_template_s130_pca10028/nrf_drv_config.h	440;"	d
+EGU_ENABLED	config/ble_app_template_s132_pca10036/nrf_drv_config.h	440;"	d
+EGU_ENABLED	config/ble_app_template_s132_pca10040/nrf_drv_config.h	440;"	d
+FIRST_CONN_PARAMS_UPDATE_DELAY	main.c	71;"	d	file:
+FPU_IRQHandler	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^FPU_IRQHandler$/;"	l
+GPIOTE_CONFIG_IRQ_PRIORITY	config/ble_app_template_s130_pca10028/nrf_drv_config.h	43;"	d
+GPIOTE_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10036/nrf_drv_config.h	43;"	d
+GPIOTE_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10040/nrf_drv_config.h	43;"	d
+GPIOTE_CONFIG_NUM_OF_LOW_POWER_EVENTS	config/ble_app_template_s130_pca10028/nrf_drv_config.h	44;"	d
+GPIOTE_CONFIG_NUM_OF_LOW_POWER_EVENTS	config/ble_app_template_s132_pca10036/nrf_drv_config.h	44;"	d
+GPIOTE_CONFIG_NUM_OF_LOW_POWER_EVENTS	config/ble_app_template_s132_pca10040/nrf_drv_config.h	44;"	d
+GPIOTE_CONFIG_USE_SWI_EGU	config/ble_app_template_s130_pca10028/nrf_drv_config.h	42;"	d
+GPIOTE_CONFIG_USE_SWI_EGU	config/ble_app_template_s132_pca10036/nrf_drv_config.h	42;"	d
+GPIOTE_CONFIG_USE_SWI_EGU	config/ble_app_template_s132_pca10040/nrf_drv_config.h	42;"	d
+GPIOTE_ENABLED	config/ble_app_template_s130_pca10028/nrf_drv_config.h	39;"	d
+GPIOTE_ENABLED	config/ble_app_template_s132_pca10036/nrf_drv_config.h	39;"	d
+GPIOTE_ENABLED	config/ble_app_template_s132_pca10040/nrf_drv_config.h	39;"	d
+GPIOTE_IRQHandler	pca10028/s130/arm5_no_packs/RTE/Device/nRF51422_xxAC/arm_startup_nrf51.s	/^GPIOTE_IRQHandler$/;"	l
+GPIOTE_IRQHandler	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^GPIOTE_IRQHandler$/;"	l
+Heap_Mem	pca10028/s130/arm5_no_packs/RTE/Device/nRF51422_xxAC/arm_startup_nrf51.s	/^Heap_Mem        SPACE   Heap_Size$/;"	l
+Heap_Mem	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^Heap_Mem        SPACE   Heap_Size$/;"	l
+Heap_Size	pca10028/s130/arm5_no_packs/RTE/Device/nRF51422_xxAC/arm_startup_nrf51.s	/^Heap_Size       EQU     2048$/;"	d
+Heap_Size	pca10028/s130/arm5_no_packs/RTE/Device/nRF51422_xxAC/arm_startup_nrf51.s	/^Heap_Size       EQU     __HEAP_SIZE$/;"	d
+Heap_Size	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^Heap_Size       EQU     8192$/;"	d
+Heap_Size	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^Heap_Size       EQU     __HEAP_SIZE$/;"	d
+I2S_CONFIG_ALIGN	config/ble_app_template_s130_pca10028/nrf_drv_config.h	455;"	d
+I2S_CONFIG_ALIGN	config/ble_app_template_s132_pca10036/nrf_drv_config.h	455;"	d
+I2S_CONFIG_ALIGN	config/ble_app_template_s132_pca10040/nrf_drv_config.h	455;"	d
+I2S_CONFIG_CHANNELS	config/ble_app_template_s130_pca10028/nrf_drv_config.h	457;"	d
+I2S_CONFIG_CHANNELS	config/ble_app_template_s132_pca10036/nrf_drv_config.h	457;"	d
+I2S_CONFIG_CHANNELS	config/ble_app_template_s132_pca10040/nrf_drv_config.h	457;"	d
+I2S_CONFIG_FORMAT	config/ble_app_template_s130_pca10028/nrf_drv_config.h	454;"	d
+I2S_CONFIG_FORMAT	config/ble_app_template_s132_pca10036/nrf_drv_config.h	454;"	d
+I2S_CONFIG_FORMAT	config/ble_app_template_s132_pca10040/nrf_drv_config.h	454;"	d
+I2S_CONFIG_IRQ_PRIORITY	config/ble_app_template_s130_pca10028/nrf_drv_config.h	452;"	d
+I2S_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10036/nrf_drv_config.h	452;"	d
+I2S_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10040/nrf_drv_config.h	452;"	d
+I2S_CONFIG_LRCK_PIN	config/ble_app_template_s130_pca10028/nrf_drv_config.h	448;"	d
+I2S_CONFIG_LRCK_PIN	config/ble_app_template_s132_pca10036/nrf_drv_config.h	448;"	d
+I2S_CONFIG_LRCK_PIN	config/ble_app_template_s132_pca10040/nrf_drv_config.h	448;"	d
+I2S_CONFIG_MASTER	config/ble_app_template_s130_pca10028/nrf_drv_config.h	453;"	d
+I2S_CONFIG_MASTER	config/ble_app_template_s132_pca10036/nrf_drv_config.h	453;"	d
+I2S_CONFIG_MASTER	config/ble_app_template_s132_pca10040/nrf_drv_config.h	453;"	d
+I2S_CONFIG_MCK_PIN	config/ble_app_template_s130_pca10028/nrf_drv_config.h	449;"	d
+I2S_CONFIG_MCK_PIN	config/ble_app_template_s132_pca10036/nrf_drv_config.h	449;"	d
+I2S_CONFIG_MCK_PIN	config/ble_app_template_s132_pca10040/nrf_drv_config.h	449;"	d
+I2S_CONFIG_MCK_SETUP	config/ble_app_template_s130_pca10028/nrf_drv_config.h	458;"	d
+I2S_CONFIG_MCK_SETUP	config/ble_app_template_s132_pca10036/nrf_drv_config.h	458;"	d
+I2S_CONFIG_MCK_SETUP	config/ble_app_template_s132_pca10040/nrf_drv_config.h	458;"	d
+I2S_CONFIG_RATIO	config/ble_app_template_s130_pca10028/nrf_drv_config.h	459;"	d
+I2S_CONFIG_RATIO	config/ble_app_template_s132_pca10036/nrf_drv_config.h	459;"	d
+I2S_CONFIG_RATIO	config/ble_app_template_s132_pca10040/nrf_drv_config.h	459;"	d
+I2S_CONFIG_SCK_PIN	config/ble_app_template_s130_pca10028/nrf_drv_config.h	447;"	d
+I2S_CONFIG_SCK_PIN	config/ble_app_template_s132_pca10036/nrf_drv_config.h	447;"	d
+I2S_CONFIG_SCK_PIN	config/ble_app_template_s132_pca10040/nrf_drv_config.h	447;"	d
+I2S_CONFIG_SDIN_PIN	config/ble_app_template_s130_pca10028/nrf_drv_config.h	451;"	d
+I2S_CONFIG_SDIN_PIN	config/ble_app_template_s132_pca10036/nrf_drv_config.h	451;"	d
+I2S_CONFIG_SDIN_PIN	config/ble_app_template_s132_pca10040/nrf_drv_config.h	451;"	d
+I2S_CONFIG_SDOUT_PIN	config/ble_app_template_s130_pca10028/nrf_drv_config.h	450;"	d
+I2S_CONFIG_SDOUT_PIN	config/ble_app_template_s132_pca10036/nrf_drv_config.h	450;"	d
+I2S_CONFIG_SDOUT_PIN	config/ble_app_template_s132_pca10040/nrf_drv_config.h	450;"	d
+I2S_CONFIG_SWIDTH	config/ble_app_template_s130_pca10028/nrf_drv_config.h	456;"	d
+I2S_CONFIG_SWIDTH	config/ble_app_template_s132_pca10036/nrf_drv_config.h	456;"	d
+I2S_CONFIG_SWIDTH	config/ble_app_template_s132_pca10040/nrf_drv_config.h	456;"	d
+I2S_ENABLED	config/ble_app_template_s130_pca10028/nrf_drv_config.h	444;"	d
+I2S_ENABLED	config/ble_app_template_s132_pca10036/nrf_drv_config.h	444;"	d
+I2S_ENABLED	config/ble_app_template_s132_pca10040/nrf_drv_config.h	444;"	d
+I2S_IRQHandler	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^I2S_IRQHandler$/;"	l
+INC_PATHS	pca10028/s130/armgcc/Makefile	/^INC_PATHS  = -I$(abspath ..\/..\/..\/config\/ble_app_template_s130_pca10028)$/;"	m
+INC_PATHS	pca10040/s132/armgcc/Makefile	/^INC_PATHS  = -I$(abspath ..\/..\/..\/config\/ble_app_template_s132_pca10040)$/;"	m
+IS_SRVC_CHANGED_CHARACT_PRESENT	main.c	54;"	d	file:
+LD	pca10028/s130/armgcc/Makefile	/^LD              := '$(GNU_INSTALL_ROOT)\/bin\/$(GNU_PREFIX)-ld'$/;"	m
+LD	pca10040/s132/armgcc/Makefile	/^LD              := '$(GNU_INSTALL_ROOT)\/bin\/$(GNU_PREFIX)-ld'$/;"	m
+LINKER_SCRIPT	pca10028/s130/armgcc/Makefile	/^nrf51422_xxac_s130: LINKER_SCRIPT=nrf5-ble-tutorial-advertising.ld$/;"	m
+LINKER_SCRIPT	pca10040/s132/armgcc/Makefile	/^nrf52832_xxaa_s132: LINKER_SCRIPT=nrf5-ble-tutorial-advertising.ld$/;"	m
+LISTING_DIRECTORY	pca10028/s130/armgcc/Makefile	/^LISTING_DIRECTORY = $(OBJECT_DIRECTORY)$/;"	m
+LISTING_DIRECTORY	pca10040/s132/armgcc/Makefile	/^LISTING_DIRECTORY = $(OBJECT_DIRECTORY)$/;"	m
+LPCOMP_CONFIG_DETECTION	config/ble_app_template_s130_pca10028/nrf_drv_config.h	424;"	d
+LPCOMP_CONFIG_DETECTION	config/ble_app_template_s132_pca10036/nrf_drv_config.h	424;"	d
+LPCOMP_CONFIG_DETECTION	config/ble_app_template_s132_pca10040/nrf_drv_config.h	424;"	d
+LPCOMP_CONFIG_INPUT	config/ble_app_template_s130_pca10028/nrf_drv_config.h	426;"	d
+LPCOMP_CONFIG_INPUT	config/ble_app_template_s132_pca10036/nrf_drv_config.h	426;"	d
+LPCOMP_CONFIG_INPUT	config/ble_app_template_s132_pca10040/nrf_drv_config.h	426;"	d
+LPCOMP_CONFIG_IRQ_PRIORITY	config/ble_app_template_s130_pca10028/nrf_drv_config.h	425;"	d
+LPCOMP_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10036/nrf_drv_config.h	425;"	d
+LPCOMP_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10040/nrf_drv_config.h	425;"	d
+LPCOMP_CONFIG_REFERENCE	config/ble_app_template_s130_pca10028/nrf_drv_config.h	423;"	d
+LPCOMP_CONFIG_REFERENCE	config/ble_app_template_s132_pca10036/nrf_drv_config.h	423;"	d
+LPCOMP_CONFIG_REFERENCE	config/ble_app_template_s132_pca10040/nrf_drv_config.h	423;"	d
+LPCOMP_ENABLED	config/ble_app_template_s130_pca10028/nrf_drv_config.h	420;"	d
+LPCOMP_ENABLED	config/ble_app_template_s132_pca10036/nrf_drv_config.h	420;"	d
+LPCOMP_ENABLED	config/ble_app_template_s132_pca10040/nrf_drv_config.h	420;"	d
+LPCOMP_IRQHandler	pca10028/s130/arm5_no_packs/RTE/Device/nRF51422_xxAC/arm_startup_nrf51.s	/^LPCOMP_IRQHandler$/;"	l
+MAKEFILE_DIR	pca10028/s130/armgcc/Makefile	/^MAKEFILE_DIR := $(dir $(MAKEFILE_NAME) ) $/;"	m
+MAKEFILE_DIR	pca10040/s132/armgcc/Makefile	/^MAKEFILE_DIR := $(dir $(MAKEFILE_NAME) ) $/;"	m
+MAKEFILE_NAME	pca10028/s130/armgcc/Makefile	/^MAKEFILE_NAME := $(MAKEFILE_LIST)$/;"	m
+MAKEFILE_NAME	pca10040/s132/armgcc/Makefile	/^MAKEFILE_NAME := $(MAKEFILE_LIST)$/;"	m
+MAX_CONN_INTERVAL	main.c	67;"	d	file:
+MAX_CONN_PARAMS_UPDATE_COUNT	main.c	73;"	d	file:
+MIN_CONN_INTERVAL	main.c	66;"	d	file:
+MK	pca10028/s130/armgcc/Makefile	/^MK := mkdir$/;"	m
+MK	pca10040/s132/armgcc/Makefile	/^MK := mkdir$/;"	m
+MWU_IRQHandler	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^MWU_IRQHandler$/;"	l
+NEXT_CONN_PARAMS_UPDATE_DELAY	main.c	72;"	d	file:
+NFCT_IRQHandler	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^NFCT_IRQHandler$/;"	l
+NM	pca10028/s130/armgcc/Makefile	/^NM              := '$(GNU_INSTALL_ROOT)\/bin\/$(GNU_PREFIX)-nm'$/;"	m
+NM	pca10040/s132/armgcc/Makefile	/^NM              := '$(GNU_INSTALL_ROOT)\/bin\/$(GNU_PREFIX)-nm'$/;"	m
+NMI_Handler	pca10028/s130/arm5_no_packs/RTE/Device/nRF51422_xxAC/arm_startup_nrf51.s	/^NMI_Handler     PROC$/;"	l
+NMI_Handler	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^NMI_Handler     PROC$/;"	l
+NO_ECHO	pca10028/s130/armgcc/Makefile	/^NO_ECHO := $/;"	m
+NO_ECHO	pca10028/s130/armgcc/Makefile	/^NO_ECHO := @$/;"	m
+NO_ECHO	pca10040/s132/armgcc/Makefile	/^NO_ECHO := $/;"	m
+NO_ECHO	pca10040/s132/armgcc/Makefile	/^NO_ECHO := @$/;"	m
+NRF_DRV_CONFIG_H	config/ble_app_template_s130_pca10028/nrf_drv_config.h	14;"	d
+NRF_DRV_CONFIG_H	config/ble_app_template_s132_pca10036/nrf_drv_config.h	14;"	d
+NRF_DRV_CONFIG_H	config/ble_app_template_s132_pca10040/nrf_drv_config.h	14;"	d
+NRF_MAXIMUM_LATENCY_US	config/ble_app_template_s130_pca10028/nrf_drv_config.h	140;"	d
+NRF_MAXIMUM_LATENCY_US	config/ble_app_template_s132_pca10036/nrf_drv_config.h	140;"	d
+NRF_MAXIMUM_LATENCY_US	config/ble_app_template_s132_pca10040/nrf_drv_config.h	140;"	d
+NRF_POWER_RAMONB_ADDRESS	pca10028/s130/arm5_no_packs/RTE/Device/nRF51422_xxAC/arm_startup_nrf51.s	/^NRF_POWER_RAMONB_ADDRESS             EQU   0x40000554  ; NRF_POWER->RAMONB address$/;"	d
+NRF_POWER_RAMON_ADDRESS	pca10028/s130/arm5_no_packs/RTE/Device/nRF51422_xxAC/arm_startup_nrf51.s	/^NRF_POWER_RAMON_ADDRESS              EQU   0x40000524  ; NRF_POWER->RAMON address$/;"	d
+NRF_POWER_RAMONx_RAMxON_ONMODE_Msk	pca10028/s130/arm5_no_packs/RTE/Device/nRF51422_xxAC/arm_startup_nrf51.s	/^NRF_POWER_RAMONx_RAMxON_ONMODE_Msk   EQU   0x3         ; All RAM blocks on in onmode bit mask$/;"	d
+OBJCOPY	pca10028/s130/armgcc/Makefile	/^OBJCOPY         := '$(GNU_INSTALL_ROOT)\/bin\/$(GNU_PREFIX)-objcopy'$/;"	m
+OBJCOPY	pca10040/s132/armgcc/Makefile	/^OBJCOPY         := '$(GNU_INSTALL_ROOT)\/bin\/$(GNU_PREFIX)-objcopy'$/;"	m
+OBJDUMP	pca10028/s130/armgcc/Makefile	/^OBJDUMP         := '$(GNU_INSTALL_ROOT)\/bin\/$(GNU_PREFIX)-objdump'$/;"	m
+OBJDUMP	pca10040/s132/armgcc/Makefile	/^OBJDUMP         := '$(GNU_INSTALL_ROOT)\/bin\/$(GNU_PREFIX)-objdump'$/;"	m
+OBJECTS	pca10028/s130/armgcc/Makefile	/^OBJECTS = $(C_OBJECTS) $(ASM_OBJECTS)$/;"	m
+OBJECTS	pca10040/s132/armgcc/Makefile	/^OBJECTS = $(C_OBJECTS) $(ASM_OBJECTS)$/;"	m
+OBJECT_DIRECTORY	pca10028/s130/armgcc/Makefile	/^OBJECT_DIRECTORY = _build$/;"	m
+OBJECT_DIRECTORY	pca10040/s132/armgcc/Makefile	/^OBJECT_DIRECTORY = _build$/;"	m
+OUTPUT_BINARY_DIRECTORY	pca10028/s130/armgcc/Makefile	/^OUTPUT_BINARY_DIRECTORY = $(OBJECT_DIRECTORY)$/;"	m
+OUTPUT_BINARY_DIRECTORY	pca10040/s132/armgcc/Makefile	/^OUTPUT_BINARY_DIRECTORY = $(OBJECT_DIRECTORY)$/;"	m
+OUTPUT_FILENAME	pca10028/s130/armgcc/Makefile	/^nrf51422_xxac_s130: OUTPUT_FILENAME := nrf51422_xxac_s130$/;"	m
+OUTPUT_FILENAME	pca10040/s132/armgcc/Makefile	/^nrf52832_xxaa_s132: OUTPUT_FILENAME := nrf52832_xxaa_s132$/;"	m
+PDM_CONFIG_CLOCK_FREQ	config/ble_app_template_s130_pca10028/nrf_drv_config.h	402;"	d
+PDM_CONFIG_CLOCK_FREQ	config/ble_app_template_s132_pca10036/nrf_drv_config.h	402;"	d
+PDM_CONFIG_CLOCK_FREQ	config/ble_app_template_s132_pca10040/nrf_drv_config.h	402;"	d
+PDM_CONFIG_EDGE	config/ble_app_template_s130_pca10028/nrf_drv_config.h	401;"	d
+PDM_CONFIG_EDGE	config/ble_app_template_s132_pca10036/nrf_drv_config.h	401;"	d
+PDM_CONFIG_EDGE	config/ble_app_template_s132_pca10040/nrf_drv_config.h	401;"	d
+PDM_CONFIG_IRQ_PRIORITY	config/ble_app_template_s130_pca10028/nrf_drv_config.h	403;"	d
+PDM_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10036/nrf_drv_config.h	403;"	d
+PDM_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10040/nrf_drv_config.h	403;"	d
+PDM_CONFIG_MODE	config/ble_app_template_s130_pca10028/nrf_drv_config.h	400;"	d
+PDM_CONFIG_MODE	config/ble_app_template_s132_pca10036/nrf_drv_config.h	400;"	d
+PDM_CONFIG_MODE	config/ble_app_template_s132_pca10040/nrf_drv_config.h	400;"	d
+PDM_ENABLED	config/ble_app_template_s130_pca10028/nrf_drv_config.h	397;"	d
+PDM_ENABLED	config/ble_app_template_s132_pca10036/nrf_drv_config.h	397;"	d
+PDM_ENABLED	config/ble_app_template_s132_pca10040/nrf_drv_config.h	397;"	d
+PDM_IRQHandler	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^PDM_IRQHandler$/;"	l
+PERIPHERAL_LINK_COUNT	main.c	57;"	d	file:
+PERIPHERAL_RESOURCE_SHARING_ENABLED	config/ble_app_template_s130_pca10028/nrf_drv_config.h	27;"	d
+PERIPHERAL_RESOURCE_SHARING_ENABLED	config/ble_app_template_s132_pca10036/nrf_drv_config.h	27;"	d
+PERIPHERAL_RESOURCE_SHARING_ENABLED	config/ble_app_template_s132_pca10040/nrf_drv_config.h	27;"	d
+POWER_CLOCK_IRQHandler	pca10028/s130/arm5_no_packs/RTE/Device/nRF51422_xxAC/arm_startup_nrf51.s	/^POWER_CLOCK_IRQHandler$/;"	l
+POWER_CLOCK_IRQHandler	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^POWER_CLOCK_IRQHandler$/;"	l
+PROJECT_NAME	pca10028/s130/armgcc/Makefile	/^PROJECT_NAME := nrf5-ble-tutorial-advertising$/;"	m
+PROJECT_NAME	pca10040/s132/armgcc/Makefile	/^PROJECT_NAME := ble_app_template_s132_pca10040$/;"	m
+PSTORAGE_CMD_QUEUE_SIZE	config/pstorage_platform.h	54;"	d
+PSTORAGE_DATA_END_ADDR	config/pstorage_platform.h	50;"	d
+PSTORAGE_DATA_START_ADDR	config/pstorage_platform.h	48;"	d
+PSTORAGE_FLASH_EMPTY_MASK	config/pstorage_platform.h	31;"	d
+PSTORAGE_FLASH_PAGE_END	config/pstorage_platform.h	41;"	d
+PSTORAGE_FLASH_PAGE_SIZE	config/pstorage_platform.h	30;"	d
+PSTORAGE_MAX_APPLICATIONS	config/pstorage_platform.h	45;"	d
+PSTORAGE_MAX_BLOCK_SIZE	config/pstorage_platform.h	53;"	d
+PSTORAGE_MIN_BLOCK_SIZE	config/pstorage_platform.h	46;"	d
+PSTORAGE_NUM_OF_PAGES	config/pstorage_platform.h	43;"	d
+PSTORAGE_PL_H__	config/pstorage_platform.h	20;"	d
+PSTORAGE_SWAP_ADDR	config/pstorage_platform.h	51;"	d
+PWM0_CONFIG_BASE_CLOCK	config/ble_app_template_s130_pca10028/nrf_drv_config.h	161;"	d
+PWM0_CONFIG_BASE_CLOCK	config/ble_app_template_s132_pca10036/nrf_drv_config.h	161;"	d
+PWM0_CONFIG_BASE_CLOCK	config/ble_app_template_s132_pca10040/nrf_drv_config.h	161;"	d
+PWM0_CONFIG_COUNT_MODE	config/ble_app_template_s130_pca10028/nrf_drv_config.h	162;"	d
+PWM0_CONFIG_COUNT_MODE	config/ble_app_template_s132_pca10036/nrf_drv_config.h	162;"	d
+PWM0_CONFIG_COUNT_MODE	config/ble_app_template_s132_pca10040/nrf_drv_config.h	162;"	d
+PWM0_CONFIG_IRQ_PRIORITY	config/ble_app_template_s130_pca10028/nrf_drv_config.h	160;"	d
+PWM0_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10036/nrf_drv_config.h	160;"	d
+PWM0_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10040/nrf_drv_config.h	160;"	d
+PWM0_CONFIG_LOAD_MODE	config/ble_app_template_s130_pca10028/nrf_drv_config.h	164;"	d
+PWM0_CONFIG_LOAD_MODE	config/ble_app_template_s132_pca10036/nrf_drv_config.h	164;"	d
+PWM0_CONFIG_LOAD_MODE	config/ble_app_template_s132_pca10040/nrf_drv_config.h	164;"	d
+PWM0_CONFIG_OUT0_PIN	config/ble_app_template_s130_pca10028/nrf_drv_config.h	156;"	d
+PWM0_CONFIG_OUT0_PIN	config/ble_app_template_s132_pca10036/nrf_drv_config.h	156;"	d
+PWM0_CONFIG_OUT0_PIN	config/ble_app_template_s132_pca10040/nrf_drv_config.h	156;"	d
+PWM0_CONFIG_OUT1_PIN	config/ble_app_template_s130_pca10028/nrf_drv_config.h	157;"	d
+PWM0_CONFIG_OUT1_PIN	config/ble_app_template_s132_pca10036/nrf_drv_config.h	157;"	d
+PWM0_CONFIG_OUT1_PIN	config/ble_app_template_s132_pca10040/nrf_drv_config.h	157;"	d
+PWM0_CONFIG_OUT2_PIN	config/ble_app_template_s130_pca10028/nrf_drv_config.h	158;"	d
+PWM0_CONFIG_OUT2_PIN	config/ble_app_template_s132_pca10036/nrf_drv_config.h	158;"	d
+PWM0_CONFIG_OUT2_PIN	config/ble_app_template_s132_pca10040/nrf_drv_config.h	158;"	d
+PWM0_CONFIG_OUT3_PIN	config/ble_app_template_s130_pca10028/nrf_drv_config.h	159;"	d
+PWM0_CONFIG_OUT3_PIN	config/ble_app_template_s132_pca10036/nrf_drv_config.h	159;"	d
+PWM0_CONFIG_OUT3_PIN	config/ble_app_template_s132_pca10040/nrf_drv_config.h	159;"	d
+PWM0_CONFIG_STEP_MODE	config/ble_app_template_s130_pca10028/nrf_drv_config.h	165;"	d
+PWM0_CONFIG_STEP_MODE	config/ble_app_template_s132_pca10036/nrf_drv_config.h	165;"	d
+PWM0_CONFIG_STEP_MODE	config/ble_app_template_s132_pca10040/nrf_drv_config.h	165;"	d
+PWM0_CONFIG_TOP_VALUE	config/ble_app_template_s130_pca10028/nrf_drv_config.h	163;"	d
+PWM0_CONFIG_TOP_VALUE	config/ble_app_template_s132_pca10036/nrf_drv_config.h	163;"	d
+PWM0_CONFIG_TOP_VALUE	config/ble_app_template_s132_pca10040/nrf_drv_config.h	163;"	d
+PWM0_ENABLED	config/ble_app_template_s130_pca10028/nrf_drv_config.h	153;"	d
+PWM0_ENABLED	config/ble_app_template_s132_pca10036/nrf_drv_config.h	153;"	d
+PWM0_ENABLED	config/ble_app_template_s132_pca10040/nrf_drv_config.h	153;"	d
+PWM0_INSTANCE_INDEX	config/ble_app_template_s130_pca10028/nrf_drv_config.h	167;"	d
+PWM0_INSTANCE_INDEX	config/ble_app_template_s132_pca10036/nrf_drv_config.h	167;"	d
+PWM0_INSTANCE_INDEX	config/ble_app_template_s132_pca10040/nrf_drv_config.h	167;"	d
+PWM0_IRQHandler	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^PWM0_IRQHandler$/;"	l
+PWM1_CONFIG_BASE_CLOCK	config/ble_app_template_s130_pca10028/nrf_drv_config.h	178;"	d
+PWM1_CONFIG_BASE_CLOCK	config/ble_app_template_s132_pca10036/nrf_drv_config.h	178;"	d
+PWM1_CONFIG_BASE_CLOCK	config/ble_app_template_s132_pca10040/nrf_drv_config.h	178;"	d
+PWM1_CONFIG_COUNT_MODE	config/ble_app_template_s130_pca10028/nrf_drv_config.h	179;"	d
+PWM1_CONFIG_COUNT_MODE	config/ble_app_template_s132_pca10036/nrf_drv_config.h	179;"	d
+PWM1_CONFIG_COUNT_MODE	config/ble_app_template_s132_pca10040/nrf_drv_config.h	179;"	d
+PWM1_CONFIG_IRQ_PRIORITY	config/ble_app_template_s130_pca10028/nrf_drv_config.h	177;"	d
+PWM1_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10036/nrf_drv_config.h	177;"	d
+PWM1_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10040/nrf_drv_config.h	177;"	d
+PWM1_CONFIG_LOAD_MODE	config/ble_app_template_s130_pca10028/nrf_drv_config.h	181;"	d
+PWM1_CONFIG_LOAD_MODE	config/ble_app_template_s132_pca10036/nrf_drv_config.h	181;"	d
+PWM1_CONFIG_LOAD_MODE	config/ble_app_template_s132_pca10040/nrf_drv_config.h	181;"	d
+PWM1_CONFIG_OUT0_PIN	config/ble_app_template_s130_pca10028/nrf_drv_config.h	173;"	d
+PWM1_CONFIG_OUT0_PIN	config/ble_app_template_s132_pca10036/nrf_drv_config.h	173;"	d
+PWM1_CONFIG_OUT0_PIN	config/ble_app_template_s132_pca10040/nrf_drv_config.h	173;"	d
+PWM1_CONFIG_OUT1_PIN	config/ble_app_template_s130_pca10028/nrf_drv_config.h	174;"	d
+PWM1_CONFIG_OUT1_PIN	config/ble_app_template_s132_pca10036/nrf_drv_config.h	174;"	d
+PWM1_CONFIG_OUT1_PIN	config/ble_app_template_s132_pca10040/nrf_drv_config.h	174;"	d
+PWM1_CONFIG_OUT2_PIN	config/ble_app_template_s130_pca10028/nrf_drv_config.h	175;"	d
+PWM1_CONFIG_OUT2_PIN	config/ble_app_template_s132_pca10036/nrf_drv_config.h	175;"	d
+PWM1_CONFIG_OUT2_PIN	config/ble_app_template_s132_pca10040/nrf_drv_config.h	175;"	d
+PWM1_CONFIG_OUT3_PIN	config/ble_app_template_s130_pca10028/nrf_drv_config.h	176;"	d
+PWM1_CONFIG_OUT3_PIN	config/ble_app_template_s132_pca10036/nrf_drv_config.h	176;"	d
+PWM1_CONFIG_OUT3_PIN	config/ble_app_template_s132_pca10040/nrf_drv_config.h	176;"	d
+PWM1_CONFIG_STEP_MODE	config/ble_app_template_s130_pca10028/nrf_drv_config.h	182;"	d
+PWM1_CONFIG_STEP_MODE	config/ble_app_template_s132_pca10036/nrf_drv_config.h	182;"	d
+PWM1_CONFIG_STEP_MODE	config/ble_app_template_s132_pca10040/nrf_drv_config.h	182;"	d
+PWM1_CONFIG_TOP_VALUE	config/ble_app_template_s130_pca10028/nrf_drv_config.h	180;"	d
+PWM1_CONFIG_TOP_VALUE	config/ble_app_template_s132_pca10036/nrf_drv_config.h	180;"	d
+PWM1_CONFIG_TOP_VALUE	config/ble_app_template_s132_pca10040/nrf_drv_config.h	180;"	d
+PWM1_ENABLED	config/ble_app_template_s130_pca10028/nrf_drv_config.h	170;"	d
+PWM1_ENABLED	config/ble_app_template_s132_pca10036/nrf_drv_config.h	170;"	d
+PWM1_ENABLED	config/ble_app_template_s132_pca10040/nrf_drv_config.h	170;"	d
+PWM1_INSTANCE_INDEX	config/ble_app_template_s130_pca10028/nrf_drv_config.h	184;"	d
+PWM1_INSTANCE_INDEX	config/ble_app_template_s132_pca10036/nrf_drv_config.h	184;"	d
+PWM1_INSTANCE_INDEX	config/ble_app_template_s132_pca10040/nrf_drv_config.h	184;"	d
+PWM1_IRQHandler	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^PWM1_IRQHandler$/;"	l
+PWM2_CONFIG_BASE_CLOCK	config/ble_app_template_s130_pca10028/nrf_drv_config.h	195;"	d
+PWM2_CONFIG_BASE_CLOCK	config/ble_app_template_s132_pca10036/nrf_drv_config.h	195;"	d
+PWM2_CONFIG_BASE_CLOCK	config/ble_app_template_s132_pca10040/nrf_drv_config.h	195;"	d
+PWM2_CONFIG_COUNT_MODE	config/ble_app_template_s130_pca10028/nrf_drv_config.h	196;"	d
+PWM2_CONFIG_COUNT_MODE	config/ble_app_template_s132_pca10036/nrf_drv_config.h	196;"	d
+PWM2_CONFIG_COUNT_MODE	config/ble_app_template_s132_pca10040/nrf_drv_config.h	196;"	d
+PWM2_CONFIG_IRQ_PRIORITY	config/ble_app_template_s130_pca10028/nrf_drv_config.h	194;"	d
+PWM2_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10036/nrf_drv_config.h	194;"	d
+PWM2_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10040/nrf_drv_config.h	194;"	d
+PWM2_CONFIG_LOAD_MODE	config/ble_app_template_s130_pca10028/nrf_drv_config.h	198;"	d
+PWM2_CONFIG_LOAD_MODE	config/ble_app_template_s132_pca10036/nrf_drv_config.h	198;"	d
+PWM2_CONFIG_LOAD_MODE	config/ble_app_template_s132_pca10040/nrf_drv_config.h	198;"	d
+PWM2_CONFIG_OUT0_PIN	config/ble_app_template_s130_pca10028/nrf_drv_config.h	190;"	d
+PWM2_CONFIG_OUT0_PIN	config/ble_app_template_s132_pca10036/nrf_drv_config.h	190;"	d
+PWM2_CONFIG_OUT0_PIN	config/ble_app_template_s132_pca10040/nrf_drv_config.h	190;"	d
+PWM2_CONFIG_OUT1_PIN	config/ble_app_template_s130_pca10028/nrf_drv_config.h	191;"	d
+PWM2_CONFIG_OUT1_PIN	config/ble_app_template_s132_pca10036/nrf_drv_config.h	191;"	d
+PWM2_CONFIG_OUT1_PIN	config/ble_app_template_s132_pca10040/nrf_drv_config.h	191;"	d
+PWM2_CONFIG_OUT2_PIN	config/ble_app_template_s130_pca10028/nrf_drv_config.h	192;"	d
+PWM2_CONFIG_OUT2_PIN	config/ble_app_template_s132_pca10036/nrf_drv_config.h	192;"	d
+PWM2_CONFIG_OUT2_PIN	config/ble_app_template_s132_pca10040/nrf_drv_config.h	192;"	d
+PWM2_CONFIG_OUT3_PIN	config/ble_app_template_s130_pca10028/nrf_drv_config.h	193;"	d
+PWM2_CONFIG_OUT3_PIN	config/ble_app_template_s132_pca10036/nrf_drv_config.h	193;"	d
+PWM2_CONFIG_OUT3_PIN	config/ble_app_template_s132_pca10040/nrf_drv_config.h	193;"	d
+PWM2_CONFIG_STEP_MODE	config/ble_app_template_s130_pca10028/nrf_drv_config.h	199;"	d
+PWM2_CONFIG_STEP_MODE	config/ble_app_template_s132_pca10036/nrf_drv_config.h	199;"	d
+PWM2_CONFIG_STEP_MODE	config/ble_app_template_s132_pca10040/nrf_drv_config.h	199;"	d
+PWM2_CONFIG_TOP_VALUE	config/ble_app_template_s130_pca10028/nrf_drv_config.h	197;"	d
+PWM2_CONFIG_TOP_VALUE	config/ble_app_template_s132_pca10036/nrf_drv_config.h	197;"	d
+PWM2_CONFIG_TOP_VALUE	config/ble_app_template_s132_pca10040/nrf_drv_config.h	197;"	d
+PWM2_ENABLED	config/ble_app_template_s130_pca10028/nrf_drv_config.h	187;"	d
+PWM2_ENABLED	config/ble_app_template_s132_pca10036/nrf_drv_config.h	187;"	d
+PWM2_ENABLED	config/ble_app_template_s132_pca10040/nrf_drv_config.h	187;"	d
+PWM2_INSTANCE_INDEX	config/ble_app_template_s130_pca10028/nrf_drv_config.h	201;"	d
+PWM2_INSTANCE_INDEX	config/ble_app_template_s132_pca10036/nrf_drv_config.h	201;"	d
+PWM2_INSTANCE_INDEX	config/ble_app_template_s132_pca10040/nrf_drv_config.h	201;"	d
+PWM2_IRQHandler	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^PWM2_IRQHandler$/;"	l
+PWM_COUNT	config/ble_app_template_s130_pca10028/nrf_drv_config.h	204;"	d
+PWM_COUNT	config/ble_app_template_s132_pca10036/nrf_drv_config.h	204;"	d
+PWM_COUNT	config/ble_app_template_s132_pca10040/nrf_drv_config.h	204;"	d
+PendSV_Handler	pca10028/s130/arm5_no_packs/RTE/Device/nRF51422_xxAC/arm_startup_nrf51.s	/^PendSV_Handler  PROC$/;"	l
+PendSV_Handler	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^PendSV_Handler  PROC$/;"	l
+QDEC_CONFIG_DBFEN	config/ble_app_template_s130_pca10028/nrf_drv_config.h	375;"	d
+QDEC_CONFIG_DBFEN	config/ble_app_template_s132_pca10036/nrf_drv_config.h	375;"	d
+QDEC_CONFIG_DBFEN	config/ble_app_template_s132_pca10040/nrf_drv_config.h	375;"	d
+QDEC_CONFIG_IRQ_PRIORITY	config/ble_app_template_s130_pca10028/nrf_drv_config.h	374;"	d
+QDEC_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10036/nrf_drv_config.h	374;"	d
+QDEC_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10040/nrf_drv_config.h	374;"	d
+QDEC_CONFIG_LEDPOL	config/ble_app_template_s130_pca10028/nrf_drv_config.h	373;"	d
+QDEC_CONFIG_LEDPOL	config/ble_app_template_s132_pca10036/nrf_drv_config.h	373;"	d
+QDEC_CONFIG_LEDPOL	config/ble_app_template_s132_pca10040/nrf_drv_config.h	373;"	d
+QDEC_CONFIG_LEDPRE	config/ble_app_template_s130_pca10028/nrf_drv_config.h	372;"	d
+QDEC_CONFIG_LEDPRE	config/ble_app_template_s132_pca10036/nrf_drv_config.h	372;"	d
+QDEC_CONFIG_LEDPRE	config/ble_app_template_s132_pca10040/nrf_drv_config.h	372;"	d
+QDEC_CONFIG_PIO_A	config/ble_app_template_s130_pca10028/nrf_drv_config.h	369;"	d
+QDEC_CONFIG_PIO_A	config/ble_app_template_s132_pca10036/nrf_drv_config.h	369;"	d
+QDEC_CONFIG_PIO_A	config/ble_app_template_s132_pca10040/nrf_drv_config.h	369;"	d
+QDEC_CONFIG_PIO_B	config/ble_app_template_s130_pca10028/nrf_drv_config.h	370;"	d
+QDEC_CONFIG_PIO_B	config/ble_app_template_s132_pca10036/nrf_drv_config.h	370;"	d
+QDEC_CONFIG_PIO_B	config/ble_app_template_s132_pca10040/nrf_drv_config.h	370;"	d
+QDEC_CONFIG_PIO_LED	config/ble_app_template_s130_pca10028/nrf_drv_config.h	371;"	d
+QDEC_CONFIG_PIO_LED	config/ble_app_template_s132_pca10036/nrf_drv_config.h	371;"	d
+QDEC_CONFIG_PIO_LED	config/ble_app_template_s132_pca10040/nrf_drv_config.h	371;"	d
+QDEC_CONFIG_REPORTPER	config/ble_app_template_s130_pca10028/nrf_drv_config.h	367;"	d
+QDEC_CONFIG_REPORTPER	config/ble_app_template_s132_pca10036/nrf_drv_config.h	367;"	d
+QDEC_CONFIG_REPORTPER	config/ble_app_template_s132_pca10040/nrf_drv_config.h	367;"	d
+QDEC_CONFIG_SAMPLEPER	config/ble_app_template_s130_pca10028/nrf_drv_config.h	368;"	d
+QDEC_CONFIG_SAMPLEPER	config/ble_app_template_s132_pca10036/nrf_drv_config.h	368;"	d
+QDEC_CONFIG_SAMPLEPER	config/ble_app_template_s132_pca10040/nrf_drv_config.h	368;"	d
+QDEC_CONFIG_SAMPLE_INTEN	config/ble_app_template_s130_pca10028/nrf_drv_config.h	376;"	d
+QDEC_CONFIG_SAMPLE_INTEN	config/ble_app_template_s132_pca10036/nrf_drv_config.h	376;"	d
+QDEC_CONFIG_SAMPLE_INTEN	config/ble_app_template_s132_pca10040/nrf_drv_config.h	376;"	d
+QDEC_ENABLED	config/ble_app_template_s130_pca10028/nrf_drv_config.h	364;"	d
+QDEC_ENABLED	config/ble_app_template_s132_pca10036/nrf_drv_config.h	364;"	d
+QDEC_ENABLED	config/ble_app_template_s132_pca10040/nrf_drv_config.h	364;"	d
+QDEC_IRQHandler	pca10028/s130/arm5_no_packs/RTE/Device/nRF51422_xxAC/arm_startup_nrf51.s	/^QDEC_IRQHandler$/;"	l
+QDEC_IRQHandler	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^QDEC_IRQHandler$/;"	l
+RADIO_IRQHandler	pca10028/s130/arm5_no_packs/RTE/Device/nRF51422_xxAC/arm_startup_nrf51.s	/^RADIO_IRQHandler$/;"	l
+RADIO_IRQHandler	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^RADIO_IRQHandler$/;"	l
+RM	pca10028/s130/armgcc/Makefile	/^RM := rm -rf$/;"	m
+RM	pca10040/s132/armgcc/Makefile	/^RM := rm -rf$/;"	m
+RNG_CONFIG_ERROR_CORRECTION	config/ble_app_template_s130_pca10028/nrf_drv_config.h	146;"	d
+RNG_CONFIG_ERROR_CORRECTION	config/ble_app_template_s132_pca10036/nrf_drv_config.h	146;"	d
+RNG_CONFIG_ERROR_CORRECTION	config/ble_app_template_s132_pca10040/nrf_drv_config.h	146;"	d
+RNG_CONFIG_IRQ_PRIORITY	config/ble_app_template_s130_pca10028/nrf_drv_config.h	148;"	d
+RNG_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10036/nrf_drv_config.h	148;"	d
+RNG_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10040/nrf_drv_config.h	148;"	d
+RNG_CONFIG_POOL_SIZE	config/ble_app_template_s130_pca10028/nrf_drv_config.h	147;"	d
+RNG_CONFIG_POOL_SIZE	config/ble_app_template_s132_pca10036/nrf_drv_config.h	147;"	d
+RNG_CONFIG_POOL_SIZE	config/ble_app_template_s132_pca10040/nrf_drv_config.h	147;"	d
+RNG_ENABLED	config/ble_app_template_s130_pca10028/nrf_drv_config.h	143;"	d
+RNG_ENABLED	config/ble_app_template_s132_pca10036/nrf_drv_config.h	143;"	d
+RNG_ENABLED	config/ble_app_template_s132_pca10040/nrf_drv_config.h	143;"	d
+RNG_IRQHandler	pca10028/s130/arm5_no_packs/RTE/Device/nRF51422_xxAC/arm_startup_nrf51.s	/^RNG_IRQHandler$/;"	l
+RNG_IRQHandler	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^RNG_IRQHandler$/;"	l
+RTC0_CONFIG_FREQUENCY	config/ble_app_template_s130_pca10028/nrf_drv_config.h	110;"	d
+RTC0_CONFIG_FREQUENCY	config/ble_app_template_s132_pca10036/nrf_drv_config.h	110;"	d
+RTC0_CONFIG_FREQUENCY	config/ble_app_template_s132_pca10040/nrf_drv_config.h	110;"	d
+RTC0_CONFIG_IRQ_PRIORITY	config/ble_app_template_s130_pca10028/nrf_drv_config.h	111;"	d
+RTC0_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10036/nrf_drv_config.h	111;"	d
+RTC0_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10040/nrf_drv_config.h	111;"	d
+RTC0_CONFIG_RELIABLE	config/ble_app_template_s130_pca10028/nrf_drv_config.h	112;"	d
+RTC0_CONFIG_RELIABLE	config/ble_app_template_s132_pca10036/nrf_drv_config.h	112;"	d
+RTC0_CONFIG_RELIABLE	config/ble_app_template_s132_pca10040/nrf_drv_config.h	112;"	d
+RTC0_ENABLED	config/ble_app_template_s130_pca10028/nrf_drv_config.h	107;"	d
+RTC0_ENABLED	config/ble_app_template_s132_pca10036/nrf_drv_config.h	107;"	d
+RTC0_ENABLED	config/ble_app_template_s132_pca10040/nrf_drv_config.h	107;"	d
+RTC0_INSTANCE_INDEX	config/ble_app_template_s130_pca10028/nrf_drv_config.h	114;"	d
+RTC0_INSTANCE_INDEX	config/ble_app_template_s132_pca10036/nrf_drv_config.h	114;"	d
+RTC0_INSTANCE_INDEX	config/ble_app_template_s132_pca10040/nrf_drv_config.h	114;"	d
+RTC0_IRQHandler	pca10028/s130/arm5_no_packs/RTE/Device/nRF51422_xxAC/arm_startup_nrf51.s	/^RTC0_IRQHandler$/;"	l
+RTC0_IRQHandler	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^RTC0_IRQHandler$/;"	l
+RTC1_CONFIG_FREQUENCY	config/ble_app_template_s130_pca10028/nrf_drv_config.h	120;"	d
+RTC1_CONFIG_FREQUENCY	config/ble_app_template_s132_pca10036/nrf_drv_config.h	120;"	d
+RTC1_CONFIG_FREQUENCY	config/ble_app_template_s132_pca10040/nrf_drv_config.h	120;"	d
+RTC1_CONFIG_IRQ_PRIORITY	config/ble_app_template_s130_pca10028/nrf_drv_config.h	121;"	d
+RTC1_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10036/nrf_drv_config.h	121;"	d
+RTC1_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10040/nrf_drv_config.h	121;"	d
+RTC1_CONFIG_RELIABLE	config/ble_app_template_s130_pca10028/nrf_drv_config.h	122;"	d
+RTC1_CONFIG_RELIABLE	config/ble_app_template_s132_pca10036/nrf_drv_config.h	122;"	d
+RTC1_CONFIG_RELIABLE	config/ble_app_template_s132_pca10040/nrf_drv_config.h	122;"	d
+RTC1_ENABLED	config/ble_app_template_s130_pca10028/nrf_drv_config.h	117;"	d
+RTC1_ENABLED	config/ble_app_template_s132_pca10036/nrf_drv_config.h	117;"	d
+RTC1_ENABLED	config/ble_app_template_s132_pca10040/nrf_drv_config.h	117;"	d
+RTC1_INSTANCE_INDEX	config/ble_app_template_s130_pca10028/nrf_drv_config.h	124;"	d
+RTC1_INSTANCE_INDEX	config/ble_app_template_s132_pca10036/nrf_drv_config.h	124;"	d
+RTC1_INSTANCE_INDEX	config/ble_app_template_s132_pca10040/nrf_drv_config.h	124;"	d
+RTC1_IRQHandler	pca10028/s130/arm5_no_packs/RTE/Device/nRF51422_xxAC/arm_startup_nrf51.s	/^RTC1_IRQHandler$/;"	l
+RTC1_IRQHandler	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^RTC1_IRQHandler$/;"	l
+RTC2_CONFIG_FREQUENCY	config/ble_app_template_s130_pca10028/nrf_drv_config.h	130;"	d
+RTC2_CONFIG_FREQUENCY	config/ble_app_template_s132_pca10036/nrf_drv_config.h	130;"	d
+RTC2_CONFIG_FREQUENCY	config/ble_app_template_s132_pca10040/nrf_drv_config.h	130;"	d
+RTC2_CONFIG_IRQ_PRIORITY	config/ble_app_template_s130_pca10028/nrf_drv_config.h	131;"	d
+RTC2_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10036/nrf_drv_config.h	131;"	d
+RTC2_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10040/nrf_drv_config.h	131;"	d
+RTC2_CONFIG_RELIABLE	config/ble_app_template_s130_pca10028/nrf_drv_config.h	132;"	d
+RTC2_CONFIG_RELIABLE	config/ble_app_template_s132_pca10036/nrf_drv_config.h	132;"	d
+RTC2_CONFIG_RELIABLE	config/ble_app_template_s132_pca10040/nrf_drv_config.h	132;"	d
+RTC2_ENABLED	config/ble_app_template_s130_pca10028/nrf_drv_config.h	127;"	d
+RTC2_ENABLED	config/ble_app_template_s132_pca10036/nrf_drv_config.h	127;"	d
+RTC2_ENABLED	config/ble_app_template_s132_pca10040/nrf_drv_config.h	127;"	d
+RTC2_INSTANCE_INDEX	config/ble_app_template_s130_pca10028/nrf_drv_config.h	134;"	d
+RTC2_INSTANCE_INDEX	config/ble_app_template_s132_pca10036/nrf_drv_config.h	134;"	d
+RTC2_INSTANCE_INDEX	config/ble_app_template_s132_pca10040/nrf_drv_config.h	134;"	d
+RTC2_IRQHandler	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^RTC2_IRQHandler$/;"	l
+RTC_COUNT	config/ble_app_template_s130_pca10028/nrf_drv_config.h	138;"	d
+RTC_COUNT	config/ble_app_template_s132_pca10036/nrf_drv_config.h	138;"	d
+RTC_COUNT	config/ble_app_template_s132_pca10040/nrf_drv_config.h	138;"	d
+RTE_COMPONENTS_H	pca10028/s130/arm5_no_packs/RTE/RTE_Components.h	11;"	d
+RTE_COMPONENTS_H	pca10040/s132/arm5_no_packs/RTE/RTE_Components.h	11;"	d
+Reset_Handler	pca10028/s130/arm5_no_packs/RTE/Device/nRF51422_xxAC/arm_startup_nrf51.s	/^Reset_Handler   PROC$/;"	l
+Reset_Handler	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^Reset_Handler   PROC$/;"	l
+SAADC_CONFIG_IRQ_PRIORITY	config/ble_app_template_s130_pca10028/nrf_drv_config.h	393;"	d
+SAADC_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10036/nrf_drv_config.h	393;"	d
+SAADC_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10040/nrf_drv_config.h	393;"	d
+SAADC_CONFIG_OVERSAMPLE	config/ble_app_template_s130_pca10028/nrf_drv_config.h	392;"	d
+SAADC_CONFIG_OVERSAMPLE	config/ble_app_template_s132_pca10036/nrf_drv_config.h	392;"	d
+SAADC_CONFIG_OVERSAMPLE	config/ble_app_template_s132_pca10040/nrf_drv_config.h	392;"	d
+SAADC_CONFIG_RESOLUTION	config/ble_app_template_s130_pca10028/nrf_drv_config.h	391;"	d
+SAADC_CONFIG_RESOLUTION	config/ble_app_template_s132_pca10036/nrf_drv_config.h	391;"	d
+SAADC_CONFIG_RESOLUTION	config/ble_app_template_s132_pca10040/nrf_drv_config.h	391;"	d
+SAADC_ENABLED	config/ble_app_template_s130_pca10028/nrf_drv_config.h	388;"	d
+SAADC_ENABLED	config/ble_app_template_s132_pca10036/nrf_drv_config.h	388;"	d
+SAADC_ENABLED	config/ble_app_template_s132_pca10040/nrf_drv_config.h	388;"	d
+SAADC_IRQHandler	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^SAADC_IRQHandler$/;"	l
+SEC_PARAM_BOND	main.c	75;"	d	file:
+SEC_PARAM_IO_CAPABILITIES	main.c	79;"	d	file:
+SEC_PARAM_KEYPRESS	main.c	78;"	d	file:
+SEC_PARAM_LESC	main.c	77;"	d	file:
+SEC_PARAM_MAX_KEY_SIZE	main.c	82;"	d	file:
+SEC_PARAM_MIN_KEY_SIZE	main.c	81;"	d	file:
+SEC_PARAM_MITM	main.c	76;"	d	file:
+SEC_PARAM_OOB	main.c	80;"	d	file:
+SIZE	pca10028/s130/armgcc/Makefile	/^SIZE            := '$(GNU_INSTALL_ROOT)\/bin\/$(GNU_PREFIX)-size'$/;"	m
+SIZE	pca10040/s132/armgcc/Makefile	/^SIZE            := '$(GNU_INSTALL_ROOT)\/bin\/$(GNU_PREFIX)-size'$/;"	m
+SLAVE_LATENCY	main.c	68;"	d	file:
+SPI0_CONFIG_IRQ_PRIORITY	config/ble_app_template_s130_pca10028/nrf_drv_config.h	215;"	d
+SPI0_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10036/nrf_drv_config.h	215;"	d
+SPI0_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10040/nrf_drv_config.h	215;"	d
+SPI0_CONFIG_MISO_PIN	config/ble_app_template_s130_pca10028/nrf_drv_config.h	214;"	d
+SPI0_CONFIG_MISO_PIN	config/ble_app_template_s132_pca10036/nrf_drv_config.h	214;"	d
+SPI0_CONFIG_MISO_PIN	config/ble_app_template_s132_pca10040/nrf_drv_config.h	214;"	d
+SPI0_CONFIG_MOSI_PIN	config/ble_app_template_s130_pca10028/nrf_drv_config.h	213;"	d
+SPI0_CONFIG_MOSI_PIN	config/ble_app_template_s132_pca10036/nrf_drv_config.h	213;"	d
+SPI0_CONFIG_MOSI_PIN	config/ble_app_template_s132_pca10040/nrf_drv_config.h	213;"	d
+SPI0_CONFIG_SCK_PIN	config/ble_app_template_s130_pca10028/nrf_drv_config.h	212;"	d
+SPI0_CONFIG_SCK_PIN	config/ble_app_template_s132_pca10036/nrf_drv_config.h	212;"	d
+SPI0_CONFIG_SCK_PIN	config/ble_app_template_s132_pca10040/nrf_drv_config.h	212;"	d
+SPI0_ENABLED	config/ble_app_template_s130_pca10028/nrf_drv_config.h	207;"	d
+SPI0_ENABLED	config/ble_app_template_s132_pca10036/nrf_drv_config.h	207;"	d
+SPI0_ENABLED	config/ble_app_template_s132_pca10040/nrf_drv_config.h	207;"	d
+SPI0_INSTANCE_INDEX	config/ble_app_template_s130_pca10028/nrf_drv_config.h	217;"	d
+SPI0_INSTANCE_INDEX	config/ble_app_template_s132_pca10036/nrf_drv_config.h	217;"	d
+SPI0_INSTANCE_INDEX	config/ble_app_template_s132_pca10040/nrf_drv_config.h	217;"	d
+SPI0_TWI0_IRQHandler	pca10028/s130/arm5_no_packs/RTE/Device/nRF51422_xxAC/arm_startup_nrf51.s	/^SPI0_TWI0_IRQHandler$/;"	l
+SPI0_USE_EASY_DMA	config/ble_app_template_s130_pca10028/nrf_drv_config.h	210;"	d
+SPI0_USE_EASY_DMA	config/ble_app_template_s132_pca10036/nrf_drv_config.h	210;"	d
+SPI0_USE_EASY_DMA	config/ble_app_template_s132_pca10040/nrf_drv_config.h	210;"	d
+SPI1_CONFIG_IRQ_PRIORITY	config/ble_app_template_s130_pca10028/nrf_drv_config.h	228;"	d
+SPI1_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10036/nrf_drv_config.h	228;"	d
+SPI1_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10040/nrf_drv_config.h	228;"	d
+SPI1_CONFIG_MISO_PIN	config/ble_app_template_s130_pca10028/nrf_drv_config.h	227;"	d
+SPI1_CONFIG_MISO_PIN	config/ble_app_template_s132_pca10036/nrf_drv_config.h	227;"	d
+SPI1_CONFIG_MISO_PIN	config/ble_app_template_s132_pca10040/nrf_drv_config.h	227;"	d
+SPI1_CONFIG_MOSI_PIN	config/ble_app_template_s130_pca10028/nrf_drv_config.h	226;"	d
+SPI1_CONFIG_MOSI_PIN	config/ble_app_template_s132_pca10036/nrf_drv_config.h	226;"	d
+SPI1_CONFIG_MOSI_PIN	config/ble_app_template_s132_pca10040/nrf_drv_config.h	226;"	d
+SPI1_CONFIG_SCK_PIN	config/ble_app_template_s130_pca10028/nrf_drv_config.h	225;"	d
+SPI1_CONFIG_SCK_PIN	config/ble_app_template_s132_pca10036/nrf_drv_config.h	225;"	d
+SPI1_CONFIG_SCK_PIN	config/ble_app_template_s132_pca10040/nrf_drv_config.h	225;"	d
+SPI1_ENABLED	config/ble_app_template_s130_pca10028/nrf_drv_config.h	220;"	d
+SPI1_ENABLED	config/ble_app_template_s132_pca10036/nrf_drv_config.h	220;"	d
+SPI1_ENABLED	config/ble_app_template_s132_pca10040/nrf_drv_config.h	220;"	d
+SPI1_INSTANCE_INDEX	config/ble_app_template_s130_pca10028/nrf_drv_config.h	230;"	d
+SPI1_INSTANCE_INDEX	config/ble_app_template_s132_pca10036/nrf_drv_config.h	230;"	d
+SPI1_INSTANCE_INDEX	config/ble_app_template_s132_pca10040/nrf_drv_config.h	230;"	d
+SPI1_TWI1_IRQHandler	pca10028/s130/arm5_no_packs/RTE/Device/nRF51422_xxAC/arm_startup_nrf51.s	/^SPI1_TWI1_IRQHandler$/;"	l
+SPI1_USE_EASY_DMA	config/ble_app_template_s130_pca10028/nrf_drv_config.h	223;"	d
+SPI1_USE_EASY_DMA	config/ble_app_template_s132_pca10036/nrf_drv_config.h	223;"	d
+SPI1_USE_EASY_DMA	config/ble_app_template_s132_pca10040/nrf_drv_config.h	223;"	d
+SPI2_CONFIG_IRQ_PRIORITY	config/ble_app_template_s130_pca10028/nrf_drv_config.h	241;"	d
+SPI2_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10036/nrf_drv_config.h	241;"	d
+SPI2_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10040/nrf_drv_config.h	241;"	d
+SPI2_CONFIG_MISO_PIN	config/ble_app_template_s130_pca10028/nrf_drv_config.h	240;"	d
+SPI2_CONFIG_MISO_PIN	config/ble_app_template_s132_pca10036/nrf_drv_config.h	240;"	d
+SPI2_CONFIG_MISO_PIN	config/ble_app_template_s132_pca10040/nrf_drv_config.h	240;"	d
+SPI2_CONFIG_MOSI_PIN	config/ble_app_template_s130_pca10028/nrf_drv_config.h	239;"	d
+SPI2_CONFIG_MOSI_PIN	config/ble_app_template_s132_pca10036/nrf_drv_config.h	239;"	d
+SPI2_CONFIG_MOSI_PIN	config/ble_app_template_s132_pca10040/nrf_drv_config.h	239;"	d
+SPI2_CONFIG_SCK_PIN	config/ble_app_template_s130_pca10028/nrf_drv_config.h	238;"	d
+SPI2_CONFIG_SCK_PIN	config/ble_app_template_s132_pca10036/nrf_drv_config.h	238;"	d
+SPI2_CONFIG_SCK_PIN	config/ble_app_template_s132_pca10040/nrf_drv_config.h	238;"	d
+SPI2_ENABLED	config/ble_app_template_s130_pca10028/nrf_drv_config.h	233;"	d
+SPI2_ENABLED	config/ble_app_template_s132_pca10036/nrf_drv_config.h	233;"	d
+SPI2_ENABLED	config/ble_app_template_s132_pca10040/nrf_drv_config.h	233;"	d
+SPI2_INSTANCE_INDEX	config/ble_app_template_s130_pca10028/nrf_drv_config.h	243;"	d
+SPI2_INSTANCE_INDEX	config/ble_app_template_s132_pca10036/nrf_drv_config.h	243;"	d
+SPI2_INSTANCE_INDEX	config/ble_app_template_s132_pca10040/nrf_drv_config.h	243;"	d
+SPI2_USE_EASY_DMA	config/ble_app_template_s130_pca10028/nrf_drv_config.h	236;"	d
+SPI2_USE_EASY_DMA	config/ble_app_template_s132_pca10036/nrf_drv_config.h	236;"	d
+SPI2_USE_EASY_DMA	config/ble_app_template_s132_pca10040/nrf_drv_config.h	236;"	d
+SPIM0_SPIS0_TWIM0_TWIS0_SPI0_TWI0_IRQHandler	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^SPIM0_SPIS0_TWIM0_TWIS0_SPI0_TWI0_IRQHandler$/;"	l
+SPIM1_SPIS1_TWIM1_TWIS1_SPI1_TWI1_IRQHandler	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^SPIM1_SPIS1_TWIM1_TWIS1_SPI1_TWI1_IRQHandler$/;"	l
+SPIM2_SPIS2_SPI2_IRQHandler	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^SPIM2_SPIS2_SPI2_IRQHandler$/;"	l
+SPIS0_CONFIG_IRQ_PRIORITY	config/ble_app_template_s130_pca10028/nrf_drv_config.h	255;"	d
+SPIS0_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10036/nrf_drv_config.h	255;"	d
+SPIS0_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10040/nrf_drv_config.h	255;"	d
+SPIS0_CONFIG_MISO_PIN	config/ble_app_template_s130_pca10028/nrf_drv_config.h	254;"	d
+SPIS0_CONFIG_MISO_PIN	config/ble_app_template_s132_pca10036/nrf_drv_config.h	254;"	d
+SPIS0_CONFIG_MISO_PIN	config/ble_app_template_s132_pca10040/nrf_drv_config.h	254;"	d
+SPIS0_CONFIG_MOSI_PIN	config/ble_app_template_s130_pca10028/nrf_drv_config.h	253;"	d
+SPIS0_CONFIG_MOSI_PIN	config/ble_app_template_s132_pca10036/nrf_drv_config.h	253;"	d
+SPIS0_CONFIG_MOSI_PIN	config/ble_app_template_s132_pca10040/nrf_drv_config.h	253;"	d
+SPIS0_CONFIG_SCK_PIN	config/ble_app_template_s130_pca10028/nrf_drv_config.h	252;"	d
+SPIS0_CONFIG_SCK_PIN	config/ble_app_template_s132_pca10036/nrf_drv_config.h	252;"	d
+SPIS0_CONFIG_SCK_PIN	config/ble_app_template_s132_pca10040/nrf_drv_config.h	252;"	d
+SPIS0_ENABLED	config/ble_app_template_s130_pca10028/nrf_drv_config.h	249;"	d
+SPIS0_ENABLED	config/ble_app_template_s132_pca10036/nrf_drv_config.h	249;"	d
+SPIS0_ENABLED	config/ble_app_template_s132_pca10040/nrf_drv_config.h	249;"	d
+SPIS0_INSTANCE_INDEX	config/ble_app_template_s130_pca10028/nrf_drv_config.h	257;"	d
+SPIS0_INSTANCE_INDEX	config/ble_app_template_s132_pca10036/nrf_drv_config.h	257;"	d
+SPIS0_INSTANCE_INDEX	config/ble_app_template_s132_pca10040/nrf_drv_config.h	257;"	d
+SPIS1_CONFIG_IRQ_PRIORITY	config/ble_app_template_s130_pca10028/nrf_drv_config.h	266;"	d
+SPIS1_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10036/nrf_drv_config.h	266;"	d
+SPIS1_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10040/nrf_drv_config.h	266;"	d
+SPIS1_CONFIG_MISO_PIN	config/ble_app_template_s130_pca10028/nrf_drv_config.h	265;"	d
+SPIS1_CONFIG_MISO_PIN	config/ble_app_template_s132_pca10036/nrf_drv_config.h	265;"	d
+SPIS1_CONFIG_MISO_PIN	config/ble_app_template_s132_pca10040/nrf_drv_config.h	265;"	d
+SPIS1_CONFIG_MOSI_PIN	config/ble_app_template_s130_pca10028/nrf_drv_config.h	264;"	d
+SPIS1_CONFIG_MOSI_PIN	config/ble_app_template_s132_pca10036/nrf_drv_config.h	264;"	d
+SPIS1_CONFIG_MOSI_PIN	config/ble_app_template_s132_pca10040/nrf_drv_config.h	264;"	d
+SPIS1_CONFIG_SCK_PIN	config/ble_app_template_s130_pca10028/nrf_drv_config.h	263;"	d
+SPIS1_CONFIG_SCK_PIN	config/ble_app_template_s132_pca10036/nrf_drv_config.h	263;"	d
+SPIS1_CONFIG_SCK_PIN	config/ble_app_template_s132_pca10040/nrf_drv_config.h	263;"	d
+SPIS1_ENABLED	config/ble_app_template_s130_pca10028/nrf_drv_config.h	260;"	d
+SPIS1_ENABLED	config/ble_app_template_s132_pca10036/nrf_drv_config.h	260;"	d
+SPIS1_ENABLED	config/ble_app_template_s132_pca10040/nrf_drv_config.h	260;"	d
+SPIS1_INSTANCE_INDEX	config/ble_app_template_s130_pca10028/nrf_drv_config.h	268;"	d
+SPIS1_INSTANCE_INDEX	config/ble_app_template_s132_pca10036/nrf_drv_config.h	268;"	d
+SPIS1_INSTANCE_INDEX	config/ble_app_template_s132_pca10040/nrf_drv_config.h	268;"	d
+SPIS2_CONFIG_IRQ_PRIORITY	config/ble_app_template_s130_pca10028/nrf_drv_config.h	277;"	d
+SPIS2_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10036/nrf_drv_config.h	277;"	d
+SPIS2_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10040/nrf_drv_config.h	277;"	d
+SPIS2_CONFIG_MISO_PIN	config/ble_app_template_s130_pca10028/nrf_drv_config.h	276;"	d
+SPIS2_CONFIG_MISO_PIN	config/ble_app_template_s132_pca10036/nrf_drv_config.h	276;"	d
+SPIS2_CONFIG_MISO_PIN	config/ble_app_template_s132_pca10040/nrf_drv_config.h	276;"	d
+SPIS2_CONFIG_MOSI_PIN	config/ble_app_template_s130_pca10028/nrf_drv_config.h	275;"	d
+SPIS2_CONFIG_MOSI_PIN	config/ble_app_template_s132_pca10036/nrf_drv_config.h	275;"	d
+SPIS2_CONFIG_MOSI_PIN	config/ble_app_template_s132_pca10040/nrf_drv_config.h	275;"	d
+SPIS2_CONFIG_SCK_PIN	config/ble_app_template_s130_pca10028/nrf_drv_config.h	274;"	d
+SPIS2_CONFIG_SCK_PIN	config/ble_app_template_s132_pca10036/nrf_drv_config.h	274;"	d
+SPIS2_CONFIG_SCK_PIN	config/ble_app_template_s132_pca10040/nrf_drv_config.h	274;"	d
+SPIS2_ENABLED	config/ble_app_template_s130_pca10028/nrf_drv_config.h	271;"	d
+SPIS2_ENABLED	config/ble_app_template_s132_pca10036/nrf_drv_config.h	271;"	d
+SPIS2_ENABLED	config/ble_app_template_s132_pca10040/nrf_drv_config.h	271;"	d
+SPIS2_INSTANCE_INDEX	config/ble_app_template_s130_pca10028/nrf_drv_config.h	279;"	d
+SPIS2_INSTANCE_INDEX	config/ble_app_template_s132_pca10036/nrf_drv_config.h	279;"	d
+SPIS2_INSTANCE_INDEX	config/ble_app_template_s132_pca10040/nrf_drv_config.h	279;"	d
+SPIS_COUNT	config/ble_app_template_s130_pca10028/nrf_drv_config.h	282;"	d
+SPIS_COUNT	config/ble_app_template_s132_pca10036/nrf_drv_config.h	282;"	d
+SPIS_COUNT	config/ble_app_template_s132_pca10040/nrf_drv_config.h	282;"	d
+SPI_COUNT	config/ble_app_template_s130_pca10028/nrf_drv_config.h	246;"	d
+SPI_COUNT	config/ble_app_template_s132_pca10036/nrf_drv_config.h	246;"	d
+SPI_COUNT	config/ble_app_template_s132_pca10040/nrf_drv_config.h	246;"	d
+SVC_Handler	pca10028/s130/arm5_no_packs/RTE/Device/nRF51422_xxAC/arm_startup_nrf51.s	/^SVC_Handler     PROC$/;"	l
+SVC_Handler	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^SVC_Handler     PROC$/;"	l
+SWI0_EGU0_IRQHandler	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^SWI0_EGU0_IRQHandler$/;"	l
+SWI0_IRQHandler	pca10028/s130/arm5_no_packs/RTE/Device/nRF51422_xxAC/arm_startup_nrf51.s	/^SWI0_IRQHandler$/;"	l
+SWI1_EGU1_IRQHandler	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^SWI1_EGU1_IRQHandler$/;"	l
+SWI1_IRQHandler	pca10028/s130/arm5_no_packs/RTE/Device/nRF51422_xxAC/arm_startup_nrf51.s	/^SWI1_IRQHandler$/;"	l
+SWI2_EGU2_IRQHandler	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^SWI2_EGU2_IRQHandler$/;"	l
+SWI2_IRQHandler	pca10028/s130/arm5_no_packs/RTE/Device/nRF51422_xxAC/arm_startup_nrf51.s	/^SWI2_IRQHandler$/;"	l
+SWI3_EGU3_IRQHandler	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^SWI3_EGU3_IRQHandler$/;"	l
+SWI3_IRQHandler	pca10028/s130/arm5_no_packs/RTE/Device/nRF51422_xxAC/arm_startup_nrf51.s	/^SWI3_IRQHandler$/;"	l
+SWI4_EGU4_IRQHandler	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^SWI4_EGU4_IRQHandler$/;"	l
+SWI4_IRQHandler	pca10028/s130/arm5_no_packs/RTE/Device/nRF51422_xxAC/arm_startup_nrf51.s	/^SWI4_IRQHandler$/;"	l
+SWI5_EGU5_IRQHandler	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^SWI5_EGU5_IRQHandler$/;"	l
+SWI5_IRQHandler	pca10028/s130/arm5_no_packs/RTE/Device/nRF51422_xxAC/arm_startup_nrf51.s	/^SWI5_IRQHandler$/;"	l
+Stack_Mem	pca10028/s130/arm5_no_packs/RTE/Device/nRF51422_xxAC/arm_startup_nrf51.s	/^Stack_Mem       SPACE   Stack_Size$/;"	l
+Stack_Mem	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^Stack_Mem       SPACE   Stack_Size$/;"	l
+Stack_Size	pca10028/s130/arm5_no_packs/RTE/Device/nRF51422_xxAC/arm_startup_nrf51.s	/^Stack_Size      EQU     2048$/;"	d
+Stack_Size	pca10028/s130/arm5_no_packs/RTE/Device/nRF51422_xxAC/arm_startup_nrf51.s	/^Stack_Size      EQU     __STACK_SIZE$/;"	d
+Stack_Size	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^Stack_Size      EQU     8192$/;"	d
+Stack_Size	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^Stack_Size      EQU     __STACK_SIZE$/;"	d
+SysTick_Handler	pca10028/s130/arm5_no_packs/RTE/Device/nRF51422_xxAC/arm_startup_nrf51.s	/^SysTick_Handler PROC$/;"	l
+SysTick_Handler	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^SysTick_Handler PROC$/;"	l
+SystemCoreClock	pca10028/s130/arm5_no_packs/RTE/Device/nRF51422_xxAC/system_nrf51.c	/^    __root uint32_t SystemCoreClock = __SYSTEM_CLOCK;$/;"	v
+SystemCoreClock	pca10028/s130/arm5_no_packs/RTE/Device/nRF51422_xxAC/system_nrf51.c	/^    uint32_t SystemCoreClock __attribute__((used)) = __SYSTEM_CLOCK;$/;"	v
+SystemCoreClock	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/system_nrf52.c	/^    __root uint32_t SystemCoreClock = __SYSTEM_CLOCK_64M;$/;"	v
+SystemCoreClock	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/system_nrf52.c	/^    uint32_t SystemCoreClock __attribute__((used)) = __SYSTEM_CLOCK_64M;$/;"	v
+SystemCoreClockUpdate	pca10028/s130/arm5_no_packs/RTE/Device/nRF51422_xxAC/system_nrf51.c	/^void SystemCoreClockUpdate(void)$/;"	f
+SystemCoreClockUpdate	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/system_nrf52.c	/^void SystemCoreClockUpdate(void)$/;"	f
+SystemInit	pca10028/s130/arm5_no_packs/RTE/Device/nRF51422_xxAC/system_nrf51.c	/^void SystemInit(void)$/;"	f
+SystemInit	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/system_nrf52.c	/^void SystemInit(void)$/;"	f
+TEMPLATE_PATH	pca10028/s130/armgcc/Makefile	/^TEMPLATE_PATH = ..\/..\/..\/..\/..\/..\/components\/toolchain\/gcc$/;"	m
+TEMPLATE_PATH	pca10040/s132/armgcc/Makefile	/^TEMPLATE_PATH = ..\/..\/..\/..\/..\/..\/components\/toolchain\/gcc$/;"	m
+TEMP_IRQHandler	pca10028/s130/arm5_no_packs/RTE/Device/nRF51422_xxAC/arm_startup_nrf51.s	/^TEMP_IRQHandler$/;"	l
+TEMP_IRQHandler	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^TEMP_IRQHandler$/;"	l
+TIMER0_CONFIG_BIT_WIDTH	config/ble_app_template_s130_pca10028/nrf_drv_config.h	53;"	d
+TIMER0_CONFIG_BIT_WIDTH	config/ble_app_template_s132_pca10036/nrf_drv_config.h	53;"	d
+TIMER0_CONFIG_BIT_WIDTH	config/ble_app_template_s132_pca10040/nrf_drv_config.h	53;"	d
+TIMER0_CONFIG_FREQUENCY	config/ble_app_template_s130_pca10028/nrf_drv_config.h	51;"	d
+TIMER0_CONFIG_FREQUENCY	config/ble_app_template_s132_pca10036/nrf_drv_config.h	51;"	d
+TIMER0_CONFIG_FREQUENCY	config/ble_app_template_s132_pca10040/nrf_drv_config.h	51;"	d
+TIMER0_CONFIG_IRQ_PRIORITY	config/ble_app_template_s130_pca10028/nrf_drv_config.h	54;"	d
+TIMER0_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10036/nrf_drv_config.h	54;"	d
+TIMER0_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10040/nrf_drv_config.h	54;"	d
+TIMER0_CONFIG_MODE	config/ble_app_template_s130_pca10028/nrf_drv_config.h	52;"	d
+TIMER0_CONFIG_MODE	config/ble_app_template_s132_pca10036/nrf_drv_config.h	52;"	d
+TIMER0_CONFIG_MODE	config/ble_app_template_s132_pca10040/nrf_drv_config.h	52;"	d
+TIMER0_ENABLED	config/ble_app_template_s130_pca10028/nrf_drv_config.h	48;"	d
+TIMER0_ENABLED	config/ble_app_template_s132_pca10036/nrf_drv_config.h	48;"	d
+TIMER0_ENABLED	config/ble_app_template_s132_pca10040/nrf_drv_config.h	48;"	d
+TIMER0_INSTANCE_INDEX	config/ble_app_template_s130_pca10028/nrf_drv_config.h	56;"	d
+TIMER0_INSTANCE_INDEX	config/ble_app_template_s132_pca10036/nrf_drv_config.h	56;"	d
+TIMER0_INSTANCE_INDEX	config/ble_app_template_s132_pca10040/nrf_drv_config.h	56;"	d
+TIMER0_IRQHandler	pca10028/s130/arm5_no_packs/RTE/Device/nRF51422_xxAC/arm_startup_nrf51.s	/^TIMER0_IRQHandler$/;"	l
+TIMER0_IRQHandler	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^TIMER0_IRQHandler$/;"	l
+TIMER1_CONFIG_BIT_WIDTH	config/ble_app_template_s130_pca10028/nrf_drv_config.h	64;"	d
+TIMER1_CONFIG_BIT_WIDTH	config/ble_app_template_s132_pca10036/nrf_drv_config.h	64;"	d
+TIMER1_CONFIG_BIT_WIDTH	config/ble_app_template_s132_pca10040/nrf_drv_config.h	64;"	d
+TIMER1_CONFIG_FREQUENCY	config/ble_app_template_s130_pca10028/nrf_drv_config.h	62;"	d
+TIMER1_CONFIG_FREQUENCY	config/ble_app_template_s132_pca10036/nrf_drv_config.h	62;"	d
+TIMER1_CONFIG_FREQUENCY	config/ble_app_template_s132_pca10040/nrf_drv_config.h	62;"	d
+TIMER1_CONFIG_IRQ_PRIORITY	config/ble_app_template_s130_pca10028/nrf_drv_config.h	65;"	d
+TIMER1_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10036/nrf_drv_config.h	65;"	d
+TIMER1_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10040/nrf_drv_config.h	65;"	d
+TIMER1_CONFIG_MODE	config/ble_app_template_s130_pca10028/nrf_drv_config.h	63;"	d
+TIMER1_CONFIG_MODE	config/ble_app_template_s132_pca10036/nrf_drv_config.h	63;"	d
+TIMER1_CONFIG_MODE	config/ble_app_template_s132_pca10040/nrf_drv_config.h	63;"	d
+TIMER1_ENABLED	config/ble_app_template_s130_pca10028/nrf_drv_config.h	59;"	d
+TIMER1_ENABLED	config/ble_app_template_s132_pca10036/nrf_drv_config.h	59;"	d
+TIMER1_ENABLED	config/ble_app_template_s132_pca10040/nrf_drv_config.h	59;"	d
+TIMER1_INSTANCE_INDEX	config/ble_app_template_s130_pca10028/nrf_drv_config.h	67;"	d
+TIMER1_INSTANCE_INDEX	config/ble_app_template_s132_pca10036/nrf_drv_config.h	67;"	d
+TIMER1_INSTANCE_INDEX	config/ble_app_template_s132_pca10040/nrf_drv_config.h	67;"	d
+TIMER1_IRQHandler	pca10028/s130/arm5_no_packs/RTE/Device/nRF51422_xxAC/arm_startup_nrf51.s	/^TIMER1_IRQHandler$/;"	l
+TIMER1_IRQHandler	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^TIMER1_IRQHandler$/;"	l
+TIMER2_CONFIG_BIT_WIDTH	config/ble_app_template_s130_pca10028/nrf_drv_config.h	75;"	d
+TIMER2_CONFIG_BIT_WIDTH	config/ble_app_template_s132_pca10036/nrf_drv_config.h	75;"	d
+TIMER2_CONFIG_BIT_WIDTH	config/ble_app_template_s132_pca10040/nrf_drv_config.h	75;"	d
+TIMER2_CONFIG_FREQUENCY	config/ble_app_template_s130_pca10028/nrf_drv_config.h	73;"	d
+TIMER2_CONFIG_FREQUENCY	config/ble_app_template_s132_pca10036/nrf_drv_config.h	73;"	d
+TIMER2_CONFIG_FREQUENCY	config/ble_app_template_s132_pca10040/nrf_drv_config.h	73;"	d
+TIMER2_CONFIG_IRQ_PRIORITY	config/ble_app_template_s130_pca10028/nrf_drv_config.h	76;"	d
+TIMER2_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10036/nrf_drv_config.h	76;"	d
+TIMER2_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10040/nrf_drv_config.h	76;"	d
+TIMER2_CONFIG_MODE	config/ble_app_template_s130_pca10028/nrf_drv_config.h	74;"	d
+TIMER2_CONFIG_MODE	config/ble_app_template_s132_pca10036/nrf_drv_config.h	74;"	d
+TIMER2_CONFIG_MODE	config/ble_app_template_s132_pca10040/nrf_drv_config.h	74;"	d
+TIMER2_ENABLED	config/ble_app_template_s130_pca10028/nrf_drv_config.h	70;"	d
+TIMER2_ENABLED	config/ble_app_template_s132_pca10036/nrf_drv_config.h	70;"	d
+TIMER2_ENABLED	config/ble_app_template_s132_pca10040/nrf_drv_config.h	70;"	d
+TIMER2_INSTANCE_INDEX	config/ble_app_template_s130_pca10028/nrf_drv_config.h	78;"	d
+TIMER2_INSTANCE_INDEX	config/ble_app_template_s132_pca10036/nrf_drv_config.h	78;"	d
+TIMER2_INSTANCE_INDEX	config/ble_app_template_s132_pca10040/nrf_drv_config.h	78;"	d
+TIMER2_IRQHandler	pca10028/s130/arm5_no_packs/RTE/Device/nRF51422_xxAC/arm_startup_nrf51.s	/^TIMER2_IRQHandler$/;"	l
+TIMER2_IRQHandler	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^TIMER2_IRQHandler$/;"	l
+TIMER3_CONFIG_BIT_WIDTH	config/ble_app_template_s130_pca10028/nrf_drv_config.h	86;"	d
+TIMER3_CONFIG_BIT_WIDTH	config/ble_app_template_s132_pca10036/nrf_drv_config.h	86;"	d
+TIMER3_CONFIG_BIT_WIDTH	config/ble_app_template_s132_pca10040/nrf_drv_config.h	86;"	d
+TIMER3_CONFIG_FREQUENCY	config/ble_app_template_s130_pca10028/nrf_drv_config.h	84;"	d
+TIMER3_CONFIG_FREQUENCY	config/ble_app_template_s132_pca10036/nrf_drv_config.h	84;"	d
+TIMER3_CONFIG_FREQUENCY	config/ble_app_template_s132_pca10040/nrf_drv_config.h	84;"	d
+TIMER3_CONFIG_IRQ_PRIORITY	config/ble_app_template_s130_pca10028/nrf_drv_config.h	87;"	d
+TIMER3_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10036/nrf_drv_config.h	87;"	d
+TIMER3_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10040/nrf_drv_config.h	87;"	d
+TIMER3_CONFIG_MODE	config/ble_app_template_s130_pca10028/nrf_drv_config.h	85;"	d
+TIMER3_CONFIG_MODE	config/ble_app_template_s132_pca10036/nrf_drv_config.h	85;"	d
+TIMER3_CONFIG_MODE	config/ble_app_template_s132_pca10040/nrf_drv_config.h	85;"	d
+TIMER3_ENABLED	config/ble_app_template_s130_pca10028/nrf_drv_config.h	81;"	d
+TIMER3_ENABLED	config/ble_app_template_s132_pca10036/nrf_drv_config.h	81;"	d
+TIMER3_ENABLED	config/ble_app_template_s132_pca10040/nrf_drv_config.h	81;"	d
+TIMER3_INSTANCE_INDEX	config/ble_app_template_s130_pca10028/nrf_drv_config.h	89;"	d
+TIMER3_INSTANCE_INDEX	config/ble_app_template_s132_pca10036/nrf_drv_config.h	89;"	d
+TIMER3_INSTANCE_INDEX	config/ble_app_template_s132_pca10040/nrf_drv_config.h	89;"	d
+TIMER3_IRQHandler	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^TIMER3_IRQHandler$/;"	l
+TIMER4_CONFIG_BIT_WIDTH	config/ble_app_template_s130_pca10028/nrf_drv_config.h	97;"	d
+TIMER4_CONFIG_BIT_WIDTH	config/ble_app_template_s132_pca10036/nrf_drv_config.h	97;"	d
+TIMER4_CONFIG_BIT_WIDTH	config/ble_app_template_s132_pca10040/nrf_drv_config.h	97;"	d
+TIMER4_CONFIG_FREQUENCY	config/ble_app_template_s130_pca10028/nrf_drv_config.h	95;"	d
+TIMER4_CONFIG_FREQUENCY	config/ble_app_template_s132_pca10036/nrf_drv_config.h	95;"	d
+TIMER4_CONFIG_FREQUENCY	config/ble_app_template_s132_pca10040/nrf_drv_config.h	95;"	d
+TIMER4_CONFIG_IRQ_PRIORITY	config/ble_app_template_s130_pca10028/nrf_drv_config.h	98;"	d
+TIMER4_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10036/nrf_drv_config.h	98;"	d
+TIMER4_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10040/nrf_drv_config.h	98;"	d
+TIMER4_CONFIG_MODE	config/ble_app_template_s130_pca10028/nrf_drv_config.h	96;"	d
+TIMER4_CONFIG_MODE	config/ble_app_template_s132_pca10036/nrf_drv_config.h	96;"	d
+TIMER4_CONFIG_MODE	config/ble_app_template_s132_pca10040/nrf_drv_config.h	96;"	d
+TIMER4_ENABLED	config/ble_app_template_s130_pca10028/nrf_drv_config.h	92;"	d
+TIMER4_ENABLED	config/ble_app_template_s132_pca10036/nrf_drv_config.h	92;"	d
+TIMER4_ENABLED	config/ble_app_template_s132_pca10040/nrf_drv_config.h	92;"	d
+TIMER4_INSTANCE_INDEX	config/ble_app_template_s130_pca10028/nrf_drv_config.h	100;"	d
+TIMER4_INSTANCE_INDEX	config/ble_app_template_s132_pca10036/nrf_drv_config.h	100;"	d
+TIMER4_INSTANCE_INDEX	config/ble_app_template_s132_pca10040/nrf_drv_config.h	100;"	d
+TIMER4_IRQHandler	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^TIMER4_IRQHandler$/;"	l
+TIMER_COUNT	config/ble_app_template_s130_pca10028/nrf_drv_config.h	104;"	d
+TIMER_COUNT	config/ble_app_template_s132_pca10036/nrf_drv_config.h	104;"	d
+TIMER_COUNT	config/ble_app_template_s132_pca10040/nrf_drv_config.h	104;"	d
+TWI0_CONFIG_FREQUENCY	config/ble_app_template_s130_pca10028/nrf_drv_config.h	309;"	d
+TWI0_CONFIG_FREQUENCY	config/ble_app_template_s132_pca10036/nrf_drv_config.h	309;"	d
+TWI0_CONFIG_FREQUENCY	config/ble_app_template_s132_pca10040/nrf_drv_config.h	309;"	d
+TWI0_CONFIG_IRQ_PRIORITY	config/ble_app_template_s130_pca10028/nrf_drv_config.h	312;"	d
+TWI0_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10036/nrf_drv_config.h	312;"	d
+TWI0_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10040/nrf_drv_config.h	312;"	d
+TWI0_CONFIG_SCL	config/ble_app_template_s130_pca10028/nrf_drv_config.h	310;"	d
+TWI0_CONFIG_SCL	config/ble_app_template_s132_pca10036/nrf_drv_config.h	310;"	d
+TWI0_CONFIG_SCL	config/ble_app_template_s132_pca10040/nrf_drv_config.h	310;"	d
+TWI0_CONFIG_SDA	config/ble_app_template_s130_pca10028/nrf_drv_config.h	311;"	d
+TWI0_CONFIG_SDA	config/ble_app_template_s132_pca10036/nrf_drv_config.h	311;"	d
+TWI0_CONFIG_SDA	config/ble_app_template_s132_pca10040/nrf_drv_config.h	311;"	d
+TWI0_ENABLED	config/ble_app_template_s130_pca10028/nrf_drv_config.h	304;"	d
+TWI0_ENABLED	config/ble_app_template_s132_pca10036/nrf_drv_config.h	304;"	d
+TWI0_ENABLED	config/ble_app_template_s132_pca10040/nrf_drv_config.h	304;"	d
+TWI0_INSTANCE_INDEX	config/ble_app_template_s130_pca10028/nrf_drv_config.h	314;"	d
+TWI0_INSTANCE_INDEX	config/ble_app_template_s132_pca10036/nrf_drv_config.h	314;"	d
+TWI0_INSTANCE_INDEX	config/ble_app_template_s132_pca10040/nrf_drv_config.h	314;"	d
+TWI0_USE_EASY_DMA	config/ble_app_template_s130_pca10028/nrf_drv_config.h	307;"	d
+TWI0_USE_EASY_DMA	config/ble_app_template_s132_pca10036/nrf_drv_config.h	307;"	d
+TWI0_USE_EASY_DMA	config/ble_app_template_s132_pca10040/nrf_drv_config.h	307;"	d
+TWI1_CONFIG_FREQUENCY	config/ble_app_template_s130_pca10028/nrf_drv_config.h	322;"	d
+TWI1_CONFIG_FREQUENCY	config/ble_app_template_s132_pca10036/nrf_drv_config.h	322;"	d
+TWI1_CONFIG_FREQUENCY	config/ble_app_template_s132_pca10040/nrf_drv_config.h	322;"	d
+TWI1_CONFIG_IRQ_PRIORITY	config/ble_app_template_s130_pca10028/nrf_drv_config.h	325;"	d
+TWI1_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10036/nrf_drv_config.h	325;"	d
+TWI1_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10040/nrf_drv_config.h	325;"	d
+TWI1_CONFIG_SCL	config/ble_app_template_s130_pca10028/nrf_drv_config.h	323;"	d
+TWI1_CONFIG_SCL	config/ble_app_template_s132_pca10036/nrf_drv_config.h	323;"	d
+TWI1_CONFIG_SCL	config/ble_app_template_s132_pca10040/nrf_drv_config.h	323;"	d
+TWI1_CONFIG_SDA	config/ble_app_template_s130_pca10028/nrf_drv_config.h	324;"	d
+TWI1_CONFIG_SDA	config/ble_app_template_s132_pca10036/nrf_drv_config.h	324;"	d
+TWI1_CONFIG_SDA	config/ble_app_template_s132_pca10040/nrf_drv_config.h	324;"	d
+TWI1_ENABLED	config/ble_app_template_s130_pca10028/nrf_drv_config.h	317;"	d
+TWI1_ENABLED	config/ble_app_template_s132_pca10036/nrf_drv_config.h	317;"	d
+TWI1_ENABLED	config/ble_app_template_s132_pca10040/nrf_drv_config.h	317;"	d
+TWI1_INSTANCE_INDEX	config/ble_app_template_s130_pca10028/nrf_drv_config.h	327;"	d
+TWI1_INSTANCE_INDEX	config/ble_app_template_s132_pca10036/nrf_drv_config.h	327;"	d
+TWI1_INSTANCE_INDEX	config/ble_app_template_s132_pca10040/nrf_drv_config.h	327;"	d
+TWI1_USE_EASY_DMA	config/ble_app_template_s130_pca10028/nrf_drv_config.h	320;"	d
+TWI1_USE_EASY_DMA	config/ble_app_template_s132_pca10036/nrf_drv_config.h	320;"	d
+TWI1_USE_EASY_DMA	config/ble_app_template_s132_pca10040/nrf_drv_config.h	320;"	d
+TWIS0_CONFIG_ADDR0	config/ble_app_template_s130_pca10028/nrf_drv_config.h	336;"	d
+TWIS0_CONFIG_ADDR0	config/ble_app_template_s132_pca10036/nrf_drv_config.h	336;"	d
+TWIS0_CONFIG_ADDR0	config/ble_app_template_s132_pca10040/nrf_drv_config.h	336;"	d
+TWIS0_CONFIG_ADDR1	config/ble_app_template_s130_pca10028/nrf_drv_config.h	337;"	d
+TWIS0_CONFIG_ADDR1	config/ble_app_template_s132_pca10036/nrf_drv_config.h	337;"	d
+TWIS0_CONFIG_ADDR1	config/ble_app_template_s132_pca10040/nrf_drv_config.h	337;"	d
+TWIS0_CONFIG_IRQ_PRIORITY	config/ble_app_template_s130_pca10028/nrf_drv_config.h	340;"	d
+TWIS0_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10036/nrf_drv_config.h	340;"	d
+TWIS0_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10040/nrf_drv_config.h	340;"	d
+TWIS0_CONFIG_SCL	config/ble_app_template_s130_pca10028/nrf_drv_config.h	338;"	d
+TWIS0_CONFIG_SCL	config/ble_app_template_s132_pca10036/nrf_drv_config.h	338;"	d
+TWIS0_CONFIG_SCL	config/ble_app_template_s132_pca10040/nrf_drv_config.h	338;"	d
+TWIS0_CONFIG_SDA	config/ble_app_template_s130_pca10028/nrf_drv_config.h	339;"	d
+TWIS0_CONFIG_SDA	config/ble_app_template_s132_pca10036/nrf_drv_config.h	339;"	d
+TWIS0_CONFIG_SDA	config/ble_app_template_s132_pca10040/nrf_drv_config.h	339;"	d
+TWIS0_ENABLED	config/ble_app_template_s130_pca10028/nrf_drv_config.h	333;"	d
+TWIS0_ENABLED	config/ble_app_template_s132_pca10036/nrf_drv_config.h	333;"	d
+TWIS0_ENABLED	config/ble_app_template_s132_pca10040/nrf_drv_config.h	333;"	d
+TWIS0_INSTANCE_INDEX	config/ble_app_template_s130_pca10028/nrf_drv_config.h	342;"	d
+TWIS0_INSTANCE_INDEX	config/ble_app_template_s132_pca10036/nrf_drv_config.h	342;"	d
+TWIS0_INSTANCE_INDEX	config/ble_app_template_s132_pca10040/nrf_drv_config.h	342;"	d
+TWIS1_CONFIG_ADDR0	config/ble_app_template_s130_pca10028/nrf_drv_config.h	348;"	d
+TWIS1_CONFIG_ADDR0	config/ble_app_template_s132_pca10036/nrf_drv_config.h	348;"	d
+TWIS1_CONFIG_ADDR0	config/ble_app_template_s132_pca10040/nrf_drv_config.h	348;"	d
+TWIS1_CONFIG_ADDR1	config/ble_app_template_s130_pca10028/nrf_drv_config.h	349;"	d
+TWIS1_CONFIG_ADDR1	config/ble_app_template_s132_pca10036/nrf_drv_config.h	349;"	d
+TWIS1_CONFIG_ADDR1	config/ble_app_template_s132_pca10040/nrf_drv_config.h	349;"	d
+TWIS1_CONFIG_IRQ_PRIORITY	config/ble_app_template_s130_pca10028/nrf_drv_config.h	352;"	d
+TWIS1_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10036/nrf_drv_config.h	352;"	d
+TWIS1_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10040/nrf_drv_config.h	352;"	d
+TWIS1_CONFIG_SCL	config/ble_app_template_s130_pca10028/nrf_drv_config.h	350;"	d
+TWIS1_CONFIG_SCL	config/ble_app_template_s132_pca10036/nrf_drv_config.h	350;"	d
+TWIS1_CONFIG_SCL	config/ble_app_template_s132_pca10040/nrf_drv_config.h	350;"	d
+TWIS1_CONFIG_SDA	config/ble_app_template_s130_pca10028/nrf_drv_config.h	351;"	d
+TWIS1_CONFIG_SDA	config/ble_app_template_s132_pca10036/nrf_drv_config.h	351;"	d
+TWIS1_CONFIG_SDA	config/ble_app_template_s132_pca10040/nrf_drv_config.h	351;"	d
+TWIS1_ENABLED	config/ble_app_template_s130_pca10028/nrf_drv_config.h	345;"	d
+TWIS1_ENABLED	config/ble_app_template_s132_pca10036/nrf_drv_config.h	345;"	d
+TWIS1_ENABLED	config/ble_app_template_s132_pca10040/nrf_drv_config.h	345;"	d
+TWIS1_INSTANCE_INDEX	config/ble_app_template_s130_pca10028/nrf_drv_config.h	354;"	d
+TWIS1_INSTANCE_INDEX	config/ble_app_template_s132_pca10036/nrf_drv_config.h	354;"	d
+TWIS1_INSTANCE_INDEX	config/ble_app_template_s132_pca10040/nrf_drv_config.h	354;"	d
+TWIS_ASSUME_INIT_AFTER_RESET_ONLY	config/ble_app_template_s130_pca10028/nrf_drv_config.h	359;"	d
+TWIS_ASSUME_INIT_AFTER_RESET_ONLY	config/ble_app_template_s132_pca10036/nrf_drv_config.h	359;"	d
+TWIS_ASSUME_INIT_AFTER_RESET_ONLY	config/ble_app_template_s132_pca10040/nrf_drv_config.h	359;"	d
+TWIS_COUNT	config/ble_app_template_s130_pca10028/nrf_drv_config.h	357;"	d
+TWIS_COUNT	config/ble_app_template_s132_pca10036/nrf_drv_config.h	357;"	d
+TWIS_COUNT	config/ble_app_template_s132_pca10040/nrf_drv_config.h	357;"	d
+TWIS_NO_SYNC_MODE	config/ble_app_template_s130_pca10028/nrf_drv_config.h	361;"	d
+TWIS_NO_SYNC_MODE	config/ble_app_template_s132_pca10036/nrf_drv_config.h	361;"	d
+TWIS_NO_SYNC_MODE	config/ble_app_template_s132_pca10040/nrf_drv_config.h	361;"	d
+TWI_COUNT	config/ble_app_template_s130_pca10028/nrf_drv_config.h	330;"	d
+TWI_COUNT	config/ble_app_template_s132_pca10036/nrf_drv_config.h	330;"	d
+TWI_COUNT	config/ble_app_template_s132_pca10040/nrf_drv_config.h	330;"	d
+UART0_CONFIG_BAUDRATE	config/ble_app_template_s130_pca10028/nrf_drv_config.h	290;"	d
+UART0_CONFIG_BAUDRATE	config/ble_app_template_s132_pca10036/nrf_drv_config.h	290;"	d
+UART0_CONFIG_BAUDRATE	config/ble_app_template_s132_pca10040/nrf_drv_config.h	290;"	d
+UART0_CONFIG_HWFC	config/ble_app_template_s130_pca10028/nrf_drv_config.h	288;"	d
+UART0_CONFIG_HWFC	config/ble_app_template_s132_pca10036/nrf_drv_config.h	288;"	d
+UART0_CONFIG_HWFC	config/ble_app_template_s132_pca10040/nrf_drv_config.h	288;"	d
+UART0_CONFIG_IRQ_PRIORITY	config/ble_app_template_s130_pca10028/nrf_drv_config.h	295;"	d
+UART0_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10036/nrf_drv_config.h	295;"	d
+UART0_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10040/nrf_drv_config.h	295;"	d
+UART0_CONFIG_PARITY	config/ble_app_template_s130_pca10028/nrf_drv_config.h	289;"	d
+UART0_CONFIG_PARITY	config/ble_app_template_s132_pca10036/nrf_drv_config.h	289;"	d
+UART0_CONFIG_PARITY	config/ble_app_template_s132_pca10040/nrf_drv_config.h	289;"	d
+UART0_CONFIG_PSEL_CTS	config/ble_app_template_s130_pca10028/nrf_drv_config.h	293;"	d
+UART0_CONFIG_PSEL_CTS	config/ble_app_template_s132_pca10036/nrf_drv_config.h	293;"	d
+UART0_CONFIG_PSEL_CTS	config/ble_app_template_s132_pca10040/nrf_drv_config.h	293;"	d
+UART0_CONFIG_PSEL_RTS	config/ble_app_template_s130_pca10028/nrf_drv_config.h	294;"	d
+UART0_CONFIG_PSEL_RTS	config/ble_app_template_s132_pca10036/nrf_drv_config.h	294;"	d
+UART0_CONFIG_PSEL_RTS	config/ble_app_template_s132_pca10040/nrf_drv_config.h	294;"	d
+UART0_CONFIG_PSEL_RXD	config/ble_app_template_s130_pca10028/nrf_drv_config.h	292;"	d
+UART0_CONFIG_PSEL_RXD	config/ble_app_template_s132_pca10036/nrf_drv_config.h	292;"	d
+UART0_CONFIG_PSEL_RXD	config/ble_app_template_s132_pca10040/nrf_drv_config.h	292;"	d
+UART0_CONFIG_PSEL_TXD	config/ble_app_template_s130_pca10028/nrf_drv_config.h	291;"	d
+UART0_CONFIG_PSEL_TXD	config/ble_app_template_s132_pca10036/nrf_drv_config.h	291;"	d
+UART0_CONFIG_PSEL_TXD	config/ble_app_template_s132_pca10040/nrf_drv_config.h	291;"	d
+UART0_CONFIG_USE_EASY_DMA	config/ble_app_template_s130_pca10028/nrf_drv_config.h	297;"	d
+UART0_CONFIG_USE_EASY_DMA	config/ble_app_template_s132_pca10036/nrf_drv_config.h	297;"	d
+UART0_CONFIG_USE_EASY_DMA	config/ble_app_template_s132_pca10040/nrf_drv_config.h	297;"	d
+UART0_ENABLED	config/ble_app_template_s130_pca10028/nrf_drv_config.h	285;"	d
+UART0_ENABLED	config/ble_app_template_s132_pca10036/nrf_drv_config.h	285;"	d
+UART0_ENABLED	config/ble_app_template_s132_pca10040/nrf_drv_config.h	285;"	d
+UART0_IRQHandler	pca10028/s130/arm5_no_packs/RTE/Device/nRF51422_xxAC/arm_startup_nrf51.s	/^UART0_IRQHandler$/;"	l
+UARTE0_UART0_IRQHandler	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^UARTE0_UART0_IRQHandler$/;"	l
+UART_EASY_DMA_SUPPORT	config/ble_app_template_s130_pca10028/nrf_drv_config.h	299;"	d
+UART_EASY_DMA_SUPPORT	config/ble_app_template_s132_pca10036/nrf_drv_config.h	299;"	d
+UART_EASY_DMA_SUPPORT	config/ble_app_template_s132_pca10040/nrf_drv_config.h	299;"	d
+UART_LEGACY_SUPPORT	config/ble_app_template_s130_pca10028/nrf_drv_config.h	300;"	d
+UART_LEGACY_SUPPORT	config/ble_app_template_s132_pca10036/nrf_drv_config.h	300;"	d
+UART_LEGACY_SUPPORT	config/ble_app_template_s132_pca10040/nrf_drv_config.h	300;"	d
+WDT_CONFIG_BEHAVIOUR	config/ble_app_template_s130_pca10028/nrf_drv_config.h	433;"	d
+WDT_CONFIG_BEHAVIOUR	config/ble_app_template_s132_pca10036/nrf_drv_config.h	433;"	d
+WDT_CONFIG_BEHAVIOUR	config/ble_app_template_s132_pca10040/nrf_drv_config.h	433;"	d
+WDT_CONFIG_IRQ_PRIORITY	config/ble_app_template_s130_pca10028/nrf_drv_config.h	435;"	d
+WDT_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10036/nrf_drv_config.h	435;"	d
+WDT_CONFIG_IRQ_PRIORITY	config/ble_app_template_s132_pca10040/nrf_drv_config.h	435;"	d
+WDT_CONFIG_RELOAD_VALUE	config/ble_app_template_s130_pca10028/nrf_drv_config.h	434;"	d
+WDT_CONFIG_RELOAD_VALUE	config/ble_app_template_s132_pca10036/nrf_drv_config.h	434;"	d
+WDT_CONFIG_RELOAD_VALUE	config/ble_app_template_s132_pca10040/nrf_drv_config.h	434;"	d
+WDT_ENABLED	config/ble_app_template_s130_pca10028/nrf_drv_config.h	430;"	d
+WDT_ENABLED	config/ble_app_template_s132_pca10036/nrf_drv_config.h	430;"	d
+WDT_ENABLED	config/ble_app_template_s132_pca10040/nrf_drv_config.h	430;"	d
+WDT_IRQHandler	pca10028/s130/arm5_no_packs/RTE/Device/nRF51422_xxAC/arm_startup_nrf51.s	/^WDT_IRQHandler$/;"	l
+WDT_IRQHandler	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^WDT_IRQHandler$/;"	l
+__SYSTEM_CLOCK	pca10028/s130/arm5_no_packs/RTE/Device/nRF51422_xxAC/system_nrf51.c	42;"	d	file:
+__SYSTEM_CLOCK_64M	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/system_nrf52.c	38;"	d	file:
+__Vectors	pca10028/s130/arm5_no_packs/RTE/Device/nRF51422_xxAC/arm_startup_nrf51.s	/^__Vectors       DCD     __initial_sp              ; Top of Stack$/;"	l
+__Vectors	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^__Vectors       DCD     __initial_sp              ; Top of Stack$/;"	l
+__Vectors_End	pca10028/s130/arm5_no_packs/RTE/Device/nRF51422_xxAC/arm_startup_nrf51.s	/^__Vectors_End$/;"	l
+__Vectors_End	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^__Vectors_End$/;"	l
+__Vectors_Size	pca10028/s130/arm5_no_packs/RTE/Device/nRF51422_xxAC/arm_startup_nrf51.s	/^__Vectors_Size  EQU     __Vectors_End - __Vectors$/;"	d
+__Vectors_Size	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^__Vectors_Size  EQU     __Vectors_End - __Vectors$/;"	d
+__heap_base	pca10028/s130/arm5_no_packs/RTE/Device/nRF51422_xxAC/arm_startup_nrf51.s	/^__heap_base$/;"	l
+__heap_base	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^__heap_base$/;"	l
+__heap_limit	pca10028/s130/arm5_no_packs/RTE/Device/nRF51422_xxAC/arm_startup_nrf51.s	/^__heap_limit$/;"	l
+__heap_limit	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^__heap_limit$/;"	l
+__initial_sp	pca10028/s130/arm5_no_packs/RTE/Device/nRF51422_xxAC/arm_startup_nrf51.s	/^__initial_sp$/;"	l
+__initial_sp	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^__initial_sp$/;"	l
+__user_initial_stackheap	pca10028/s130/arm5_no_packs/RTE/Device/nRF51422_xxAC/arm_startup_nrf51.s	/^__user_initial_stackheap PROC$/;"	l
+__user_initial_stackheap	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/arm_startup_nrf52.s	/^__user_initial_stackheap PROC$/;"	l
+advertising_init	main.c	/^static void advertising_init(void)$/;"	f	file:
+assert_nrf_callback	main.c	/^void assert_nrf_callback(uint16_t line_num, const uint8_t * p_file_name)$/;"	f
+ble_evt_dispatch	main.c	/^static void ble_evt_dispatch(ble_evt_t * p_ble_evt)$/;"	f	file:
+ble_stack_init	main.c	/^static void ble_stack_init(void)$/;"	f	file:
+block_id	config/pstorage_platform.h	/^    pstorage_block_t    block_id;       \/**< Block ID.*\/$/;"	m	struct:__anon1
+bsp_event_handler	main.c	/^void bsp_event_handler(bsp_event_t event)$/;"	f
+buttons_leds_init	main.c	/^static void buttons_leds_init(bool * p_erase_bonds)$/;"	f	file:
+conn_params_error_handler	main.c	/^static void conn_params_error_handler(uint32_t nrf_error)$/;"	f	file:
+conn_params_init	main.c	/^static void conn_params_init(void)$/;"	f	file:
+device_manager_evt_handler	main.c	/^static uint32_t device_manager_evt_handler(dm_handle_t const * p_handle,$/;"	f	file:
+device_manager_init	main.c	/^static void device_manager_init(bool erase_bonds)$/;"	f	file:
+errata_16	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/system_nrf52.c	/^static bool errata_16(void)$/;"	f	file:
+errata_31	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/system_nrf52.c	/^static bool errata_31(void)$/;"	f	file:
+errata_32	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/system_nrf52.c	/^static bool errata_32(void)$/;"	f	file:
+errata_36	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/system_nrf52.c	/^static bool errata_36(void)$/;"	f	file:
+errata_37	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/system_nrf52.c	/^static bool errata_37(void)$/;"	f	file:
+errata_57	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/system_nrf52.c	/^static bool errata_57(void)$/;"	f	file:
+errata_66	pca10040/s132/arm5_no_packs/RTE/Device/nRF52832_xxAA/system_nrf52.c	/^static bool errata_66(void)$/;"	f	file:
+gap_params_init	main.c	/^static void gap_params_init(void)$/;"	f	file:
+is_disabled_in_debug_needed	pca10028/s130/arm5_no_packs/RTE/Device/nRF51422_xxAC/system_nrf51.c	/^static bool is_disabled_in_debug_needed(void)$/;"	f	file:
+is_manual_peripheral_setup_needed	pca10028/s130/arm5_no_packs/RTE/Device/nRF51422_xxAC/system_nrf51.c	/^static bool is_manual_peripheral_setup_needed(void)$/;"	f	file:
+is_peripheral_domain_setup_needed	pca10028/s130/arm5_no_packs/RTE/Device/nRF51422_xxAC/system_nrf51.c	/^static bool is_peripheral_domain_setup_needed(void)$/;"	f	file:
+m_app_handle	main.c	/^static dm_application_instance_t         m_app_handle;                              \/**< Application identifier allocated by device manager *\/$/;"	v	file:
+m_conn_handle	main.c	/^static uint16_t                          m_conn_handle = BLE_CONN_HANDLE_INVALID;   \/**< Handle of the current connection. *\/$/;"	v	file:
+main	main.c	/^int main(void)$/;"	f
+module_id	config/pstorage_platform.h	/^    uint32_t            module_id;      \/**< Module ID.*\/$/;"	m	struct:__anon1
+on_adv_evt	main.c	/^static void on_adv_evt(ble_adv_evt_t ble_adv_evt)$/;"	f	file:
+on_ble_evt	main.c	/^static void on_ble_evt(ble_evt_t * p_ble_evt)$/;"	f	file:
+on_conn_params_evt	main.c	/^static void on_conn_params_evt(ble_conn_params_evt_t * p_evt)$/;"	f	file:
+power_manage	main.c	/^static void power_manage(void)$/;"	f	file:
+pstorage_block_t	config/pstorage_platform.h	/^typedef uint32_t pstorage_block_t;$/;"	t
+pstorage_flash_page_end	config/pstorage_platform.h	/^static __INLINE uint32_t pstorage_flash_page_end()$/;"	f
+pstorage_flash_page_size	config/pstorage_platform.h	/^static __INLINE uint16_t pstorage_flash_page_size()$/;"	f
+pstorage_handle_t	config/pstorage_platform.h	/^} pstorage_handle_t;$/;"	t	typeref:struct:__anon1
+pstorage_size_t	config/pstorage_platform.h	/^typedef uint16_t pstorage_size_t;      \/** Size of length and offset fields. *\/$/;"	t
+remduplicates	pca10028/s130/armgcc/Makefile	/^remduplicates = $(strip $(if $1,$(firstword $1) $(call remduplicates,$(filter-out $(firstword $1),$1))))$/;"	m
+remduplicates	pca10040/s132/armgcc/Makefile	/^remduplicates = $(strip $(if $1,$(firstword $1) $(call remduplicates,$(filter-out $(firstword $1),$1))))$/;"	m
+sleep_mode_enter	main.c	/^static void sleep_mode_enter(void)$/;"	f	file:
+sys_evt_dispatch	main.c	/^static void sys_evt_dispatch(uint32_t sys_evt)$/;"	f	file:
+timers_init	main.c	/^static void timers_init(void)$/;"	f	file:

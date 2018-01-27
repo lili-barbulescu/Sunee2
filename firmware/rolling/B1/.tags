@@ -1,0 +1,69 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+APP_ADV_INTERVAL	src/ble.h	38;"	d
+APP_ADV_TIMEOUT_IN_SECONDS	src/ble.h	39;"	d
+APP_TIMER_OP_QUEUE_SIZE	src/ble.h	42;"	d
+APP_TIMER_PRESCALER	src/ble.h	41;"	d
+BLE__H_	src/ble.h	2;"	d
+CENTRAL_LINK_COUNT	src/ble.h	34;"	d
+CONN_SUP_TIMEOUT	src/ble.h	47;"	d
+DEAD_BEEF	src/ble.h	62;"	d
+DEVICE_NAME	src/ble.h	37;"	d
+FIRST_CONN_PARAMS_UPDATE_DELAY	src/ble.h	49;"	d
+IS_SRVC_CHANGED_CHARACT_PRESENT	src/ble.h	32;"	d
+LED0_B	src/main.c	7;"	d	file:
+LED0_G	src/main.c	6;"	d	file:
+LED0_R	src/main.c	5;"	d	file:
+LED1_B	src/main.c	10;"	d	file:
+LED1_G	src/main.c	9;"	d	file:
+LED1_R	src/main.c	8;"	d	file:
+LEDS_MSK	src/main.c	13;"	d	file:
+LINKER_SCRIPT	Makefile	/^  LINKER_SCRIPT  := linker_script.ld$/;"	m
+MAX_CONN_INTERVAL	src/ble.h	45;"	d
+MAX_CONN_PARAMS_UPDATE_COUNT	src/ble.h	51;"	d
+MIN_CONN_INTERVAL	src/ble.h	44;"	d
+NEXT_CONN_PARAMS_UPDATE_DELAY	src/ble.h	50;"	d
+OUTPUT_DIRECTORY	Makefile	/^OUTPUT_DIRECTORY := obj$/;"	m
+PERIPHERAL_LINK_COUNT	src/ble.h	35;"	d
+PROJECT_NAME	Makefile	/^PROJECT_NAME     := Sunee_B1$/;"	m
+PROJ_DIR	Makefile	/^PROJ_DIR := .\/src$/;"	m
+SDK_ROOT	Makefile	/^SDK_ROOT := ..\/..\/NRF52SDK\/$/;"	m
+SEC_PARAM_BOND	src/ble.h	53;"	d
+SEC_PARAM_IO_CAPABILITIES	src/ble.h	57;"	d
+SEC_PARAM_KEYPRESS	src/ble.h	56;"	d
+SEC_PARAM_LESC	src/ble.h	55;"	d
+SEC_PARAM_MAX_KEY_SIZE	src/ble.h	60;"	d
+SEC_PARAM_MIN_KEY_SIZE	src/ble.h	59;"	d
+SEC_PARAM_MITM	src/ble.h	54;"	d
+SEC_PARAM_OOB	src/ble.h	58;"	d
+SLAVE_LATENCY	src/ble.h	46;"	d
+TARGETS	Makefile	/^TARGETS          := nrf52$/;"	m
+TEMPLATE_PATH	Makefile	/^TEMPLATE_PATH := $(SDK_ROOT)\/components\/toolchain\/gcc$/;"	m
+_BV	src/main.c	4;"	d	file:
+advertising_init	src/ble.c	/^void advertising_init(void)$/;"	f
+assert_nrf_callback	src/ble.c	/^void assert_nrf_callback(uint16_t line_num, const uint8_t * p_file_name)$/;"	f
+ble_evt_dispatch	src/ble.c	/^static void ble_evt_dispatch(ble_evt_t * p_ble_evt)$/;"	f	file:
+ble_stack_init	src/ble.c	/^void ble_stack_init(void)$/;"	f
+blink_led	src/main.c	/^void blink_led (int msk)$/;"	f
+bsp_event_handler	src/ble.c	/^void bsp_event_handler(bsp_event_t event)$/;"	f
+buttons_leds_init	src/ble.c	/^static void buttons_leds_init(bool * p_erase_bonds)$/;"	f	file:
+conn_params_error_handler	src/ble.c	/^static void conn_params_error_handler(uint32_t nrf_error)$/;"	f	file:
+conn_params_init	src/ble.c	/^void conn_params_init(void)$/;"	f
+device_manager_evt_handler	src/ble.c	/^static uint32_t device_manager_evt_handler(dm_handle_t const * p_handle,$/;"	f	file:
+device_manager_init	src/ble.c	/^void device_manager_init(bool erase_bonds)$/;"	f
+gap_params_init	src/ble.c	/^static void gap_params_init(void)$/;"	f	file:
+m_app_handle	src/ble.c	/^ static dm_application_instance_t         m_app_handle;                              \/**< Application identifier allocated by device manager *\/$/;"	v	file:
+m_conn_handle	src/ble.c	/^ static uint16_t                          m_conn_handle = BLE_CONN_HANDLE_INVALID;   \/**< Handle of the current connection. *\/$/;"	v	file:
+main	src/ble.c	/^int main(void)$/;"	f
+main	src/main.c	/^int main(void)$/;"	f
+on_adv_evt	src/ble.c	/^static void on_adv_evt(ble_adv_evt_t ble_adv_evt)$/;"	f	file:
+on_ble_evt	src/ble.c	/^static void on_ble_evt(ble_evt_t * p_ble_evt)$/;"	f	file:
+on_conn_params_evt	src/ble.c	/^static void on_conn_params_evt(ble_conn_params_evt_t * p_evt)$/;"	f	file:
+power_manage	src/ble.c	/^static void power_manage(void)$/;"	f	file:
+sleep_mode_enter	src/ble.c	/^static void sleep_mode_enter(void)$/;"	f	file:
+sys_evt_dispatch	src/ble.c	/^static void sys_evt_dispatch(uint32_t sys_evt)$/;"	f	file:
+timers_init	src/ble.c	/^static void timers_init(void)$/;"	f	file:
