@@ -1,3 +1,5 @@
 Sunee-cache.lib
 **.bak
 **.kicad_pcb-bak
+*.d
+*.o
